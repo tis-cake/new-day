@@ -1,0 +1,237 @@
+.header {
+  position: relative;
+  max-height: 175px;
+  height: 9.1145vw;
+  color: @light-black;
+
+  letter-spacing: 0.2px;
+
+  @media (max-width: @mobile-width) {
+    background-color: @white;
+    height: 262px;
+  }
+}
+
+.header__mobile {
+  display: none;
+
+  @media (max-width: @mobile-width) {
+    display: block;
+  }
+}
+
+.header__mobile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__search-link {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/svg/search-green.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.header__desktop {
+  // padding-top: 1.35416vw;
+  padding-top: 1.5625vw;
+
+  @media (min-width: @max-desktop-width) {
+    padding-top: 30px;
+  }
+}
+
+.header__desktop-top {
+  display: block;
+  padding-bottom: 2.135416vw;
+  // padding-bottom: 1.783vw;
+
+  @media (min-width: @max-desktop-width) {
+    padding-bottom: 41px;
+  }
+
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.header__desktop-bottom {
+  @media (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.header__desktop-bottom.active {
+  display: block;
+  position: absolute;
+
+  background-color: #fff;
+}
+
+.header__services-link {
+  text-transform: none;
+  text-align: left;
+
+  color: #14b250;
+  background-color: @white;
+}
+
+.header__consultation-phone {
+  display: none;
+
+  @media (max-width: @mobile-width) {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 30px;
+    color: #747474;
+  }
+}
+
+.header__consultation-phone--link {
+  font-size: 45px;
+  font-weight: 700;
+
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.header__callback {
+  display: none;
+
+  @media (max-width: @mobile-width) {
+    display: block;
+  }
+}
+
+/*styles for index page*/
+.header-bg {
+  display: none;
+
+  position: absolute;
+  z-index: -1;
+  max-height: 1000px;
+  min-height: 49.5vw;
+  width: 100%;
+  // border: 1px solid red;
+
+  @media (min-width: @max-desktop-width) {
+    min-height: auto;
+    height: 950px;
+  }
+
+  @media (max-width: @mobile-width) {
+    height: 128vw;
+  }
+}
+
+.header-bg__img{
+  position: absolute;
+  z-index: -1;
+  // min-height: 49.5vw;
+  // max-height: 1000px;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.header.index .header-bg {
+  display: block;
+}
+
+.header.index {
+  // position: absolute;
+  z-index: 10;
+
+  // min-height: 49.5vw;
+  // max-height: 1000px;
+  // color: @white;
+  width: 100%;
+
+  background-color: #0c6f9e;
+  // background-image: url("../img/index-bg-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  @media (min-width: @max-desktop-width) {
+    // min-height: auto;
+    // height: 950px;
+  }
+
+  @media (max-width: @mobile-width) {
+    // height: 128vw;
+
+    // background-image: url("../img/index-bg-mob.png");
+    background-size: cover;
+  }
+}
+
+.header.index,
+.header.index p,
+.header.index .nav-info__link,
+.header.index .main-nav__link,
+.header.index .nav-section__link,
+.header.index .logo {
+  color: @white;
+ }
+
+.header.index .logo__text,
+.header.index .logo__text--strong {
+  font-weight: 400;
+ }
+
+.header.index .menu-toggle span,
+.header.index .menu-toggle::before,
+.header.index .menu-toggle::after {
+  background-color: @white;
+}
+
+.header.index .menu-toggle.active span {
+  background-color: transparent;
+}
+
+.header.index .nav-section__item--services {
+  display: none;
+}
+
+.header.index .logo__text::before {
+  background-image: url("../img/svg/logo-nd-white.svg");
+}
+
+.header.index .header__search-link::before {
+  background-image: url("../img/svg/search-white.svg");
+}
+
+
+// .header.index .search--green,
+// .header__menu-logo.active .logo--white,
+// .header.index .logo--green,
+// .header.index .header__desktop-top .logo img:first-of-type,
+.header.index .nav-section__link .nav-section__icon:first-of-type {
+  display: none;
+}
+
+// .header .logo--white,
+// .header.index .header__desktop-top .logo img:last-of-type,
+.header.index .nav-section__link .nav-section__icon:last-of-type {
+  display: block;
+}

@@ -1,0 +1,100 @@
+.banners {
+  margin-bottom: 100px;
+}
+
+.banners.container {
+  @media (max-width: @mobile-width) {
+    .margin-inline(0);
+  }
+}
+
+.banners__list {
+  display: flex;
+  justify-content: space-between;
+
+  @media  (max-width: @mobile-width) {
+    overflow-x: scroll;
+  }
+
+}
+
+.banners__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  max-height: 575px;
+  max-width: 368px;
+  height: 30vw;
+  width: 19.1vw;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 19px;
+  box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
+
+  &--salt {
+    background-image: url("../img/banners/banner-salt.jpg");
+  }
+
+  &--narco {
+    background-image: url("../img/banners/banner-narco.jpg");
+  }
+
+  &--detox {
+    background-image: url("../img/banners/banner-detox.jpg");
+  }
+
+  &--game {
+    background-image: url("../img/banners/banner-game.jpg");
+  }
+
+  &--resoc {
+    background-image: url("../img/banners/banner-resoc.jpg");
+  }
+
+  &--drink {
+    background-image: url("../img/banners/banner-drink.jpg");
+  }
+
+  &--narco-prof {
+    background-image: url("../img/banners/banner-narco-prof.jpg");
+  }
+
+  &--encode {
+    background-image: url("../img/banners/banner-encode.jpg");
+  }
+
+  &--today {
+    background-image: url("../img/banners/banner-today.jpg");
+  }
+
+  &--camp {
+    background-image: url("../img/banners/banner-camp.jpg");
+  }
+
+}
+
+.banners__item--salt .banners__subtitle {
+  color: #b89c88;
+}
+
+.banners__subtitle {
+  margin-bottom: @a;
+  color:@white;
+}
+
+.banners__title,
+.banners__description,
+.banner__link-phone {
+  color: @white;
+}
+
+.banners__link {
+  position: absolute;
+  bottom: -3%;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,91 @@
+.price {
+  margin-bottom: 100px;
+}
+
+.price__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  @media  (max-width: @mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.price__column {
+  box-sizing: border-box;
+  position: relative;
+  padding: 40px 50px;
+
+  width: 507px;
+  height: 700px;
+
+  box-shadow: 0 0 29px 3px rgba(2, 7, 32, 0.04);
+  border-radius: 19px;
+  background-color: #ffffff;
+
+  @media  (max-width: @mobile-width) {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.price__title {
+  // .margin-inline(@a);
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.price__icon-img {
+  width: 26px;
+  height: 26px;
+  padding-right: 15px;
+
+  &--narco {
+    width: 30px;
+    height: 29px;
+  }
+
+  &--alco {
+
+  }
+
+  &--other {
+    height: 30px;
+    width: auto;
+  }
+}
+
+.price__table {
+  width: 100%;
+}
+
+.price__table td {
+  font-size: 19px;
+  padding-bottom: 35px;
+}
+
+.price__table td:first-child {
+  // border: 1px solid red;
+  // width: 222px;
+  // width: 45%;
+  // width: 53%;
+  width: 68%;
+  color: #747474;
+}
+
+.price__table td:last-child {
+  text-align: right;
+  // height: 18px;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+
+.price__link {
+  // .margin-inline(@a);
+  position: absolute;
+  bottom: -2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}

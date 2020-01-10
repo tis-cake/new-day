@@ -1,0 +1,107 @@
+.intro {
+  &--about {
+    max-width: 890px;
+    width: 46.954vw;
+  }
+
+  &--get-help {
+    max-width: 960px;
+    width: 52vw;
+
+    .margin-inline(@a);
+
+    .intro__title {
+      margin-bottom: 2.39583vw;
+    }
+
+    .intro__description {
+      letter-spacing: 0.19px;
+    }
+  }
+
+  &--rehab-swiper {
+    width: 41.666vw;
+    margin-bottom: 3.645833vw;
+  }
+
+  &--program {
+    width: 900px;
+  }
+
+  &--reviews {
+    .intro__description {
+      width: 894px;
+
+      @media  (max-width: @mobile-width) {
+        width: auto;
+      }
+    }
+  }
+
+  &--warning {
+    max-width: 750px;
+    width: 39.0625vw;
+  }
+}
+
+.intro--database-preview--sub {
+  width: 454px;
+}
+
+.intro__title {
+  margin-bottom: 2.187vw;
+
+  font-size: 2.34375vw;
+  font-weight: 700;
+  letter-spacing: 0.23px;
+
+  color: #2f2f2f;
+}
+
+.intro__description {
+  font-size: 0.98958333vw;
+  font-weight: 400;
+  line-height: 1.458vw;
+  letter-spacing: 0.1px;
+
+  color: #747474;
+}
+
+.intro__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media  (max-width: @mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.intro__link {
+  position: relative;
+
+  color: #1ab455;
+}
+
+@media (min-width: @max-desktop-width) {
+  .intro__title {
+    margin-bottom: 42.4px;
+    font-size: 45px;
+  }
+
+  .intro__description {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .intro--get-help {
+    .intro__title {
+      margin-bottom: 46px;
+    }
+  }
+
+  .intro--rehab-swiper {
+    width: 800px;
+    margin-bottom: 70px;
+  }
+
+}

@@ -1,0 +1,220 @@
+.arrow-container {
+  position: relative;
+  max-width: 1810px;
+  width: 94.2708vw;
+  .margin-inline(@a);
+
+  @media (max-width: @mobile-width) {
+    width: auto;
+    .margin-inline(0);
+  }
+}
+
+.arrow-container .swiper-button-next,
+.arrow-container .swiper-button-prev {
+  color: #dadada!important;
+  @media  (max-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.arrow-container .container {
+  max-width: 1625px;
+  width: 84.6354vw;
+
+  box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
+
+  @media  (max-width: @mobile-width) {
+    .margin-inline(0);
+  }
+}
+
+.rehab-swiper {
+  margin-bottom: 10.03125vw;
+}
+
+.rehab-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
+  border-radius: 7px;
+}
+
+.rehab-swiper__link-pages {
+  display: none;
+
+  text-decoration: none;
+  color: #14b250;
+
+  @media  (max-width: @mobile-width) {
+    display: block;
+  }
+}
+
+.rehab-swiper__img-wrapper {
+  max-height: 372px;
+  height: 19.3vw;
+}
+
+.rehab-swiper__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 7px 7px 0 0;
+}
+
+ .rehab-swiper__text-wrapper {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  padding-top: 1.9270833vw;
+  .padding-inline(2.08333vw);
+  padding-bottom: 2.239583vw;
+}
+
+.rehab-swiper--clinics {
+  .rehab-swiper__text-wrapper {
+    padding-top: 2.127vw;
+  }
+
+  .rehab-swiper__street {
+    padding-bottom: 1.854vw;
+  }
+
+  .rehab-swiper__place-description {
+    padding-bottom: 1.385vw;
+  }
+}
+
+.rehab-swiper__city {
+  padding-bottom: 0.2083333vw;
+
+  font-size: 1.40625vw;
+  letter-spacing: 0.14px;
+}
+
+ .rehab-swiper__street {
+  padding-bottom: 1.3541666vw;
+
+  font-size: 1.5625vw;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+
+  color: #2f2f2f;
+}
+
+.rehab-swiper__place-description {
+  width: 17.6041666vw;
+  padding-bottom: 0.885vw;
+
+  font-size: 0.9375vw;
+  line-height: 1.25vw;
+  letter-spacing: 0.18px;
+}
+
+.rehab-swiper__price {
+  margin-top: auto;
+
+  font-size: 1.197916vw;
+  font-weight: 700;
+  line-height: 2.60416vw;
+  letter-spacing: 0.23px;
+
+  color: #2f2f2f;
+}
+
+.rehab-swiper__link-page {
+  position: absolute;
+  bottom: 2.604166vw;
+  right: 3.75vw;
+
+  max-width: 33px;
+  max-height: 33px;
+  width: 1.71875vw;
+  height: 1.71875vw;
+
+  text-align: center;
+  text-decoration: none;
+  color: #dadada;
+  //
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+@media (min-width: @max-desktop-width) {
+
+  .rehab-swiper {
+    margin-bottom: 192.6px;
+  }
+
+  .rehab-swiper__text-wrapper {
+    padding-top: 37px;
+    .padding-inline(40px);
+    padding-bottom: 43px;
+  }
+
+  .rehab-swiper__city {
+    padding-bottom: 4px;
+    font-size: 27px;
+  }
+
+  .rehab-swiper__street {
+    padding-bottom: 26px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .rehab-swiper__place-description {
+    width: 338px;
+    padding-bottom: 17px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .rehab-swiper__price {
+    font-size: 23px;
+    line-height: 50px;
+  }
+
+  .rehab-swiper__link-page {
+    bottom: 50px;
+    right: 72px;
+  }
+
+  .rehab-swiper--clinics {
+    .rehab-swiper__text-wrapper {
+      padding-top: 41px;
+    }
+    .rehab-swiper__street {
+      padding-bottom: 36px;
+    }
+    .rehab-swiper__place-description {
+      padding-bottom: 26px;
+    }
+  }
+
+}
+
+// при переполнении
+
+// .swiper-slide {
+//   display: flex!important;
+// }
+
+// .arrow-container {
+//   display: flex;
+// }

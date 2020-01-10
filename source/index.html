@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Портал Новый День»">
+    <title>Новый День</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+
+    <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header class="header index">
+      <div class="header-bg">
+        <picture>
+          <source type="image/webp" media="(max-width: 750px)" srcset="img/webp/index-bg-mob.webp">
+          <source type="image/webp" srcset="img/webp/index-bg-desk.webp">
+          <source media="(max-width: 750px)" srcset="img/index-bg-mob.png">
+          <img class="header-bg__img" src="img/index-bg-desk.png" alt="">
+        </picture>
+      </div>
+
+      <div class="header__mobile">
+
+        <div class="header__mobile-top container">
+          <button type="button" class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__menu-logo logo" href="index.html">
+            <p class="logo__text">
+              <span class="logo__text--strong">Новый</span> День
+            </p>
+          </a>
+
+          <!-- <div class="header__search"> -->
+            <a class="header__search-link" href="index.html">
+
+              <!-- <img class="header__search-img search--white" src="img/svg/search-white.svg" alt="Поиск по сайту" width="30" height="30"> -->
+              <!-- <img class="header__search-img search--green" src="img/svg/search-green.svg" alt="Поиск по сайту" width="30" height="30"> -->
+            </a>
+          <!-- </div> -->
+        </div>
+
+        <div class="header__mobile-bottom nav-section container">
+          <ul class="nav-section__list">
+            <li class="nav-section__item">
+              <a class="nav-section__link" href="centers.html">
+                <img class="nav-section__icon" src="img/svg/hospital-black.svg" alt="Центры" width="30" height="30">
+                <img class="nav-section__icon" src="img/svg/hospital-white.svg" alt="Центры" width="30" height="30">
+                <p class="nav-section__title">Центры</p>
+              </a>
+            </li>
+            <li class="nav-section__item">
+              <a class="nav-section__link" href="clinics.html">
+                <img class="nav-section__icon" src="img/svg/heart-black.svg" alt="Клиники" width="30" height="30">
+                <img class="nav-section__icon" src="img/svg/heart-white.svg" alt="Клиники" width="30" height="30">
+                <p class="nav-section__title">Клиники</p>
+              </a>
+            </li>
+            <li class="nav-section__item">
+              <a class="nav-section__link" href="article-page.html">
+                <img class="nav-section__icon" src="img/svg/wine-glass-black.svg" alt="Алкоголизм" width="30" height="30">
+                <img class="nav-section__icon" src="img/svg/wine-glass-white.svg" alt="Алкоголизм" width="30" height="30">
+                <p class="nav-section__title">Алкоголизм</p>
+              </a>
+            </li>
+            <li class="nav-section__item">
+              <a class="nav-section__link" href="article-page.html">
+                <img class="nav-section__icon" src="img/svg/medicine-black.svg" alt="Наркомания" width="30" height="30">
+                <img class="nav-section__icon" src="img/svg/medicine-white.svg" alt="Наркомания" width="30" height="30">
+                <p class="nav-section__title">Наркомания</p>
+              </a>
+            </li>
+            <li class="nav-section__item nav-section__item--services">
+              <a class="nav-section__link" href="#">
+                <img class="nav-section__icon" src="img/svg/pharmacy-black.svg" alt="Услуги" width="30" height="30">
+                <img class="nav-section__icon" src="img/svg/pharmacy-white.svg" alt="Услуги" width="30" height="30">
+                <p class="nav-section__title">Услуги</p>
+              </a>
+            </li>
+          </ul>
+
+          <a class="header__services-link btn" href="">Наши услуги</a>
+        </div>
+      </div>
+
+      <div class="header__desktop container">
+
+        <div class="header__desktop-top">
+          <div class="header__nav-info nav-info">
+
+            <a class="nav-info__logo logo" href="index.html">
+              <!-- <div class="logo__img-wrapper">
+                <img src="img/svg/logo-nd-green.svg" alt="Логотип портала «Новый День»" width="35" height="35">
+                <img src="img/svg/logo-nd-white.svg" alt="Логотип портала «Новый День»" width="35" height="35">
+              </div> -->
+              <p class="logo__text">
+                <span class="logo__text--strong">Новый</span> День
+              </p>
+            </a>
+
+            <ul class="nav-info__list">
+              <li class="nav-info__item nav-info__item--search">
+                <a class="nav-info__link" href="#">
+                  Поиск
+                </a>
+              </li>
+              <li class="nav-info__item">
+                <!-- <a class="nav-info__link" href="#"> -->
+                  Помощь <span class="nav-info__link--around-clock">24/7</span>
+                <!-- </a> -->
+              </li>
+              <li class="nav-info__item">
+                <!-- <a class="nav-info__link" href="#"> -->
+                  Анонимно
+                <!-- </a> -->
+              </li>
+              <li class="nav-info__item">
+                <a class="nav-info__link" href="tel:+79004562345">
+                  +7 (900) 456-23-45
+                </a>
+              </li>
+              <li class="nav-info__item">
+                <a class="nav-info__link nav-info__link--callback btn" href="#">
+                  Обратный звонок
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="header__desktop-bottom">
+          <nav class="header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="centers.html">Реабилитационные центры</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="clinics.html">Клиники</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="article-page.html">Наркомания</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="article-page.html">Алкоголизм</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Услуги</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="database.html">Публикации</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="family.html">Родственникам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+
+          </nav>
+
+          <div class="header__consultation-phone">
+            <span class="header__consultation-phone--text">Бесплатная консультация</span>
+            <a class="header__consultation-phone--link" href="tel:+79004562345">8 (900) 456-23-45</a>
+          </div>
+
+          <div class="header__callback">
+            <a class="header__callback--link btn" href="#">
+              Обратный звонок
+            </a>
+          </div>
+
+          <div class="header__features features-block">
+            <ul class="features-block__list features-block__list--header-mobile">
+              <li class="features-block__item features-block__item--anon">
+                <h3 class="features-block__title">Анонимно</h3>
+                <p class="features-block__description">Все звонки бесплатные и строго конфиденциальные</p>
+              </li>
+
+              <li class="features-block__item features-block__item--free">
+                <h3 class="features-block__title">Бесплатно</h3>
+                <p class="features-block__description">Консультация проводится на безвозмездной основе</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="main-info">
+        <div class="container">
+          <h1 class="main-info__title">Реабилитационные центры и клиники по России</h1>
+          <p class="main-info__description">Лечение алкоголизма и наркомании в клинике проводится на анонимной основе, вся информация о результатах обследования и лечения является строго конфиденциальной.</p>
+
+          <a class="main-info__callback btn" href="#">Оставить заявку</a>
+
+          <div class="main-info__features features-block features-block--main-info">
+            <ul class="features-block__list features-block__list--header-desktop">
+              <li class="features-block__item features-block__item--anon">
+                <h3 class="features-block__title">Анонимно</h3>
+                <p class="features-block__description">Все звонки бесплатные и строго конфиденциальные</p>
+              </li>
+
+              <li class="features-block__item features-block__item--free">
+                <h3 class="features-block__title">Бесплатно</h3>
+                <p class="features-block__description">Консультация проводится на безвозмездной основе</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about about--top container">
+        <div class="about__column-left">
+          <div class="intro intro--about">
+            <h2 class="intro__title">Центры лечения Новый День</h2>
+            <p class="intro__description">Хорошая наркологическая клиника — единственная возможность избавиться от пагубной зависимости. Именно такую возможность предоставляет своим пациентам центр Новый день — специализированная сеть клиник в России. За последние годы мы провели успешное лечение и вернули к полноценной жизни сотни наркозависимых, и этот опыт — лучшая оценка нашей работы.</p>
+          </div>
+
+          <div class="about__features features-block features-block--about">
+            <ul class="features-block__list">
+              <li class="features-block__item features-block__item--all-exp">
+                <h3 class="features-block__title">263 года</h3>
+                <p class="features-block__description">Общий стаж наших сотрудников</p>
+              </li>
+              <li class="features-block__item features-block__item--all-rehab">
+                <h3 class="features-block__title">3 580 человек</h3>
+                <p class="features-block__description">Общее количество прошедших реабилитацию</p>
+              </li>
+              <li class="features-block__item features-block__item--all-years">
+                <h3 class="features-block__title">20 лет</h3>
+                <p class="features-block__description">Именно столько мы спасаем жизни</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about__column-right">
+          <div class="about__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/webp/about-top.webp">
+              <img class="about__img" src="img/about/about-top.jpg" alt="«Центр Новый День»">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-help container">
+        <div class="intro intro--get-help">
+          <h2 class="intro__title">Получите помощь прямо сейчас</h2>
+          <p class="intro__description">Кто-то из ваших родственников или друзей имеет зависимость? Вы всячески пытались помочь, но в результате человек все равно возвращался к прошлой жизни? Вы не первые, кто столкнулся с этой бедой, и мы можем вам помочь. Мы гарантируем анонимность, уговорим на лечение, поможем подобрать центр </p>
+        </div>
+
+        <div class="get-help__call-wrapper">
+          <p class="get-help__text">Позвоните нам </p>
+          <p class="get-help__number">8 900 456 23 45</p>
+          <p class="get-help__text">или</p>
+          <a class="get-help__link btn" href="#">Позвоните мне</a>
+        </div>
+      </section>
+
+      <section class="rehab-swiper rehab-swiper--centers">
+
+        <div class="container">
+          <div class="intro intro--rehab-swiper">
+            <h2 class="intro__title">Наши реабилитационные центры</h2>
+            <p class="intro__description">Современные методики реабилитации,  квалифицированный персонал, достойные условия проживания и питание,  отвественность за обеспечение безопасности</p>
+          </div>
+          <a class="rehab-swiper__link-pages" href="clinics.html">Все центры</a>
+        </div>
+
+        <div class="arrow-container">
+          <div class="swiper-container container" id="center-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/about/about-top.jpg" alt="Реабилитационный центр в г." />
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__city">г. Москва</p>
+                    <p class="rehab-swiper__street">ул. Покровка, 31</p>
+                    <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
+                    <p class="rehab-swiper__price">40 000 - 80 000 &#8381; / мес.</p>
+                    <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab/клиника.jpg" alt="Реабилитационный центр в г." />
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__city">г. Екатеринбург</p>
+                    <p class="rehab-swiper__street">ул. Лермонтова, 43</p>
+                    <p class="rehab-swiper__place-description">Рекомендуемое время прохождения лечения 6 месяцев</p>
+                    <p class="rehab-swiper__price">40 000 - 80 000 &#8381; / мес.</p>
+                    <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г." />
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__city">г. Санкт-Петербург</p>
+                    <p class="rehab-swiper__street">ул. Балтийская, 12</p>
+                    <p class="rehab-swiper__place-description">Лечение наркотической, алко- и игровой зависимости</p>
+                    <p class="rehab-swiper__price">40 000 - 80 000 &#8381; / мес.</p>
+                    <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="swiper-button-next swiper-button-next--center"></div>
+          <div class="swiper-button-prev swiper-button-prev--center"></div>
+        </div>
+      </section>
+
+      <section class="rehab-swiper rehab-swiper--clinics">
+
+        <div class="container">
+          <div class="intro intro--rehab-swiper">
+            <h2 class="intro__title">Наши клиники</h2>
+            <p class="intro__description">Современные методики реабилитации,  квалифицированный персонал, достойные условия проживания и питание,  отвественность за обеспечение безопасности</p>
+          </div>
+          <a class="rehab-swiper__link-pages" href="clinics.html">Все центры</a>
+        </div>
+
+        <div class="arrow-container">
+          <div class="swiper-container container" id="clinic-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/about/about-top.jpg" alt="Реабилитационный центр в г." />
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__city">г. Москва</p>
+                    <p class="rehab-swiper__street">ул. Бориса Галушкина, 17</p>
+                    <p class="rehab-swiper__place-description">Срок лечения от 3 до 14 дней</p>
+                    <p class="rehab-swiper__price">от 3000 &#8381; / день</p>
+                    <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab/клиника.jpg" alt="Реабилитационный центр в г." />
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__city">г. Новосибирск</p>
+                    <p class="rehab-swiper__street">ул. Набережная, 34</p>
+                    <p class="rehab-swiper__place-description">Срок лечения от 3 до 14 дней</p>
+                    <p class="rehab-swiper__price">от 3500 &#8381; / день</p>
+                    <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г." />
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__city">г. Санкт-Петербург</p>
+                    <p class="rehab-swiper__street">Рижский проспект, 90</p>
+                    <p class="rehab-swiper__place-description">Срок лечения от 3 до 14 дней</p>
+                    <p class="rehab-swiper__price">от 3000 &#8381; / день</p>
+                    <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="swiper-button-next swiper-button-next--clinic"></div>
+          <div class="swiper-button-prev swiper-button-prev--clinic"></div>
+        </div>
+      </section>
+
+      <section class="program container">
+        <div class="intro intro--program">
+          <h2 class="intro__title">Как мы работаем?</h2>
+          <p class="intro__description">Специалисты составляют план лечения индивидуально для каждого обратившегося, учитывая его физиологические особенности, физические данные, психологическую составляющую</p>
+        </div>
+        <ul class="program__list">
+          <li class="program__item">
+            <h3 class="program__title">Заявка</h3>
+            <p class="program__description">Подача заявки через сайт, по телефону или социальные сети</p>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title">Убеждение</h3>
+            <p class="program__description">Убеждение пациента в необходимости лечения от зависимости</p>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title">План лечения</h3>
+            <p class="program__description">Встреча с пациентом и разработка индивидуальной программы реабилитации</p>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title">Договор</h3>
+            <p class="program__description">Заключение договора и дальнейшее размещение пациента в центре</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="banners container">
+        <ul class="banners__list">
+
+          <li class="banners__item banners__item--salt">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Лечение солевой зависимости</h3>
+            <p class="banners__description">симптоматическое лечение в стационаре</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li>
+
+          <li class="banners__item banners__item--narco">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Лечение наркомании</h3>
+            <p class="banners__description">для каждого пациента свой план с учетом случая и потребности</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li>
+
+          <li class="banners__item banners__item--detox">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Детоксикация</h3>
+            <p class="banners__description">очищение организма от наркотических препаратов и их шлаков</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li>
+
+          <li class="banners__item banners__item--game">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Лечение несовершенно-летних зависимых</h3>
+            <p class="banners__description">гарантируем анонимность, круглосуточно, без выходных</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li>
+
+          <!-- <li class="banners__item banners__item--resoc">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Ресоциализация</h3>
+            <p class="banners__description">работа с психологами,подготовка к возвращению в трудовой коллектив</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li> -->
+
+          <!-- <li class="banners__item banners__item--drink">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Вывод из запоя</h3>
+            <p class="banners__description">Снятие интоксикации, регидратация, психологическая помощь</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li> -->
+
+          <!-- <li class="banners__item banners__item--narco-prof">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Нарколог на дом</h3>
+            <p class="banners__description">Приедем за 30 – 50 минут, гарантируем анонимность, круглосуточно, без выходных</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li> -->
+
+          <!-- <li class="banners__item banners__item--encode">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Кодирование</h3>
+            <p class="banners__description">эффективная форма терапии, которая сокращает потребление алкоголя</p>
+            <a class="banners__link btn" href="#">Подробнее об услуге</a>
+          </li> -->
+
+
+          <!-- <li class="banners__item banners__item--today">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Начните лечение уже сегодня!</h3>
+            <p class="banners__description">Мы гарантируем анонимность, уговорим на лечение, поможем подобрать центр</p>
+            <a class="banner__link-phone" href="tel:+79006463212">8 (900) 646-32-12</a>
+            <a class="banners__link btn" href="#">Выбрать центр</a>
+          </li> -->
+
+          <!-- <li class="banners__item banners__item--camp">
+            <p class="banners__subtitle">Бесплатная консультация</p>
+            <h3 class="banners__title">Антинаркотический лагерь в Крыму</h3>
+            <p class="banners__description">с 23 августа по 3 сентября количество мест ограничено подробности по телефону</p>
+            <a class="banner__link-phone" href="tel:+79006463212">8 (900) 646-32-12</a>
+            <a class="banners__link btn" href="#">Выбрать центр</a>
+          </li> -->
+
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <div class="intro intro--reviews container">
+          <h2 class="intro__title">Мотивирующие истории</h2>
+          <div class="intro__link-wrapper">
+            <p class="intro__description">Отзывы наших пациентов, оставленные ими непосредственно перед выпиской. Здесь они делятся своими надеждами и опасениями, рассказывают о впечатлениях, полученных в процессе сотрудничества</p>
+            <a class="intro__link" href="reviews.html">Все отзывы</a>
+          </div>
+        </div>
+
+        <div class="reviews__blockquote-wrapper container">
+
+          <!-- <div class="reviews__column"> -->
+            <blockquote class="reviews__blockquote">
+              <div class="reviews__text-block">
+                <time class="reviews__datetime" datetime="2019-04-16">16 апр</time>
+                <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации длнаркозависимых РЕШЕНИЕ пришел к трезвости и чистоте.</p>
+              </div>
+
+              <div class="reviews__author-block">
+                <div class="reviews__author-photo-wrapper">
+                  <img class="reviews__author-img" src="img/reviews/eminem.jpg" alt="Сергей Абрамов, бывший наркоман">
+                </div>
+                <div class="reviews__author-wrapper">
+                  <cite class="reviews__author-name">Сергей Абрамов</cite>
+                  <p class="reviews__author-background">бывший наркоман</p>
+                </div>
+              </div>
+
+            </blockquote>
+          <!-- </div> -->
+
+          <!-- <div class="reviews__column"> -->
+            <blockquote class="reviews__blockquote">
+              <div class="reviews__text-block">
+                <time class="reviews__datetime" datetime="2019-12-20">20 дек</time>
+                <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации длнаркозависимых РЕШЕНИЕ пришел к трезвости и чистоте.</p>
+              </div>
+
+              <div class="reviews__author-block">
+                <div class="reviews__author-photo-wrapper">
+                  <img class="reviews__author-img" src="img/reviews/person-two.png" alt="Ксения Морозова, мать зависимого">
+                </div>
+                <div class="reviews__author-wrapper">
+                  <cite class="reviews__author-name">Ксения Морозова</cite>
+                  <p class="reviews__author-background">мать зависимого</p>
+                </div>
+              </div>
+
+            </blockquote>
+          <!-- </div> -->
+
+          <!-- <div class="reviews__column"> -->
+            <blockquote class="reviews__blockquote">
+              <div class="reviews__text-block">
+                <time class="reviews__datetime" datetime="2020-01-05">5 янв</time>
+                <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации длнаркозависимых РЕШЕНИЕ пришел к трезвости и чистоте.</p>
+              </div>
+
+              <div class="reviews__author-block">
+                <div class="reviews__author-photo-wrapper">
+                  <img class="reviews__author-img" src="img/reviews/person-three.png" alt="Сергей Абрамов, бывший алкоголик">
+                </div>
+                <div class="reviews__author-wrapper">
+                  <cite class="reviews__author-name">Сергей Абрамов</cite>
+                  <p class="reviews__author-background">бывший алкоголик</p>
+                </div>
+              </div>
+
+            </blockquote>
+          <!-- </div> -->
+
+        </div>
+      </section>
+
+      <section class="price container">
+        <div class="intro intro--price">
+          <h2 class="intro__title">Наши цены</h2>
+          <p class="intro__description">Современные методики реабилитации,  квалифицированный персонал, достойные условия проживания и питание,  отвественность за обеспечение безопасности</p>
+        </div>
+
+        <div class="price__wrapper">
+
+          <div class="price__column">
+            <h3 class="price__title"><img class="price__icon-img price__icon-img--narco" src="img/svg/medicine-green.svg" alt=" " width="35" height="35">Лечение наркомании</h3>
+
+            <table class="price__table">
+              <tr>
+                <td>Выезд команды интервенции</td>
+                <td>5000 р.</td>
+              </tr>
+              <tr>
+                <td>Кардиопротекторная терапия</td>
+                <td>1400 р.</td>
+              </tr>
+              <tr>
+                <td>Метаболическая терапия (курс из 5 капельниц)</td>
+                <td>7600 р.</td>
+              </tr>
+              <tr>
+                <td>Плазмаферез</td>
+                <td>8000 р.</td>
+              </tr>
+              <tr>
+                <td>Лазеротерапия</td>
+                <td>2500 р.</td>
+              </tr>
+              <tr>
+                <td>Нейропротекторная терапия</td>
+                <td>2000 р.</td>
+              </tr>
+              <tr>
+                <td>Гепатопротекторы для печени (1 капельница)</td>
+                <td>1300 р.</td>
+              </tr>
+              <tr>
+                <td>Ноотропная терапия для головного мозга (1 капельница)</td>
+                <td>1500 р.</td>
+              </tr>
+            </table>
+
+            <a class="price__link btn" href="#">Подробнее</a>
+          </div>
+
+          <div class="price__column">
+            <h3 class="price__title"><img class="price__icon-img price__icon-img--alco" src="img/svg/wine.svg" alt=" " width="35" height="35">Лечение алкоголизма</h3>
+
+            <table class="price__table">
+              <tr>
+                <td>Одинарная капельница от запоя</td>
+                <td>5000 р.</td>
+              </tr>
+              <tr>
+                <td>Детоксикация от алкоголя</td>
+                <td>1400 р.</td>
+              </tr>
+              <tr>
+                <td>Вывод из запоя в стационаре клиники</td>
+                <td>7600 р.</td>
+              </tr>
+              <tr>
+                <td>Двойная капельница</td>
+                <td>8000 р.</td>
+              </tr>
+              <tr>
+                <td>Устранение похмельного синдрома</td>
+                <td>2500 р.</td>
+              </tr>
+              <tr>
+                <td>Экстренное вытрезвление</td>
+                <td>2000 р.</td>
+              </tr>
+              <tr>
+                <td>Медикаментозная терапия при отравлении алкоголем</td>
+                <td>1300 р.</td>
+              </tr>
+              <tr>
+                <td>Дуплет (вывод из запоя + кодирование от срыва)</td>
+                <td>1500 р.</td>
+              </tr>
+            </table>
+
+            <a class="price__link btn" href="#">Подробнее</a>
+          </div>
+
+          <div class="price__column">
+            <h3 class="price__title"><img class="price__icon-img price__icon-img--other" src="img/svg/pharmacy-green.svg" alt=" " width="35" height="35">Другие услуги</h3>
+
+            <table class="price__table">
+              <tr>
+                <td>Консультация по телефону</td>
+                <td>Бесплатно</td>
+              </tr>
+              <tr>
+                <td>Первичная консультация в офисе клиники</td>
+                <td>Бесплатно</td>
+              </tr>
+              <tr>
+                <td>Первичная консультация нарколога на дому</td>
+                <td>1000 р.</td>
+              </tr>
+              <tr>
+                <td>Семейная консультация с психологом</td>
+                <td>2500 р.</td>
+              </tr>
+              <tr>
+                <td>Консультация специалиста (терапевт, хирург, кардиолог)</td>
+                <td>2500 р.</td>
+              </tr>
+              <tr>
+                <td>Первичный осмотр в клинике (анамнез, анализ крови и т.д.)</td>
+                <td>Бесплатно</td>
+              </tr>
+              <tr>
+                <td>Составление плана лечения</td>
+                <td>Бесплатно</td>
+              </tr>
+              <!-- <tr>
+                <td>Ноотропная терапия для головного мозга (1 капельница)</td>
+                <td>1500 р.</td>
+              </tr> -->
+            </table>
+
+            <a class="price__link btn" href="#">Подробнее</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="warning container">
+        <div class="warning__wrapper">
+          <div class="warning__img-wrapper">
+            <img class="warning__img" src="img/warn.jpg" alt="">
+          </div>
+
+          <div class="warning__form-wrapper">
+            <div class="intro intro--warning">
+              <h2 class="intro__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
+              <p class="intro__description">Наркотическая зависимость считается наиболее опасным заболеванием, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
+            </div>
+
+            <form class="warning__form" action="/echo" method="post">
+              <input class="warning__input" type="tel" name="callme" placeholder="+7 (___) ___-____" minlength="16" maxlength="16">
+              <button class="warning__btn btn">Позвоните мне</button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="database-preview">
+        <div class="intro intro--database-preview container">
+          <h2 class="intro__title">Это важно знать</h2>
+          <div class="intro__link-wrapper">
+            <p class="intro__description">В нашей базе знаний можно найти всю необходимую информацию и ответ на любой интересующий вопрос</p>
+            <a class="intro__link" href="database.html">Все статьи</a>
+          </div>
+        </div>
+
+        <ul class="database-preview__list container">
+
+          <li class="database-preview__item">
+            <a class="database-preview__link" href="article-page.html">
+              <div class="database-preview__img-wrapper">
+                <img class="database-preview__img" src="img/database-preview/preview1.jpg" alt="">
+              </div>
+              <div class="intro intro--database-preview--sub">
+                <h3 class="intro__title">Наркотик фен – что это такое</h3>
+                <p class="intro__description">Среди молодежи все большую популярность приобретают дешевые запрещенные вещества для получения «кайфа»</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="database-preview__item">
+            <a class="database-preview__link" href="article-page.html">
+              <div class="database-preview__img-wrapper">
+                <img class="database-preview__img" src="img/database-preview/preview2.jpg" alt="">
+              </div>
+              <div class="intro intro--database-preview--sub">
+                <h3 class="intro__title">Что такое аудионаркотики</h3>
+                <p class="intro__description">Аудионаркотики влияют на мозг человека звуковыми эффектами, которые вызывают состояние эйфории</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="database-preview__item">
+            <a class="database-preview__link" href="article-page.html">
+              <div class="database-preview__img-wrapper">
+                <img class="database-preview__img" src="img/database-preview/preview3.jpg" alt="">
+              </div>
+              <div class="intro intro--database-preview--sub">
+                <h3 class="intro__title">Запой и белая горячка</h3>
+                <p class="intro__description">При злоупотреблении алкоголем возникают опасные последствия для организма</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="database-preview__item">
+            <a class="database-preview__link" href="article-page.html">
+              <div class="database-preview__img-wrapper">
+                <img class="database-preview__img" src="img/database-preview/preview4.jpg" alt="">
+              </div>
+              <div class="intro intro--database-preview--sub">
+                <h3 class="intro__title">Лечение солевой наркомании</h3>
+                <p class="intro__description">Изначально «соли» попали на рынок как препараты для лечения переутомления и стресса</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="about about--bottom container">
+        <!-- <div class="container"> -->
+          <div class="about__column-left">
+            <div class="intro intro--about">
+              <h2 class="intro__title">Начните свой новый день</h2>
+              <p class="intro__description">История наркомании насчитывает не одну тысячу лет, однако, за последние 150 лет из-за изобретения синтетических наркотиков, проблема зависимости обрела колоссальные масштабы.</p>
+              <h3 class="intro__subtitle">Реабилитация</h3>
+              <p class="intro__description">Раньше наркотики были исключительно растительными: опиум – мак, гашиш- конопля, кокаин – кокаиновый куст. Из-за этого чаще всего их употребление было региональным, и было доступно не для всех. Хотя Москва в этом плане всегда отличалась от других городов.</p>
+              <p class="intro__description">Опиум стал популярен в Европе в 19-м веке как средство борьбы с алкоголизмом. Позже, для лечения опиумной зависимости был изобретен морфий, после чего героин. Разумеется, эти вещества не лечили зависимость, а только способствовали росту числа наркозависимых, о чем тогда не знали.</p>
+              <h3 class="intro__subtitle">Сроки восстановления</h3>
+              <p class="intro__description">Выделение наркологии в отдельную науку произошло в начале 20-го века. В 20-е годы впервые были описаны тяга к алкоголю и опиуму. Следующим этапом развития этой области является период 1930-1970. За это время появилось описание действия различных психотропных наркотических веществ и поведения человека под ними. Толчком для рецептурного лечения наркозависимости стали многочисленные исследования мозга человека и принципов работы нейромедиаторов.</p>
+
+            </div>
+
+          </div>
+
+          <div class="about__column-right">
+            <div class="about__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/webp/about-bot.webp">
+                <img class="about__img" src="img/about/about-bot.jpg" alt="«Центр Новый День»">
+              </picture>
+            </div>
+          </div>
+        <!-- </div> -->
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+
+        <a class="footer__logo logo" href="index.html">
+          <p class="logo__text">
+            <span class="logo--footer">Новый</span> День
+          </p>
+        </a>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="centers.html">Реабилитационные центры</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="clinics.html">Клиники</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и цены</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Алкоголизм</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Наркомания</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="family.html">Родственикам</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="database.html">Публикации</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="about.html">О нас</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__mobile-wrapper">
+          <ul class="footer__list footer__list--left">
+            <li class="footer__item">
+              <a class="footer__link" href="centers.html">Реабилитационные центры</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="clinics.html">Клиники</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и цены</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="about">О нас</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list footer__list--right">
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Алкоголизм</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Наркомания</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="family.html">Родственикам</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="database.html">Публикации</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__phone">
+          <a class="footer__number-link" href="tel:+79004562345">8 (900) 456-23-45</a>
+          <p class="footer__text">Бесплатная горячая линия</p>
+        </div>
+
+      </div>
+
+      </div>
+    </footer>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

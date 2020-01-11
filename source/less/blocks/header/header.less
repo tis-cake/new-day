@@ -9,6 +9,9 @@
   @media (max-width: @mobile-width) {
     background-color: @white;
     height: 262px;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
   }
 }
 
@@ -60,11 +63,10 @@
 
 .header__desktop-top {
   display: block;
-  padding-bottom: 2.135416vw;
-  // padding-bottom: 1.783vw;
+  padding-bottom: 2.08333vw;
 
   @media (min-width: @max-desktop-width) {
-    padding-bottom: 41px;
+    padding-bottom: 40px;
   }
 
   @media (max-width: @mobile-width) {
@@ -122,7 +124,7 @@
 }
 
 /*styles for index page*/
-.header-bg {
+.index-bg {
   display: none;
 
   position: absolute;
@@ -142,7 +144,7 @@
   }
 }
 
-.header-bg__img{
+.index-bg__img{
   position: absolute;
   z-index: -1;
   // min-height: 49.5vw;
@@ -153,20 +155,20 @@
   object-fit: cover;
 }
 
-.header.index .header-bg {
+.main.index .index-bg {
   display: block;
 }
 
 .header.index {
-  // position: absolute;
-  z-index: 10;
+  position: absolute;
+  z-index: 15;
 
   // min-height: 49.5vw;
   // max-height: 1000px;
   // color: @white;
   width: 100%;
 
-  background-color: #0c6f9e;
+  // background-color: #0c6f9e;
   // background-image: url("../img/index-bg-desk.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,10 +180,11 @@
   }
 
   @media (max-width: @mobile-width) {
+    background-color: transparent;
     // height: 128vw;
 
     // background-image: url("../img/index-bg-mob.png");
-    background-size: cover;
+    // background-size: cover;
   }
 }
 

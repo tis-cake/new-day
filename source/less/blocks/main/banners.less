@@ -1,5 +1,5 @@
 .banners {
-  margin-bottom: 100px;
+  margin-bottom: 11.45833vw;
 }
 
 .banners.container {
@@ -19,6 +19,8 @@
 }
 
 .banners__item {
+  box-sizing: border-box;
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,6 +30,9 @@
   max-width: 368px;
   height: 30vw;
   width: 19.1vw;
+  padding-top: 1.822916vw;
+  .padding-inline(2.083vw);
+  padding-bottom: 3.6458vw;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,15 +79,25 @@
   &--camp {
     background-image: url("../img/banners/banner-camp.jpg");
   }
-
 }
 
-.banners__item--salt .banners__subtitle {
-  color: #b89c88;
+.banners__item--salt {
+  .banners__subtitle {
+    color: #b89c88;
+  }
 }
 
 .banners__subtitle {
+  max-width: 128px;
+  width: 6.6666vw;
   margin-bottom: @a;
+
+  font-size: 0.83333vw;
+  font-weight: 400;
+  line-height: 1.302vw;
+  letter-spacing: 0.08px;
+  text-transform: uppercase;
+
   color:@white;
 }
 
@@ -92,9 +107,74 @@
   color: @white;
 }
 
+.banners__title {
+  max-width: 294px;
+  width: 15.513vw;
+  padding-bottom: 0.78125vw;
+
+  font-size: 1.8229166vw;
+  font-weight: 700;
+  line-height: 1.71875vw;
+  letter-spacing: 0.17px;
+}
+
+.banners__description {
+  max-width: 262px;
+  width: 13.629vw;
+
+  font-size: 0.98958vw;
+  line-height: 1.3020vw;
+  letter-spacing: 0.1px;
+}
+
 .banners__link {
   position: absolute;
-  bottom: -3%;
+  bottom: -4.4%;
   left: 50%;
   transform: translateX(-50%);
+
+  max-width: 287px;
+  max-height: 55px;
+  width: 14.94791vw;
+  height: 2.864583vw;
+
+  font-size: 0.9375vw;
+  font-weight: 400;
+  letter-spacing: 0.09px;
+
+  border-radius: 28px;
+}
+
+@media (min-width: @max-desktop-width) {
+  .banners {
+    margin-bottom: 220px;
+  }
+
+  .banners__item {
+    padding-top: 34px;
+    .padding-inline(40px);
+    padding-bottom: 70px;
+  }
+
+  .banners__subtitle {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .banners__title {
+    padding-bottom: 15px;
+    font-size: 35px;
+    line-height: 33px;
+  }
+
+  .banners__description {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .banners__link {
+    font-size: 18px;
+  }
+
+
 }

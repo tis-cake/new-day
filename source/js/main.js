@@ -1,3 +1,7 @@
+if($(".main").hasClass("index")) {
+  $('.header').addClass('index');
+}
+
 // мобильное меню
 
 $('.menu-toggle').click(function () {
@@ -56,10 +60,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next--clinic',
       prevEl: '.swiper-button-prev--clinic',

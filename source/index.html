@@ -16,15 +16,15 @@
   </head>
   <body>
 
-    <header class="header index">
-      <div class="header-bg">
+    <header class="header">
+      <!-- <div class="header-bg">
         <picture>
           <source type="image/webp" media="(max-width: 750px)" srcset="img/webp/index-bg-mob.webp">
           <source type="image/webp" srcset="img/webp/index-bg-desk.webp">
           <source media="(max-width: 750px)" srcset="img/index-bg-mob.png">
           <img class="header-bg__img" src="img/index-bg-desk.png" alt="">
         </picture>
-      </div>
+      </div> -->
 
       <div class="header__mobile">
 
@@ -38,14 +38,8 @@
               <span class="logo__text--strong">Новый</span> День
             </p>
           </a>
-
-          <!-- <div class="header__search"> -->
-            <a class="header__search-link" href="index.html">
-
-              <!-- <img class="header__search-img search--white" src="img/svg/search-white.svg" alt="Поиск по сайту" width="30" height="30"> -->
-              <!-- <img class="header__search-img search--green" src="img/svg/search-green.svg" alt="Поиск по сайту" width="30" height="30"> -->
-            </a>
-          <!-- </div> -->
+          <a class="header__search-link" href="index.html">
+          </a>
         </div>
 
         <div class="header__mobile-bottom nav-section container">
@@ -199,9 +193,18 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main index">
+      <div class="index-bg">
+        <picture>
+          <source type="image/webp" media="(max-width: 750px)" srcset="img/webp/index-bg-mob.webp">
+          <source type="image/webp" srcset="img/webp/index-bg-desk.webp">
+          <source media="(max-width: 750px)" srcset="img/index-bg-mob.png">
+          <img class="index-bg__img" src="img/index-bg-desk.png" alt="">
+        </picture>
+      </div>
 
       <section class="main-info">
+
         <div class="container">
           <h1 class="main-info__title">Реабилитационные центры и клиники по России</h1>
           <p class="main-info__description">Лечение алкоголизма и наркомании в клинике проводится на анонимной основе, вся информация о результатах обследования и лечения является строго конфиденциальной.</p>
@@ -252,7 +255,7 @@
         <div class="about__column-right">
           <div class="about__img-wrapper">
             <picture>
-              <source type="image/webp" srcset="img/webp/about-top.webp">
+              <source type="image/webp" srcset="img/about/about-top.webp">
               <img class="about__img" src="img/about/about-top.jpg" alt="«Центр Новый День»">
             </picture>
           </div>
@@ -414,18 +417,22 @@
         </div>
         <ul class="program__list">
           <li class="program__item">
+            <div class="program__item__icon program__item__icon--request"></div>
             <h3 class="program__title">Заявка</h3>
             <p class="program__description">Подача заявки через сайт, по телефону или социальные сети</p>
           </li>
           <li class="program__item">
+            <div class="program__item__icon program__item__icon--assure"></div>
             <h3 class="program__title">Убеждение</h3>
             <p class="program__description">Убеждение пациента в необходимости лечения от зависимости</p>
           </li>
           <li class="program__item">
+            <div class="program__item__icon program__item__icon--plan"></div>
             <h3 class="program__title">План лечения</h3>
             <p class="program__description">Встреча с пациентом и разработка индивидуальной программы реабилитации</p>
           </li>
           <li class="program__item">
+            <div class="program__item__icon program__item__icon--contract"></div>
             <h3 class="program__title">Договор</h3>
             <p class="program__description">Заключение договора и дальнейшее размещение пациента в центре</p>
           </li>
@@ -521,67 +528,56 @@
         </div>
 
         <div class="reviews__blockquote-wrapper container">
+          <blockquote class="reviews__blockquote">
+            <div class="reviews__text-block">
+              <time class="reviews__datetime" datetime="2019-04-16">16 апр</time>
+              <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации</p>
+            </div>
 
-          <!-- <div class="reviews__column"> -->
-            <blockquote class="reviews__blockquote">
-              <div class="reviews__text-block">
-                <time class="reviews__datetime" datetime="2019-04-16">16 апр</time>
-                <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации длнаркозависимых РЕШЕНИЕ пришел к трезвости и чистоте.</p>
+            <div class="reviews__author-block">
+              <div class="reviews__author-photo-wrapper">
+                <img class="reviews__author-img" src="img/reviews/eminem.jpg" alt="Сергей Абрамов, бывший наркоман">
               </div>
-
-              <div class="reviews__author-block">
-                <div class="reviews__author-photo-wrapper">
-                  <img class="reviews__author-img" src="img/reviews/eminem.jpg" alt="Сергей Абрамов, бывший наркоман">
-                </div>
-                <div class="reviews__author-wrapper">
-                  <cite class="reviews__author-name">Сергей Абрамов</cite>
-                  <p class="reviews__author-background">бывший наркоман</p>
-                </div>
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author-name">Сергей Абрамов</cite>
+                <p class="reviews__author-background">бывший наркоман</p>
               </div>
+            </div>
+          </blockquote>
 
-            </blockquote>
-          <!-- </div> -->
+          <blockquote class="reviews__blockquote">
+            <div class="reviews__text-block">
+              <time class="reviews__datetime" datetime="2019-12-20">20 дек</time>
+              <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации</p>
+            </div>
 
-          <!-- <div class="reviews__column"> -->
-            <blockquote class="reviews__blockquote">
-              <div class="reviews__text-block">
-                <time class="reviews__datetime" datetime="2019-12-20">20 дек</time>
-                <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации длнаркозависимых РЕШЕНИЕ пришел к трезвости и чистоте.</p>
+            <div class="reviews__author-block">
+              <div class="reviews__author-photo-wrapper">
+                <img class="reviews__author-img" src="img/reviews/person-two.png" alt="Ксения Морозова, мать зависимого">
               </div>
-
-              <div class="reviews__author-block">
-                <div class="reviews__author-photo-wrapper">
-                  <img class="reviews__author-img" src="img/reviews/person-two.png" alt="Ксения Морозова, мать зависимого">
-                </div>
-                <div class="reviews__author-wrapper">
-                  <cite class="reviews__author-name">Ксения Морозова</cite>
-                  <p class="reviews__author-background">мать зависимого</p>
-                </div>
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author-name">Ксения Морозова</cite>
+                <p class="reviews__author-background">мать зависимого</p>
               </div>
+            </div>
+          </blockquote>
 
-            </blockquote>
-          <!-- </div> -->
+          <blockquote class="reviews__blockquote">
+            <div class="reviews__text-block">
+              <time class="reviews__datetime" datetime="2020-01-05">5 янв</time>
+              <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации</p>
+            </div>
 
-          <!-- <div class="reviews__column"> -->
-            <blockquote class="reviews__blockquote">
-              <div class="reviews__text-block">
-                <time class="reviews__datetime" datetime="2020-01-05">5 янв</time>
-                <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации длнаркозависимых РЕШЕНИЕ пришел к трезвости и чистоте.</p>
+            <div class="reviews__author-block">
+              <div class="reviews__author-photo-wrapper">
+                <img class="reviews__author-img" src="img/reviews/person-three.png" alt="Сергей Абрамов, бывший алкоголик">
               </div>
-
-              <div class="reviews__author-block">
-                <div class="reviews__author-photo-wrapper">
-                  <img class="reviews__author-img" src="img/reviews/person-three.png" alt="Сергей Абрамов, бывший алкоголик">
-                </div>
-                <div class="reviews__author-wrapper">
-                  <cite class="reviews__author-name">Сергей Абрамов</cite>
-                  <p class="reviews__author-background">бывший алкоголик</p>
-                </div>
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author-name">Сергей Абрамов</cite>
+                <p class="reviews__author-background">бывший алкоголик</p>
               </div>
-
-            </blockquote>
-          <!-- </div> -->
-
+            </div>
+          </blockquote>
         </div>
       </section>
 
@@ -722,7 +718,10 @@
       <section class="warning container">
         <div class="warning__wrapper">
           <div class="warning__img-wrapper">
-            <img class="warning__img" src="img/warn.jpg" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/warning/warn1.webp">
+              <img class="warning__img" src="img/warning/warn1.jpg" alt="">
+            </picture>
           </div>
 
           <div class="warning__form-wrapper">
@@ -754,7 +753,10 @@
           <li class="database-preview__item">
             <a class="database-preview__link" href="article-page.html">
               <div class="database-preview__img-wrapper">
-                <img class="database-preview__img" src="img/database-preview/preview1.jpg" alt="">
+                <picture>
+                  <source type="image/webp" srcset="img/database-preview/preview1.webp">
+                  <img class="database-preview__img" src="img/database-preview/preview1.jpg" alt="">
+                </picture>
               </div>
               <div class="intro intro--database-preview--sub">
                 <h3 class="intro__title">Наркотик фен – что это такое</h3>
@@ -766,7 +768,10 @@
           <li class="database-preview__item">
             <a class="database-preview__link" href="article-page.html">
               <div class="database-preview__img-wrapper">
-                <img class="database-preview__img" src="img/database-preview/preview2.jpg" alt="">
+                <picture>
+                  <source type="image/webp" srcset="img/database-preview/preview2.webp">
+                  <img class="database-preview__img" src="img/database-preview/preview2.jpg" alt="">
+                </picture>
               </div>
               <div class="intro intro--database-preview--sub">
                 <h3 class="intro__title">Что такое аудионаркотики</h3>
@@ -778,7 +783,10 @@
           <li class="database-preview__item">
             <a class="database-preview__link" href="article-page.html">
               <div class="database-preview__img-wrapper">
-                <img class="database-preview__img" src="img/database-preview/preview3.jpg" alt="">
+                <picture>
+                  <source type="image/webp" srcset="img/database-preview/preview3.webp">
+                  <img class="database-preview__img" src="img/database-preview/preview3.jpg" alt="">
+                </picture>
               </div>
               <div class="intro intro--database-preview--sub">
                 <h3 class="intro__title">Запой и белая горячка</h3>
@@ -790,7 +798,10 @@
           <li class="database-preview__item">
             <a class="database-preview__link" href="article-page.html">
               <div class="database-preview__img-wrapper">
-                <img class="database-preview__img" src="img/database-preview/preview4.jpg" alt="">
+                <picture>
+                  <source type="image/webp" srcset="img/database-preview/preview4.webp">
+                  <img class="database-preview__img" src="img/database-preview/preview4.jpg" alt="">
+                </picture>
               </div>
               <div class="intro intro--database-preview--sub">
                 <h3 class="intro__title">Лечение солевой наркомании</h3>
@@ -799,34 +810,31 @@
             </a>
           </li>
         </ul>
-
       </section>
 
       <section class="about about--bottom container">
-        <!-- <div class="container"> -->
-          <div class="about__column-left">
-            <div class="intro intro--about">
-              <h2 class="intro__title">Начните свой новый день</h2>
-              <p class="intro__description">История наркомании насчитывает не одну тысячу лет, однако, за последние 150 лет из-за изобретения синтетических наркотиков, проблема зависимости обрела колоссальные масштабы.</p>
-              <h3 class="intro__subtitle">Реабилитация</h3>
-              <p class="intro__description">Раньше наркотики были исключительно растительными: опиум – мак, гашиш- конопля, кокаин – кокаиновый куст. Из-за этого чаще всего их употребление было региональным, и было доступно не для всех. Хотя Москва в этом плане всегда отличалась от других городов.</p>
-              <p class="intro__description">Опиум стал популярен в Европе в 19-м веке как средство борьбы с алкоголизмом. Позже, для лечения опиумной зависимости был изобретен морфий, после чего героин. Разумеется, эти вещества не лечили зависимость, а только способствовали росту числа наркозависимых, о чем тогда не знали.</p>
-              <h3 class="intro__subtitle">Сроки восстановления</h3>
-              <p class="intro__description">Выделение наркологии в отдельную науку произошло в начале 20-го века. В 20-е годы впервые были описаны тяга к алкоголю и опиуму. Следующим этапом развития этой области является период 1930-1970. За это время появилось описание действия различных психотропных наркотических веществ и поведения человека под ними. Толчком для рецептурного лечения наркозависимости стали многочисленные исследования мозга человека и принципов работы нейромедиаторов.</p>
-
-            </div>
+        <div class="about__column-left">
+          <div class="intro intro--about">
+            <h2 class="intro__title">Начните свой новый день</h2>
+            <p class="intro__description">История наркомании насчитывает не одну тысячу лет, однако, за последние 150 лет из-за изобретения синтетических наркотиков, проблема зависимости обрела колоссальные масштабы.</p>
+            <h3 class="intro__subtitle">Реабилитация</h3>
+            <p class="intro__description">Раньше наркотики были исключительно растительными: опиум – мак, гашиш- конопля, кокаин – кокаиновый куст. Из-за этого чаще всего их употребление было региональным, и было доступно не для всех. Хотя Москва в этом плане всегда отличалась от других городов.</p>
+            <p class="intro__description">Опиум стал популярен в Европе в 19-м веке как средство борьбы с алкоголизмом. Позже, для лечения опиумной зависимости был изобретен морфий, после чего героин. Разумеется, эти вещества не лечили зависимость, а только способствовали росту числа наркозависимых, о чем тогда не знали.</p>
+            <h3 class="intro__subtitle">Сроки восстановления</h3>
+            <p class="intro__description">Выделение наркологии в отдельную науку произошло в начале 20-го века. В 20-е годы впервые были описаны тяга к алкоголю и опиуму. Следующим этапом развития этой области является период 1930-1970. За это время появилось описание действия различных психотропных наркотических веществ и поведения человека под ними. Толчком для рецептурного лечения наркозависимости стали многочисленные исследования мозга человека и принципов работы нейромедиаторов.</p>
 
           </div>
 
-          <div class="about__column-right">
-            <div class="about__img-wrapper">
-              <picture>
-                <source type="image/webp" srcset="img/webp/about-bot.webp">
-                <img class="about__img" src="img/about/about-bot.jpg" alt="«Центр Новый День»">
-              </picture>
-            </div>
+        </div>
+
+        <div class="about__column-right">
+          <div class="about__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/about/about-bot.webp">
+              <img class="about__img" src="img/about/about-bot.jpg" alt="«Центр Новый День»">
+            </picture>
           </div>
-        <!-- </div> -->
+        </div>
       </section>
 
     </main>

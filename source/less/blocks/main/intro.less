@@ -20,17 +20,25 @@
   }
 
   &--rehab-swiper {
+    max-width: 800px;
     width: 41.666vw;
     margin-bottom: 3.645833vw;
   }
 
   &--program {
-    width: 900px;
+    max-width: 900px;
+    width: 46.875vw;
+    margin-bottom: 3.64583vw;
   }
 
   &--reviews {
     .intro__description {
-      width: 894px;
+      max-width: 900px;
+      width: 47.275vw;
+
+      @media  (max-width: 920px) {
+        width: 47.575vw;
+      }
 
       @media  (max-width: @mobile-width) {
         width: auto;
@@ -78,8 +86,29 @@
 
 .intro__link {
   position: relative;
+  max-width: 129px;
+  width: 6.718vw;
+  margin-top: auto;
 
+  font-size: 0.989vw;
+  letter-spacing: 0.1px;
   color: #1ab455;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -0.156vw;
+    right: 0;
+
+    max-width: 8px;
+    max-height: 26px;
+    width: 0.4166vw;
+    height: 1.354vw;
+
+    background-image: url('../img/svg/arrow-m.svg');
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -100,8 +129,27 @@
   }
 
   .intro--rehab-swiper {
-    width: 800px;
     margin-bottom: 70px;
+  }
+
+  .intro--program {
+    margin-bottom: 70px;
+  }
+
+  .intro__link {
+    font-size: 19px;
+    letter-spacing: 0.1px;
+    color: #1ab455;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      right: 0;
+
+      width: 8px;
+      height: 26px;
+    }
   }
 
 }

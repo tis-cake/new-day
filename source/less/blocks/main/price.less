@@ -1,11 +1,11 @@
 .price {
-  margin-bottom: 100px;
+  margin-bottom: 12.1875vw;
 }
 
 .price__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 3.17708vw;
 
   @media  (max-width: @mobile-width) {
     flex-direction: column;
@@ -15,10 +15,12 @@
 .price__column {
   box-sizing: border-box;
   position: relative;
-  padding: 40px 50px;
+  padding: 2.0833vw 2.6041vw;
 
-  width: 507px;
-  height: 700px;
+  max-width: 507px;
+  // max-height: 700px;
+  width: 26.40625vw;
+  // height: 36.45833vw;
 
   box-shadow: 0 0 29px 3px rgba(2, 7, 32, 0.04);
   border-radius: 19px;
@@ -31,20 +33,23 @@
 }
 
 .price__title {
-  // .margin-inline(@a);
-  margin-bottom: 30px;
-  font-size: 30px;
+  margin-bottom: 2.91666vw;
+  font-size: 1.5625vw;
   text-align: center;
 }
 
 .price__icon-img {
-  width: 26px;
-  height: 26px;
-  padding-right: 15px;
+  max-width: 26px;
+  max-height: 26px;
+  width: 1.3541vw;
+  height: 1.3541vw;
+  padding-right: 0.781vw;
 
   &--narco {
-    width: 30px;
-    height: 29px;
+    max-width: 30px;
+    max-height: 29px;
+    width: 1.56vw;
+    height: 1.5104vw;
   }
 
   &--alco {
@@ -52,7 +57,8 @@
   }
 
   &--other {
-    height: 30px;
+    max-height: 30px;
+    height: 1.56vw;;
     width: auto;
   }
 }
@@ -62,30 +68,59 @@
 }
 
 .price__table td {
-  font-size: 19px;
-  padding-bottom: 35px;
+  font-size: 0.989vw;
+  padding-bottom: 1.510vw;
 }
 
 .price__table td:first-child {
-  // border: 1px solid red;
-  // width: 222px;
-  // width: 45%;
-  // width: 53%;
   width: 68%;
   color: #747474;
 }
 
 .price__table td:last-child {
   text-align: right;
-  // height: 18px;
   color: #2f2f2f;
   font-weight: 700;
 }
 
 .price__link {
-  // .margin-inline(@a);
   position: absolute;
-  bottom: -2.5%;
+  bottom: -4.4%;
   left: 50%;
+
   transform: translateX(-50%);
+
+  border-radius: 28px;
+}
+
+@media (min-width: @max-desktop-width) {
+  .price {
+    margin-bottom: 234px;
+  }
+
+  .price__wrapper {
+    margin-top: 61px;
+  }
+
+  .price__column {
+    padding: 40px 50px;
+  }
+
+  .price__title {
+    margin-bottom: 56px;
+    font-size: 30px;
+  }
+
+  .price__icon-img {
+    padding-right: 15px;
+  }
+
+  .price__table td {
+    font-size: 19px;
+    padding-bottom: 29px;
+  }
+
+
+
+
 }

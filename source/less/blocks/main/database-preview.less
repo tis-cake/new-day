@@ -1,5 +1,5 @@
 .database-preview {
-  margin-bottom: 50px;
+  margin-bottom: 2.6040vw;
 }
 
 .database-preview__list.container {
@@ -13,6 +13,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  margin-top: 3.6875vw;
+
   @media  (max-width: @mobile-width) {
     overflow-x: scroll;
     height: 470px;
@@ -21,11 +23,12 @@
 }
 
 .database-preview__item {
-  // display: flex;
+  box-sizing: border-box;
+  display: flex;
 
-  width: 785px;
-  height: 179px;
-  margin-bottom: 30px;
+  max-width: 785px;
+  width: 40.8854vw;
+  margin-bottom: 2.6040vw;
 
   box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
   border-radius: 19px;
@@ -34,4 +37,36 @@
 
 .database-preview__link {
   display: flex;
+}
+
+.database-preview__img-wrapper {
+  // align-self: center;
+  max-width: 203px;
+  width: 10.57vw;
+  // max-height: 179px;
+  // height: 9.3229vw;
+}
+
+.database-preview__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 19px 0 0 19px;
+}
+
+@media (min-width: @max-desktop-width) {
+
+  .database-preview {
+    margin-bottom: 50px;
+  }
+
+  .database-preview__list {
+    margin-top: 70.8px;
+  }
+
+  .database-preview__item {
+    width: 785px;
+    margin-bottom: 50px;
+  }
 }

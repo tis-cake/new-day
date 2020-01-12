@@ -53,16 +53,44 @@
 
   &--warning {
     max-width: 750px;
-    width: 39.0625vw;
+    width: 39.363vw;
 
     .intro__title {
-      margin-bottom: 49px;
+      margin-bottom: 2.552vw;
     }
   }
-}
 
-.intro--database-preview--sub {
-  width: 454px;
+  &--database-preview {
+    .intro__description {
+      max-width: 725px;
+      width: 37.76vw;
+    }
+  }
+
+  &--database-preview--sub {
+    padding-top: 1.875vw;
+    padding-left: 1.510vw;
+    padding-bottom: 2.083vw;
+
+    .intro__title {
+      margin-bottom: 1.0104vw;
+      font-size: 1.406vw;
+      letter-spacing: 0.14px;
+    }
+
+    .intro__description {
+      max-width: 502px;
+      width: 26.545vw;
+
+      font-size: 0.989vw;
+      line-height: 1.302vw;
+    }
+
+    .intro__subtitle {
+      margin-top: 1.35416vw;
+      margin-bottom: 0.677vw;
+    }
+  }
 }
 
 .intro__title {
@@ -120,6 +148,14 @@
   }
 }
 
+.intro__subtitle {
+  margin-bottom: 12px;
+
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+}
+
 @media (min-width: @max-desktop-width) {
   .intro__title {
     margin-bottom: 42.4px;
@@ -129,20 +165,6 @@
   .intro__description {
     font-size: 19px;
     line-height: 28px;
-  }
-
-  .intro--get-help {
-    .intro__title {
-      margin-bottom: 46px;
-    }
-  }
-
-  .intro--rehab-swiper {
-    margin-bottom: 70px;
-  }
-
-  .intro--program {
-    margin-bottom: 70px;
   }
 
   .intro__link {
@@ -161,10 +183,46 @@
     }
   }
 
+  .intro__subtitle {
+    margin-bottom: 12px;
+    font-size: 27px;
+  }
+
+  .intro--get-help {
+    .intro__title {
+      margin-bottom: 46px;
+    }
+  }
+
+  .intro--rehab-swiper {
+    margin-bottom: 70px;
+  }
+
+  .intro--program {
+    margin-bottom: 70px;
+  }
+
   .intro--warning {
     .intro__title {
       margin-bottom: 49px;
     }
   }
 
+  .intro--database-preview--sub {
+    padding-top: 36px;
+    padding-left: 29px;
+    padding-bottom: 40px;
+    .intro__title {
+      margin-bottom: 19.4px;
+      font-size: 27px;
+    }
+    .intro__description {
+      font-size: 19px;
+      line-height: 25px;
+    }
+    .intro__subtitle {
+      margin-top: 26px;
+      margin-bottom: 13px;
+    }
+  }
 }

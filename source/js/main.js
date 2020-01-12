@@ -1,3 +1,5 @@
+// если открыта главная
+
 if($(".main").hasClass("index")) {
   $('.header').addClass('index');
 }
@@ -78,4 +80,14 @@ $(document).ready(function () {
   });
 });
 
+// маска для поля ввода номера
 
+// maskedinput
+$(document).ready(function () {
+  $("#phone").mask("+7 (  999  ) 999  99  99");
+});
+
+// inputmask
+// $(document).ready(function(){
+//   $("#phone").inputmask({"mask": "+7 (  999  ) 999  99  99"});
+// });

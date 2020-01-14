@@ -2,20 +2,9 @@
   margin-bottom: 11.45833vw;
 }
 
-.banners.container {
-  @media (max-width: @mobile-width) {
-    .margin-inline(0);
-  }
-}
-
 .banners__list {
   display: flex;
   justify-content: space-between;
-
-  @media  (max-width: @mobile-width) {
-    overflow-x: scroll;
-  }
-
 }
 
 .banners__img-wrapper {
@@ -41,26 +30,6 @@
   border-radius: 19px;
 }
 
-.banners__content-wrapper {
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  max-height: 575px;
-  max-width: 368px;
-  height: 30vw;
-  width: 19.1vw;
-
-  padding-top: 1.822916vw;
-  .padding-inline(2.083vw);
-  padding-bottom: 3.6458vw;
-
-  border-radius: 19px;
-}
-
-
 .banners__item {
   box-sizing: border-box;
 
@@ -82,53 +51,27 @@
 
   border-radius: 19px;
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
-
-  &--salt {
-    // background-image: url("../img/banners/banner-salt.jpg");
-  }
-
-  &--narco {
-    // background-image: url("../img/banners/banner-narco.jpg");
-  }
-
-  &--detox {
-    // background-image: url("../img/banners/banner-detox.jpg");
-  }
-
-  &--game {
-    // background-image: url("../img/banners/banner-game.jpg");
-  }
-
-  &--resoc {
-    // background-image: url("../img/banners/banner-resoc.jpg");
-  }
-
-  &--drink {
-    // background-image: url("../img/banners/banner-drink.jpg");
-  }
-
-  &--narco-prof {
-    // background-image: url("../img/banners/banner-narco-prof.jpg");
-  }
-
-  &--encode {
-    // background-image: url("../img/banners/banner-encode.jpg");
-  }
-
-  &--today {
-    // background-image: url("../img/banners/banner-today.jpg");
-  }
-
-  &--camp {
-    // background-image: url("../img/banners/banner-camp.jpg");
-  }
 }
 
-// .banners__item--salt {
-//   .banners__subtitle {
+.banners__content-wrapper {
+  box-sizing: border-box;
 
-//   }
-// }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  max-height: 575px;
+  max-width: 368px;
+  height: 30vw;
+  width: 19.1vw;
+
+  padding-top: 1.822916vw;
+  .padding-inline(2.083vw);
+  padding-bottom: 3.6458vw;
+
+  border-radius: 19px;
+}
+
 
 .banners__subtitle {
   max-width: 128px;
@@ -144,9 +87,9 @@
   color:@white;
 }
 
-  .banners__subtitle--brown {
-    color: #b89c88;
-  }
+.banners__subtitle--brown {
+  color: #b89c88;
+}
 
 .banners__title,
 .banners__description,
@@ -186,6 +129,37 @@
   height: 2.864583vw;
 
   border-radius: 28px;
+}
+
+@media (max-width: @mobile-width) {
+  .banners.container {
+    .margin-inline(0);
+  }
+
+  .banners__list {
+    // width: 2393px;
+    height: 680px;
+    overflow-x: scroll;
+  }
+
+  .banners__img-wrapper {
+    .mn ();
+    width: 572px;
+    height: 580px;
+  }
+
+  .banners__item {
+    .mn ();
+    width: 572px;
+    height: 580px;
+    margin-right: 35px;
+  }
+
+  .banners__content-wrapper {
+    .mn ();
+    width: 572px;
+    height: 580px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {

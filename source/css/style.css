@@ -880,6 +880,14 @@ input[type="radio"].visually-hidden {
     width: 90vw;
     margin-bottom: 10.646vw;
   }
+  .intro--program {
+    max-width: none;
+    width: 81.875vw;
+    margin-bottom: 11.46vw;
+  }
+  .intro--program .intro__title {
+    margin-bottom: 4.266vw;
+  }
   .intro--reviews .intro__description {
     width: auto;
   }
@@ -1281,33 +1289,14 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 755px) {
-  .arrow-container {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 .arrow-container .swiper-button-next,
 .arrow-container .swiper-button-prev {
   color: #dadada !important;
-}
-@media (max-width: 755px) {
-  .arrow-container .swiper-button-next,
-  .arrow-container .swiper-button-prev {
-    display: none;
-  }
 }
 .arrow-container .container {
   max-width: 1625px;
   width: 84.6354vw;
   box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
-}
-@media (max-width: 755px) {
-  .arrow-container .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -1332,11 +1321,6 @@ input[type="radio"].visually-hidden {
   display: none;
   text-decoration: none;
   color: #14b250;
-}
-@media (max-width: 755px) {
-  .rehab-swiper__link-pages {
-    display: block;
-  }
 }
 .rehab-swiper__img-wrapper {
   max-height: 372px;
@@ -1414,6 +1398,80 @@ input[type="radio"].visually-hidden {
 .rehab-swiper__link-page img {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 755px) {
+  .arrow-container {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .arrow-container .swiper-button-next,
+  .arrow-container .swiper-button-prev {
+    display: none;
+  }
+  .arrow-container .container {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .rehab-swiper {
+    margin-bottom: 23.031vw;
+  }
+  .rehab-swiper__link-pages {
+    display: block;
+    font-size: 4vw;
+    margin-bottom: 5.866vw;
+  }
+  .rehab-swiper__img-wrapper {
+    max-height: none;
+    height: 372px;
+  }
+  .rehab-swiper__text-wrapper {
+    padding-top: 4.927vw;
+    padding-left: 5.083vw;
+    padding-right: 3.066vw;
+    padding-bottom: 40px;
+  }
+  .rehab-swiper__city {
+    padding-bottom: 0.666vw;
+    font-size: 3.599vw;
+  }
+  .rehab-swiper__street {
+    padding-bottom: 4.666vw;
+    font-size: 4vw;
+    font-weight: 700;
+  }
+  .rehab-swiper__place-description {
+    width: 100%;
+    padding-bottom: 3.333vw;
+    font-size: 3.599vw;
+    line-height: 3.733vw;
+  }
+  .rehab-swiper__price {
+    margin-top: auto;
+    font-size: 4vw;
+    line-height: normal;
+    letter-spacing: 0.23px;
+  }
+  .rehab-swiper__link-page {
+    bottom: 6.266vw;
+    max-width: none;
+    max-height: none;
+    width: 4.399vw;
+    height: 4.399vw;
+  }
+  .rehab-swiper--clinics {
+    margin-bottom: 23.466vw;
+  }
+  .rehab-swiper--clinics .rehab-swiper__text-wrapper {
+    padding-top: 5.333vw;
+  }
+  .rehab-swiper--clinics .rehab-swiper__street {
+    padding-bottom: 4.8vw;
+  }
+  .rehab-swiper--clinics .rehab-swiper__place-description {
+    padding-bottom: 3.466vw;
+  }
 }
 @media (min-width: 1921px) {
   .rehab-swiper {
@@ -1562,6 +1620,51 @@ input[type="radio"].visually-hidden {
   line-height: 1.30208vw;
   letter-spacing: 0.1px;
 }
+@media (max-width: 755px) {
+  .program__list {
+    flex-direction: column;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    width: 100%;
+  }
+  .program__item {
+    max-width: none;
+    max-height: none;
+    width: auto;
+    height: auto;
+    margin-bottom: 5.866vw;
+    margin-left: 6.8vw;
+    padding-top: 5.144vw;
+    padding-left: 12.808vw;
+    padding-right: 1.066vw;
+  }
+  .program__item__icon {
+    max-width: none;
+    max-height: none;
+    width: 100px;
+    height: 100px;
+  }
+  .program__item__icon::before {
+    max-width: none;
+    max-height: none;
+    width: 56px;
+    height: 60px;
+  }
+  .program__title {
+    margin-bottom: 1.008vw;
+    font-size: 4.266vw;
+  }
+  .program__description {
+    max-width: none;
+    max-height: none;
+    width: auto;
+    height: auto;
+    padding-bottom: 5.733vw;
+    font-size: 4vw;
+    line-height: 4.399vw;
+  }
+}
 @media (min-width: 1921px) {
   .program {
     margin-bottom: 203px;
@@ -1588,20 +1691,9 @@ input[type="radio"].visually-hidden {
 .banners {
   margin-bottom: 11.45833vw;
 }
-@media (max-width: 755px) {
-  .banners.container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 .banners__list {
   display: flex;
   justify-content: space-between;
-}
-@media (max-width: 755px) {
-  .banners__list {
-    overflow-x: scroll;
-  }
 }
 .banners__img-wrapper {
   position: absolute;
@@ -1620,6 +1712,16 @@ input[type="radio"].visually-hidden {
   object-fit: cover;
   border-radius: 19px;
 }
+.banners__item {
+  box-sizing: border-box;
+  position: relative;
+  max-height: 575px;
+  max-width: 368px;
+  height: 30vw;
+  width: 19.1vw;
+  border-radius: 19px;
+  box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
+}
 .banners__content-wrapper {
   box-sizing: border-box;
   display: flex;
@@ -1634,16 +1736,6 @@ input[type="radio"].visually-hidden {
   padding-right: 2.083vw;
   padding-bottom: 3.6458vw;
   border-radius: 19px;
-}
-.banners__item {
-  box-sizing: border-box;
-  position: relative;
-  max-height: 575px;
-  max-width: 368px;
-  height: 30vw;
-  width: 19.1vw;
-  border-radius: 19px;
-  box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
 }
 .banners__subtitle {
   max-width: 128px;
@@ -1690,6 +1782,35 @@ input[type="radio"].visually-hidden {
   width: 14.94791vw;
   height: 2.864583vw;
   border-radius: 28px;
+}
+@media (max-width: 755px) {
+  .banners.container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .banners__list {
+    height: 680px;
+    overflow-x: scroll;
+  }
+  .banners__img-wrapper {
+    max-width: none;
+    max-height: none;
+    width: 572px;
+    height: 580px;
+  }
+  .banners__item {
+    max-width: none;
+    max-height: none;
+    width: 572px;
+    height: 580px;
+    margin-right: 35px;
+  }
+  .banners__content-wrapper {
+    max-width: none;
+    max-height: none;
+    width: 572px;
+    height: 580px;
+  }
 }
 @media (min-width: 1921px) {
   .banners {

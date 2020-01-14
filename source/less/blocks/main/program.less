@@ -129,6 +129,56 @@
   letter-spacing: 0.1px;
 }
 
+@media (max-width: @mobile-width) {
+
+  .program__list {
+    flex-direction: column;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    width: 100%;
+  }
+
+  .program__item {
+    max-width: none;
+    max-height: none;
+    width: auto;
+    height: auto;
+    margin-bottom: @m44px;
+    margin-left: @m51px;
+    padding-top: 5.144vw;
+    padding-left: 12.808vw;
+    padding-right: @m8px;
+  }
+
+  .program__item__icon {
+    .mn ();
+    width: 100px;
+    height: 100px;
+
+    &::before {
+      .mn ();
+      width: 56px;
+      height: 60px;
+    }
+  }
+
+  .program__title {
+    margin-bottom: 1.008vw;
+    font-size: @m32px;
+  }
+
+  .program__description {
+    .mn ();
+    width: auto;
+    height: auto;
+    padding-bottom: @m43px;
+
+    font-size: @m30px;
+    line-height: @m33px;
+  }
+}
+
 @media (min-width: @max-desktop-width) {
   .program {
     margin-bottom: 203px;

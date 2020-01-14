@@ -42,10 +42,10 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev--center',
     },
     breakpoints: {
-      751: {
+      752: {
         slidesPerView: '3',
         spaceBetween: 42,
-        loop: true
+        loop: true,
       }
     }
   });
@@ -71,7 +71,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev--clinic',
     },
     breakpoints: {
-      751: {
+      752: {
         slidesPerView: '3',
         spaceBetween: 30,
         loop: true
@@ -91,3 +91,23 @@ $(document).ready(function () {
 // $(document).ready(function(){
 //   $("#phone").inputmask({"mask": "+7 (  999  ) 999  99  99"});
 // });
+
+
+// добавляем троеточие при избыточности сиволов
+
+$(document).ready(function () {
+
+  var width = $(window).width(); // ширина экрана
+  var size = 46; // кол-во символов
+
+  if (width <= 752) {
+    $('.rehab-swiper__place-description').each(function () {
+      var rehabText = $(this).text();
+
+      if(rehabText.length > size){
+        $(this).text(rehabText.slice(0, size) + ' ...');
+      }
+    });
+  }
+
+});

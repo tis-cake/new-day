@@ -15,6 +15,7 @@
     }
 
     .intro__description {
+      display: inline;
       letter-spacing: 0.19px;
     }
   }
@@ -38,10 +39,6 @@
 
       @media  (max-width: 920px) {
         width: 47.575vw;
-      }
-
-      @media  (max-width: @mobile-width) {
-        width: auto;
       }
     }
   }
@@ -115,10 +112,6 @@
 .intro__link-wrapper {
   display: flex;
   justify-content: space-between;
-
-  @media  (max-width: @mobile-width) {
-    flex-direction: column;
-  }
 }
 
 .intro__link {
@@ -154,6 +147,59 @@
   font-size: 1.406vw;
   font-weight: 700;
   letter-spacing: 0.14px;
+}
+
+@media  (max-width: @mobile-width) {
+  .intro--about {
+    max-width: none;
+    width: 86.854vw;
+  }
+
+  .intro--get-help {
+    max-width: none;
+    width: 73vw;
+    .intro__title {
+      width: 55vw;
+      .margin-inline(@a);
+      margin-bottom: 5.396vw;
+    }
+    .intro__description {
+      display: block;
+      margin-bottom: 42px;
+    }
+  }
+
+  .intro--rehab-swiper {
+    max-width: none;
+    width: auto;
+    .intro__title {
+      margin-bottom: 4.096vw;
+    }
+    .intro__description {
+      width: 90vw;
+      margin-bottom: 10.646vw;
+    }
+  }
+
+  .intro--reviews {
+    .intro__description {
+      width: auto;
+    }
+  }
+
+  .intro__title {
+    margin-bottom: 5.387vw;
+    font-size: @m45px;
+  }
+
+  .intro__description {
+    font-size: @m30px;
+    line-height: @m38px;
+  }
+
+  .intro__link-wrapper {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: @max-desktop-width) {

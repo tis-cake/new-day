@@ -8,22 +8,6 @@
   color: @light-black;
 }
 
-.logo__img {
-  width: 36px;
-  height: 53px;
-}
-
-.logo__img img {
-  // max-width: 35px;
-  // max-height: 35px;
-  // width: 1.822916vw;
-  // height: 1.822916vw;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .logo__text {
   position: relative;
   padding-left: 2.864583vw;
@@ -51,8 +35,38 @@
     background-position: center;
     background-size: cover;
   }
+}
 
-  @media  (min-width: @max-desktop-width) {
+.footer__logo {
+  .logo__text::before {
+    background-image: url("../img/svg/logo-nd-white.svg");
+  }
+}
+
+
+@media (max-width: @mobile-width) {
+
+  .logo__text {
+    width: 14.666vw;
+    padding-left: 11.16vw;
+
+    font-size: @m33px;
+    letter-spacing: 0.17px;
+
+    &::before {
+      top: -@m17px;
+      left: -@m24px;
+      max-width: none;
+      max-height: none;
+      width: 14.666vw;
+      height: 14.666vw;
+    }
+  }
+}
+
+@media  (min-width: @max-desktop-width) {
+
+  .logo__text {
     padding-left: 55px;
     font-size: 24px;
 
@@ -62,4 +76,3 @@
     }
   }
 }
-

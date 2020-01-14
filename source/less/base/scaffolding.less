@@ -49,9 +49,8 @@ p {
   .margin-inline(@a);
 
   @media (max-width: @mobile-width) {
-    // width: 768px;
     width: auto;
-    .margin-inline(35px);
+    .padding-inline(@m35px);
   }
 }
 
@@ -96,6 +95,12 @@ input[type="radio"].visually-hidden {
   background-color: #14b250;
 
   border-radius: 19px;
+
+  @media (max-width: @mobile-width) {
+    width: 270px;
+    font-size: @m27px;
+    border-radius: 38px;
+  }
 
   @media (min-width: @max-desktop-width) {
     font-size: 18px;

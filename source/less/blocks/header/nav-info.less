@@ -18,9 +18,28 @@
   letter-spacing: 0.1px;
 }
 
-.nav-info__item {
-  &--search {
-    padding-left: 2.60416vw;
+.nav-info__item--search {
+  .nav-info__link {
+    position: relative;
+    padding-left: 2.603vw;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: @d8px;
+
+      max-width: 25px;
+      max-height: 25px;
+      width: @d25px;
+      height: @d25px;
+
+      background-image: url('../img/svg/search-green.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+    }
   }
 }
 
@@ -53,9 +72,12 @@
     padding-top: 6px;
   }
 
-  .nav-info__item {
-    &--search {
+  .nav-info__item--search {
+    .nav-info__link {
       padding-left: 50px;
+      &::before {
+        left: 8px;
+      }
     }
   }
 }

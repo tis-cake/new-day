@@ -1,4 +1,6 @@
 .nav-section {
+  margin-top: @m64px;
+  font-size: @m27px;
 }
 
 .nav-section.active {
@@ -6,8 +8,29 @@
 }
 
 .nav-section__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+
+    width: 200%;
+    height: @m1px;
+
+    background-color: #ffffff;
+    opacity: 0.14;
+  }
+
+  &::before {
+    top: -@m30px;
+  }
+  &::after {
+    bottom: -@m23px;
+  }
 }
 
 .nav-section__link {
@@ -20,8 +43,9 @@
 }
 
 .nav-section__icon {
-  width: 30px;
-  height: 30px;
+  width: @m35px;
+  height: @m35px;
+  padding-bottom: @m10px;
 }
 
 .nav-section__icon:last-of-type {

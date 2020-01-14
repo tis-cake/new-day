@@ -18,10 +18,32 @@
 
 }
 
-.banners__item {
+.banners__img-wrapper {
+  position: absolute;
+  z-index: -1;
+
+  max-height: 575px;
+  max-width: 368px;
+  height: 30vw;
+  width: 19.1vw;
+
+  border-radius: 19px;
+}
+
+.banners__img {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 19px;
+}
+
+.banners__content-wrapper {
   box-sizing: border-box;
 
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -30,62 +52,83 @@
   max-width: 368px;
   height: 30vw;
   width: 19.1vw;
+
   padding-top: 1.822916vw;
   .padding-inline(2.083vw);
   padding-bottom: 3.6458vw;
 
-  background-size: cover;
-  background-repeat: no-repeat;
+  border-radius: 19px;
+}
+
+
+.banners__item {
+  box-sizing: border-box;
+
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+
+  max-height: 575px;
+  max-width: 368px;
+  height: 30vw;
+  width: 19.1vw;
+  // padding-top: 1.822916vw;
+  // .padding-inline(2.083vw);
+  // padding-bottom: 3.6458vw;
+
+  // background-size: cover;
+  // background-repeat: no-repeat;
 
   border-radius: 19px;
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
 
   &--salt {
-    background-image: url("../img/banners/banner-salt.jpg");
+    // background-image: url("../img/banners/banner-salt.jpg");
   }
 
   &--narco {
-    background-image: url("../img/banners/banner-narco.jpg");
+    // background-image: url("../img/banners/banner-narco.jpg");
   }
 
   &--detox {
-    background-image: url("../img/banners/banner-detox.jpg");
+    // background-image: url("../img/banners/banner-detox.jpg");
   }
 
   &--game {
-    background-image: url("../img/banners/banner-game.jpg");
+    // background-image: url("../img/banners/banner-game.jpg");
   }
 
   &--resoc {
-    background-image: url("../img/banners/banner-resoc.jpg");
+    // background-image: url("../img/banners/banner-resoc.jpg");
   }
 
   &--drink {
-    background-image: url("../img/banners/banner-drink.jpg");
+    // background-image: url("../img/banners/banner-drink.jpg");
   }
 
   &--narco-prof {
-    background-image: url("../img/banners/banner-narco-prof.jpg");
+    // background-image: url("../img/banners/banner-narco-prof.jpg");
   }
 
   &--encode {
-    background-image: url("../img/banners/banner-encode.jpg");
+    // background-image: url("../img/banners/banner-encode.jpg");
   }
 
   &--today {
-    background-image: url("../img/banners/banner-today.jpg");
+    // background-image: url("../img/banners/banner-today.jpg");
   }
 
   &--camp {
-    background-image: url("../img/banners/banner-camp.jpg");
+    // background-image: url("../img/banners/banner-camp.jpg");
   }
 }
 
-.banners__item--salt {
-  .banners__subtitle {
-    color: #b89c88;
-  }
-}
+// .banners__item--salt {
+//   .banners__subtitle {
+
+//   }
+// }
 
 .banners__subtitle {
   max-width: 128px;
@@ -100,6 +143,10 @@
 
   color:@white;
 }
+
+  .banners__subtitle--brown {
+    color: #b89c88;
+  }
 
 .banners__title,
 .banners__description,
@@ -146,7 +193,7 @@
     margin-bottom: 220px;
   }
 
-  .banners__item {
+  .banners__content-wrapper {
     padding-top: 34px;
     .padding-inline(40px);
     padding-bottom: 70px;

@@ -85,6 +85,43 @@
   border-radius: 2px;
 }
 
+@media  (max-width: @mobile-width) {
+  .about {
+    flex-direction: column;
+    margin-top: 12.573vw;
+    margin-bottom: 27.53125vw;
+  }
+
+  .about__column-left {
+    margin-bottom: @m16px;
+    padding-top: 0;
+  }
+
+  .about__features {
+    margin-top: 12.129vw;
+  }
+
+  // .about__column-right {
+  //   display: none;
+  // }
+
+  .about__img-wrapper {
+    max-width: none;
+    max-height: none;
+    width: 87.2vw;
+    height: 114.66vw;
+    margin-right: 3.4625vw;
+
+    &::after {
+      bottom: -@m26px;
+      right: -@m26px;
+      border-bottom: @m27px solid #1bbd59;
+      border-right: @m27px solid #1bbd59;
+    }
+  }
+}
+
+
 @media (min-width: @max-desktop-width) {
   .about {
     margin-top: 203px;

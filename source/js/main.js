@@ -90,7 +90,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   var width = $(window).width(); // ширина экрана
-  var size = 46; // кол-во символов
+  var size = 43; // кол-во символов
 
   if (width <= 752) {
     $('.rehab-swiper__place-description').each(function () {

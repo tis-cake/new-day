@@ -1,21 +1,16 @@
 // если открыта главная
-
 if($(".main").hasClass("index")) {
   $('.header').addClass('index');
 }
 
 // мобильное меню
-
 $('.menu-toggle').click(function () {
   $(this).toggleClass('active');
   $('.nav-section').toggleClass('active');
   $('.header__desktop-bottom').toggleClass('active');
-  // $('.header__menu-logo').toggleClass('active');
-
 });
 
 // убрать index при открытом меню
-
 if($(".header").hasClass("index")) {
   $('.menu-toggle').click(function () {
     $('.header').toggleClass('index');
@@ -23,7 +18,6 @@ if($(".header").hasClass("index")) {
 }
 
 // слайдер центров
-
 $(document).ready(function () {
   var mySwiper = new Swiper('#center-swiper', {
     slidesPerView: '1.5',
@@ -52,7 +46,6 @@ $(document).ready(function () {
 });
 
 // слайдер клиник
-
 $(document).ready(function () {
   var mySwiper = new Swiper('#clinic-swiper', {
     slidesPerView: '1.5',
@@ -93,8 +86,7 @@ $(document).ready(function () {
 // });
 
 
-// добавляем троеточие при избыточности сиволов
-
+// троеточие при избыточности символов на мобильном разрешении в rehab-swiper
 $(document).ready(function () {
 
   var width = $(window).width(); // ширина экрана
@@ -109,5 +101,22 @@ $(document).ready(function () {
       }
     });
   }
+});
 
+// троеточие при избыточности символов на мобильном разрешении в database-preview
+$(document).ready(function () {
+
+  var width = $(window).width();
+  var size = 64; // кол-во символов
+
+  if (width <= 752) {
+    $('.intro--database-preview--sub .intro__description').each(function () {
+      console.log($(this));
+      var databaseText = $(this).text();
+
+      if(databaseText.length > size){
+        $(this).text(databaseText.slice(0, size) + ' ...');
+      }
+    });
+  }
 });

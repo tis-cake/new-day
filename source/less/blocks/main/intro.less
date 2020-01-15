@@ -153,6 +153,10 @@
   .intro--about {
     max-width: none;
     width: 86.854vw;
+
+    .intro__title {
+      margin-bottom: 5.396vw;
+    }
   }
 
   .intro--get-help {
@@ -165,16 +169,12 @@
     }
     .intro__description {
       display: block;
-      margin-bottom: 42px;
     }
   }
 
   .intro--rehab-swiper {
     max-width: none;
     width: auto;
-    .intro__title {
-      margin-bottom: 4.096vw;
-    }
     .intro__description {
       width: 90vw;
       margin-bottom: 10.646vw;
@@ -185,29 +185,100 @@
     max-width: none;
     width: 81.875vw;
     margin-bottom: @m86px;
-    .intro__title {
-    margin-bottom: @m32px;
-    }
   }
 
   .intro--reviews {
     .intro__description {
       width: auto;
+      margin-bottom: 10.833vw;
+    }
+  }
+
+  .intro--price {
+    max-width: none;
+    width: 87vw;
+  }
+
+  .intro--warning {
+    max-width: none;
+    width: 100%;
+    .intro__title {
+      width: 68vw;
+      margin-bottom: 3.552vw;
+    }
+    .intro__description {
+      width: 80vw;
+    }
+  }
+
+  .intro--database-preview {
+    .intro__description {
+      max-width: none;
+      width: 84.76vw;
+      margin-bottom: 11.333vw; //84px
+    }
+  }
+
+  .intro--database-preview--sub {
+    padding-top: 5.275vw;
+    padding-left: 3.21vw;
+
+    .intro__title {
+      font-size: @m32px;
+      letter-spacing: 0.16px;
+    }
+
+    .intro__description {
+      max-width: none;
+      width:  54.666vw;
+      margin-bottom: 0;
+
+      font-size: @m30px;
+      line-height: @m35px;
+    }
+
+    .intro__subtitle {
+      margin-top: 1.35416vw;
+      margin-bottom: 0.677vw;
     }
   }
 
   .intro__title {
-    margin-bottom: 5.387vw;
+    margin-bottom: 4.096vw;
     font-size: @m45px;
   }
 
   .intro__description {
+    margin-bottom: @m40px;
+
     font-size: @m30px;
     line-height: @m38px;
   }
 
   .intro__link-wrapper {
     flex-direction: column;
+  }
+
+  .intro__link {
+    max-width: none;
+    // width: 21.333vw;
+    width: 22.66vw;
+    font-size: @m30px;
+
+    &::before {
+      top: -@m5px;
+      right: -@m12px;
+      .mn();
+      width: @m14px;
+      height: @m44px;
+    }
+  }
+
+  .intro__subtitle {
+    margin-bottom: @m14px;
+
+    font-size: @m32px;
+    letter-spacing: 0.16px;
   }
 }
 

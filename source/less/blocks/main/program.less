@@ -131,6 +131,10 @@
 
 @media (max-width: @mobile-width) {
 
+  .program {
+    margin-bottom: 24.5vw;
+  }
+
   .program__list {
     flex-direction: column;
     max-width: none;
@@ -153,13 +157,13 @@
 
   .program__item__icon {
     .mn ();
-    width: 100px;
-    height: 100px;
+    width: @m100px;
+    height: @m100px;
 
     &::before {
       .mn ();
-      width: 56px;
-      height: 60px;
+      width: @m56px;
+      height: @m60px;
     }
   }
 

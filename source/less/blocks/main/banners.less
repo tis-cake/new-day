@@ -132,6 +132,10 @@
 }
 
 @media (max-width: @mobile-width) {
+  .banners {
+    margin-bottom: 24.358vw
+  }
+
   .banners.container {
     .margin-inline(0);
   }
@@ -159,7 +163,42 @@
     .mn ();
     width: 572px;
     height: 580px;
+    padding-top: 4.523vw;
+    .padding-inline(4.383vw);
+    padding-bottom: 12.846vw;
   }
+
+  .banners__subtitle {
+    max-width: none;
+    width: 18.66vw;
+    font-size: @m16px;
+    line-height: @m25px;
+  }
+
+  .banners__title {
+    max-width: none;
+    width: auto;
+    padding-bottom: 2.781vw;
+
+    font-size: @m45px;
+    line-height: @m40px;
+  }
+
+  .banners__description {
+    max-width: none;
+    width: 48.629vw;
+    font-size: @m30px;
+    line-height: @m39px;
+  }
+
+  .banners__link {
+    bottom: -6.6%;
+    .mn;
+    width: 414px;
+    height: 75px;
+    border-radius: 38px;
+  }
+
 }
 
 @media (min-width: @max-desktop-width) {

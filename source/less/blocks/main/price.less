@@ -6,10 +6,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3.17708vw;
-
-  @media  (max-width: @mobile-width) {
-    flex-direction: column;
-  }
 }
 
 .price__column {
@@ -25,11 +21,6 @@
   box-shadow: 0 0 29px 3px rgba(2, 7, 32, 0.04);
   border-radius: 19px;
   background-color: #ffffff;
-
-  @media  (max-width: @mobile-width) {
-    width: auto;
-    margin-bottom: 30px;
-  }
 }
 
 .price__title {
@@ -53,7 +44,6 @@
   }
 
   &--alco {
-
   }
 
   &--other {
@@ -74,6 +64,7 @@
 
 .price__table td:first-child {
   width: 68%;
+  text-align: left;
   color: #747474;
 }
 
@@ -91,6 +82,75 @@
   transform: translateX(-50%);
 
   border-radius: 28px;
+}
+
+@media  (max-width: @mobile-width) {
+  .price {
+    margin-bottom: 23.733vw;
+  }
+
+  .price__wrapper {
+    flex-direction: column;
+    margin-top: 11.977vw;
+  }
+
+  .price__column {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 19.333vw;
+    padding-top: 7.783vw;
+    .padding-inline(3.904vw);
+    padding-bottom: 12.083vw;
+
+    text-align: center;
+  }
+
+  .price__column:last-child {
+    margin-bottom: 0;
+  }
+
+  .price__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 7.317vw;
+    padding-left: @m82px;
+
+    font-size: @m35px;
+  }
+
+  .price__icon-img {
+    position: absolute;
+    top: -@m7px;
+    left: -@m4px;
+
+    .mn();
+    width: @m60px;
+    height: @m60px;
+    padding-right: 0.781vw;
+
+    // &--narco {
+    //   top: -@m7px;
+    // }
+
+    &--alco {
+      top: -@m15px;
+    }
+
+    &--other {
+      top: -@m13px;
+    }
+  }
+
+  .price__table td {
+    font-size: @m30px;
+    padding-bottom: 4.51vw;
+  }
+
+  .price__link {
+    bottom: -3.6%;
+    width: 44vw;
+    border-radius: 38px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -119,8 +179,4 @@
     font-size: 19px;
     padding-bottom: 29px;
   }
-
-
-
-
 }

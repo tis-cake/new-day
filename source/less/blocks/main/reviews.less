@@ -7,17 +7,6 @@
   justify-content: space-between;
 
   margin-top: 3.125vw;
-
-  @media  (max-width: @mobile-width) {
-    overflow-x: scroll;
-  }
-
-}
-
-.reviews__blockquote-wrapper.container {
-  @media (max-width: @mobile-width) {
-    .margin-inline(0);
-  }
 }
 
 .reviews__blockquote {
@@ -132,6 +121,102 @@
 .reviews__author-background {
   font-size: @d18px;
   letter-spacing: 0.046vw;
+}
+
+@media  (max-width: @mobile-width) {
+  .reviews {
+    margin-bottom: 18.352vw;
+  }
+
+  .reviews__blockquote-wrapper {
+    // height: 550px;
+    height: 73.33vw;
+    margin-top: 0;
+    padding-top: @m43px;
+    overflow-x: scroll;
+  }
+
+  .reviews__blockquote {
+    margin-right: @m65px;
+  }
+
+  .reviews__blockquote:first-child {
+    margin-left: @m11px;
+  }
+
+  .reviews__blockquote:last-child {
+    padding-right: @m35px;
+  }
+
+  .reviews__blockquote-wrapper.container {
+    .margin-inline(0);
+  }
+
+  .reviews__text-block {
+    max-width: none;
+    width: auto;
+    margin-bottom: 6.083vw;
+    padding-top: 3.656vw;
+    padding-left: 11.356vw;
+    padding-bottom: @m26px;
+
+    &::before {
+      top: @m48px;
+      left: -@m12px;
+
+      .mn();
+      width: @m60px;
+      height: @m52px;
+    }
+
+    &::after {
+      bottom: -@m24px;
+      left: 13%;
+
+      border: @m14px solid @white;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-width: @m26px;
+      border-bottom-width: 0;
+    }
+  }
+
+  .reviews__datetime {
+    font-size: @m25px;
+  }
+
+  .reviews__blockquote-text {
+    max-width: none;
+    width: 46.13vw;
+    margin-right: @m62px;
+    padding-top: 2.594vw;
+    // padding-bottom: 2.34375vw;
+
+    font-size: @m27px;
+    line-height: @m33px;
+  }
+
+  .reviews__author-photo-wrapper {
+    .mn();
+    width: 20.4vw;
+    height: 20.4vw;
+  }
+
+  .reviews__author-wrapper {
+    padding-left: @m15px;
+    line-height: @m30px;
+    letter-spacing: normal;
+  }
+
+  .reviews__author-name {
+    font-size: @m30px;
+  }
+
+  .reviews__author-background {
+    font-size: @m27px;
+    letter-spacing: 0.14px;
+  }
+
 }
 
 @media (min-width: @max-desktop-width) {

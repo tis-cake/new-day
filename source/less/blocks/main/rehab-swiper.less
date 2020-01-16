@@ -169,9 +169,24 @@
   }
 
   .rehab-swiper__link-pages {
-    display: block;
+    position: relative;
+    display: inline-block;
     font-size: @m30px;
     margin-bottom: @m44px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -0.5vw;
+      right: -4vw;
+
+      width: 1.86vw;
+      height: 5.866vw;
+
+      background-image: url('../img/svg/arrow-m.svg');
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   .rehab-swiper__img-wrapper {
@@ -201,6 +216,7 @@
 
   .rehab-swiper__place-description {
     width: 100%;
+    min-height: @m85px;
     padding-bottom: @m25px;
 
     font-size: @m27px;
@@ -300,4 +316,8 @@
 
 // .arrow-container {
 //   display: flex;
+// }
+
+// #center-swiper {
+//     display: flex;
 // }

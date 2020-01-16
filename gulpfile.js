@@ -48,8 +48,8 @@ gulp.task("img", function () {
 });
 
 gulp.task("webp", function () {
-  // return gulp.src("source/img/**/*.{png,jpg}")
-  return gulp.src('source/img/banners/*.{png,jpg}')
+  return gulp.src("source/img/banners/banner-program.jpg")
+  // return gulp.src('source/img/articles-block/*.{png,jpg}')
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img/webp"));
 });

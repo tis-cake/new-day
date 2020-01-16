@@ -87,21 +87,21 @@ $(document).ready(function () {
 
 
 // троеточие при избыточности символов на мобильном разрешении в rehab-swiper
-$(document).ready(function () {
+// $(document).ready(function () {
 
-  var width = $(window).width(); // ширина экрана
-  var size = 43; // кол-во символов
+//   var width = $(window).width(); // ширина экрана
+//   var size = 43; // кол-во символов
 
-  if (width <= 752) {
-    $('.rehab-swiper__place-description').each(function () {
-      var rehabText = $(this).text();
+//   if (width <= 752) {
+//     $('.rehab-swiper__place-description').each(function () {
+//       var rehabText = $(this).text();
 
-      if(rehabText.length > size){
-        $(this).text(rehabText.slice(0, size) + ' ...');
-      }
-    });
-  }
-});
+//       if(rehabText.length > size){
+//         $(this).text(rehabText.slice(0, size) + ' ...');
+//       }
+//     });
+//   }
+// });
 
 // троеточие при избыточности символов на мобильном разрешении в database-preview
 $(document).ready(function () {
@@ -111,7 +111,6 @@ $(document).ready(function () {
 
   if (width <= 752) {
     $('.intro--database-preview--sub .intro__description').each(function () {
-      console.log($(this));
       var databaseText = $(this).text();
 
       if(databaseText.length > size){

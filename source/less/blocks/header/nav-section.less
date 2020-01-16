@@ -13,18 +13,30 @@
 }
 
 .nav-section__link {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: @m42px;
 
   text-decoration: none;
   color: @light-black;
 }
 
 .nav-section__icon {
+  position: absolute;
+  top: 0px;
   width: @m35px;
   height: @m35px;
   padding-bottom: @m10px;
+}
+
+.nav-section__item:nth-child(2) {
+  .nav-section__icon {
+    top: -@m6px;
+    width: @m46px;
+    height: @m46px;
+  }
 }
 
 .nav-section__icon:last-of-type {

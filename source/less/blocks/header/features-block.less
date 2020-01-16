@@ -122,9 +122,9 @@
 }
 
 @media (max-width: @mobile-width) {
-  // .features-block--main-info {
-  //   padding-bottom: 0;
-  // }
+  .features-block {
+    background-color: #fff;
+  }
 
   .features-block__list--header-desktop {
     display: none;
@@ -133,25 +133,59 @@
   .features-block__list--header-mobile {
     display: flex;
     flex-direction: column;
-    height: 170px;
+    // height: 170px;
     padding-bottom: @m50px;
   }
 
+  .header__features {
+    .features-block__item {
+      max-width: none;
+      width: 48.46vw;
+      margin-bottom: 8.5vw;
+      padding-left: 15vw;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        max-width: none;
+        max-height: none;
+        width: @m70px;
+        height: @m70px;
+      }
+    }
+
+    .features-block__title {
+      margin-bottom:  1.1vw;
+      font-size: @m30px;
+    }
+
+    .features-block__description {
+      margin-bottom:  0.104vw;
+
+      font-size: @m27px;
+      line-height: @m32px;
+      letter-spacing: 0.15px;
+    }
+  }
 
   .features-block--about {
-
     .features-block__item {
       max-width: none;
       width: 67.833vw;
       margin-bottom: 12.7625vw;
       padding-left: 20.7vw;
-    }
 
+      &::before {
+        max-width: none;
+        max-height: none;
+      }
+    }
     .features-block__title {
       margin-bottom:  1.404vw;
       font-size: @m35px;
     }
-
     .features-block__description {
       margin-bottom:  0.104vw;
 
@@ -161,31 +195,30 @@
     }
   }
 
-    .features-block__item {
-      &--all-exp::before {
-        top:-@m9px;
-        max-width: none;
-        max-height: none;
-        width: 13.66458vw;
-        height: 13.06458vw;
-      }
-
-      &--all-rehab::before {
-        max-width: none;
-        max-height: none;
-        width: 13.916666vw;
-        height: 13.447917vw;
-      }
-
-      &--all-years::before {
-        top:-@m10px;
-        max-width: none;
-        max-height: none;
-        width: 13.916666vw;
-        height: 13.847917vw;
-      }
+  .features-block__item {
+    &--anon::before {
+      top: @m13px;
+      left: @m2px;
     }
-
+    &--free::before {
+      top: @m22px;
+      left: @m4px;
+    }
+    &--all-exp::before {
+      top:-@m9px;
+      width: 13.664vw;
+      height: 13.064vw;
+    }
+    &--all-rehab::before {
+      width: 13.916vw;
+      height: 13.447vw;
+    }
+    &--all-years::before {
+      top:-@m10px;
+      width: 13.916vw;
+      height: 13.847vw;
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {

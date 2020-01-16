@@ -1193,6 +1193,9 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.1px;
   color: #ffffff;
 }
+.main-info__description--mob {
+  display: none;
+}
 .main-info__callback {
   max-width: 337px;
   max-height: 77px;
@@ -1252,6 +1255,12 @@ input[type="radio"].visually-hidden {
     margin-bottom: 8.5vw;
     font-size: 4vw;
     line-height: 5.066vw;
+  }
+  .main-info__description--desk {
+    display: none;
+  }
+  .main-info__description--mob {
+    display: block;
   }
   .main-info__callback {
     width: 44.4vw;

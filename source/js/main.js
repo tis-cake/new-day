@@ -1,10 +1,12 @@
+// [index-page]
+
 // если открыта главная
 if($(".main").hasClass("index")) {
   $('.header').addClass('index');
 }
 
 // мобильное меню
-$('.menu-toggle').click(function () {
+$('.header__menu-toggle').click(function () {
   $(this).toggleClass('active');
   $('.nav-section').toggleClass('active');
   $('.header__desktop-bottom').toggleClass('active');
@@ -12,7 +14,7 @@ $('.menu-toggle').click(function () {
 
 // убрать index при открытом меню
 if($(".header").hasClass("index")) {
-  $('.menu-toggle').click(function () {
+  $('.header__menu-toggle').click(function () {
     $('.header').toggleClass('index');
   });
 }
@@ -115,6 +117,32 @@ $(document).ready(function () {
 
       if(databaseText.length > size){
         $(this).text(databaseText.slice(0, size) + ' ...');
+      }
+    });
+  }
+});
+
+// [database-page]
+
+//меню со статьями
+$('.database-search__list-toggle').click(function () {
+  $('.database-search__close-btn').toggleClass('active');
+  $('.database-search__list-toggle').toggleClass('active');
+  $('.database-search__list').toggleClass('active');
+});
+
+// троеточие при избыточности символов на мобильном разрешении в article-block
+$(document).ready(function () {
+
+  var width = $(window).width(); // ширина экрана
+  var size = 189; // кол-во символов
+
+  if (width <= 752) {
+    $('.articles-block .intro__description').each(function () {
+      var rehabText = $(this).text();
+
+      if(rehabText.length > size){
+        $(this).text(rehabText.slice(0, size) + ' ...');
       }
     });
   }

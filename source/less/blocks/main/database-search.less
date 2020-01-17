@@ -53,12 +53,20 @@
 
 .database-search__icon-btn {
   position: absolute;
+  top: 50%;
   left: 4.4%;
   width: @d32px;
   height: @d32px;
+
+  transform: translateY(-50%);
+
   border: none;
   background-color: transparent;
   background-image: url("../img/svg/search-gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
 }
 
 .database-search__btn {
@@ -121,16 +129,227 @@
 }
 
 @media (max-width: @mobile-width) {
+  .database-search {
+    margin-top: 23.1vw;
+    margin-bottom: 23vw;
+  }
+
+  .database-search__title {
+    margin-bottom: @m30px;
+    font-size: @m45px;
+  }
+
+  .database-search__form-wrapper {
+    margin-bottom: 8.11vw;
+  }
+
+  .database-search__form {
+    .mn();
+    width: 90.66vw;
+    height: @m90px;
+
+    box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
+    background-color: #fff;
+  }
+
+  .database-search__input {
+    width: 70%;
+    padding-left: @m88px;
+
+    font-size: @m30px;
+  }
+
+  .database-search__icon-btn {
+    left: 4.9%;
+    width: @m37px;
+    height: @m37px;
+  }
+
+  .database-search__btn {
+    width: 20.4vw;
+    font-size: @m27px;
+  }
+
   .database-search__list-toggle {
+    position: relative;
+
     display: flex;
-    width: 680px;
-    height: 90px;
-    box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
+    justify-content: flex-start;
+    width: 90.66vw;
+    height: @m90px;
+    padding-left: 14.53vw;
+
+    font-size: @m30px;
+    text-transform: none;
+    box-shadow: 0 0 @m55px 5px rgba(5, 9, 48, 0.04);
     border-radius: 45px;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: @m42px;
+
+      width: @m30px;
+      height: @m5px;
+      background-color:#fff;
+
+      transition-duration: 1s;
+      transition-property: transform;
+
+      border-radius: 20px;
+    }
+
+    &::before {
+      right: @m51px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      // right: @m40px;
+      // width: @m70px;
+      // height: @m52px;
+      // background-image: url('../img/svg/arrow-m-white.svg');
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: cover;
+
+      // transition-duration: 1s;
+      // transition-property: transform;
+      right: @m70px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .active.database-search__list-toggle {
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      // transform: rotateX(210deg);
+      transform: rotate(-45deg);
+    }
+  }
+
+  .database-search__close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: @m35px;
+
+    width: @m38px;
+    height: @m26px;
+  }
+
+  .database-search__close-btn span {
+    height: @m3px;
+    background: #fff;
+    transition: 0.1s 0.1s;
+    border-radius: 3px;
+  }
+
+  .active.database-search__close-btn span {
+    background-color: transparent;
+  }
+
+  .database-search__close-btn::before,
+  .database-search__close-btn::after {
+    height: @m3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: 0.3s 0.3s, transform 0.3s;
+  }
+
+  .database-search__close-btn::before {
+    top: 0;
+  }
+
+  .database-search__close-btn::after {
+    top: @m22px;
+  }
+
+  .active.database-search__close-btn::before {
+    transform: rotate3d(0, 0, 1, -45deg);
+    transition: 0.3s, transform 0.3s 0.3s;
+    top: @m10px;
+  }
+
+  .active.database-search__close-btn::after {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transition: 0.3s, transform 0.3s 0.3s;
+    top: @m10px;
   }
 
   .database-search__list {
     display: none;
+  }
+
+  .active.database-search__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 100%;
+    max-height: none;
+    // height: 1300px;
+    height: 173.33vw;
+
+    margin-top: @m40px;
+    padding-top: @m30px;
+    padding-bottom: @m30px;
+
+    box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
+    border-radius: 37px;
+    background-color: #fff;
+  }
+
+  .database-search__item {
+    width: 100%;
+    height: @m80px;
+
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .database-search__item:first-child {
+    border-radius: 37px 37px 0 0;
+  }
+
+  .database-search__item:last-child {
+    border-radius: 0 0 37px 37px;
+  }
+
+  .database-search__link {
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 0;
+    padding-left: 15.46vw;
+
+
+    font-size: @m33px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+    color: #2f2f2f;
+
+    border-radius: 0;
+  }
+
+  .database-search__img {
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    width: @m40px;
+    height: @m40px;
+    transform: translateX(-50%);
   }
 }
 

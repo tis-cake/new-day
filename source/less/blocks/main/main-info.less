@@ -61,8 +61,8 @@
 }
 
 .main-info__description {
-  max-width: 604px;
-  width: 31.25vw;
+  max-width: 593px;
+  width: 31.15vw;
   // margin-bottom: 2.5vw;
   margin-bottom: 0.2vw;
 
@@ -71,6 +71,11 @@
   letter-spacing: 0.1px;
 
   color: #ffffff;
+}
+
+.main.index .main-info__description {
+  max-width: 604px;
+  width: 33.35vw;
 }
 
 .main-info__description--mob {
@@ -90,11 +95,54 @@
   border-radius: 37px;
 }
 
+.main.index .main-info__callback {
+  font-size: @d22px;
+}
+
 .main-info__features {
   padding-bottom: 4.531vw;
 }
 
 @media (max-width: @mobile-width) {
+
+  .main-info {
+    .mn();
+    // height: 775;
+    height: 103.33vw;
+    width: 100%;
+
+    margin-top: @m8px;
+    // margin-bottom: 5.275vw;
+
+    // border-bottom: @m1px solid transparent;
+  }
+
+  .main.index .main-info {
+    // width: 84.54vw;
+    width: 100%;
+    // height: 750px;
+    margin-top: 0;
+    // margin-bottom: 4.875vw;
+    margin-bottom: 0;
+    padding-top: 47.96vw;
+
+    font-size: @m50px;
+    line-height: @m57px;
+
+    border-bottom: @m1px solid transparent;
+  }
+
+  .main-info .container {
+    padding-top: 28.54vw;
+  }
+
+  .main-info__bg-wrapper {
+    max-height: none;
+    width: 100vw;
+    // height: 40.364vw;
+    // height: 103.33vw;
+    height: 103.33vw;
+  }
 
   .main-info__services-link {
     position: relative;
@@ -135,14 +183,14 @@
     }
   }
 
-  .main.index .main-info {
-    // padding-top: 66.66vw;
-    padding-top: 47.96vw;
-    border-bottom: @m1px solid transparent;
-  }
-
   .main-info__title {
     width: 84.54vw;
+    margin-bottom: 5.175vw;
+    font-size: @m60px;
+    line-height: @m63px;
+  }
+
+  .main.index .main-info__title {
     margin-bottom: 4.875vw;
     font-size: @m50px;
     line-height: @m57px;
@@ -150,11 +198,22 @@
 
   .main-info__description {
     display: block;
-    width: 78.25vw;
-    margin-bottom: 8.5vw;
+    max-width: none;
+    // width: 83.25vw;
+    width: 84.25vw;
+    margin-bottom: 6.7vw;
 
     font-size: @m30px;
     line-height: @m38px;
+  }
+
+  .main.index .main-info__description {
+    width: 78.25vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .main-info__description:first-of-type {
+    margin-bottom: 0;
   }
 
   .main-info__description--desk {
@@ -166,12 +225,20 @@
   }
 
   .main-info__callback {
+    max-width: none;
+    width: 64vw;
+    height: @m74px;
+    margin-bottom: 0;
+
+    font-size: @m27px;
+    border-radius: 37px;
+  }
+
+  .main.index .main-info__callback {
     width: 44.4vw;
     height: @m74px;
-    margin-bottom: 20.74583vw;
-
     font-size: @m22px;
-    border-radius: 37px;
+    margin-bottom: 20.74583vw;
   }
 
   .main-info__features {
@@ -185,12 +252,12 @@
     width: 100%;
   }
 
-  .main-info__bg-wrapper {
-    width: 100%;
-  }
-
   .main.index .main-info {
     padding-top: 293px;
+  }
+
+  .main-info__bg-wrapper {
+    width: 100%;
   }
 
   .main-info .container {
@@ -215,6 +282,10 @@
     margin-bottom: 118px;
     font-size: 18px;
     letter-spacing: 0.11px;
+  }
+
+  .main.index .main-info__callback {
+    font-size: 22px;
   }
 
   .main-info__features {

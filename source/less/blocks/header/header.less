@@ -223,19 +223,26 @@
     display: none;
   }
 
-  .header__desktop-bottom.active {
+  /*при отключённом js*/
+  .header__mob-menu--nojs,
+  .active.header__desktop-bottom {
     box-sizing: border-box;
     display: block;
-    position: absolute;
     width: 100%;
 
     padding-left: 4.666vw;
     padding-right: 4.666vw;
     padding-bottom: @m30px;
-    padding-bottom: @m40px;
+    // padding-bottom: @m40px;
+    padding-bottom: @m47px;
 
     background-color: #fff;
-    box-shadow: 0 50px 65px 0px rgba(5, 9, 48, 0.05);
+  }
+
+  /**/
+
+  .active.header__desktop-bottom {
+    position: absolute;
     box-shadow: 0 10px 10px 0px rgba(5, 9, 48, 0.05);
   }
 

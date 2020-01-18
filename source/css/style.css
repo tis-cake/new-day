@@ -312,17 +312,21 @@ input[type="radio"].visually-hidden {
   .header__desktop-bottom {
     display: none;
   }
-  .header__desktop-bottom.active {
+  /*при отключённом js*/
+  .header__mob-menu--nojs,
+  .active.header__desktop-bottom {
     box-sizing: border-box;
     display: block;
-    position: absolute;
     width: 100%;
     padding-left: 4.666vw;
     padding-right: 4.666vw;
     padding-bottom: 4vw;
-    padding-bottom: 5.333vw;
+    padding-bottom: 6.266vw;
     background-color: #fff;
-    box-shadow: 0 50px 65px 0px rgba(5, 9, 48, 0.05);
+  }
+  /**/
+  .active.header__desktop-bottom {
+    position: absolute;
     box-shadow: 0 10px 10px 0px rgba(5, 9, 48, 0.05);
   }
   .header__consultation-phone {
@@ -513,6 +517,9 @@ input[type="radio"].visually-hidden {
   }
   .main-nav__item {
     padding-bottom: 7.066vw;
+  }
+  .main-nav__link {
+    color: #2f2f2f;
   }
   .main-nav__item:last-child {
     padding-bottom: 0;
@@ -3008,6 +3015,7 @@ input[type="radio"].visually-hidden {
   .database-search__list {
     display: none;
   }
+  .database-search__list--nojs,
   .active.database-search__list {
     display: flex;
     justify-content: space-between;

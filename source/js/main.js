@@ -5,6 +5,9 @@ if($(".main").hasClass("index")) {
   $('.header').addClass('index');
 }
 
+// если js подключён - меню скрыто
+$('.header__desktop-bottom').removeClass('header__mob-menu--nojs');
+
 // мобильное меню
 $('.header__menu-toggle').click(function () {
   $(this).toggleClass('active');
@@ -124,7 +127,10 @@ $(document).ready(function () {
 
 // [database-page]
 
-//меню со статьями
+// если js подключён - меню скрыто
+  $('.database-search__list').removeClass('database-search__list--nojs');
+
+// меню со статьями
 $('.database-search__list-toggle').click(function () {
   $('.database-search__close-btn').toggleClass('active');
   $('.database-search__list-toggle').toggleClass('active');

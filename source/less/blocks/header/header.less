@@ -26,28 +26,6 @@
   padding-bottom: 2.08333vw;
 }
 
-.header__mobile-bottom {
-  position: relative;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-
-    width: 100%;
-    height: @m1px;
-
-    background-color: #ffffff;
-    opacity: 0.14;
-  }
-  &::before {
-    top: -@m30px;
-  }
-  &::after {
-    bottom: -@m23px;
-  }
-}
-
 .header__consultation-phone {
   display: none;
 }
@@ -176,6 +154,29 @@
     background-color: #fff;
   }
 
+
+.header.index .header__mobile-bottom {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    width: 100%;
+    height: @m1px;
+
+    background-color: #ffffff;
+    opacity: 0.14;
+  }
+  &::before {
+    top: @m1px;
+  }
+  &::after {
+    bottom: -@m16px;
+  }
+}
+
   .header.index {
     position: absolute;
   }
@@ -189,7 +190,8 @@
   }
 
   .header__desktop {
-    padding-top: @m10px;
+    // padding-top: @m10px;
+    padding-top: 0;
   }
 
   .header__desktop-top {
@@ -232,9 +234,11 @@
 
     padding-left: 4.666vw;
     padding-right: 4.666vw;
-    padding-bottom: @m30px;
+    // padding-bottom: @m30px;
     // padding-bottom: @m40px;
-    padding-bottom: @m47px;
+    // padding-bottom: @m47px;
+    padding-bottom: 120px;
+    padding-bottom: 16vw;
 
     background-color: #fff;
   }

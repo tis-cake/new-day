@@ -1,6 +1,13 @@
 .nav-section {
-  margin-top: @m64px;
+  margin-top: @m32px;
+  padding-top: @m27px;
+  padding-bottom: @m14px;
   font-size: @m27px;
+  background-color: #f8f8f8;
+}
+
+.header.index .nav-section {
+  background-color: transparent;
 }
 
 .nav-section.active {
@@ -21,6 +28,7 @@
 
   text-decoration: none;
   color: @light-black;
+  color: #2f2f2f;
 }
 
 .nav-section__icon {
@@ -41,4 +49,8 @@
 
 .nav-section__icon:last-of-type {
   display: none;
+}
+
+.nav-section__title {
+  color: #2f2f2f;
 }

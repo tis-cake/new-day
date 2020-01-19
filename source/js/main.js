@@ -183,7 +183,19 @@ $(document).ready(function () {
 });
 
 // [detox-page]
+// переключатель меню
 $('.services__item').click(function (evt) {
   evt.preventDefault();
+
+  if($(".services__item").hasClass("active")) {                // по дефолту:
+    $('.services__item').not(this).removeClass('active');      //   удалить у всех li класс acitve (кроме данного, т.к. у него впереди самое интересное)
+    $('.services__sub-menu').removeClass('active');            //   закрыть все другие подменю
+  }
+
   $(this).toggleClass('active');
+
+  if($(this).hasClass("active")) {
+    var data = $(this).data('id');
+    $(this).find($('.services__sub-menu[data-id='+data+']').toggleClass('active'));
+  }
 });

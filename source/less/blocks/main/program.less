@@ -129,6 +129,132 @@
   letter-spacing: 0.1px;
 }
 
+.program--detox {
+  .program__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-content: space-between;
+
+    // max-height: 407px;
+    height: 450px;
+
+    counter-reset: none;
+  }
+  .program__item {
+    position: relative;
+    box-sizing: border-box;
+
+    // max-width: 660px;
+    max-height: none;
+    width: 350px;
+    height: 300px;
+    margin-left: 2.6041vw;
+    padding-top: 2.34375vw;
+    padding-left: 5.208vw;
+
+    box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
+    border-radius: 19px;
+    background-color: #ffffff;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: @d21px;
+      right: @d22px;
+
+      font-family: @gotham;
+      font-size: @d50px;
+      font-weight: 700;
+      letter-spacing: 0.25px;
+
+      color: #1ab455;
+      opacity: 0.07;
+    }
+  }
+
+  .program__item__icon {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+
+    transform: translate(15%, -50%);
+
+    max-width: 100px;
+    max-height: 100px;
+    width: 5.208vw;
+    height: 5.208vw;
+
+    border-radius: 19px;
+    background-color: #1ab455;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--request::before {
+      max-width: 47px;
+      max-height: 53px;
+      width: 2.4479vw;
+      height: 2.760vw;
+
+      background-image: url('../img/svg/request-white.svg');
+    }
+
+    &--assure::before {
+      max-width: 59px;
+      max-height: 53px;
+      width: 3.0729vw;
+      height: 2.760vw;
+
+      background-image: url('../img/svg/assure-white.svg');
+    }
+
+    &--plan::before {
+      max-width: 43px;
+      max-height: 55px;
+      width: 2.2395vw;
+      height: 2.8645vw;
+
+      background-image: url('../img/svg/plan-white.svg');
+    }
+
+    &--contract::before {
+      max-width: 45px;
+      max-height: 55px;
+      width: 2.34375vw;
+      height: 2.8645vw;
+
+      background-image: url('../img/svg/contract-white.svg');
+    }
+  }
+
+  .program__title {
+    margin-bottom: 0.2083vw;
+
+    font-size: 1.5625vw;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+  }
+
+  .program__description {
+    // max-width: 369px;
+    width: 260px;
+
+    font-size: 0.989583vw;
+    line-height: 1.30208vw;
+    letter-spacing: 0.1px;
+  }
+}
+
 @media (max-width: @mobile-width) {
 
   .program {

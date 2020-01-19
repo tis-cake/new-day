@@ -187,6 +187,8 @@ $(document).ready(function () {
 $('.services__item').click(function (evt) {
   evt.preventDefault();
 
+  // $('.services__list').toggleClass('active');
+
   if($(".services__item").hasClass("active")) {                // по дефолту:
     $('.services__item').not(this).removeClass('active');      //   удалить у всех li класс acitve (кроме данного, т.к. у него впереди самое интересное)
     $('.services__sub-menu').removeClass('active');            //   закрыть все другие подменю

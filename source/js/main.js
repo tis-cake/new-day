@@ -1,5 +1,4 @@
 // [index-page]
-
 // если открыта главная
 if($(".main").hasClass("index")) {
   $('.header').addClass('index');
@@ -79,7 +78,6 @@ $(document).ready(function () {
 });
 
 // маска для поля ввода номера
-
 // maskedinput
 $(document).ready(function () {
   $("#phone").mask("+7 (  999  ) 999  99  99");
@@ -126,9 +124,8 @@ $(document).ready(function () {
 });
 
 // [database-page]
-
 // если js подключён - меню скрыто
-  $('.database-search__list').removeClass('database-search__list--nojs');
+$('.database-search__list').removeClass('database-search__list--nojs');
 
 // меню со статьями
 $('.database-search__list-toggle').click(function () {
@@ -152,4 +149,41 @@ $(document).ready(function () {
       }
     });
   }
+});
+
+// [reviews-page]
+// слайдер отзывов
+$(document).ready(function () {
+  var mySwiper = new Swiper('#review-swiper', {
+    slidesPerView: '1.5',
+    centeredSlides: true,
+    speed: 3000,
+    spaceBetween: 25,
+    touchRatio: 1,
+    loop: true,
+    freeMode: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next--review',
+      prevEl: '.swiper-button-prev--review',
+    },
+    breakpoints: {
+      752: {
+        slidesPerView: '3',
+        // spaceBetween: 20,
+        spaceBetween: 0,
+        slidesOffsetBefore: 14,
+        loop: true
+      }
+    }
+  });
+});
+
+// [detox-page]
+$('.services__item').click(function (evt) {
+  evt.preventDefault();
+  $(this).toggleClass('active');
 });

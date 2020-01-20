@@ -1,8 +1,277 @@
+.tariffs {
+  margin-bottom: 10.10vw;
+}
+
 .tariffs__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .tariffs__column {
-  width: 383px;
+  display: flex;
+  flex-direction: column;
+
+  width: 19.947vw;
+  height: 44.322vw;
+
+  border-radius: 20px;
+  box-shadow: 0 0 87px rgba(2, 7, 32, 0.04);
+}
+
+.tariffs__header {
+  position: relative;
+
+  height: 10.416vw;
+
+  border-radius: 20px 20px 0 0;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 9.89vw;
+
+    background-image: url('../img/tariffs/bg-tar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.tariffs__header * {
+  color: #ffffff;
+}
+
+.tariffs__icon {
+  position: absolute;
+
+  top: -@d41px;
+  right: @d39px;
+  width: @d90px;
+  height: @d90px;
+
+  box-shadow: 12px 12px 38px rgba(8, 8, 72, 0.15);
+  border-radius: 19px;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: @d52px;
+    height: @d52px;
+
+    transform: translate(-50%, -50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--lh::before {
+    background-image: url('../img/tariffs/lh.svg');
+  }
+  &--mh::before {
+    background-image: url('../img/tariffs/mh.svg');
+  }
+  &--gh::before {
+    background-image: url('../img/tariffs/gh.svg');
+  }
+}
+
+.tariffs__header-text {
+  box-sizing: border-box;
+  padding-top: @d30px;
+  .padding-inline(@d40px);
+}
+
+.tariffs__title {
+  margin-bottom: @d10px;
+
+
+  font-size: @d30px;
+  font-weight: 400;
+}
+
+.tariffs__category {
+  display: flex;
+
+  font-size: @d19px;
+  &-text {
+    margin-top: auto;
+    margin-left: @d2px;
+    margin-right: @d12px;
+    margin-bottom: @d5px;
+  }
+  &-price {
+    font-size: @d40px;
+    font-weight: 700;
+  }
+  &-day {
+    margin-top: @d5px;
+    margin-left: @d12px;
+  }
+}
+
+.tariffs__main {
+  padding-left: @d40px;
+  padding-right: @d20px;
+}
+
+.tariffs__description {
+  font-size: @d18px;
+  line-height: @d26px;
+  letter-spacing: 0.09px;
+
+  color: #747474;
+}
+
+.tariffs__list {
+  margin-top: @d35px;
+  padding-left: @d38px;
+  padding-right: @d20px;
+
+  font-size: @d19px;
+}
+
+.tariffs__item {
+  position: relative;
+  margin-bottom: @d21px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: @d4px;
+    left: -@d36px;
+
+    width: @d16px;
+    height: @d6px;
+
+    border: @d2px solid #5a5a5a;
+    border-color: #14b250;
+    border-top-style: none;
+    border-right-style: none;
+
+    transform: rotate(-45deg);
+  }
+
+  &--gray {
+    color: #747474;
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.tariffs__footer {
+  margin-top: auto;
+  height: 7.39vw;
+}
+
+.tariffs__footer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+
+@media (min-width: @max-desktop-width) {
+  .tariffs {
+    margin-bottom: 194px;
+  }
+
+  .tariffs__column {
+    width: 383px;
+    height: 851px;
+  }
+
+  .tariffs__header {
+    height: 200px;
+    &::before {
+      height: 190px;
+    }
+  }
+
+  .tariffs__icon {
+    top: -41px;
+    right: 39px;
+    width: 90px;
+    height: 90px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .tariffs__header-text {
+    padding-top: 30px;
+    .padding-inline(40px);
+  }
+
+  .tariffs__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .tariffs__category {
+    font-size: 19px;
+    &-text {
+      margin-left: 2px;
+      margin-right: 12px;
+      margin-bottom: 5px;
+    }
+    &-price {
+      font-size: 40px;
+    }
+    &-day {
+      margin-top: 5px;
+      margin-left: 12px;
+    }
+  }
+
+  .tariffs__main {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .tariffs__description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .tariffs__list {
+    margin-top: 35px;
+    padding-left: 38px;
+    padding-right: 20px;
+    font-size: 19px;
+  }
+
+  .tariffs__item {
+    margin-bottom: 21px;
+
+    &::before {
+      top: 4px;
+      left: -36px;
+
+      width: 16px;
+      height: 6px;
+
+      border: 2px solid #5a5a5a;
+      border-color: #14b250;
+      border-top-style: none;
+      border-right-style: none;
+    }
+  }
+
+  .tariffs__footer {
+    height: 142px;
+  }
 }

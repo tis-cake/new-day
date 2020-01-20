@@ -203,7 +203,7 @@
           <a class="breadcrumbs__link" href="database.html">База знаний</a>
         </li>
         <li class="breadcrumbs__item breadcrumbs__item--current">
-          <a class="breadcrumbs__link" href="#">Детоксикация</a>
+          Детоксикация
         </li>
       </ul>
 
@@ -231,7 +231,7 @@
             </a>
           </li>
 
-          <li class="services__item" data-id='2'>
+          <li class="services__item active" data-id='2'>
             <a class="services__link" href="#">
               <picture class="services__picture">
                 <source media="(max-width: 750px)" srcset="img/services/s-2-wine-gray.svg">
@@ -240,19 +240,8 @@
               <img class="services__img services__img--white" src="img/services/s-2-wine-white.svg" alt="" width="30" height="30">
               <span class="services__text">Лечение алкоголизма</span>
             </a>
-          </li>
 
-          <li class="services__item active" data-id='3'>
-            <a class="services__link" href="#">
-              <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-3-detox-gray.svg">
-                <img class="services__img" src="img/services/s-3-detox-black.svg" alt="" width="30" height="30">
-              </picture>
-              <img class="services__img services__img--white" src="img/services/s-3-detox-white.svg" alt="" width="30" height="30">
-              <span class="services__text">Детоксикация</span>
-            </a>
-
-            <ul class="services__sub-menu active" data-id='3'>
+            <ul class="services__sub-menu active" data-id='2'>
               <li class="services__sub-item">
                 <a class="services__sub-link" href="#">
                   <span class="services__sub-text">Реабилитация алкозависимых</span>
@@ -301,6 +290,17 @@
                 </a>
               </li>
             </ul>
+          </li>
+
+          <li class="services__item" data-id='3'>
+            <a class="services__link" href="#">
+              <picture class="services__picture">
+                <source media="(max-width: 750px)" srcset="img/services/s-3-detox-gray.svg">
+                <img class="services__img" src="img/services/s-3-detox-black.svg" alt="" width="30" height="30">
+              </picture>
+              <img class="services__img services__img--white" src="img/services/s-3-detox-white.svg" alt="" width="30" height="30">
+              <span class="services__text">Детоксикация</span>
+            </a>
           </li>
 
           <li class="services__item" data-id='4'>
@@ -367,7 +367,7 @@
 
           <article class="service-item">
             <div class="service-item__container">
-              <div class="service-item__icon service-item__icon--drop"></div>
+              <div class="service-item__icon service-item__icon--lite"></div>
               <h3 class="service-item__title">Капельница Лайт</h3>
               <p class="service-item__subtitle">1 капельница на 150 мл,  длительность 1 час</p>
               <p class="service-item__description">Пациенту вводят внутривенно через капельницу изотонический раствор хлорида натрия или обычную глюкозу. После этого за счет диуретиков достигается мочегонный эффект, что помогает быстро выводить из организма наркотические вещества и продукты их распада.</p>
@@ -395,34 +395,34 @@
             </div>
             <ul class="program__list">
               <li class="program__item">
-                <div class="program__item__icon program__item__icon--request"></div>
+                <div class="program__item__icon program__item__icon--danger"></div>
                 <h3 class="program__title">Критическое состояние</h3>
                 <p class="program__description">Снятие острых ситуаций: вывод из запоя, снятие ломки, психологическая помощь</p>
               </li>
               <li class="program__item">
-                <div class="program__item__icon program__item__icon--assure"></div>
+                <div class="program__item__icon program__item__icon--sad"></div>
                 <h3 class="program__title">Нестабильная психика</h3>
                 <p class="program__description">Восстановление физическо-го состояния здоровья зави-симого после выхода из острой ситуации</p>
               </li>
               <li class="program__item">
-                <div class="program__item__icon program__item__icon--plan"></div>
+                <div class="program__item__icon program__item__icon--time"></div>
                 <h3 class="program__title">Длительное употребление</h3>
                 <p class="program__description">Длительное употребление наркотиков лишает жизнь радости, зависимость блокирует все ощущения</p>
               </li>
               <li class="program__item">
-                <div class="program__item__icon program__item__icon--contract"></div>
+                <div class="program__item__icon program__item__icon--check"></div>
                 <h3 class="program__title">Решение зависимого</h3>
                 <p class="program__description">Если Вы решили покончить с зависимостью, клиника - первый шаг к решению проблемы</p>
               </li>
               <li class="program__item">
-                <div class="program__item__icon program__item__icon--request"></div>
+                <div class="program__item__icon program__item__icon--vip"></div>
                 <h3 class="program__title">Особые условия лечения</h3>
                 <p class="program__description">VIP-лечение, повышенные условия комфорта, 100% гарантия анонимности, расширенный пакет услуг</p>
               </li>
               <li class="program__item">
-                <div class="program__item__icon program__item__icon--request"></div>
+                <div class="program__item__icon program__item__icon--more"></div>
                 <h3 class="program__title">Различные виды услуг</h3>
-                <p class="program__description">Комфортное лечение организма: детокс, анти-стресс, физиотерапия, антиоксидант</p>
+                <p class="program__description">Комфортное лечение организма: <span class="program__description--under">детокс</span>, <span class="program__description--under">анти-стресс</span>, <span class="program__description--under">физиотерапия</span>, <span class="program__description--under">антиоксидант</span></p>
               </li>
             </ul>
           </section>
@@ -454,14 +454,17 @@
             <div class="tariffs__wrapper">
               <div class="tariffs__column">
                 <div class="tariffs__header">
-                  <h3 class="tariffs__title">Стандарт</h3>
-                  <p class="tariffs__category">
-                    <span class="tariffs__category-text">от</span>
-                    <span class="tariffs__category-price">8 400 &#8381;</span>
-                    <span class="tariffs__category-day">/ сутки</span>
-                  </p>
-
+                  <div class="tariffs__icon tariffs__icon--lh"></div>
+                  <div class="tariffs__header-text">
+                    <h3 class="tariffs__title">Стандарт</h3>
+                    <p class="tariffs__category">
+                      <span class="tariffs__category-text">от</span>
+                      <span class="tariffs__category-price">8 400 &#8381;</span>
+                      <span class="tariffs__category-day">/ сутки</span>
+                    </p>
+                  </div>
                 </div>
+
                 <div class="tariffs__main">
                   <p class="tariffs__description">Курс лечения длится 14 или 21 день</p>
                   <p class="tariffs__description">Возможна индивидуальная программа</p>
@@ -477,17 +480,21 @@
                 </div>
 
                 <div class="tariffs__footer">
+                  <img class="tariffs__footer-img" src="img/tariffs/tar-1.png" alt="Тариф «Стандарт»">
                 </div>
               </div>
 
               <div class="tariffs__column">
                 <div class="tariffs__header">
-                  <h3 class="tariffs__title">Стандарт</h3>
-                  <p class="tariffs__category">
-                    <span class="tariffs__category-text">от</span>
-                    <span class="tariffs__category-price">8 400 &#8381;</span>
-                    <span class="tariffs__category-day">/ сутки</span>
-                  </p>
+                  <div class="tariffs__icon tariffs__icon--mh"></div>
+                  <div class="tariffs__header-text">
+                    <h3 class="tariffs__title">Комфорт</h3>
+                    <p class="tariffs__category">
+                      <span class="tariffs__category-text">от</span>
+                      <span class="tariffs__category-price">10 800 &#8381;</span>
+                      <span class="tariffs__category-day">/ сутки</span>
+                    </p>
+                  </div>
 
                 </div>
                 <div class="tariffs__main">
@@ -495,7 +502,8 @@
                   <p class="tariffs__description">Возможна индивидуальная программа</p>
                   <ul class="tariffs__list">
                     <li class="tariffs__item">4-х разовое питание</li>
-                    <li class="tariffs__item">Размещение в 3-6 местной палате</li>
+                    <li class="tariffs__item">Размещение в 1-2 местной палате</li>
+                    <li class="tariffs__item">Повышенная категория номера</li>
                     <li class="tariffs__item">2 капельницы в день</li>
                     <li class="tariffs__item">3 раза в день таблетированные препараты</li>
                     <li class="tariffs__item">Седативные для сна</li>
@@ -505,40 +513,179 @@
                 </div>
 
                 <div class="tariffs__footer">
+                  <img class="tariffs__footer-img" src="img/tariffs/tar-2.png" alt="Тариф «Комфорт»">
                 </div>
               </div>
 
               <div class="tariffs__column">
                 <div class="tariffs__header">
-                  <h3 class="tariffs__title">Стандарт</h3>
-                  <p class="tariffs__category">
-                    <span class="tariffs__category-text">от</span>
-                    <span class="tariffs__category-price">8 400 &#8381;</span>
-                    <span class="tariffs__category-day">/ сутки</span>
-                  </p>
+                  <div class="tariffs__icon tariffs__icon--gh"></div>
+                  <div class="tariffs__header-text">
+                    <h3 class="tariffs__title">VIP</h3>
+                    <p class="tariffs__category">
+                      <span class="tariffs__category-text">от</span>
+                      <span class="tariffs__category-price">19 200 &#8381;</span>
+                      <span class="tariffs__category-day">/ сутки</span>
+                    </p>
+                  </div>
 
                 </div>
                 <div class="tariffs__main">
                   <p class="tariffs__description">Курс лечения длится 14 или 21 день</p>
                   <p class="tariffs__description">Возможна индивидуальная программа</p>
                   <ul class="tariffs__list">
-                    <li class="tariffs__item">4-х разовое питание</li>
-                    <li class="tariffs__item">Размещение в 3-6 местной палате</li>
-                    <li class="tariffs__item">2 капельницы в день</li>
-                    <li class="tariffs__item">3 раза в день таблетированные препараты</li>
-                    <li class="tariffs__item">Седативные для сна</li>
-                    <li class="tariffs__item">2 раза в день групповая психотерапия</li>
-                    <li class="tariffs__item">Круглосуточно дежурный врач</li>
+                    <li class="tariffs__item">Все услуги тарифа “Комфорт”</li>
+                    <li class="tariffs__item tariffs__item--gray">Дополнительно:</li>
+                    <li class="tariffs__item">Тихий этаж, 1-местная палата</li>
+                    <li class="tariffs__item">Полная анонимность</li>
+                    <li class="tariffs__item">Отдельное питание</li>
+                    <li class="tariffs__item">Доп. физиопроцедуры</li>
+                    <li class="tariffs__item">Индивидуальный психолог</li>
+                    <li class="tariffs__item">Возможность замены групповых занятий на индивидуальные</li>
                   </ul>
                 </div>
 
                 <div class="tariffs__footer">
+                  <img class="tariffs__footer-img" src="img/tariffs/tar-3.png" alt="Тариф «VIP»">
                 </div>
               </div>
 
             </div>
           </section>
 
+          <section class="price-category">
+            <div class="intro intro--price-category">
+              <h2 class="intro__title">Наши цены</h2>
+              <div class="intro__link-wrapper">
+                <p class="intro__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития</p>
+                <a class="intro__link" href="reviews.html">Все цены</a>
+              </div>
+            </div>
+
+            <div class="price-category__wrapper">
+              <div class="price-category__row">
+                <div class="price-category__category">
+                  <h3 class="price-category__title">Минимум</h3>
+                  <p class="price-category__description">(1 капельница)</p>
+                </div>
+                <p class="price-category__cost">Бесплатно</p>
+              </div>
+
+              <div class="price-category__row">
+                <div class="price-category__category">
+                  <h3 class="price-category__title">Стандарт</h3>
+                  <p class="price-category__description">(2 капельница)</p>
+                </div>
+                <p class="price-category__cost">3 000 р.</p>
+              </div>
+
+              <div class="price-category__row">
+                <div class="price-category__category">
+                  <h3 class="price-category__title">Максимум</h3>
+                  <p class="price-category__description">(2 капельница)</p>
+                </div>
+                <p class="price-category__cost">5 000 р.</p>
+              </div>
+
+              <div class="price-category__row">
+                <div class="price-category__category">
+                  <h3 class="price-category__title">Минимум</h3>
+                  <p class="price-category__description">(1 капельница)</p>
+                </div>
+                <p class="price-category__cost">Бесплатно</p>
+              </div>
+
+              <div class="price-category__row">
+                <div class="price-category__category">
+                  <h3 class="price-category__title">Стандарт</h3>
+                  <p class="price-category__description">(2 капельница)</p>
+                </div>
+                <p class="price-category__cost">3 000 р.</p>
+              </div>
+
+              <div class="price-category__row">
+                <div class="price-category__category">
+                  <h3 class="price-category__title">Максимум</h3>
+                  <p class="price-category__description">(2 капельница)</p>
+                </div>
+                <p class="price-category__cost">5 000 р.</p>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="banner-program">
+            <div class="banner-program__wrapper">
+              <div class="banner-program__img-wrapper">
+                <img class="banner-program__img" src="img/banner-program/detox-banner1.jpg" alt="">
+              </div>
+
+              <div class="banner-program__text-wrapper">
+                <div class="intro intro--banner-program">
+                  <h2 class="intro__title">Программа стационар интенсив</h2>
+                  <p class="intro__description">расчитана от 1 до 3 дней</p>
+                </div>
+
+                <ul class="banner-program__list banner-program__list--intens">
+                  <li class="banner-program__item">персональный врач нарколог</li>
+                  <li class="banner-program__item">индивидуальная палата в VIP-отделении</li>
+                  <li class="banner-program__item">форсированная детоксикация</li>
+                  <li class="banner-program__item">восстановление работы организма, устранение влечения к алкоголю</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="get-help get-help--consultation">
+            <div class="intro intro--get-help">
+              <h2 class="intro__title">Получите бесплатную консультацию</h2>
+              <p class="intro__description">Мы работаем круглосуточно без выходных</p>
+            </div>
+
+            <div class="get-help__consultation-wrapper">
+              <div class="get-help__consultation-phone">8 (800) 565-34-23</div>
+              <button class="get-help__consultation-btn btn">Обратный звонок</button>
+            </div>
+          </section>
+
+          <section class="program program--detox program--signs">
+            <div class="intro intro--program-detox">
+              <h2 class="intro__title">Признаки зависимости</h2>
+              <p class="intro__description">Важно отметить, что если при алкогольной и наркотической зависимости ее признаки бывают достаточно явными, то в случае зависимости иного рода, ее появление и развитие, возможно, не сразу станет заметным</p>
+            </div>
+            <ul class="program__list">
+              <li class="program__item">
+                <div class="program__item__icon program__item__icon--oculus"></div>
+                <h3 class="program__title">Странные зрачки</h3>
+                <p class="program__description">Расширение зрачков и слабая реакция на свет. Степень увеличения зрачка зависит от дозы и стадии действия вещества.</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon program__item__icon--sad"></div>
+                <h3 class="program__title">Подавленное настроение</h3>
+                <p class="program__description">Отвлекаясь от своей зависи-мости, человек ощущает беспокойство, страх, тревогу, депрессию</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon program__item__icon--hypnos"></div>
+                <h3 class="program__title">Галлюцинации, заторможенность</h3>
+                <p class="program__description">Длительное употребление наркотиков лишает жизнь радости, зависимость блокирует все ощущения</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon program__item__icon--catlery"></div>
+                <h3 class="program__title">Повышенный аппетит</h3>
+                <p class="program__description">Расстройства аппетита: долгое голодание, приступы, обжорства, резкая любовь к сладкому</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon program__item__icon--snow"></div>
+                <h3 class="program__title">Бледный цвет кожи</h3>
+                <p class="program__description">Черты лица становятся размытыми, невыразительны-ми, будто стертыми. А кожа либо высыхает, либо лоснится от жира</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon program__item__icon--share"></div>
+                <h3 class="program__title">Нарушение координации</h3>
+                <p class="program__description">Замедленные движения и реакция при выполнении стандартных двигательных функций</p>
+              </li>
+            </ul>
+          </section>
 
 
 

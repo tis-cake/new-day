@@ -65,11 +65,8 @@
 }
 
 .main-info__description {
-  // max-width: 593px;
   max-width: 617px;
-  // width: 31.15vw;
   width: 32.15vw;
-  // margin-bottom: 2.5vw;
   margin-bottom: 0.2vw;
 
   font-size: 1.04166666vw;
@@ -77,10 +74,6 @@
   letter-spacing: 0.1px;
 
   color: #ffffff;
-
-  &--detox {
-    // width: 32.15vw;
-  }
 }
 
 .main.index .main-info__description {
@@ -111,6 +104,17 @@
 
 .main-info__features {
   padding-bottom: 4.531vw;
+}
+
+.main-info--detox {
+  margin-bottom: @d97px;
+  .main-info__title {
+    width: 36.54vw;
+    margin-bottom: @d27px;
+  }
+  .main-info__callback {
+    margin-top: @d40px;
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -299,7 +303,6 @@
   }
 
   .main-info__description {
-    // margin-bottom: 48px;
     margin-bottom: 4px;
     font-size: 20px;
     line-height: 30px;
@@ -318,5 +321,16 @@
 
   .main-info__features {
     padding-bottom: 87px;
+  }
+
+  .main-info--detox {
+    margin-bottom: 97px;
+    .main-info__title {
+      width: 702px;
+      margin-bottom: 27px;
+    }
+    .main-info__callback {
+      margin-top: 40px;
+    }
   }
 }

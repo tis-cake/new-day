@@ -3,42 +3,6 @@
   justify-content: space-between;
   // margin-top: 10.57291vw;
   margin-bottom: 12.03125vw;
-
-  &--bottom {
-    flex-direction: row-reverse;
-    // margin-top: 7.55vw;
-    margin-bottom: 9.8958vw;
-
-    .about__img-wrapper {
-      margin-right: 0;
-      margin-left: 1.041vw;
-
-      &::after {
-        bottom: -1.041vw;
-        left: -0.9375vw;
-        right: auto;
-        width: 28.7%;
-        height: 57.2%;
-        border-bottom: 1.041vw solid #1bbd59;
-        border-left: 1.041vw solid #1bbd59;
-        border-right: none;
-      }
-    }
-
-    .about__column-left {
-      padding-top: 5.10416vw;
-      padding-right: 1.093vw;
-    }
-
-    .intro--about {
-      max-width: 816px;
-      width: 42.5vw;
-    }
-
-    .intro__description {
-      margin-bottom: 1.3541vw;
-    }
-  }
 }
 
 .about__column-left {
@@ -83,6 +47,45 @@
 
   box-shadow: 0 0 69px 12px rgba(17, 30, 66, 0.1);
   border-radius: 2px;
+}
+
+.about--bottom {
+  flex-direction: row-reverse;
+  margin-bottom: 9.8958vw;
+
+  .about__img-wrapper {
+    margin-right: 0;
+    margin-left: 1.041vw;
+
+    &::after {
+      bottom: -1.041vw;
+      left: -0.9375vw;
+      right: auto;
+      width: 28.7%;
+      height: 57.2%;
+      border-bottom: 1.041vw solid #1bbd59;
+      border-left: 1.041vw solid #1bbd59;
+      border-right: none;
+    }
+  }
+
+  .about__column-left {
+    padding-top: 5.10416vw;
+    padding-right: 1.093vw;
+  }
+
+  .intro--about {
+    max-width: 816px;
+    width: 42.5vw;
+  }
+
+  .intro__description {
+    margin-bottom: 1.3541vw;
+  }
+}
+
+.about--detox {
+  margin-bottom: @d87px;
 }
 
 @media  (max-width: @mobile-width) {
@@ -154,7 +157,6 @@
 
 @media (min-width: @max-desktop-width) {
   .about {
-    // margin-top: 203px;
     margin-bottom: 231px;
   }
 
@@ -179,7 +181,6 @@
   }
 
   .about--bottom {
-    // margin-top: 145px;
     margin-bottom: 190px;
 
     .about__img-wrapper {
@@ -201,5 +202,9 @@
     .intro__description {
       margin-bottom: 26px;
     }
+  }
+
+  .about--detox {
+    margin-bottom: 87px;
   }
 }

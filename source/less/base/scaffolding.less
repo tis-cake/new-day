@@ -1,5 +1,4 @@
 body {
-  // max-width: 1920px;
   margin: 0;
   padding: 0;
 
@@ -63,21 +62,36 @@ input {
 .detox-main-wrapper {
   display: flex;
   justify-content: space-between;
+
   min-height: 1500px;
-  // padding-top: 20px;
 }
 
 .detox-column-wrapper {
-  .b(blue);
-  width: 1210px;
-  padding-top: 20px;
+  // .b(blue);
+  width: 63.02vw;
+  padding-top: @d20px;
+
+  @media (max-width: @mobile-width) {
+  }
+
+  @media (min-width: @max-desktop-width) {
+    width: 1210px;
+    padding-top: 20px;
+  }
 }
 
 .detox-aside-wrapper {
   .b(black);
-  // width: 30%;
-  width: 382px;
-  padding-top: 20px;
+  width: 19.89vw;
+  padding-top: @d20px;
+
+  @media (max-width: @mobile-width) {
+  }
+
+  @media (min-width: @max-desktop-width) {
+    width: 382px;
+    padding-top: 20px;
+  }
 
 }
 

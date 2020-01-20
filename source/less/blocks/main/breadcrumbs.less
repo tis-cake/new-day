@@ -1,0 +1,46 @@
+.breadcrumbs {
+  display: flex;
+  margin-bottom: @d93px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  margin-right: @d30px;
+
+  color: #747474;
+  font-size: @d19px;
+
+  &::before {
+    content: '>';
+    position: absolute;
+    top: 0;
+    right: -@d21px;
+  }
+
+  &--current {
+    color: #2f2f2f;
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: #747474;
+}
+
+@media  (min-width: @max-desktop-width) {
+  .breadcrumbs {
+    margin-bottom: 93px;
+  }
+
+  .breadcrumbs__item {
+    margin-right: 30px;
+    font-size: 19px;
+
+    &::before {
+      right: -21px;
+    }
+  }
+}

@@ -59,10 +59,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.swiper-button-next--clinic',
       prevEl: '.swiper-button-prev--clinic',
@@ -200,4 +200,70 @@ $('.services__item').click(function (evt) {
     var data = $(this).data('id');
     $(this).find($('.services__sub-menu[data-id='+data+']').toggleClass('active'));
   }
+});
+
+// слайдер врачей
+$(document).ready(function () {
+  var galleryThumbs = new Swiper('#little-master-swiper', {
+    direction: 'vertical',
+    slidesPerView: '3',
+    touchRatio: 1,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        dragSize: 48
+      }
+
+    // freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    // navigation: {
+    //   nextEl: '.swiper-button-next--center',
+    //   prevEl: '.swiper-button-prev--center',
+    // },
+    // breakpoints: {
+    //   752: {
+    //     slidesPerView: '3',
+    //     spaceBetween: 42,
+    //     loop: true,
+    //   }
+    // }
+  });
+
+  var mainMasterSwiper = new Swiper('#main-master-swiper', {
+
+    thumbs: {
+        swiper: galleryThumbs,
+      },
+
+    direction: 'vertical',
+    slidesPerView: '1',
+    spaceBetween: 15,
+    touchRatio: 1,
+    freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    // navigation: {
+    //   nextEl: '.swiper-button-next--center',
+    //   prevEl: '.swiper-button-prev--center',
+    // },
+    // breakpoints: {
+    //   752: {
+    //     slidesPerView: '3',
+    //     spaceBetween: 42,
+    //     loop: true,
+    //   }
+    // }
+  });
+});
+
+// вопрос-ответ
+$(".faq__wrapper--q").on('click', function(){
+    $(this).toggleClass('active');
+    var data = $(this).data('id');
+    $(this).find($('.faq__wrapper--a[data-id='+data+']').slideToggle());
 });

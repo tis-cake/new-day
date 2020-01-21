@@ -73,13 +73,72 @@
   }
 }
 
-.banner-program__list--intens {
+.banner-program__consultation-wrapper {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 27.81vw;
+  height: @d55px;
+  margin-top: @d49px;
+
+  border-radius: 45px;
+}
+
+.banner-program__consultation-phone {
+  font-size: @d30px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+
+  color: #2f2f2f;
+  background-color: transparent;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+}
+
+.banner-program__consultation-btn {
+  max-width: none;
+  max-height: none;
+  width: 12.60vw;
+  height: 100%;
+
+  font-size: @d18px;
+
+  border: none;
+  border-radius: 45px;
+}
+
+.banner-program--intens {
   .banner-program__item:nth-child(2) {
     padding-right: @d30px;
   }
-
   .banner-program__item:last-child {
     width: 15.625vw;
+  }
+}
+
+.banner-program--complex {
+  margin-bottom: 9.58vw;
+}
+
+.banner-program--transit {
+  height: 26.04vw;
+  margin-bottom: 10.175vw;
+  .banner-program__img-wrapper {
+    padding-top: @d40px;
+  }
+  .banner-program__text-wrapper {
+    padding-top: @d83px;
+    padding-left: @d49px;
+  }
+  .intro__title {
+    width: auto;
+    margin-bottom: @d55px;
+  }
+  .intro__description {
+    width: 28.125vw;
   }
 }
 
@@ -109,11 +168,9 @@
     width: 190px;
     padding-left: 36px;
     font-size: 19px;
-
     &:nth-child(2n) {
       width: 270px;
     }
-
     &::before {
       top: 14px;
 
@@ -127,14 +184,54 @@
     }
   }
 
-  .banner-program__list--intens {
+  .banner-program__consultation-wrapper {
+    width: 534px;
+    height: 55px;
+    margin-top: 49px;
+  }
+
+  .banner-program__consultation-phone {
+    font-size: 30px;
+  }
+
+  .banner-program__consultation-btn {
+    max-width: none;
+    max-height: none;
+    width: 242px;
+    height: 100%;
+    font-size: 18px;
+  }
+
+  .banner-program--intens {
     .banner-program__item:nth-child(2) {
       padding-right: 30px;
     }
-
     .banner-program__item:last-child {
       width: 300px;
     }
   }
 
+  .banner-program--complex {
+    margin-bottom: 184px;
+  }
+
+  .banner-program--transit {
+    height: 500px;
+    margin-bottom: 195px;
+
+    .banner-program__img-wrapper {
+      padding-top: 40px;
+    }
+    .banner-program__text-wrapper {
+      padding-top: 83px;
+      padding-left: 49px;
+    }
+    .intro__title {
+      width: auto;
+      margin-bottom: 55px;
+    }
+    .intro__description {
+      width: 540px;
+    }
+  }
 }

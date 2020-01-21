@@ -212,7 +212,6 @@
       background-image: url('../img/program/share.svg');
     }
   }
-
   .program__title {
     margin-bottom: @d31px;
     padding-right: @d20px;
@@ -221,7 +220,6 @@
     line-height: @d30px;
     letter-spacing: 0.15px;
   }
-
   .program__description {
     width: 13.541vw;
 
@@ -243,7 +241,6 @@
     font-size: @d19px;
     line-height: @d29px;
   }
-
   .program__item:first-child {
     .program__title {
         padding-right: @d80px;
@@ -252,6 +249,58 @@
  .program__title {
     padding-right: @d30px;
  }
+}
+
+.program--detox-treatment {
+  margin-bottom: 9.973vw;
+  .intro--program-detox {
+    margin-bottom: @d77px;
+  }
+  .intro__description {
+    font-size: @d19px;
+  }
+  .program__list {
+    counter-reset: programItem;
+    max-height: none;
+    height: 34.89vw;
+  }
+  .program__item {
+    max-height: none;
+    width: 27.08vw;
+    height: 9.687vw;
+    margin-left: @d53px;
+    padding-top: @d39px;
+    padding-left: @d98px;
+    &::before {
+      content: none;
+    }
+  }
+  .program__item__icon {
+    position: absolute;
+    top: @d88px;
+    left: -@d65px;
+
+    width: @d100px;
+    height: @d100px;
+
+    &::before {
+      counter-increment: programItem;
+      content: counter(programItem, decimal-leading-zero);
+
+      position: absolute;
+
+      font-family: @gotham;
+      font-size: @d40px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+
+      color: #ffffff;
+    }
+  }
+  .program__title {
+    margin-bottom: @d10px;
+    line-height: @d30px;
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -333,8 +382,12 @@
   }
 
   .program__item__icon {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .program__title {
@@ -405,5 +458,41 @@
    .program__title {
       padding-right: 30px;
    }
+  }
+
+  .program--detox-treatment {
+    margin-bottom: 191px;
+    .intro--program-detox {
+      margin-bottom: 77px;
+    }
+    .intro__description {
+      font-size: 19px;
+    }
+    .program__list {
+      max-height: none;
+      height: 670px;
+    }
+    .program__item {
+      max-height: none;
+      width: 520px;
+      height: 186px;
+      margin-left: 53px;
+      padding-top: 39px;
+      padding-left: 98px;
+    }
+    .program__item__icon {
+      top: 88px;
+      left: -65px;
+
+      width: 100px;
+      height: 100px;
+      &::before {
+        font-size: 40px;
+      }
+    }
+    .program__title {
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
   }
 }

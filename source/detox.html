@@ -13,8 +13,17 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- preloader -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/preloader-init.js"></script>
+
   </head>
   <body>
+
+    <div id="preloader">
+      <div class="dws-progress-bar"></div>
+    </div>
 
     <header class="header">
       <div class="header__mobile">
@@ -362,7 +371,6 @@
 
       <div class="container detox-main-wrapper">
 
-
         <div class="detox-column-wrapper">
 
           <article class="service-item">
@@ -614,7 +622,7 @@
             </div>
           </section>
 
-          <section class="banner-program">
+          <section class="banner-program banner-program--intens">
             <div class="banner-program__wrapper">
               <div class="banner-program__img-wrapper">
                 <img class="banner-program__img" src="img/banner-program/detox-banner1.jpg" alt="">
@@ -626,7 +634,7 @@
                   <p class="intro__description">расчитана от 1 до 3 дней</p>
                 </div>
 
-                <ul class="banner-program__list banner-program__list--intens">
+                <ul class="banner-program__list">
                   <li class="banner-program__item">персональный врач нарколог</li>
                   <li class="banner-program__item">индивидуальная палата в VIP-отделении</li>
                   <li class="banner-program__item">форсированная детоксикация</li>
@@ -687,9 +695,517 @@
             </ul>
           </section>
 
+          <section class="contraindications">
+            <div class="intro intro--contraindications">
+              <h2 class="intro__title">Противопоказания к лечению</h2>
+              <p class="intro__description">Существуют ситуации, когда очистку организма от наркотиков приходится отложить до устранения всех препятствующих ее проведению причин. Противопоказаниям к детоксикации могут стать следующие факторы:</p>
+            </div>
 
+            <ul class="contraindications__list">
+              <li class="contraindications__item">
+                <span class="contraindications__text">Серьезные нарушения психики</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">Маркеры HAV (гепатит А)</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">Маркеры HbsAg (гепатит B)</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">RW (сифилис)</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">Маркеры HSV (гепатит C)</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">СПИД</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">Склонность к эпилептическим припадкам</span>
+              </li>
+              <li class="contraindications__item">
+                <span class="contraindications__text">Патологии сердечно-сосудистой системы</span>
+              </li>
+            </ul>
+          </section>
 
+          <section class="banner-program banner-program--complex">
+            <div class="banner-program__wrapper">
+              <div class="banner-program__img-wrapper">
+                <img class="banner-program__img" src="img/banner-program/detox-banner2.jpg" alt="">
+              </div>
 
+              <div class="banner-program__text-wrapper">
+                <div class="intro intro--banner-program">
+                  <h2 class="intro__title"><span class="intro--green">Бесплатно</span> полный комплекс диагностики</h2>
+                  <p class="intro__description">при прохождении курса от 14 дней</p>
+                </div>
+
+                <ul class="banner-program__list">
+                  <li class="banner-program__item">общий анализ крови пациента</li>
+                  <li class="banner-program__item">анализы на маркеры различных заболеваний</li>
+                  <li class="banner-program__item">психологическое тестирование</li>
+                  <li class="banner-program__item">анализы на венерологические заболевания</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="about about--detox about-two">
+            <div class="intro intro--detox">
+              <h2 class="intro__title">Значимость этих проблем</h2>
+              <p class="intro__description">Детоксикация — это обязательная процедура, направленная на выведение из организма пациента токсических продуктов.</p>
+
+              <p class="intro__description">Как правило, лечение назначается при острой интоксикациии, абстинентном синдроме (синдроме «отмены», характеризующемся болезненной симптоматикой после отказа от наркотиков), а также перед прохождением курса терапии. Детоксикация при наркомании позволяет нормализовать общее состояние пациента, способствует избавлению от физической зависимости.</p>
+
+              <p class="intro__description">Человеческий организм – это совершенная система, способная самостоятельно перерабатывать и выводить большинство поступающих внутрь токсинов. Однако при воздействии различных внешних факторов, работа этого механизма со временем ухудшается. Если человек регулярно отравляет свой организм наркотиками и алкоголем, он намного быстрее перестает справляться с поступающими ядами. Это приводит к тому, что токсические вещества присутствуют в организме зависимого постоянно. Человек начинает жаловаться на плохое самочувствие, страдает от хронических заболеваний, в особо тяжелых случаях возможен летальный исход.</p>
+            </div>
+          </section>
+
+          <section class="program program--detox-treatment">
+            <div class="intro intro--program-detox">
+              <h2 class="intro__title">Этапы лечения</h2>
+              <p class="intro__description">Специалисты составляют план лечения индивидуально для каждого обратившегося, учитывая его физиологические особенности, физические данные, психологическую составляющую</p>
+            </div>
+            <ul class="program__list">
+              <li class="program__item">
+                <div class="program__item__icon"></div>
+                <h3 class="program__title">Заявка</h3>
+                <p class="program__description">Подача заявки через сайт, по телефону или социальные сети, все звонки и разговоры строго конфиденциальны</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon"></div>
+                <h3 class="program__title">Транспортировка</h3>
+                <p class="program__description">Сопровождение врача на автомобиле без медицинской символики и в сопровождении куратора программы</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon"></div>
+                <h3 class="program__title">Детоксикация</h3>
+                <p class="program__description">Обязательная процедура, направленная на выведение из организма пациента токсических продуктов</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon"></div>
+                <h3 class="program__title">Реабилитация</h3>
+                <p class="program__description">Лечение направлено на восстановление личности, усвоение новых привычек, возвращение к жизни без зависисмости</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon"></div>
+                <h3 class="program__title">Ресоциализация</h3>
+                <p class="program__description">Работа с психологами и психиаторами, подготовка к возвращению в трудовой коллектив</p>
+              </li>
+              <li class="program__item">
+                <div class="program__item__icon"></div>
+                <h3 class="program__title">Амбулаторное лечение</h3>
+                <p class="program__description">Лечение необходимо для закрепления полученных положительных результатов</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="banner-program banner-program--transit">
+            <div class="banner-program__wrapper">
+              <div class="banner-program__img-wrapper">
+                <img class="banner-program__img" src="img/banner-program/detox-banner3.png" alt="">
+              </div>
+
+              <div class="banner-program__text-wrapper">
+                <div class="intro intro--banner-program">
+                  <h2 class="intro__title">Бесплатная транспортировка пациента в стационар</h2>
+                  <p class="intro__description">Сопровождение врача возможно на легковом автомобиле без медицинской символики и в сопровождении консультанта-куратора программы</p>
+                </div>
+
+                <div class="banner-program__consultation-wrapper">
+                  <div class="banner-program__consultation-phone">+7 (900) 456-23-45</div>
+                  <button class="banner-program__consultation-btn btn">Повзоните мне</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="master-swiper master-swiper--detox">
+
+            <div class="intro intro--master-swiper">
+              <h2 class="intro__title">Наши специалисты</h2>
+              <p class="intro__description">Лечением пациентов занимается команда специалистов. Благодаря командному подходу к лечению мы можем предложить нашим пациентам наиболее полноценный курс реабилитации</p>
+            </div>
+
+            <div class="master-swiper__main-wrapper">
+              <div class="master-swiper__little-swiper">
+                <div class="swiper-container" id="little-master-swiper">
+                  <div class="swiper-scrollbar"></div>
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__little-item">
+                        <div class="master-swiper__little-img-wrapper">
+                          <img class="master-swiper__little-img" src="img/master-swiper/master1-m.jpg" alt="">
+                        </div>
+                        <div class="master-swiper__little-text-wrapper">
+                          <h3 class="master-swiper__little-title">Петр Васильев</h3>
+                          <p class="master-swiper__little-description">Врач-нарколог</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__little-item">
+                        <div class="master-swiper__little-img-wrapper">
+                          <img class="master-swiper__little-img" src="img/master-swiper/master2-m.jpg" alt="">
+                        </div>
+                        <div class="master-swiper__little-text-wrapper">
+                          <h3 class="master-swiper__little-title">Дарья Ветрова</h3>
+                          <p class="master-swiper__little-description">Врач-нарколог</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__little-item">
+                        <div class="master-swiper__little-img-wrapper">
+                          <img class="master-swiper__little-img" src="img/master-swiper/master3-m.jpg" alt="">
+                        </div>
+                        <div class="master-swiper__little-text-wrapper">
+                          <h3 class="master-swiper__little-title">Эдуард Воробьев</h3>
+                          <p class="master-swiper__little-description">Врач-психотерапевт</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__little-item">
+                        <div class="master-swiper__little-img-wrapper">
+                          <img class="master-swiper__little-img" src="img/master-swiper/master4-m.png" alt="">
+                        </div>
+                        <div class="master-swiper__little-text-wrapper">
+                        <h3 class="master-swiper__little-title">Хью Лори</h3>
+                          <p class="master-swiper__little-description">В завязке</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__little-item">
+                        <div class="master-swiper__little-img-wrapper">
+                          <img class="master-swiper__little-img" src="img/master-swiper/master5-m.jpg" alt="">
+                        </div>
+                        <div class="master-swiper__little-text-wrapper">
+                        <h3 class="master-swiper__little-title">Dr. Acula</h3>
+                          <p class="master-swiper__little-description">В завязке</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="master-swiper__main-swiper" >
+                <div class="swiper-container" id="main-master-swiper">
+
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__main-content-wrapper">
+                        <div class="master-swiper__main-img-wrapper">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master2-b.png" alt="">
+                        </div>
+                        <div class="master-swiper__main-text-wrapper">
+                          <h3 class="master-swiper__main-name">Петр Васильев</h3>
+                          <p class="master-swiper__main-position">Врач-нарколог</p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-experience">Стаж работы</p>
+                          <div class="master-swiper__main-experience-current">2 год</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__main-content-wrapper">
+                        <div class="master-swiper__main-img-wrapper">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master2-b.png" alt="">
+                        </div>
+                        <div class="master-swiper__main-text-wrapper">
+                          <h3 class="master-swiper__main-name">Дарья Ветрова</h3>
+                          <p class="master-swiper__main-position">Врач-нарколог</p>
+                          <p class="master-swiper__main-description">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых</p>
+                          <p class="master-swiper__main-description">Автор 20 авторских статей на тему наркологии.</p>
+                          <p class="master-swiper__main-experience">Стаж работы</p>
+                          <div class="master-swiper__main-experience-current">2 год</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__main-content-wrapper">
+                        <div class="master-swiper__main-img-wrapper">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master4-m.png" alt="">
+                        </div>
+                        <div class="master-swiper__main-text-wrapper">
+                          <h3 class="master-swiper__main-name">Эдуард Воробьев</h3>
+                          <p class="master-swiper__main-position">Врач-психотерапевт</p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-experience">Стаж работы</p>
+                          <div class="master-swiper__main-experience-current">2 год</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__main-content-wrapper">
+                        <div class="master-swiper__main-img-wrapper">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master4-m.png" alt="">
+                        </div>
+                        <div class="master-swiper__main-text-wrapper">
+                          <h3 class="master-swiper__main-name">Хью Лори</h3>
+                          <p class="master-swiper__main-position">В завязке</p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-experience">Стаж работы</p>
+                          <div class="master-swiper__main-experience-current">2 год</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="master-swiper__main-content-wrapper">
+                        <div class="master-swiper__main-img-wrapper">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master4-m.png" alt="">
+                        </div>
+                        <div class="master-swiper__main-text-wrapper">
+                          <h3 class="master-swiper__main-name">Dr. Acula</h3>
+                          <p class="master-swiper__main-position">В завязке</p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-description"></p>
+                          <p class="master-swiper__main-experience">Стаж работы</p>
+                          <div class="master-swiper__main-experience-current">2 год</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+
+          <section class="rehab-swiper rehab-swiper--clinics">
+            <div class="wrapper">
+              <div class="intro intro--rehab-swiper">
+                <h2 class="intro__title">Наши клиники</h2>
+                <p class="intro__description">Современные методики реабилитации,  квалифицированный персонал, достойные условия проживания и питание,  отвественность за обеспечение безопасности</p>
+              </div>
+              <a class="rehab-swiper__link-pages" href="clinics.html">Все центры</a>
+            </div>
+            <div class="swiper-container" id="clinic-swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <a class="rehab-swiper__slide" href="clinic-page.html">
+                    <div class="rehab-swiper__img-wrapper">
+                      <img class="rehab-swiper__img" src="img/about/about-top.jpg" alt="Реабилитационный центр в г." />
+                    </div>
+                    <div class="rehab-swiper__text-wrapper">
+                      <p class="rehab-swiper__city">г. Москва</p>
+                      <p class="rehab-swiper__street">ул. Бориса Галушкина, 17</p>
+                      <p class="rehab-swiper__place-description">Срок лечения от 3 до 14 дней</p>
+                      <p class="rehab-swiper__price">от 3000 &#8381; / день</p>
+                      <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a class="rehab-swiper__slide" href="clinic-page.html">
+                    <div class="rehab-swiper__img-wrapper">
+                      <img class="rehab-swiper__img" src="img/rehab/клиника.jpg" alt="Реабилитационный центр в г." />
+                    </div>
+                    <div class="rehab-swiper__text-wrapper">
+                      <p class="rehab-swiper__city">г. Новосибирск</p>
+                      <p class="rehab-swiper__street">ул. Набережная, 34</p>
+                      <p class="rehab-swiper__place-description">Срок лечения от 3 до 14 дней</p>
+                      <p class="rehab-swiper__price">от 3500 &#8381; / день</p>
+                      <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a class="rehab-swiper__slide" href="clinic-page.html">
+                    <div class="rehab-swiper__img-wrapper">
+                      <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г." />
+                    </div>
+                    <div class="rehab-swiper__text-wrapper">
+                      <p class="rehab-swiper__city">г. Санкт-Петербург</p>
+                      <p class="rehab-swiper__street">Рижский проспект, 90</p>
+                      <p class="rehab-swiper__place-description">Срок лечения от 3 до 14 дней</p>
+                      <p class="rehab-swiper__price">от 3000 &#8381; / день</p>
+                      <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+
+          <section class="about about--detox">
+            <div class="intro intro--detox">
+              <h2 class="intro__title">Значимость этих проблем</h2>
+              <p class="intro__description">Детоксикация — это обязательная процедура, направленная на выведение из организма пациента токсических продуктов.</p>
+
+              <p class="intro__description">Как правило, лечение назначается при острой интоксикациии, абстинентном синдроме (синдроме «отмены», характеризующемся болезненной симптоматикой после отказа от наркотиков), а также перед прохождением курса терапии. Детоксикация при наркомании позволяет нормализовать общее состояние пациента, способствует избавлению от физической зависимости.</p>
+
+              <p class="intro__description">Человеческий организм – это совершенная система, способная самостоятельно перерабатывать и выводить большинство поступающих внутрь токсинов. Однако при воздействии различных внешних факторов, работа этого механизма со временем ухудшается. Если человек регулярно отравляет свой организм наркотиками и алкоголем, он намного быстрее перестает справляться с поступающими ядами. Это приводит к тому, что токсические вещества присутствуют в организме зависимого постоянно. Человек начинает жаловаться на плохое самочувствие, страдает от хронических заболеваний, в особо тяжелых случаях возможен летальный исход.</p>
+            </div>
+          </section>
+
+          <section class="reviews">
+            <div class="intro intro--reviews">
+              <h2 class="intro__title">Мотивирующие истории</h2>
+              <div class="intro__link-wrapper">
+                <p class="intro__description">Отзывы наших пациентов, оставленные ими непосредственно перед выпиской. Здесь они делятся своими надеждами и опасениями, рассказывают о впечатлениях, полученных в процессе сотрудничества</p>
+                <a class="intro__link" href="reviews.html">Все отзывы</a>
+              </div>
+            </div>
+
+            <div class="reviews__blockquote-wrapper">
+              <blockquote class="reviews__blockquote">
+                <div class="reviews__text-block">
+                  <time class="reviews__datetime" datetime="2019-04-16">16 апр</time>
+                  <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации</p>
+                </div>
+
+                <div class="reviews__author-block">
+                  <div class="reviews__author-photo-wrapper">
+                    <img class="reviews__author-img" src="img/reviews/eminem.jpg" alt="Сергей Абрамов, бывший наркоман">
+                  </div>
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author-name">Сергей Абрамов</cite>
+                    <p class="reviews__author-background">бывший наркоман</p>
+                  </div>
+                </div>
+              </blockquote>
+
+              <blockquote class="reviews__blockquote">
+                <div class="reviews__text-block">
+                  <time class="reviews__datetime" datetime="2019-12-20">20 дек</time>
+                  <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации</p>
+                </div>
+
+                <div class="reviews__author-block">
+                  <div class="reviews__author-photo-wrapper">
+                    <img class="reviews__author-img" src="img/reviews/person-two.png" alt="Ксения Морозова, мать зависимого">
+                  </div>
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author-name">Ксения Морозова</cite>
+                    <p class="reviews__author-background">мать зависимого</p>
+                  </div>
+                </div>
+              </blockquote>
+
+              <blockquote class="reviews__blockquote">
+                <div class="reviews__text-block">
+                  <time class="reviews__datetime" datetime="2020-01-05">5 янв</time>
+                  <p class="reviews__blockquote-text">Обращение наркомана с тридцатилетним стажем к зависимым. Сергей употреблял наркотики больше 30 лет, но благодаря программе реабилитации</p>
+                </div>
+
+                <div class="reviews__author-block">
+                  <div class="reviews__author-photo-wrapper">
+                    <img class="reviews__author-img" src="img/reviews/person-three.png" alt="Сергей Абрамов, бывший алкоголик">
+                  </div>
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author-name">Сергей Абрамов</cite>
+                    <p class="reviews__author-background">бывший алкоголик</p>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+          </section>
+
+          <section class="warning warning--detox">
+            <div class="warning__wrapper">
+              <div class="warning__img-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/warning/warn1.webp">
+                  <img class="warning__img" src="img/warning/warn1.jpg" alt="">
+                </picture>
+              </div>
+
+              <div class="warning__form-wrapper">
+                <div class="intro intro--warning">
+                  <h2 class="intro__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
+                  <p class="intro__description">Наркотическая зависимость - опасное заболевание, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
+                </div>
+
+                <form class="warning__form" action="/echo" method="post">
+                  <input id="phone" class="warning__input" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+                  <button class="warning__btn btn">Позвоните мне</button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <section class="faq">
+            <div class="intro intro--faq">
+              <h2 class="intro__title">Ответы на часто задаваемые вопросы</h2>
+              <div class="intro__link-wrapper">
+                <p class="intro__description">Более подробно изучить волнующий вопрос Вы можете в нашем собрании публикаций, посвященному проблемам наркомании и алкоголизма </p>
+              </div>
+            </div>
+
+            <div class="faq__wrapper faq__wrapper--q" data-id="20">
+              <h3 class="faq__question">Сколько нужно сделать шагов от вызова нарколога до трезвой полноценной жизни?</h3>
+            </div>
+            <div class="faq__wrapper faq__wrapper--a" data-id="20">
+              <p class="faq__answer">Почти любое патологическое проявление в организме человека сопровождается болевыми ощущениями различной интенсивности. Для прекращения страдания и повышения качества жизни пациента применяются анальгетические средства. Часть из них воздействуют на опиоидные рецепторы и обладают значительной силой, поэтому их используют у самых тяжелых пациентов и при неэффективности других средств для обезболивания. Так действует любой наркотический анальгетик, но он же может вызывать привыкание.</p>
+            </div>
+
+            <div class="faq__wrapper faq__wrapper--q" data-id="21">
+              <h3 class="faq__question">Сколько нужно сделать шагов от вызова нарколога до трезвой полноценной жизни?</h3>
+            </div>
+            <div class="faq__wrapper faq__wrapper--a" data-id="21">
+              <p class="faq__answer">Почти любое патологическое проявление в организме человека сопровождается болевыми ощущениями различной интенсивности. Для прекращения страдания и повышения качества жизни пациента применяются анальгетические средства. Часть из них воздействуют на опиоидные рецепторы и обладают значительной силой, поэтому их используют у самых тяжелых пациентов и при неэффективности других средств для обезболивания. Так действует любой наркотический анальгетик, но он же может вызывать привыкание.</p>
+            </div>
+
+            <div class="faq__wrapper faq__wrapper--q" data-id="22">
+              <h3 class="faq__question">Сколько нужно сделать шагов от вызова нарколога до трезвой полноценной жизни?</h3>
+            </div>
+            <div class="faq__wrapper faq__wrapper--a" data-id="22">
+              <p class="faq__answer">Почти любое патологическое проявление в организме человека сопровождается болевыми ощущениями различной интенсивности. Для прекращения страдания и повышения качества жизни пациента применяются анальгетические средства. Часть из них воздействуют на опиоидные рецепторы и обладают значительной силой, поэтому их используют у самых тяжелых пациентов и при неэффективности других средств для обезболивания. Так действует любой наркотический анальгетик, но он же может вызывать привыкание.</p>
+            </div>
+          </section>
+
+          <section class="get-help get-help--green">
+            <div class="get-help__header">
+              <div class="get-help__icon"></div>
+              <div class="get-help__header-text">
+                <h3 class="get-help__header-title">Бесплатная горячая линия</h3>
+                <p class="get-help__header-phone">8 (800) 546 - 54- 94</p>
+              </div>
+            </div>
+
+            <div class="intro intro--get-help">
+              <h2 class="intro__title">Помогите близкому справиться с зависимостью! </h2>
+              <p class="intro__description">Каждый день может стать последним. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
+            </div>
+
+            <div class="get-help__consultation-wrapper">
+              <button class="get-help__consultation-btn btn">Выбрать клинику</button>
+            </div>
+          </section>
+
+          <section class="about about--detox">
+            <div class="intro intro--detox">
+              <h2 class="intro__title">Значимость этих проблем</h2>
+              <p class="intro__description">Детоксикация — это обязательная процедура, направленная на выведение из организма пациента токсических продуктов.</p>
+
+              <p class="intro__description">Как правило, лечение назначается при острой интоксикациии, абстинентном синдроме (синдроме «отмены», характеризующемся болезненной симптоматикой после отказа от наркотиков), а также перед прохождением курса терапии. Детоксикация при наркомании позволяет нормализовать общее состояние пациента, способствует избавлению от физической зависимости.</p>
+
+              <p class="intro__description">Человеческий организм – это совершенная система, способная самостоятельно перерабатывать и выводить большинство поступающих внутрь токсинов. Однако при воздействии различных внешних факторов, работа этого механизма со временем ухудшается. Если человек регулярно отравляет свой организм наркотиками и алкоголем, он намного быстрее перестает справляться с поступающими ядами. Это приводит к тому, что токсические вещества присутствуют в организме зависимого постоянно. Человек начинает жаловаться на плохое самочувствие, страдает от хронических заболеваний, в особо тяжелых случаях возможен летальный исход.</p>
+            </div>
+          </section>
         </div>
 
 
@@ -822,7 +1338,7 @@
       </div>
     </footer>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <!-- <script src="js/jquery.inputmask.min.js"></script> -->

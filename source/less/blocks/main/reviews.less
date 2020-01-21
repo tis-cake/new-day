@@ -146,6 +146,26 @@
   letter-spacing: 0.046vw;
 }
 
+.detox-page {
+  .reviews__blockquote {
+    margin-left: @d15px;
+  }
+  .reviews__text-block {
+    width: 19.375vw;
+    margin-bottom: @d64px;
+    padding-top: @d46px;
+    padding-left: @d74px;
+  }
+  .reviews__blockquote-text {
+    width: 14.58vw;
+    padding-top: @d20px;
+    padding-bottom: @d20px;
+  }
+  .reviews__author-wrapper {
+    padding-left: @d18px;
+  }
+}
+
 @media  (max-width: @mobile-width) {
   .reviews {
     margin-bottom: 18.352vw;
@@ -212,7 +232,6 @@
     width: 46.13vw;
     margin-right: @m62px;
     padding-top: 2.594vw;
-    // padding-bottom: 2.34375vw;
 
     font-size: @m27px;
     line-height: @m33px;
@@ -238,7 +257,6 @@
     font-size: @m27px;
     letter-spacing: 0.14px;
   }
-
 }
 
 @media (min-width: @max-desktop-width) {
@@ -305,5 +323,25 @@
   .reviews__author-background {
     font-size: 18px;
     letter-spacing: 0.9px;
+  }
+
+  .detox-page {
+    .reviews__blockquote {
+      margin-left: 15px;
+    }
+    .reviews__text-block {
+      width: 372px;
+      margin-bottom: 64px;
+      padding-top: 46px;
+      padding-left: 74px;
+    }
+    .reviews__blockquote-text {
+      width: 280px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .reviews__author-wrapper {
+      padding-left: 18px;
+    }
   }
 }

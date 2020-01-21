@@ -33,6 +33,31 @@
   font-weight: 300;
   font-style: normal;
 }
+.dws-progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.progress-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-weight: bold;
+  color: #14b250;
+}
+#preloader {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -988,6 +1013,24 @@ input[type="radio"].visually-hidden {
   margin-bottom: 1.4062vw;
   line-height: 2.4479vw;
 }
+.intro--banner-program .intro--green {
+  color: #1ab455;
+}
+.intro--contraindications {
+  width: 44.79vw;
+  margin-bottom: 3.6979vw;
+}
+.intro--contraindications .intro__title {
+  margin-bottom: 0.8854vw;
+}
+.intro--master-swiper {
+  width: 49.47vw;
+  margin-bottom: 3.6458vw;
+}
+.intro--faq {
+  width: 40.1vw;
+  margin-bottom: 3.6458vw;
+}
 .intro__title {
   margin-bottom: 2.187vw;
   font-size: 2.34375vw;
@@ -1267,6 +1310,21 @@ input[type="radio"].visually-hidden {
     width: 420px;
     margin-bottom: 27px;
     line-height: 47px;
+  }
+  .intro--contraindications {
+    width: 860px;
+    margin-bottom: 71px;
+  }
+  .intro--contraindications .intro__title {
+    margin-bottom: 17px;
+  }
+  .intro--master-swiper {
+    width: 950px;
+    margin-bottom: 70px;
+  }
+  .intro--faq {
+    width: 770px;
+    margin-bottom: 70px;
   }
 }
 .main-info {
@@ -1737,16 +1795,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.11px;
   border-radius: 37px;
 }
-.get-help--detox {
-  margin-bottom: 8.05vw;
-}
-.get-help--consultation {
-  box-shadow: none;
-  background-color: transparent;
-}
-.get-help--consultation .intro__title {
-  margin-bottom: 0.625vw;
-}
 .get-help__consultation-wrapper {
   box-sizing: border-box;
   position: relative;
@@ -1779,6 +1827,108 @@ input[type="radio"].visually-hidden {
   font-size: 0.9375vw;
   border: none;
   border-radius: 45px;
+}
+.get-help__header {
+  box-sizing: border-box;
+  position: relative;
+  height: 12.08vw;
+  padding-top: 4.0104vw;
+  background-color: transparent;
+}
+.get-help__header::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12.6vw;
+  background-image: url('../img/bg-green-big.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 19px 19px 0 0;
+}
+.get-help__icon {
+  position: absolute;
+  top: -2.3437vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.6875vw;
+  height: 4.6875vw;
+  background-color: #fff;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+  border-radius: 19px;
+}
+.get-help__icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.3958vw;
+  height: 2.3958vw;
+  background-image: url('../img/svg/phone-call-green.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.get-help__header-text {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 14.58vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.get-help__header-title {
+  margin-bottom: 0.7291vw;
+  font-size: 0.7291vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.get-help__header-phone {
+  font-size: 1.6666vw;
+  font-weight: 700;
+  color: #ffffff;
+}
+.get-help--detox {
+  margin-bottom: 8.05vw;
+}
+.get-help--consultation {
+  box-shadow: none;
+  background-color: transparent;
+}
+.get-help--consultation .intro__title {
+  margin-bottom: 0.625vw;
+}
+.get-help--green {
+  margin-bottom: 10.31vw;
+  padding-top: 0;
+  padding-bottom: 2.1875vw;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
+  border-radius: 19px;
+}
+.get-help--green .intro--get-help {
+  width: 34.8vw;
+}
+.get-help--green .intro__title {
+  margin-bottom: 1.4062vw;
+  line-height: 2.2395vw;
+  letter-spacing: 0.19px;
+}
+.get-help--green .get-help__consultation-wrapper {
+  justify-content: center;
+  margin-top: 1.5625vw;
+  padding-left: 0;
+  box-shadow: none;
+}
+.get-help--green .get-help__consultation-btn {
+  width: 14.63vw;
+  margin-top: 0px;
+  font-size: 0.8333vw;
 }
 @media (max-width: 755px) {
   .get-help {
@@ -1834,12 +1984,6 @@ input[type="radio"].visually-hidden {
   .get-help__link {
     font-size: 18px;
   }
-  .get-help--detox {
-    margin-bottom: 154px;
-  }
-  .get-help--consultation .intro__title {
-    margin-bottom: 12px;
-  }
   .get-help__consultation-wrapper {
     width: 610px;
     height: 55px;
@@ -1853,6 +1997,57 @@ input[type="radio"].visually-hidden {
   .get-help__consultation-btn {
     width: 262px;
     font-size: 18px;
+  }
+  .get-help__header {
+    height: 232px;
+    padding-top: 77px;
+  }
+  .get-help__header::before {
+    height: 242px;
+  }
+  .get-help__icon {
+    top: -45px;
+    width: 90px;
+    height: 90px;
+  }
+  .get-help__icon::before {
+    width: 46px;
+    height: 46px;
+  }
+  .get-help__header-text {
+    width: 280px;
+  }
+  .get-help__header-title {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+  .get-help__header-phone {
+    font-size: 32px;
+  }
+  .get-help--detox {
+    margin-bottom: 154px;
+  }
+  .get-help--consultation .intro__title {
+    margin-bottom: 12px;
+  }
+  .get-help--green {
+    margin-bottom: 198px;
+    padding-top: 0;
+    padding-bottom: 42px;
+  }
+  .get-help--green .intro--get-help {
+    width: 670px;
+  }
+  .get-help--green .intro__title {
+    margin-bottom: 27px;
+    line-height: 43px;
+  }
+  .get-help--green .get-help__consultation-wrapper {
+    margin-top: 30px;
+  }
+  .get-help--green .get-help__consultation-btn {
+    width: 281px;
+    font-size: 16px;
   }
 }
 .arrow-container {
@@ -1917,18 +2112,6 @@ input[type="radio"].visually-hidden {
   padding-right: 2.08333vw;
   padding-bottom: 2.239583vw;
 }
-.rehab-swiper--clinics {
-  margin-bottom: 9.931vw;
-}
-.rehab-swiper--clinics .rehab-swiper__text-wrapper {
-  padding-top: 2.3vw;
-}
-.rehab-swiper--clinics .rehab-swiper__street {
-  padding-bottom: 1.834vw;
-}
-.rehab-swiper--clinics .rehab-swiper__place-description {
-  padding-bottom: 1.385vw;
-}
 .rehab-swiper__city {
   padding-bottom: 0.2083333vw;
   font-size: 1.40625vw;
@@ -1971,6 +2154,43 @@ input[type="radio"].visually-hidden {
 .rehab-swiper__link-page img {
   width: 100%;
   height: 100%;
+}
+.detox-page .rehab-swiper {
+  margin-bottom: 10.72vw;
+}
+.detox-page .swiper-container {
+  box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
+}
+.detox-page .rehab-swiper__img-wrapper {
+  height: 14.479vw;
+}
+.detox-page .rehab-swiper__text-wrapper {
+  padding-top: 1.5104vw;
+  padding-left: 1.7187vw;
+  padding-right: 1.7187vw;
+  padding-bottom: 1.1979vw;
+}
+.detox-page .rehab-swiper__city {
+  font-size: 1.0416vw;
+}
+.detox-page .rehab-swiper__street {
+  margin-bottom: 0.10416vw;
+  font-size: 1.1458vw;
+}
+.detox-page .rehab-swiper__place-description {
+  margin-bottom: 0.46875vw;
+  font-size: 0.7291vw;
+  line-height: normal;
+}
+.detox-page .rehab-swiper__price {
+  font-size: 0.8854vw;
+  line-height: normal;
+}
+.detox-page .rehab-swiper__link-page {
+  bottom: 1.25vw;
+  right: 2.3437vw;
+  width: 1.302vw;
+  height: 1.302vw;
 }
 @media (max-width: 755px) {
   .arrow-container {
@@ -2081,17 +2301,39 @@ input[type="radio"].visually-hidden {
     bottom: 50px;
     right: 72px;
   }
-  .rehab-swiper--clinics {
-    margin-bottom: 191px;
+  .detox-page .rehab-swiper {
+    margin-bottom: 206px;
   }
-  .rehab-swiper--clinics .rehab-swiper__text-wrapper {
-    padding-top: 34px;
+  .detox-page .rehab-swiper__img-wrapper {
+    height: 278px;
   }
-  .rehab-swiper--clinics .rehab-swiper__street {
-    padding-bottom: 36px;
+  .detox-page .rehab-swiper__text-wrapper {
+    padding-top: 29px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 23px;
   }
-  .rehab-swiper--clinics .rehab-swiper__place-description {
-    padding-bottom: 26px;
+  .detox-page .rehab-swiper__city {
+    font-size: 20px;
+  }
+  .detox-page .rehab-swiper__street {
+    margin-bottom: 2px;
+    font-size: 22px;
+  }
+  .detox-page .rehab-swiper__place-description {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .detox-page .rehab-swiper__price {
+    font-size: 17px;
+    line-height: normal;
+  }
+  .detox-page .rehab-swiper__link-page {
+    bottom: 24px;
+    right: 45px;
+    width: 25px;
+    height: 25px;
   }
 }
 .program {
@@ -2292,6 +2534,52 @@ input[type="radio"].visually-hidden {
 .program--signs .program__title {
   padding-right: 1.5625vw;
 }
+.program--detox-treatment {
+  margin-bottom: 9.973vw;
+}
+.program--detox-treatment .intro--program-detox {
+  margin-bottom: 4.0104vw;
+}
+.program--detox-treatment .intro__description {
+  font-size: 0.9895vw;
+}
+.program--detox-treatment .program__list {
+  counter-reset: programItem;
+  max-height: none;
+  height: 34.89vw;
+}
+.program--detox-treatment .program__item {
+  max-height: none;
+  width: 27.08vw;
+  height: 9.687vw;
+  margin-left: 2.7604vw;
+  padding-top: 2.0312vw;
+  padding-left: 5.1041vw;
+}
+.program--detox-treatment .program__item::before {
+  content: none;
+}
+.program--detox-treatment .program__item__icon {
+  position: absolute;
+  top: 4.5833vw;
+  left: -3.3854vw;
+  width: 5.208vw;
+  height: 5.208vw;
+}
+.program--detox-treatment .program__item__icon::before {
+  counter-increment: programItem;
+  content: counter(programItem, decimal-leading-zero);
+  position: absolute;
+  font-family: 'GothamPro', 'Arial', sans-serif;
+  font-size: 2.0833vw;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.program--detox-treatment .program__title {
+  margin-bottom: 0.5208vw;
+  line-height: 1.5625vw;
+}
 @media (max-width: 755px) {
   .program {
     margin-bottom: 24.5vw;
@@ -2361,6 +2649,10 @@ input[type="radio"].visually-hidden {
     font-size: 50px;
   }
   .program__item__icon {
+    width: 100px;
+    height: 100px;
+  }
+  .program__item__icon::before {
     width: 50px;
     height: 50px;
   }
@@ -2423,6 +2715,40 @@ input[type="radio"].visually-hidden {
   }
   .program--signs .program__title {
     padding-right: 30px;
+  }
+  .program--detox-treatment {
+    margin-bottom: 191px;
+  }
+  .program--detox-treatment .intro--program-detox {
+    margin-bottom: 77px;
+  }
+  .program--detox-treatment .intro__description {
+    font-size: 19px;
+  }
+  .program--detox-treatment .program__list {
+    max-height: none;
+    height: 670px;
+  }
+  .program--detox-treatment .program__item {
+    max-height: none;
+    width: 520px;
+    height: 186px;
+    margin-left: 53px;
+    padding-top: 39px;
+    padding-left: 98px;
+  }
+  .program--detox-treatment .program__item__icon {
+    top: 88px;
+    left: -65px;
+    width: 100px;
+    height: 100px;
+  }
+  .program--detox-treatment .program__item__icon::before {
+    font-size: 40px;
+  }
+  .program--detox-treatment .program__title {
+    margin-bottom: 10px;
+    line-height: 30px;
   }
 }
 .banners {
@@ -2724,6 +3050,23 @@ input[type="radio"].visually-hidden {
   font-size: 0.9375vw;
   letter-spacing: 0.046vw;
 }
+.detox-page .reviews__blockquote {
+  margin-left: 0.7812vw;
+}
+.detox-page .reviews__text-block {
+  width: 19.375vw;
+  margin-bottom: 3.3333vw;
+  padding-top: 2.3958vw;
+  padding-left: 3.8541vw;
+}
+.detox-page .reviews__blockquote-text {
+  width: 14.58vw;
+  padding-top: 1.0416vw;
+  padding-bottom: 1.0416vw;
+}
+.detox-page .reviews__author-wrapper {
+  padding-left: 0.9375vw;
+}
 @media (max-width: 755px) {
   .reviews {
     margin-bottom: 18.352vw;
@@ -2853,6 +3196,23 @@ input[type="radio"].visually-hidden {
   .reviews__author-background {
     font-size: 18px;
     letter-spacing: 0.9px;
+  }
+  .detox-page .reviews__blockquote {
+    margin-left: 15px;
+  }
+  .detox-page .reviews__text-block {
+    width: 372px;
+    margin-bottom: 64px;
+    padding-top: 46px;
+    padding-left: 74px;
+  }
+  .detox-page .reviews__blockquote-text {
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .detox-page .reviews__author-wrapper {
+    padding-left: 18px;
   }
 }
 .price {
@@ -3018,6 +3378,8 @@ input[type="radio"].visually-hidden {
   border-radius: 15px 0 0 15px;
 }
 .warning__form-wrapper {
+  box-sizing: border-box;
+  width: 44.84vw;
   padding-top: 4.27vw;
   padding-left: 5.833vw;
   padding-bottom: 4.531vw;
@@ -3046,6 +3408,38 @@ input[type="radio"].visually-hidden {
 .warning__btn {
   border: none;
   border-radius: 28px;
+}
+.warning--detox .warning__img-wrapper {
+  max-width: none;
+  width: 28.59vw;
+}
+.warning--detox .warning__form-wrapper {
+  width: 34.37vw;
+  padding-top: 4.5833vw;
+  padding-left: 2.4479vw;
+  padding-bottom: 0;
+}
+.warning--detox .intro--warning {
+  width: 27.6vw;
+}
+.warning--detox .intro__title {
+  margin-bottom: 1.6666vw;
+  line-height: 2.6041vw;
+}
+.warning--detox .warning__form {
+  justify-content: space-between;
+  width: 29.16vw;
+  margin-top: 1.9791vw;
+  margin-bottom: 2.8645vw;
+}
+.warning--detox .warning__input {
+  max-width: none;
+  width: 9.37vw;
+  padding-left: 2.6041vw;
+}
+.warning--detox .warning__btn {
+  max-width: none;
+  width: 12.6vw;
 }
 @media (max-width: 755px) {
   .warning {
@@ -3102,6 +3496,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 195px;
   }
   .warning__form-wrapper {
+    width: 861px;
     padding-top: 82px;
     padding-left: 112px;
     padding-bottom: 87px;
@@ -3111,6 +3506,37 @@ input[type="radio"].visually-hidden {
   }
   .warning__input {
     font-size: 19px;
+  }
+  .warning--detox .warning__img-wrapper {
+    max-width: none;
+    width: 549px;
+  }
+  .warning--detox .warning__form-wrapper {
+    width: 660px;
+    padding-top: 88px;
+    padding-left: 47px;
+    padding-bottom: 0;
+  }
+  .warning--detox .intro--warning {
+    width: 530px;
+  }
+  .warning--detox .intro__title {
+    margin-bottom: 32px;
+    line-height: 50px;
+  }
+  .warning--detox .warning__form {
+    width: 560px;
+    margin-top: 38px;
+    margin-bottom: 55px;
+  }
+  .warning--detox .warning__input {
+    max-width: none;
+    width: 180px;
+    padding-left: 50px;
+  }
+  .warning--detox .warning__btn {
+    max-width: none;
+    width: 242px;
   }
 }
 .database-preview {
@@ -4275,11 +4701,60 @@ input[type="radio"].visually-hidden {
   border-right-style: none;
   transform: rotate(-45deg);
 }
-.banner-program__list--intens .banner-program__item:nth-child(2) {
+.banner-program__consultation-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27.81vw;
+  height: 2.8645vw;
+  margin-top: 2.552vw;
+  border-radius: 45px;
+}
+.banner-program__consultation-phone {
+  font-size: 1.5625vw;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  color: #2f2f2f;
+  background-color: transparent;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+}
+.banner-program__consultation-btn {
+  max-width: none;
+  max-height: none;
+  width: 12.6vw;
+  height: 100%;
+  font-size: 0.9375vw;
+  border: none;
+  border-radius: 45px;
+}
+.banner-program--intens .banner-program__item:nth-child(2) {
   padding-right: 1.5625vw;
 }
-.banner-program__list--intens .banner-program__item:last-child {
+.banner-program--intens .banner-program__item:last-child {
   width: 15.625vw;
+}
+.banner-program--complex {
+  margin-bottom: 9.58vw;
+}
+.banner-program--transit {
+  height: 26.04vw;
+  margin-bottom: 10.175vw;
+}
+.banner-program--transit .banner-program__img-wrapper {
+  padding-top: 2.0833vw;
+}
+.banner-program--transit .banner-program__text-wrapper {
+  padding-top: 4.3229vw;
+  padding-left: 2.552vw;
+}
+.banner-program--transit .intro__title {
+  width: auto;
+  margin-bottom: 2.8645vw;
+}
+.banner-program--transit .intro__description {
+  width: 28.125vw;
 }
 @media (min-width: 1921px) {
   .banner-program {
@@ -4315,11 +4790,385 @@ input[type="radio"].visually-hidden {
     border-top-style: none;
     border-right-style: none;
   }
-  .banner-program__list--intens .banner-program__item:nth-child(2) {
+  .banner-program__consultation-wrapper {
+    width: 534px;
+    height: 55px;
+    margin-top: 49px;
+  }
+  .banner-program__consultation-phone {
+    font-size: 30px;
+  }
+  .banner-program__consultation-btn {
+    max-width: none;
+    max-height: none;
+    width: 242px;
+    height: 100%;
+    font-size: 18px;
+  }
+  .banner-program--intens .banner-program__item:nth-child(2) {
     padding-right: 30px;
   }
-  .banner-program__list--intens .banner-program__item:last-child {
+  .banner-program--intens .banner-program__item:last-child {
     width: 300px;
+  }
+  .banner-program--complex {
+    margin-bottom: 184px;
+  }
+  .banner-program--transit {
+    height: 500px;
+    margin-bottom: 195px;
+  }
+  .banner-program--transit .banner-program__img-wrapper {
+    padding-top: 40px;
+  }
+  .banner-program--transit .banner-program__text-wrapper {
+    padding-top: 83px;
+    padding-left: 49px;
+  }
+  .banner-program--transit .intro__title {
+    width: auto;
+    margin-bottom: 55px;
+  }
+  .banner-program--transit .intro__description {
+    width: 540px;
+  }
+}
+.contraindications {
+  margin-bottom: 10.52vw;
+}
+.contraindications__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 12.3vw;
+}
+.contraindications__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.58vw;
+  height: 5.36vw;
+  color: #2f2f2f;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+  border-radius: 19px;
+  background-color: #ffffff;
+}
+.contraindications__text {
+  width: 8.572vw;
+  font-size: 0.9375vw;
+  text-align: center;
+}
+@media (min-width: 1921px) {
+  .contraindications {
+    margin-bottom: 202px;
+  }
+  .contraindications__list {
+    height: 237px;
+  }
+  .contraindications__item {
+    width: 280px;
+    height: 103px;
+  }
+  .contraindications__text {
+    width: 165px;
+    font-size: 18px;
+  }
+}
+.master-swiper .swiper-container {
+  box-shadow: none;
+}
+.master-swiper__main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9.89vw;
+}
+.master-swiper__little-swiper {
+  position: relative;
+  width: 20.833vw;
+  height: 22.39vw;
+}
+.master-swiper__little-swiper .swiper-wrapper {
+  height: 22.39vw;
+}
+.swiper-container-vertical > .swiper-scrollbar {
+  right: auto !important;
+  left: 0px!important;
+  border-radius: 3px!important;
+  background-color: #e2e3ea !important;
+}
+.swiper-scrollbar-drag {
+  width: 0.26041vw !important;
+  background-color: #14af4f !important;
+  border-radius: 3px!important;
+}
+.master-swiper__little-item {
+  box-sizing: border-box;
+  display: flex;
+  width: 17.96vw;
+  height: 6.4vw;
+  margin-left: 2.0833vw;
+  margin-bottom: 2.604vw;
+  margin-bottom: 0;
+  box-shadow: 0 0 25px 5px rgba(5, 9, 48, 0.02);
+  border-radius: 19px;
+  background-color: #ffffff;
+}
+.master-swiper__little-img-wrapper {
+  width: 6.197vw;
+  height: 6.4vw;
+}
+.master-swiper__little-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 19px 0 0 19px;
+}
+.master-swiper__little-text-wrapper {
+  box-sizing: border-box;
+  padding-top: 1.6666vw;
+  padding-left: 1.1979vw;
+}
+.master-swiper__little-title {
+  margin-bottom: 0.46875vw;
+  font-size: 1.1458vw;
+  letter-spacing: 0.11px;
+}
+.master-swiper__little-description {
+  font-size: 0.9375vw;
+  letter-spacing: 0.09px;
+  color: #747474;
+}
+.master-swiper__main-swiper {
+  width: 41.51vw;
+  font-size: 0.9375vw;
+  letter-spacing: 0.09px;
+}
+.master-swiper__main-swiper .swiper-wrapper {
+  height: 22.5vw;
+}
+.master-swiper__main-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 22.5vw;
+}
+.master-swiper__main-img-wrapper {
+  width: 20vw;
+  height: 22.5vw;
+}
+.master-swiper__main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.master-swiper__main-text-wrapper {
+  width: 20vw;
+  padding-top: 0.677vw;
+  font-size: 0.9895vw;
+}
+.master-swiper__main-name {
+  margin-bottom: 0.8333vw;
+  color: #2f2f2f;
+  font-size: 1.5625vw;
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: 0.15px;
+}
+.master-swiper__main-position {
+  margin-bottom: 2.0833vw;
+}
+.master-swiper__main-description {
+  margin-bottom: 1.302vw;
+  line-height: 1.302vw;
+}
+.master-swiper__main-experience {
+  margin-bottom: 0.41666vw;
+}
+.master-swiper__main-experience-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.781vw;
+  height: 2.0312vw;
+  color: #fff;
+  border-radius: 19px;
+  background-color: #14af4f;
+}
+@media (min-width: 1921px) {
+  .master-swiper__main-wrapper {
+    margin-bottom: 190px;
+  }
+  .master-swiper__little-swiper {
+    width: 400px;
+    height: 430px;
+  }
+  .master-swiper__little-swiper .swiper-wrapper {
+    height: 430px;
+  }
+  .swiper-container-vertical > .swiper-scrollbar {
+    right: auto !important;
+    left: 0px!important;
+  }
+  .swiper-scrollbar-drag {
+    width: 5px!important;
+  }
+  .master-swiper__little-item {
+    width: 345px;
+    height: 123px;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  .master-swiper__little-img-wrapper {
+    width: 119px;
+    height: 123px;
+  }
+  .master-swiper__little-text-wrapper {
+    padding-top: 32px;
+    padding-left: 23px;
+  }
+  .master-swiper__little-title {
+    margin-bottom: 9px;
+    font-size: 22px;
+  }
+  .master-swiper__little-description {
+    font-size: 18px;
+  }
+  .master-swiper__main-swiper {
+    width: 797px;
+    font-size: 18px;
+  }
+  .master-swiper__main-swiper .swiper-wrapper {
+    height: 432px;
+  }
+  .master-swiper__main-content-wrapper {
+    height: 432px;
+  }
+  .master-swiper__main-img-wrapper {
+    width: 384px;
+    height: 432px;
+  }
+  .master-swiper__main-text-wrapper {
+    width: 384px;
+    padding-top: 13px;
+    font-size: 19px;
+  }
+  .master-swiper__main-name {
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+  .master-swiper__main-position {
+    margin-bottom: 40px;
+  }
+  .master-swiper__main-description {
+    margin-bottom: 25px;
+    line-height: 25px;
+  }
+  .master-swiper__main-experience {
+    margin-bottom: 8px;
+  }
+  .master-swiper__main-experience-current {
+    width: 111px;
+    height: 39px;
+  }
+}
+.faq {
+  margin-bottom: 14.32vw;
+}
+.faq__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.0416vw;
+  padding-top: 0.8854vw;
+  padding-left: 3.125vw;
+  padding-right: 3.125vw;
+  padding-bottom: 0.8854vw;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
+  border-radius: 35px;
+  background-color: #ffffff;
+}
+.faq__wrapper--q {
+  cursor: pointer;
+}
+.faq__wrapper--q::before,
+.faq__wrapper--q::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 0.7812vw;
+  height: 0.15625vw;
+  background-color: #1ab455;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  border-radius: 20px;
+}
+.faq__wrapper--q::before {
+  right: 2.6041vw;
+  transform: rotate(-45deg);
+}
+.faq__wrapper--q::after {
+  right: 3.125vw;
+  transform: rotate(45deg);
+}
+.faq__wrapper--a {
+  display: none;
+  padding-top: 1.7187vw;
+  padding-bottom: 1.7187vw;
+}
+.faq__wrapper--q.active::before {
+  transform: rotate(45deg);
+}
+.faq__wrapper--q.active::after {
+  transform: rotate(-45deg);
+}
+.faq__question {
+  font-size: 1.1979vw;
+  line-height: 1.7708vw;
+  letter-spacing: 0.12px;
+  color: #2f2f2f;
+}
+.faq__answer {
+  width: 55.98vw;
+  font-size: 0.9375vw;
+  line-height: 1.7708vw;
+  letter-spacing: 0.09px;
+  color: #747474;
+}
+@media (min-width: 1921px) {
+  .faq {
+    margin-bottom: 275px;
+  }
+  .faq__wrapper {
+    margin-bottom: 20px;
+    padding-top: 17px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 17px;
+  }
+  .faq__wrapper--q::before,
+  .faq__wrapper--q::after {
+    width: 15px;
+    height: 3px;
+  }
+  .faq__wrapper--q::before {
+    right: 50px;
+  }
+  .faq__wrapper--q::after {
+    right: 60px;
+  }
+  .faq__wrapper--a {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .faq__question {
+    font-size: 23px;
+    line-height: 34px;
+  }
+  .faq__answer {
+    width: 1075px;
+    font-size: 18px;
+    line-height: 34px;
   }
 }
 .footer {

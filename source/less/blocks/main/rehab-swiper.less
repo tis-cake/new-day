@@ -75,21 +75,21 @@
   padding-bottom: 2.239583vw;
 }
 
-.rehab-swiper--clinics {
-  margin-bottom: 9.931vw;
+// .rehab-swiper--clinics {
+//   margin-bottom: 9.931vw;
 
-  .rehab-swiper__text-wrapper {
-    padding-top: 2.3vw;
-  }
+//   .rehab-swiper__text-wrapper {
+//     padding-top: 2.3vw;
+//   }
 
-  .rehab-swiper__street {
-    padding-bottom: 1.834vw;
-  }
+//   .rehab-swiper__street {
+//     padding-bottom: 1.834vw;
+//   }
 
-  .rehab-swiper__place-description {
-    padding-bottom: 1.385vw;
-  }
-}
+//   .rehab-swiper__place-description {
+//     padding-bottom: 1.385vw;
+//   }
+// }
 
 .rehab-swiper__city {
   padding-bottom: 0.2083333vw;
@@ -145,6 +145,46 @@
   & img {
     width: 100%;
     height: 100%;
+  }
+}
+
+.detox-page {
+  .rehab-swiper {
+    margin-bottom: 10.72vw;
+  }
+  .swiper-container {
+    box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
+  }
+  .rehab-swiper__img-wrapper {
+    height: 14.479vw;
+  }
+  .rehab-swiper__text-wrapper {
+    padding-top: @d29px;
+    .padding-inline(@d33px);
+    padding-bottom: @d23px;
+  }
+  .rehab-swiper__city {
+    font-size: @d20px;
+  }
+  .rehab-swiper__street {
+    margin-bottom: @d2px;
+    font-size: @d22px;
+  }
+  .rehab-swiper__place-description {
+    margin-bottom: @d9px;
+    font-size: @d14px;
+    line-height: normal;
+  }
+  .rehab-swiper__price {
+    font-size: @d17px;
+    line-height: normal;
+  }
+  .rehab-swiper__link-page {
+    bottom: @d24px;
+    right: @d45px;
+
+    width: @d25px;
+    height: @d25px;
   }
 }
 
@@ -256,7 +296,6 @@
 }
 
 @media (min-width: @max-desktop-width) {
-
   .rehab-swiper {
     margin-bottom: 192.6px;
   }
@@ -295,16 +334,52 @@
     right: 72px;
   }
 
-  .rehab-swiper--clinics {
-    margin-bottom: 191px;
+  // .rehab-swiper--clinics {
+  //   margin-bottom: 191px;
+  //   .rehab-swiper__text-wrapper {
+  //     padding-top: 34px;
+  //   }
+  //   .rehab-swiper__street {
+  //     padding-bottom: 36px;
+  //   }
+  //   .rehab-swiper__place-description {
+  //     padding-bottom: 26px;
+  //   }
+  // }
+
+  .detox-page {
+    .rehab-swiper {
+      margin-bottom: 206px;
+    }
+    .rehab-swiper__img-wrapper {
+      height: 278px;
+    }
     .rehab-swiper__text-wrapper {
-      padding-top: 34px;
+      padding-top: 29px;
+      .padding-inline(33px);
+      padding-bottom: 23px;
+    }
+    .rehab-swiper__city {
+      font-size: 20px;
     }
     .rehab-swiper__street {
-      padding-bottom: 36px;
+      margin-bottom: 2px;
+      font-size: 22px;
     }
     .rehab-swiper__place-description {
-      padding-bottom: 26px;
+      margin-bottom: 9px;
+      font-size: 14px;
+      line-height: normal;
+    }
+    .rehab-swiper__price {
+      font-size: 17px;
+      line-height: normal;
+    }
+    .rehab-swiper__link-page {
+      bottom: 24px;
+      right: 45px;
+      width: 25px;
+      height: 25px;
     }
   }
 }

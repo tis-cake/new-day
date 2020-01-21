@@ -47,18 +47,6 @@
   border-radius: 37px;
 }
 
-.get-help--detox {
-  margin-bottom: 8.05vw;
-}
-
-.get-help--consultation {
-  box-shadow: none;
-  background-color: transparent;
-  .intro__title {
-    margin-bottom: @d12px;
-  }
-}
-
 .get-help__consultation-wrapper {
   box-sizing: border-box;
   position: relative;
@@ -101,6 +89,130 @@
 
   border: none;
   border-radius: 45px;
+}
+
+.get-help__header {
+  box-sizing: border-box;
+  position: relative;
+  height: 12.08vw;
+  padding-top: @d77px;
+  background-color: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12.6vw;
+
+    background-image: url('../img/bg-green-big.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 19px 19px 0 0;
+  }
+}
+
+.get-help__icon {
+  position: absolute;
+  top: -@d45px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: @d90px;
+  height: @d90px;
+
+  background-color: #fff;
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+  border-radius: 19px;
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: @d46px;
+    height: @d46px;
+
+    background-image: url('../img/svg/phone-call-green.svg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+}
+
+.get-help__header-text {
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  width: 14.58vw;
+  .margin-inline(@a);
+}
+
+.get-help__header-title {
+  margin-bottom: @d14px;
+
+  font-size: @d14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.get-help__header-phone {
+  font-size: @d32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.get-help--detox {
+  margin-bottom: 8.05vw;
+}
+
+.get-help--consultation {
+  box-shadow: none;
+  background-color: transparent;
+  .intro__title {
+    margin-bottom: @d12px;
+  }
+}
+
+.get-help--green {
+  margin-bottom: 10.31vw;
+  padding-top: 0;
+  padding-bottom: @d42px;
+
+  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
+  border-radius: 19px;
+  .intro--get-help {
+    width: 34.8vw;
+  }
+  .intro__title {
+    margin-bottom: @d27px;
+    line-height: @d43px;
+    letter-spacing: 0.19px;
+  }
+  .get-help__consultation-wrapper {
+    justify-content: center;
+    margin-top: @d30px;
+    padding-left: 0;
+    box-shadow: none;
+  }
+  .get-help__consultation-btn {
+    width: 14.63vw;
+    margin-top: 0px;
+    font-size: @d16px;
+  }
 }
 
 @media  (max-width: @mobile-width) {
@@ -169,16 +281,6 @@
     font-size: 18px;
   }
 
-  .get-help--detox {
-    margin-bottom: 154px;
-  }
-
-  .get-help--consultation {
-    .intro__title {
-      margin-bottom: 12px;
-    }
-  }
-
   .get-help__consultation-wrapper {
     width: 610px;
     height: 55px;
@@ -195,5 +297,66 @@
   .get-help__consultation-btn {
     width: 262px;
     font-size: 18px;
+  }
+
+  .get-help__header {
+    height: 232px;
+    padding-top: 77px;
+    &::before {
+      height: 242px;
+    }
+  }
+
+  .get-help__icon {
+    top: -45px;
+    width: 90px;
+    height: 90px;
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  .get-help__header-text {
+    width: 280px;
+  }
+
+  .get-help__header-title {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .get-help__header-phone {
+    font-size: 32px;
+  }
+
+  .get-help--detox {
+    margin-bottom: 154px;
+  }
+
+  .get-help--consultation {
+    .intro__title {
+      margin-bottom: 12px;
+    }
+  }
+
+  .get-help--green {
+    margin-bottom: 198px;
+    padding-top: 0;
+    padding-bottom: 42px;
+    .intro--get-help {
+      width: 670px;
+    }
+    .intro__title {
+      margin-bottom: 27px;
+      line-height: 43px;
+    }
+    .get-help__consultation-wrapper {
+      margin-top: 30px;
+    }
+    .get-help__consultation-btn {
+      width: 281px;
+      font-size: 16px;
+    }
   }
 }

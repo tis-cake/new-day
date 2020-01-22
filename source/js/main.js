@@ -261,6 +261,36 @@ $(document).ready(function () {
   });
 });
 
+// слайдер документов
+$(document).ready(function () {
+  var documentsSwiper = new Swiper('#little-documents-swiper', {
+      slidesPerView: '1',
+      touchRatio: 1
+      // freeMode: true,
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
+      // navigation: {
+      //   nextEl: '.swiper-button-next--center',
+      //   prevEl: '.swiper-button-prev--center',
+      // },
+      // breakpoints: {
+      //   752: {
+      //     slidesPerView: '3',
+      //     spaceBetween: 42,
+      //     loop: true,
+      //   }
+      // }
+  });
+
+  // var documentsSwiper = new Swiper('#little-documents-swiper', {
+  //   slidesPerView: '1',
+  //   speed: 3000,
+  //   spaceBetween: 50
+  // });
+});
+
 // вопрос-ответ
 $(".faq__wrapper--q").on('click', function(){
     $(this).toggleClass('active');

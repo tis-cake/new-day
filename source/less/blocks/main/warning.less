@@ -1,6 +1,6 @@
 .warning {
   box-sizing: border-box;
-  margin-bottom: 10.156vw;
+  margin-bottom: @d195px;
 
   box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
   border-radius: 15px;
@@ -14,7 +14,7 @@
 
 .warning__img-wrapper {
   max-width: 642px;
-  width: 33.437vw;
+  width: @d642px;
 }
 
 .warning__img {
@@ -27,10 +27,10 @@
 
 .warning__form-wrapper {
   box-sizing: border-box;
-  width: 44.84vw;
-  padding-top: 4.270vw;
-  padding-left: 5.833vw;
-  padding-bottom: 4.531vw;
+  width: @d861px;
+  padding-top: @d82px;
+  padding-left: @d112px;
+  padding-bottom: @d87px;
 }
 
 .warning__form {
@@ -40,8 +40,8 @@
   align-items: center;
 
   max-width: 600px;
-  width: 31.25vw;
-  margin-top: 3.2291vw;
+  width: @d600px;
+  margin-top: @d62px;
 
   border-radius: 28px;
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
@@ -49,9 +49,9 @@
 
 .warning__input {
   max-width: 307px;
-  width: 15.989vw;
+  width: @d307px;
 
-  font-size: 0.989vw;
+  font-size: @d19px;
   font-weight: 400;
   letter-spacing: 0.19px;
 
@@ -68,16 +68,16 @@
 .warning--detox {
   .warning__img-wrapper {
     max-width: none;
-    width: 28.59vw;
+    width: @d549px;
   }
   .warning__form-wrapper {
-    width: 34.37vw;
+    width: @d660px;
     padding-top: @d88px;
     padding-left: @d47px;
     padding-bottom: 0;
   }
   .intro--warning {
-    width: 27.60vw;
+    width: @d530px;
   }
   .intro__title {
     margin-bottom: @d32px;
@@ -85,24 +85,24 @@
   }
   .warning__form {
     justify-content: space-between;
-    width: 29.16vw;
+    width: @d560px;
     margin-top: @d38px;
     margin-bottom: @d55px;
   }
   .warning__input {
     max-width: none;
-    width: 9.37vw;
+    width: @d180px;
     padding-left: @d50px;
   }
   .warning__btn {
     max-width: none;
-    width: 12.60vw;
+    width: @d242px;
   }
 }
 
 @media  (max-width: @mobile-width) {
   .warning {
-    margin-bottom: 23.156vw;
+    margin-bottom: @m174px;
     box-shadow: none;
     background-color: transparent;
   }
@@ -116,7 +116,7 @@
   .warning__img-wrapper {
     max-width: none;
     width: 100%;
-    height: 63.6vw;
+    height: @m477px;
   }
 
   .warning__img {
@@ -124,9 +124,10 @@
   }
 
   .warning__form-wrapper {
-    padding-top: 5.67vw;
-    .padding-inline(4.233vw);
-    padding-bottom: 6.831vw;
+    width: auto;
+    padding-top: @m42px;
+    .padding-inline(@m32px);
+    padding-bottom: @m51px;
   }
 
   .warning__form {
@@ -135,7 +136,7 @@
 
     max-width: none;
     width: 100%;
-    margin-top: 3.2291vw;
+    margin-top: @m24px;
 
     box-shadow: none;
   }

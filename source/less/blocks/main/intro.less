@@ -1,16 +1,16 @@
 .intro {
   &--about {
     max-width: 890px;
-    width: 46.954vw;
+    width: @d890px;
   }
 
   &--get-help {
     max-width: 960px;
-    width: 52vw;
+    width: @d960px;
     .margin-inline(@a);
 
     .intro__title {
-      margin-bottom: 2.39583vw;
+      margin-bottom: @d46px;
     }
     .intro__description {
       display: inline;
@@ -20,20 +20,20 @@
 
   &--rehab-swiper {
     max-width: 800px;
-    width: 41.666vw;
-    margin-bottom: 3.645833vw;
+    width: @d800px;
+    margin-bottom: @d70px;
   }
 
   &--program {
     max-width: 900px;
-    width: 46.875vw;
-    margin-bottom: 3.64583vw;
+    width: @d900px;
+    margin-bottom: @d70px;
   }
 
   &--reviews {
     .intro__description {
       max-width: 900px;
-      width: 47.275vw;
+      width: @d900px;
 
       @media  (max-width: 920px) {
         width: 47.575vw;
@@ -43,47 +43,49 @@
 
   &--price {
     max-width: 780px;
-    width: 45.625vw;
+    width: @d780px;
   }
 
   &--warning {
     max-width: 750px;
-    width: 39.363vw;
+    width: @d750px;
 
     .intro__title {
-      margin-bottom: 2.552vw;
+      margin-bottom: @d49px;
     }
   }
 
   &--database-preview {
     .intro__description {
       max-width: 725px;
-      width: 37.76vw;
+      width: @d725px;
     }
   }
 
   &--database-preview--sub {
-    padding-top: 1.875vw;
-    padding-left: 1.510vw;
-    padding-bottom: 2.083vw;
+    box-sizing: border-box;
+    width: @d530px;
+    padding-top: @d36px;
+    padding-left: @d29px;
+    padding-bottom: @d40px;
 
     .intro__title {
-      margin-bottom: 1.0104vw;
-      font-size: 1.406vw;
+      margin-bottom: @d20px;
+      font-size: @d27px;
       letter-spacing: 0.14px;
     }
 
     .intro__description {
       max-width: 502px;
-      width: 26.545vw;
+      width: @d502px;
 
-      font-size: 0.989vw;
-      line-height: 1.302vw;
+      font-size: @d19px;
+      line-height: @d25px;
     }
 
     .intro__subtitle {
-      margin-top: 1.35416vw;
-      margin-bottom: 0.677vw;
+      margin-top: @d26px;
+      margin-bottom: @d13px;
     }
   }
 
@@ -97,7 +99,7 @@
     .intro__link {
       margin-top: @d17px;
       max-width: 191px;
-      width: 9.91vw
+      width: @d191px;
     }
   }
 
@@ -108,7 +110,7 @@
   }
 
   &--detox {
-    width: 62.23vw;
+    width: 62.23vw; //1195px
     .intro__title {
       margin-bottom: @d48px;
     }
@@ -122,7 +124,7 @@
   }
 
   &--program-detox {
-    width: 46.875vw;
+    width: @d900px;
     margin-bottom: @d73px;
     .intro__description {
       font-size: @d18px;
@@ -132,24 +134,24 @@
   }
 
   &--tariffs {
-    width: 46.35vw;
-    margin-bottom: 5.989vw;
+    width: @d860px;
+    margin-bottom: @d115px;
   }
 
   &--price-category {
     margin-bottom: @d68px;
     .intro__description {
-      width: 44.9vw;
+      width: @d840px;
     }
     .intro__link {
-      width: 8.218vw;
+      width: @d129px;
       margin-bottom: @d3px;
     }
   }
 
   &--banner-program {
     .intro__title {
-      width: 21.87vw;
+      width: @d420px;
       margin-bottom: @d27px;
       line-height: @d47px;
     }
@@ -159,7 +161,7 @@
   }
 
   &--contraindications {
-    width: 44.79vw;
+    width: @d860px;
     margin-bottom: @d71px;
     .intro__title {
       margin-bottom: @d17px;
@@ -167,20 +169,20 @@
   }
 
   &--master-swiper {
-    width: 49.47vw;
+    width: @d860px;
     margin-bottom: @d70px;
   }
 
   &--faq {
-    width: 40.10vw;
+    width: @d950px;
     margin-bottom: @d70px;
   }
 }
 
 .intro__title {
-  margin-bottom: 2.187vw;
+  margin-bottom: @d42px;
 
-  font-size: 2.34375vw;
+  font-size: @d45px;
   font-weight: 700;
   letter-spacing: 0.23px;
 
@@ -188,9 +190,9 @@
 }
 
 .intro__description {
-  font-size: 0.98958333vw;
+  font-size: @d19px;
   font-weight: 400;
-  line-height: 1.458vw;
+  line-height: @d28px;
   letter-spacing: 0.1px;
 
   color: #747474;
@@ -204,23 +206,23 @@
 .intro__link {
   position: relative;
   max-width: 129px;
-  width: 6.718vw;
+  width: @d129px;
   margin-top: auto;
 
-  font-size: 0.989vw;
+  font-size: @d19px;
   letter-spacing: 0.1px;
   color: #1ab455;
 
   &::before {
     content: '';
     position: absolute;
-    top: -0.156vw;
+    top: -@d3px;
     right: 0;
 
     max-width: 8px;
     max-height: 26px;
-    width: 0.4166vw;
-    height: 1.354vw;
+    width: @d8px;
+    height: @d26px;
 
     background-image: url('../img/svg/arrow-m.svg');
     background-position: center;
@@ -229,9 +231,9 @@
 }
 
 .intro__subtitle {
-  margin-bottom: 0.625vw;
+  margin-bottom: @d12px;
 
-  font-size: 1.406vw;
+  font-size: @d27px;
   font-weight: 700;
   letter-spacing: 0.14px;
 }
@@ -247,20 +249,20 @@
 @media  (max-width: @mobile-width) {
   .intro--about {
     max-width: none;
-    width: 86.854vw;
+    width: @m651px;
 
     .intro__title {
-      margin-bottom: 5.396vw;
+      margin-bottom: @m41px;
     }
   }
 
   .intro--get-help {
     max-width: none;
-    width: 73vw;
+    width: @m548px;
     .intro__title {
-      width: 55vw;
+      width: @m413px;
       .margin-inline(@a);
-      margin-bottom: 5.396vw;
+      margin-bottom: @m40px;
     }
     .intro__description {
       display: block;
@@ -271,52 +273,54 @@
     max-width: none;
     width: auto;
     .intro__description {
-      width: 90vw;
-      margin-bottom: 10.646vw;
+      width: @m675px;
+      margin-bottom: @m80px;
     }
   }
 
   .intro--program {
     max-width: none;
-    width: 81.875vw;
+    width: @m614px;
     margin-bottom: @m86px;
   }
 
   .intro--reviews {
     .intro__description {
       width: auto;
-      margin-bottom: 10.833vw;
+      margin-bottom: @m81px;
     }
   }
 
   .intro--price {
     max-width: none;
-    width: 87vw;
+    width: @m652px;
   }
 
   .intro--warning {
     max-width: none;
     width: 100%;
     .intro__title {
-      width: 68vw;
-      margin-bottom: 3.552vw;
+      width: @m510px;
+      margin-bottom: @m27px;
     }
     .intro__description {
-      width: 80vw;
+      width: @m600px;
     }
   }
 
   .intro--database-preview {
     .intro__description {
       max-width: none;
-      width: 84.76vw;
-      margin-bottom: 11.333vw;
+      width: @m636px;
+      margin-bottom: @m85px;
     }
   }
 
   .intro--database-preview--sub {
-    padding-top: 5.275vw;
-    padding-left: 3.21vw;
+    width: @m439px;
+    padding-top: @m40px;
+    padding-left: @m24px;
+    padding-bottom: @m38px;
 
     .intro__title {
       font-size: @m32px;
@@ -325,7 +329,7 @@
 
     .intro__description {
       max-width: none;
-      width:  54.666vw;
+      width: @m410px;
       margin-bottom: 0;
 
       font-size: @m30px;
@@ -333,13 +337,13 @@
     }
 
     .intro__subtitle {
-      margin-top: 1.35416vw;
-      margin-bottom: 0.677vw;
+      margin-top: @m10px;
+      margin-bottom: @m5px;
     }
   }
 
   .intro__title {
-    margin-bottom: 4.096vw;
+    margin-bottom: @m30px;
     font-size: @m45px;
   }
 
@@ -356,8 +360,7 @@
 
   .intro__link {
     max-width: none;
-    // width: 21.333vw;
-    width: 22.66vw;
+    width: @m170px;
     font-size: @m30px;
 
     &::before {
@@ -383,10 +386,10 @@
 
   .intro--articles-block {
     flex-direction: column;
-    margin-bottom: 5.54vw;
+    margin-bottom: @m42px;
     .intro__link {
       max-width: none;
-      width: 36.666vw;
+      width: @m275px;
       margin-top: @m42px;
     }
   }
@@ -394,7 +397,7 @@
 
 @media (min-width: @max-desktop-width) {
   .intro__title {
-    margin-bottom: 42.4px;
+    margin-bottom: 42px;
     font-size: 45px;
   }
 
@@ -450,11 +453,12 @@
   }
 
   .intro--database-preview--sub {
+    width: 530px;
     padding-top: 36px;
     padding-left: 29px;
     padding-bottom: 40px;
     .intro__title {
-      margin-bottom: 19.4px;
+      margin-bottom: 20px;
       font-size: 27px;
     }
     .intro__description {

@@ -1,6 +1,6 @@
 .database-preview {
-  margin-bottom: 2.6040vw;
-  margin-bottom: 7.55vw;
+  margin-bottom: @d50px;
+  margin-bottom: @d145px;
 }
 
 .database-preview__list {
@@ -8,7 +8,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-top: 3.6875vw;
+  margin-top: @d71px;
 }
 
 .database-preview__row {
@@ -22,21 +22,17 @@
   display: flex;
 
   max-width: 785px;
-  width: 40.8854vw;
-  margin-bottom: 2.6040vw;
+  width: @d785px;
+  margin-bottom: @d50px;
 
   box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
   border-radius: 19px;
   background-color: #ffffff;
 }
 
-// .database-preview__link {
-//   display: flex;
-// }
-
 .database-preview__img-wrapper {
   max-width: 203px;
-  width: 10.57vw;
+  width: @d203px;
 }
 
 .database-preview__img {
@@ -50,8 +46,7 @@
 @media  (max-width: @mobile-width) {
 
   .database-preview {
-    // margin-bottom: 0;
-    margin-bottom: 15.9vw;
+    margin-bottom: @m119px;
   }
 
   .database-preview__list.container {
@@ -61,29 +56,29 @@
   .database-preview__list {
     overflow-x: scroll;
 
-    height: 76.4vw;
+    // height: 76.4vw;
+    margin-top: @m22px;
     padding-top: @m20px;
     padding-bottom: @m10px;
-    margin-top: 2.888vw;
   }
 
   .database-preview__row {
-    // width: 1385px;
-    width: 184.666vw;
+    width: 184.666vw; //1381px;
+    margin-bottom: @m50px;
   }
 
   .database-preview__item {
     box-sizing: border-box;
     max-width: none;
-    width: 88.13vw;
-    height:31.46vw;
+    width: @m660px;
+    // height:31.46vw;
     margin-right: @m30px;
     margin-bottom: 0;
   }
 
   .database-preview__img-wrapper {
     max-width: none;
-    width: 24.26vw;
+    width: @m182px;
   }
 }
 
@@ -95,7 +90,7 @@
   }
 
   .database-preview__list {
-    margin-top: 70.8px;
+    margin-top: 71px;
   }
 
   .database-preview__item {

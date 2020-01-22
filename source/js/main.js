@@ -107,21 +107,21 @@ $(document).ready(function () {
 // });
 
 // троеточие при избыточности символов на мобильном разрешении в database-preview
-$(document).ready(function () {
+// $(document).ready(function () {
 
-  var width = $(window).width();
-  var size = 64; // кол-во символов
+//   var width = $(window).width();
+//   var size = 64; // кол-во символов
 
-  if (width <= 752) {
-    $('.intro--database-preview--sub .intro__description').each(function () {
-      var databaseText = $(this).text();
+//   if (width <= 752) {
+//     $('.intro--database-preview--sub .intro__description').each(function () {
+//       var databaseText = $(this).text();
 
-      if(databaseText.length > size){
-        $(this).text(databaseText.slice(0, size) + ' ...');
-      }
-    });
-  }
-});
+//       if(databaseText.length > size){
+//         $(this).text(databaseText.slice(0, size) + ' ...');
+//       }
+//     });
+//   }
+// });
 
 // [database-page]
 // если js подключён - меню скрыто
@@ -155,10 +155,9 @@ $(document).ready(function () {
 // слайдер отзывов
 $(document).ready(function () {
   var mySwiper = new Swiper('#review-swiper', {
-    slidesPerView: '1.5',
-    centeredSlides: true,
+    slidesPerView: '1.3',
     speed: 3000,
-    spaceBetween: 25,
+    spaceBetween: 50,
     touchRatio: 1,
     loop: true,
     freeMode: true,
@@ -175,6 +174,7 @@ $(document).ready(function () {
         slidesPerView: '3',
         // spaceBetween: 20,
         spaceBetween: 0,
+        centeredSlides: true,
         slidesOffsetBefore: 14,
         loop: true
       }

@@ -10,9 +10,9 @@
 
 .logo__text {
   position: relative;
-  padding-left: 2.864583vw;
+  padding-left: @d55px;
 
-  font-size: 1.25vw;
+  font-size: @d24px;
   font-weight: 300;
 
   &--strong {
@@ -23,13 +23,13 @@
   &::before {
     content: '';
     position: absolute;
-    top: -0.520vw;
-    left:  -0.3125vw;
+    top: -@d10px;
+    left:  -@d6px;
 
     max-width: 50px;
     max-height: 50px;
-    width: 2.60416vw;
-    height: 2.60416vw;
+    width: @d50px;
+    height: @d50px;
 
     background-image: url("../img/svg/logo-nd-green.svg");
     background-repeat: no-repeat;
@@ -48,8 +48,8 @@
 @media (max-width: @mobile-width) {
 
   .logo__text {
-    width: 14.666vw;
-    padding-left: 11.16vw;
+    width: @m110px;
+    padding-left: @m84px;
 
     font-size: @m33px;
     letter-spacing: 0.17px;
@@ -59,8 +59,8 @@
       left: -@m24px;
       max-width: none;
       max-height: none;
-      width: 14.666vw;
-      height: 14.666vw;
+      width: @m110px;
+      height: @m110px;
     }
   }
 }

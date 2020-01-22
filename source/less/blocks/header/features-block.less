@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   max-width: 615px;
-  width: 32.03125vw;
+  width: @d615px;
 
   &--header-mobile {
     display: none;
@@ -15,8 +15,8 @@
   position: relative;
 
   max-width: 200px;
-  width: 10.416vw;
-  padding-left: 3.2812vw;
+  width: @d200px;
+  padding-left: @d63px;
 
   &::before {
     content: "";
@@ -29,7 +29,7 @@
   }
 
   &--anon::before {
-    top: 0.6770vw;
+    top: @d13px;
     max-width: 39px;
     max-height: 39px;
     width: 2.03125vw;
@@ -39,7 +39,7 @@
   }
 
   &--free::before {
-    top:  0.7812vw;
+    top: @d15px;
     max-width: 47px;
     max-height: 47px;
     width: 2.44791vw;
@@ -78,14 +78,14 @@
 }
 
 .features-block__title {
-  font-size: 0.98958333vw;
+  font-size: @d19px;
   font-weight: 700;
-  margin-bottom: 0.3125vw;
+  margin-bottom: @d6px;
 }
 
 .features-block__description {
-  font-size: 0.7812vw;
-  line-height: 1.0937vw;
+  font-size: @d15px;
+  line-height: @d21px;
 }
 
 .features-block--main-info {
@@ -104,20 +104,20 @@
 
   .features-block__item {
     max-width: 400px;
-    width: 20.833vw;
-    margin-bottom: 4.0625vw;
-    padding-left: 5vw;
+    width: @d400px;
+    margin-bottom: @d78px;
+    padding-left: @d96px;
   }
 
   .features-block__title {
-    margin-bottom:  0.104vw;
-    font-size: 1.5625vw;
+    margin-bottom:  @d2px;
+    font-size: @d30px;
     color: #2f2f2f;
   }
 
   .features-block__description {
-    font-size:  0.98958vw;
-    line-height: 1.458333vw;
+    font-size:  @d19px;
+    line-height: @d28px;
   }
 }
 
@@ -140,9 +140,9 @@
   .header__features {
     .features-block__item {
       max-width: none;
-      width: 48.46vw;
-      margin-bottom: 8.5vw;
-      padding-left: 15vw;
+      width: @m364px;
+      margin-bottom: @m64px;
+      padding-left: @m113px;
 
       &:last-child {
         margin-bottom: 0;
@@ -157,12 +157,12 @@
     }
 
     .features-block__title {
-      margin-bottom:  1.1vw;
+      margin-bottom:  @m8px;
       font-size: @m30px;
     }
 
     .features-block__description {
-      margin-bottom:  0.104vw;
+      margin-bottom:  @m1px;
 
       font-size: @m27px;
       line-height: @m32px;
@@ -173,9 +173,9 @@
   .features-block--about {
     .features-block__item {
       max-width: none;
-      width: 67.833vw;
-      margin-bottom: 12.7625vw;
-      padding-left: 20.7vw;
+      width: @m509px;
+      margin-bottom: @m96px;
+      padding-left: @m155px;
 
       &::before {
         max-width: none;
@@ -183,14 +183,14 @@
       }
     }
     .features-block__title {
-      margin-bottom:  1.404vw;
+      margin-bottom: @m11px;
       font-size: @m35px;
     }
     .features-block__description {
-      margin-bottom:  0.104vw;
+      margin-bottom: @m1px;
 
-      font-size: 3.966vw;
-      line-height: 4.133vw;
+      font-size: @m30px;
+      line-height: @m31px;
       letter-spacing: 0.15px;
     }
   }

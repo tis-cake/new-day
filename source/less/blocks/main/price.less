@@ -1,21 +1,21 @@
 .price {
-  margin-bottom: 12.1875vw;
+  margin-bottom: @d234px;
 }
 
 .price__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.17708vw;
+  margin-top: @d61px;
 }
 
 .price__column {
   box-sizing: border-box;
   position: relative;
-  padding: 2.0833vw 2.6041vw;
+  padding: @d40px @d50px;
 
   max-width: 507px;
   // max-height: 700px;
-  width: 26.40625vw;
+  width: @d507px;
   // height: 36.45833vw;
 
   box-shadow: 0 0 29px 3px rgba(2, 7, 32, 0.04);
@@ -24,23 +24,23 @@
 }
 
 .price__title {
-  margin-bottom: 2.91666vw;
-  font-size: 1.5625vw;
+  margin-bottom: @d56px;
+  font-size: @d30px;
   text-align: center;
 }
 
 .price__icon-img {
   max-width: 26px;
   max-height: 26px;
-  width: 1.3541vw;
-  height: 1.3541vw;
+  width: @d26px;
+  height: @d26px;
   padding-right: 0.781vw;
 
   &--narco {
     max-width: 30px;
     max-height: 29px;
-    width: 1.56vw;
-    height: 1.5104vw;
+    width: @d30px;
+    height: @d29px;
   }
 
   &--alco {
@@ -48,7 +48,7 @@
 
   &--other {
     max-height: 30px;
-    height: 1.56vw;;
+    height: @d30px;
     width: auto;
   }
 }
@@ -58,8 +58,8 @@
 }
 
 .price__table td {
-  font-size: 0.989vw;
-  padding-bottom: 1.510vw;
+  font-size: @d19px;
+  padding-bottom: @d29px;
 }
 
 .price__table td:first-child {
@@ -91,16 +91,16 @@
 
   .price__wrapper {
     flex-direction: column;
-    margin-top: 11.977vw;
+    margin-top: @m178px;
   }
 
   .price__column {
     max-width: none;
     width: 100%;
-    margin-bottom: 19.333vw;
-    padding-top: 7.783vw;
-    .padding-inline(3.904vw);
-    padding-bottom: 12.083vw;
+    margin-bottom: @m145px;
+    padding-top: @m58px;
+    .padding-inline(@m29px);
+    padding-bottom: @m91px;
 
     text-align: center;
   }
@@ -112,7 +112,7 @@
   .price__title {
     position: relative;
     display: inline-block;
-    margin-bottom: 7.317vw;
+    margin-bottom: @m58px;
     padding-left: @m82px;
 
     font-size: @m35px;
@@ -126,11 +126,7 @@
     .mn();
     width: @m60px;
     height: @m60px;
-    padding-right: 0.781vw;
-
-    // &--narco {
-    //   top: -@m7px;
-    // }
+    padding-right: @m6px;
 
     &--alco {
       top: -@m15px;
@@ -143,12 +139,12 @@
 
   .price__table td {
     font-size: @m30px;
-    padding-bottom: 4.51vw;
+    padding-bottom: @m34px;
   }
 
   .price__link {
     bottom: -3.6%;
-    width: 44vw;
+    width: @m330px;
     border-radius: 38px;
   }
 }

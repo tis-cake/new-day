@@ -1,5 +1,5 @@
 .banners {
-  margin-bottom: 11.45833vw;
+  margin-bottom: @d220px;
 }
 
 .banners__list {
@@ -11,10 +11,10 @@
   position: absolute;
   z-index: -1;
 
-  max-height: 575px;
   max-width: 368px;
-  height: 30vw;
-  width: 19.1vw;
+  max-height: 575px;
+  width: @d368px;
+  height: @d575px;
 
   border-radius: 19px;
   background-color: #6c6c6c;
@@ -35,20 +35,10 @@
   box-sizing: border-box;
 
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
-
-  max-height: 575px;
   max-width: 368px;
-  height: 30vw;
-  width: 19.1vw;
-  // padding-top: 1.822916vw;
-  // .padding-inline(2.083vw);
-  // padding-bottom: 3.6458vw;
-
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  max-height: 575px;
+  width: @d368px;
+  height: @d575px;
 
   border-radius: 19px;
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
@@ -61,14 +51,14 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  max-height: 575px;
   max-width: 368px;
-  height: 30vw;
-  width: 19.1vw;
+  max-height: 575px;
+  width: @d368px;
+  height: @d575px;
 
-  padding-top: 1.822916vw;
-  .padding-inline(2.083vw);
-  padding-bottom: 3.6458vw;
+  padding-top: @d34px;
+  .padding-inline(@d40px);
+  padding-bottom: @d70px;
 
   border-radius: 19px;
 }
@@ -76,12 +66,12 @@
 
 .banners__subtitle {
   max-width: 128px;
-  width: 6.6666vw;
+  width: @d128px;
   margin-bottom: @a;
 
-  font-size: 0.83333vw;
+  font-size: @d16px;
   font-weight: 400;
-  line-height: 1.302vw;
+  line-height: @d25px;
   letter-spacing: 0.08px;
   text-transform: uppercase;
 
@@ -100,21 +90,21 @@
 
 .banners__title {
   max-width: 294px;
-  width: 15.513vw;
-  padding-bottom: 0.78125vw;
+  width: @d294px;
+  padding-bottom: @d15px;
 
-  font-size: 1.8229166vw;
+  font-size: @d35px;
   font-weight: 700;
-  line-height: 1.71875vw;
+  line-height: @d33px;
   letter-spacing: 0.17px;
 }
 
 .banners__description {
   max-width: 262px;
-  width: 13.629vw;
+  width: @d262px;
 
-  font-size: 0.98958vw;
-  line-height: 1.3020vw;
+  font-size: @d19px;
+  line-height: @d25px;
   letter-spacing: 0.1px;
 }
 
@@ -126,15 +116,15 @@
 
   max-width: 287px;
   max-height: 55px;
-  width: 14.94791vw;
-  height: 2.864583vw;
+  width: @d287px;
+  height: @d55px;
 
   border-radius: 28px;
 }
 
 @media (max-width: @mobile-width) {
   .banners {
-    margin-bottom: 24.358vw
+    margin-bottom: @m183px;
   }
 
   .banners.container {
@@ -142,44 +132,43 @@
   }
 
   .banners__list {
-    // width: 2393px;
-    height: 90.66vw;
+    height: @m680px;
     overflow-x: scroll;
   }
 
   .banners__img-wrapper {
     .mn ();
-    width: 76.266vw;
-    height: 77.33vw;
+    width: @m572px;
+    height: @m580px;
   }
 
   .banners__item {
     .mn ();
-    width: 76.266vw;
-    height: 77.33vw;
+    width: @m572px;
+    height: @m580px;
     margin-right: @m35px;
   }
 
   .banners__content-wrapper {
     .mn ();
-    width: 76.266vw;
-    height: 77.33vw;
-    padding-top: 4.523vw;
-    .padding-inline(4.383vw);
-    padding-bottom: 12.846vw;
+    width: @m572px;
+    height: @m580px;
+    padding-top: @m34px;
+    .padding-inline(@m33px);
+    padding-bottom: @m96px;
   }
 
   .banners__subtitle {
     max-width: none;
-    width: 18.66vw;
+    width: @m140px;
     font-size: @m25px;
     line-height: @m33px;
   }
 
   .banners__title {
     max-width: none;
-    width: 67vw;
-    padding-bottom: 2.781vw;
+    width: @m502px;
+    padding-bottom: @m21px;
 
     font-size: @m45px;
     line-height: @m40px;
@@ -187,8 +176,7 @@
 
   .banners__description {
     max-width: none;
-    // width: 48.629vw;
-    width: 51.029vw;
+    width: @m383px;
 
     font-size: @m30px;
     line-height: @m39px;
@@ -197,7 +185,7 @@
   .banners__link {
     bottom: -6.6%;
     .mn;
-    width: 55.2vw;
+    width: @m414px;
     height: @m75px;
 
     font-size: @m27px;

@@ -209,10 +209,10 @@ $(document).ready(function () {
     slidesPerView: '3',
     touchRatio: 1,
     scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-        dragSize: 48
-      }
+      el: '.swiper-scrollbar',
+      draggable: true,
+      dragSize: 48
+    }
 
     // freeMode: true,
     // autoplay: {
@@ -265,16 +265,19 @@ $(document).ready(function () {
 $(document).ready(function () {
   var documentsSwiper = new Swiper('#little-documents-swiper', {
       slidesPerView: '1',
-      touchRatio: 1
+      // centeredSlides: true,
+      touchRatio: 1,
+      // spaceBetween: 12,
       // freeMode: true,
       // autoplay: {
       //   delay: 3000,
       //   disableOnInteraction: false,
       // },
-      // navigation: {
-      //   nextEl: '.swiper-button-next--center',
-      //   prevEl: '.swiper-button-prev--center',
-      // },
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next--documents',
+        prevEl: '.swiper-button-prev--documents',
+      }
       // breakpoints: {
       //   752: {
       //     slidesPerView: '3',
@@ -283,12 +286,6 @@ $(document).ready(function () {
       //   }
       // }
   });
-
-  // var documentsSwiper = new Swiper('#little-documents-swiper', {
-  //   slidesPerView: '1',
-  //   speed: 3000,
-  //   spaceBetween: 50
-  // });
 });
 
 // вопрос-ответ

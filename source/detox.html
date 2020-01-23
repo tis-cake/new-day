@@ -1237,7 +1237,7 @@
             </div>
           </article>
 
-          <article class="aside-banner aside-banner--bg">
+          <article class="aside-banner aside-banner--bg aside-banner--family">
             <div class="aside-banner__container">
               <h2 class="aside-banner__title">Поддержка родственников</h2>
             </div>
@@ -1305,11 +1305,103 @@
             </div>
           </article>
 
-          <section>
-            <!-- калькулятор -->
+          <section class="calc">
+            <h2 class="calc__title">Калькулятор стоимости лечения</h2>
+            <form class="calc__form" action="" method="post">
+              <div class="calc__filter-options">
+                <!-- <label class="calc__label" for="filter-whom">Кому нужна помощь?</label> -->
+                <input class="calc__input visually-hidden" type="text" name="WHOM" value="" data-id="" id="filter-whom">
+                <a class="calc__filter-handler" href="javascript:void(0);" data-id="40">Кому нужна помощь?</a>
+                <ul class="calc__filter-list" data-id="40">
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Мне</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Моему близкому</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="calc__filter-options">
+                <!-- <label class="calc__label" for="filter-old">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="OLD" value="" data-id="" id="filter-old">
+                <a class="calc__filter-handler" href="javascript:void(0);" data-id="41">Возраст зависимого</a>
+                <ul class="calc__filter-list" data-id="41">
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Несовершеннолетний</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">18-25</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">25-35</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">35-50</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">50+</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="calc__filter-options">
+                <!-- <label class="calc__label" for="filter-subst">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="SUBSTANCE" value="" data-id="" id="filter-subst">
+                <a class="calc__filter-handler" href="javascript:void(0);" data-id="42">Вещество</a>
+                <ul class="calc__filter-list" data-id="42">
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Алкоголь</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Наркотики</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="calc__filter-options">
+                <!-- <label class="calc__label" for="filter-region">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="REGION" value="" data-id="" id="filter-region">
+                <a class="calc__filter-handler" href="javascript:void(0);" data-id="43">Регион</a>
+                <ul class="calc__filter-list" data-id="43">
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Москва</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Замкадье</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="calc__filter-options">
+                <!-- <label class="calc__label" for="filter-time">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="TIME" value="" data-id="" id="filter-time">
+                <a class="calc__filter-handler" href="javascript:void(0);" data-id="44">Стаж употребления</a>
+                <ul class="calc__filter-list" data-id="44">
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Несколько дней</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">До года</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">От 1 до 3 лет</a>
+                  </li>
+                  <li class="calc__filter-list-item">
+                    <a class="calc__filter-item" href="javascript:void(0);" data-id="0">Более 3 лет</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+
+            <div class="calc__price-wrapper">
+              <span class="calc__price" id="final-price">25 000</span><span class="calc__price-icon">&#8381;</span>
+            </div>
+
+            <button class="calc__link btn" href="#">Расчитать стоимость</button>
           </section>
 
-<!--           <article class="aside-banner__banners-category banners__item">
+          <article class="aside-banner__banners-category banners__item">
             <div class="banners__img-wrapper">
               <picture>
                 <source type="image/webp" srcset="img/banners/banner-narco-prof.webp">
@@ -1324,17 +1416,21 @@
             </div>
           </article>
 
-          <article class="aside-banner">
-            <h2 class="aside-banner__title">VIP-лечение</h2>
-            <p class="aside-banner__description">повышенные условия комфорта, 100% гарантия анонимности, расширенный пакет услуг</p>
-            <a class="aside-banner__link btn">Подробнее</a>
+          <article class="aside-banner aside-banner--btn aside-banner--vip">
+            <div class="aside-banner__container">
+              <h2 class="aside-banner__title">VIP-лечение</h2>
+              <p class="aside-banner__description">повышенные условия комфорта, 100% гарантия анонимности, расширенный пакет услуг</p>
+              <a class="aside-banner__link btn">Подробнее</a>
+            </div>
           </article>
 
-          <article class="aside-banner">
-            <h2 class="aside-banner__title">Оформление больничного листа</h2>
-            <p class="aside-banner__description">с альтернативным диагнозом</p>
-            <div class="aside-banner__img-wrapper">
-              <img class="aside-banner__img-bg" src="" alt="">
+          <article class="aside-banner aside-banner--bg aside-banner--sick-leave">
+            <div class="aside-banner__container">
+              <h2 class="aside-banner__title">Оформление больничного листа</h2>
+              <p class="aside-banner__description">с альтернативным диагнозом</p>
+            </div>
+            <div class="aside-banner__bg-wrapper">
+              <img class="aside-banner__bg-img" src="img/aside-banner/bg-sick-leave.png" alt="Поддержка родственников">
             </div>
           </article>
 
@@ -1354,10 +1450,12 @@
             </div>
           </article>
 
-          <article class="aside-banner">
-            <h2 class="aside-banner__title">VIP-лечение</h2>
-            <p class="aside-banner__description">повышенные условия комфорта, 100% гарантия анонимности, расширенный пакет услуг</p>
-            <a class="aside-banner__link btn">Подробнее</a>
+          <article class="aside-banner aside-banner--btn aside-banner--anonymity">
+            <div class="aside-banner__container">
+              <h2 class="aside-banner__title">100% гарантия анонимности</h2>
+              <p class="aside-banner__description">Мы не ставим наших клиентов на государственный наркологический учёт и не передаем их данные в какие-либо гос. структуры</p>
+              <a class="aside-banner__link btn">Подробнее</a>
+            </div>
           </article>
 
           <article class="aside-banner__banners-category banners__item">
@@ -1373,14 +1471,46 @@
               <p class="banners__description">гарантируем анонимность, круглосуточно, без выходных</p>
               <a class="banners__link btn" href="#">Подробнее об услуге</a>
             </div>
-          </article> -->
+          </article>
 
-          <section>
-            <!-- лечение в другом регионе -->
+          <section class="other-region">
+            <h2 class="other-region__title">Лечение в другом регионе</h2>
+            <ul class="other-region__list">
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Москва и МО</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Санкт-Петербург</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Ростов-на-Дону</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Краснодар</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Сочи</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Ставрополь</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Тверь</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Новороссийск</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Воронеж</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Тула</a>
+              </li>
+              <li class="other-region__item">
+                <a class="other-region__link" href="javascript:void(0);">Другой</a>
+              </li>
+            </ul>
           </section>
-
-
-
         </aside>
 
       </div>

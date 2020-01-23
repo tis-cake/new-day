@@ -1,10 +1,10 @@
 .documents-swiper {
   position: relative;
 
-  margin-bottom: 84px;
-  padding-top: 34px;
-  .padding-inline(37px);
-  padding-bottom: 50px;
+  margin-bottom: @d84px;
+  padding-top: @d34px;
+  .padding-inline(@d37px);
+  padding-bottom: @d50px;
 
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
   border-radius: 19px;
@@ -12,9 +12,9 @@
 }
 
 .documents-swiper__title {
-  margin-bottom: 52px;
+  margin-bottom: @d52px;
 
-  font-size: 30px;
+  font-size: @d30px;
   font-weight: 700;
   letter-spacing: 0.15px;
 }
@@ -24,29 +24,40 @@
   display: flex;
   justify-content: space-between;
 
-  top: 20px;
-  right: 30px;
+  top: @d20px;
+  right: @d30px;
 
-  width: 130px;
-  height: 50px;
+  width: @d130px;
+  height: @d50px;
 }
 
 .documents-swiper .swiper-button-next,
 .documents-swiper .swiper-button-prev {
   position: relative;
+  top: @d25px;
 
-  width: 46px;
-  height: 46px;
+  width: @d46px;
+  height: @d46px;
   color: #14b250;
 
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
   background-color: #ffffff;
   border-radius: 50%;
+
+  @media (max-width: 1400px) {
+    top: @d40px;
+  }
+  @media (max-width: 1050px) {
+    top: @d50px;
+  }
+  @media (max-width: 850px) {
+    top: @d60px;
+  }
 }
 
 .documents-swiper .swiper-button-next::after,
 .documents-swiper .swiper-button-prev::after {
-  font-size: 24px!important;
+  font-size: @d24px!important;
 }
 
 .documents-swiper .swiper-slide {
@@ -55,12 +66,50 @@
 }
 
 .documents-swiper__img-wrapper {
-  width: 283px;
-  height: 399px;
+  width: @d283px;
+  height: @d399px;
 }
 
 .documents-swiper__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: @max-desktop-width) {
+  .documents-swiper {
+    margin-bottom: 84px;
+    padding-top: 34px;
+    .padding-inline(37px);
+    padding-bottom: 50px;
+  }
+
+  .documents-swiper__title {
+    margin-bottom: 52px;
+    font-size: 30px;
+  }
+
+  .documents-swiper-navigation {
+    top: 20px;
+    right: 30px;
+    width: 130px;
+    height: 50px;
+  }
+
+  .documents-swiper .swiper-button-next,
+  .documents-swiper .swiper-button-prev {
+    top: 25px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .documents-swiper .swiper-button-next::after,
+  .documents-swiper .swiper-button-prev::after {
+    font-size: 24px!important;
+  }
+
+  .documents-swiper__img-wrapper {
+    width: 283px;
+    height: 399px;
+  }
 }

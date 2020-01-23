@@ -1,8 +1,8 @@
 .aside-banner {
   box-sizing: border-box;
   position: relative;
-  width: 382px;
-  margin-bottom: 105px;
+  width: @d382px;
+  margin-bottom: @d105px;
 
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
   border-radius: 19px;
@@ -11,11 +11,11 @@
   &::before {
     content: '';
     position: absolute;
-    top: 39px;
-    left: 38px;
+    top: @d39px;
+    left: @d38px;
 
-    width: 62px;
-    height: 62px;
+    width: @d62px;
+    height: @d62px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -28,26 +28,33 @@
   &--stethoscope::before {
     background-image: url('../img/aside-banner/stethoscope.svg');
   }
+  &--vip::before {
+    background-image: url('../img/aside-banner/vip.svg');
+  }
+
+  &--anonymity::before {
+    background-image: url('../img/aside-banner/anonymity.svg');
+  }
 
   &--btn {
     .aside-banner__container {
-      padding-top: 127px;
+      padding-top: @d127px;
     }
   }
 
   &--cards {
-    margin-bottom: 81px;
+    margin-bottom: @d81px;
     .aside-banner__container {
-      padding-bottom: 35px;
+      padding-bottom: @d35px;
     }
     .aside-banner__title {
-      width: 200px;
-      margin-bottom: 31px;
+      width: @d200px;
+      margin-bottom: @d31px;
     }
   }
 
   &--bg {
-    margin-bottom: 81px;
+    margin-bottom: @d81px;
     .aside-banner__container {
       padding-bottom: 0px;
     }
@@ -55,24 +62,23 @@
 }
 
 .aside-banner__container {
-  padding-top: 40px;
-  .padding-inline(37px);
-  padding-bottom: 63px;
+  padding-top: @d40px;
+  .padding-inline(@d37px);
+  padding-bottom: @d63px;
 }
 
 .aside-banner__title {
-  // width: 260px;
-  margin-bottom: 18px;
+  margin-bottom: @d18px;
 
-  font-size: 30px;
+  font-size: @d30px;
   font-weight: 700;
   letter-spacing: 0.15px;
 }
 
 .aside-banner__description {
-  width: 247px;
-  font-size: 18px;
-  line-height: 22px;
+  width: @d265px;
+  font-size: @d18px;
+  line-height: @d22px;
   letter-spacing: 0.09px;
 }
 
@@ -83,20 +89,20 @@
   transform: translateX(-50%);
 
   .mn;
-  width: 282px;
-  height: 56px;
+  width: @d282px;
+  height: @d56px;
   border-radius: 28px;
 }
 
 .aside-banner__cards-wrapper {
-  width: 250px;
   display: flex;
   justify-content: space-between;
+  width: @d250px;
 }
 
 .aside-banner__card-wrapper {
-  width: 63px;
-  height: 63px;
+  width: @d63px;
+  height: @d63px;
   border-radius: 50%;
 }
 
@@ -108,10 +114,21 @@
 }
 
 .aside-banner__bg-wrapper {
-  height: 175px;
   width: 100%;
-  // .b(red);
+  height: @d250px;
   border-radius: 0 0 19px 19px;
+}
+
+.aside-banner--family {
+  .aside-banner__bg-wrapper {
+    height: @d175px;
+  }
+}
+
+.aside-banner--sick-leave {
+  .aside-banner__bg-wrapper {
+    height: @d260px;
+  }
 }
 
 .aside-banner__bg-img {
@@ -122,5 +139,95 @@
 }
 
 .aside-banner__banners-category {
-  margin-bottom: 110px;
+  margin-bottom: @d110px;
+}
+
+@media (min-width: @max-desktop-width) {
+  .aside-banner {
+    width: 382px;
+    margin-bottom: 105px;
+    &::before {
+      top: 39px;
+      left: 38px;
+      width: 62px;
+      height: 62px;
+    }
+
+    &--btn {
+      .aside-banner__container {
+        padding-top: 127px;
+      }
+    }
+  }
+
+  .aside-banner--cards {
+    margin-bottom: 81px;
+    .aside-banner__container {
+      padding-bottom: 35px;
+    }
+    .aside-banner__title {
+      width: 200px;
+      margin-bottom: 31px;
+    }
+  }
+
+  .aside-banner--bg {
+    margin-bottom: 81px;
+    .aside-banner__container {
+      padding-bottom: 0px;
+    }
+  }
+
+  .aside-banner__container {
+    padding-top: 40px;
+    .padding-inline(37px);
+    padding-bottom: 63px;
+  }
+
+  .aside-banner__title {
+    margin-bottom: 18px;
+    font-size: 30px;
+  }
+
+  .aside-banner__description {
+    width: 265px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .aside-banner__link {
+    .mn;
+    width: 282px;
+    height: 56px;
+  }
+
+  .aside-banner__cards-wrapper {
+    width: 250px;
+  }
+
+  .aside-banner__card-wrapper {
+    width: 63px;
+    height: 63px;
+  }
+
+  .aside-banner__bg-wrapper {
+    height: 250px;
+    width: 100%;
+  }
+
+  .aside-banner--family {
+    .aside-banner__bg-wrapper {
+      height: 175px;
+    }
+  }
+
+  .aside-banner--sick-leave {
+    .aside-banner__bg-wrapper {
+      height: 260px;
+    }
+  }
+
+  .aside-banner__banners-category {
+    margin-bottom: 110px;
+  }
 }

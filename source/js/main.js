@@ -289,8 +289,85 @@ $(document).ready(function () {
 });
 
 // вопрос-ответ
-$(".faq__wrapper--q").on('click', function(){
+// $(document).ready(function () {
+  $(".faq__wrapper--q").on('click', function(){
     $(this).toggleClass('active');
     var data = $(this).data('id');
     $(this).find($('.faq__wrapper--a[data-id='+data+']').slideToggle());
+  });
+// });
+
+// калькулятор
+$(document).ready(function () {
+  // взаимодействие с меню
+  $('.calc__filter-handler').on('click', function(){
+
+    // if($('.calc__filter-list').hasClass('changed')) { // если значение уже было изменено - удалить класс
+    //   $('.calc__filter-list').removeClass('changed');
+    // }
+
+    $(this).toggleClass('active');
+    $data = $(this).data('id');
+    $(this).find($('.calc__filter-list[data-id='+$data+']').slideToggle()); // открываем список с выбором
+
+    $('.calc__filter-item').click(function () {      // при выборе элемента из списка
+      $value = $(this).text();                    // копируем текст элемента
+      $(this).addClass('active');
+
+      $(this).closest('.calc__filter-options').find('.calc__filter-handler').text($value); // находим ближайшее поле ввода (ссылку)
+                                                                                          //  и подставляем выбранное значение из списка
+
+      // value = $(this).data('id');   // раскомменитровать если в input нужно вставлять не текст,
+                                       //   а значение data-id (сейчас = 0)
+                                       //   [сейчас input скрыт: удалить класс visually-hidden (html), и left (css)]
+
+      $(this).closest('.calc__filter-options').find('input').val($value);        // находим поле ввода и вставляем туда же текст
+      if ($(this).closest('.calc__filter-options').find('input').change()) {    // если поле было изменено - скрыть
+        // $(this).closest('.calc__filter-options').find('.calc__filter-list').addClass('changed');
+        // if ($('.calc__filter-list').hasClass('changed')) {
+          // $(this).removeClass('.active');
+
+          // $(this).closest('.calc__filter-options').find('.calc__filter-handler').removeClass('.active'); // отключить класс ?
+          $(this).closest('.calc__filter-options').find('.calc__filter-list').slideUp();
+        // }
+      }
+    });
+  });
+
+  // расчёт стоимости
+  $('.calc__link').on('click', function() {
+
+    var priceArr = {
+      'Мне' : 1000,
+      'Моему близкому' : 1500,
+      'Несовершеннолетний' : 1200,
+      '18-25' : 150,
+      '25-35' : 200,
+      '35-50' : 30,
+      '50+' : 35,
+      'Алкоголь' : 200,
+      'Наркотики' : 400,
+      'Москва' : 3000,
+      'Замкадье' : 2000,
+      'Несколько дней' : 300,
+      'До года' : 1000,
+      'От 1 до 3 лет' : 4000,
+      'Более 3 лет' : 10000
+    }
+
+    var whomPrice = $('#filter-whom').val();
+    var oldPrice = $('#filter-old').val();
+    var substPrice = $('#filter-subst').val();
+    var regionPrice = $('#filter-region').val();
+    var timePrice = $('#filter-time').val();
+
+    var priceArrCurrent = [whomPrice, oldPrice, substPrice, regionPrice, timePrice];
+
+    var currentSum = 0;
+    for (var i = 0; i < priceArrCurrent.length; i++) {
+      currentSum += priceArr[priceArrCurrent[i]];
+    }
+
+    $('span#final-price').text(currentSum);
+  });
 });

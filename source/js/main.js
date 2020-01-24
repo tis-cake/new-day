@@ -289,13 +289,13 @@ $(document).ready(function () {
 });
 
 // вопрос-ответ
-// $(document).ready(function () {
+$(document).ready(function () {
   $(".faq__wrapper--q").on('click', function(){
     $(this).toggleClass('active');
     var data = $(this).data('id');
     $(this).find($('.faq__wrapper--a[data-id='+data+']').slideToggle());
   });
-// });
+});
 
 // калькулятор
 $(document).ready(function () {
@@ -371,4 +371,15 @@ $(document).ready(function () {
 
     $('span#final-price').text(currentSum);
   });
+});
+
+// если js подключён - меню скрыто
+
+$('.services__list').removeClass('services__list--nojs');
+
+// меню с услугами
+$('#btn-list-detox').click(function () {
+  $('.btn-list__close-btn').toggleClass('active');
+  $('.btn-list__list-toggle').toggleClass('active');
+  $('.services__list').toggleClass('active');
 });

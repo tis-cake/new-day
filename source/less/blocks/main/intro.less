@@ -246,7 +246,49 @@
   letter-spacing: 0.15px;
 }
 
-@media  (max-width: @mobile-width) {
+@media (max-width: @mobile-width) {
+  .intro__title {
+    margin-bottom: @m30px;
+    font-size: @m45px;
+  }
+
+  .intro__description {
+    margin-bottom: @m40px;
+
+    font-size: @m30px;
+    line-height: @m38px;
+  }
+
+  .intro__link-wrapper {
+    flex-direction: column;
+  }
+
+  .intro__link {
+    max-width: none;
+    width: @m170px;
+    font-size: @m30px;
+
+    &::before {
+      top: -@m5px;
+      right: -@m12px;
+      .mn();
+      width: @m14px;
+      height: @m44px;
+    }
+  }
+
+  .intro__subtitle {
+    margin-bottom: @m14px;
+
+    font-size: @m32px;
+    letter-spacing: 0.16px;
+  }
+
+  .intro__counter {
+    padding-left: @m10px;
+    font-size: @m30px;
+  }
+
   .intro--about {
     max-width: none;
     width: @m651px;
@@ -342,48 +384,6 @@
     }
   }
 
-  .intro__title {
-    margin-bottom: @m30px;
-    font-size: @m45px;
-  }
-
-  .intro__description {
-    margin-bottom: @m40px;
-
-    font-size: @m30px;
-    line-height: @m38px;
-  }
-
-  .intro__link-wrapper {
-    flex-direction: column;
-  }
-
-  .intro__link {
-    max-width: none;
-    width: @m170px;
-    font-size: @m30px;
-
-    &::before {
-      top: -@m5px;
-      right: -@m12px;
-      .mn();
-      width: @m14px;
-      height: @m44px;
-    }
-  }
-
-  .intro__subtitle {
-    margin-bottom: @m14px;
-
-    font-size: @m32px;
-    letter-spacing: 0.16px;
-  }
-
-  .intro__counter {
-    padding-left: @m10px;
-    font-size: @m30px;
-  }
-
   .intro--articles-block {
     flex-direction: column;
     margin-bottom: @m42px;
@@ -391,6 +391,57 @@
       max-width: none;
       width: @m275px;
       margin-top: @m42px;
+    }
+  }
+
+  .intro--services {
+    .intro__title {
+      display: none;
+    }
+  }
+
+  .intro--detox {
+    width: @a;
+    .intro__title {
+      margin-bottom: @m47px;
+    }
+    .intro__description {
+      margin-bottom: @m39px;
+      font-size: @m30px;
+      line-height: @m39px;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .intro--program-detox {
+    width: @a;
+    margin-bottom: @m65px;
+    .intro__title {
+      width: @m500px;
+      margin-bottom: @m40px;
+    }
+    .intro__description {
+      font-size: @m30px;
+      line-height: @m38px;
+    }
+  }
+
+  .intro--tariffs {
+    width: @m590px;
+    margin-bottom: @m115px;
+    .intro__title {
+      margin-bottom: @m35px;
+      line-height: @m60px;
+    }
+  }
+
+  .intro--price-category {
+    .intro__description {
+      width: @m550px;
+      margin-bottom: @m86px;
+    }
+    .intro__link {
+      width: @m150px;
     }
   }
 }

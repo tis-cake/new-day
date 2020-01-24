@@ -364,103 +364,52 @@
   }
 
   .program--detox {
-    // margin-bottom: @d191px;
+    margin-bottom: @m75px;
     .program__list {
       overflow-x: scroll;
-      // counter-reset: none;
-      // max-height: none;
-      // height: @d658px;
+      max-height: none;
+      height: @m400px;
+      padding-top: @m20px;
     }
-    // .program__item {
-    //   max-height: none;
-    //   width: @d344px;
-    //   height: @d300px;
-    //   margin-left: @d43px;
-    //   padding-top: @d39px;
-    //   padding-left: @d58px;
-    //   &::before {
-    //     content: none;
-    //   }
-    // }
-    // .program__item__icon {
-    //   position: absolute;
-    //   top: @d72px;
-    //   left: -@d52px;
+    .program__item {
+      max-height: none;
+      width: @m485px;
+      height: @a;
+      margin-left: @m35px;
+      margin-right: @m33px;
+      padding-top: @m30px;
+      padding-left: @m65px;
+      padding-right: @m20px;
+      padding-bottom: @m56px;
 
-    //   width: @d70px;
-    //   height: @d70px;
+      box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
+    }
+    .program__item__icon {
+      top: @m74px;
+      left: -@m45px;
 
-    //   &::before {
-    //     width: @d32px;
-    //     height: @d32px;
-    //   }
+      width: @m70px;
+      height: @m70px;
 
-    //   &--danger::before {
-    //     width: @d36px;
-    //     height: @d32px;
+      &::before {
+        width: @m34px;
+        height: @m34px;
+      }
+    }
+    .program__title {
+      margin-bottom: @m13px;
+      padding-right: 0;
+      font-size: @m33px;
+      line-height: normal;
+      letter-spacing: 0.17px;
+    }
+    .program__description {
+      width: @a;
 
-    //     background-image: url('../img/program/danger.svg');
-    //   }
-
-    //   &--sad::before {
-    //     background-image: url('../img/program/sad.svg');
-    //   }
-
-    //   &--time::before {
-    //     background-image: url('../img/program/time.svg');
-    //   }
-
-    //   &--check::before {
-    //     background-image: url('../img/program/check.svg');
-    //   }
-
-    //   &--vip::before {
-    //     background-image: url('../img/program/vip.svg');
-    //   }
-
-    //   &--more::before {
-    //     background-image: url('../img/program/more.svg');
-    //   }
-
-    //   &--oculus::before {
-    //     background-image: url('../img/program/oculus.svg');
-    //   }
-
-    //   &--hypnos::before {
-    //     background-image: url('../img/program/hypnos.svg');
-    //   }
-
-    //   &--catlery::before {
-    //     background-image: url('../img/program/catlery.svg');
-    //   }
-
-    //   &--snow::before {
-    //     background-image: url('../img/program/snow.svg');
-    //   }
-
-    //   &--share::before {
-    //     background-image: url('../img/program/share.svg');
-    //   }
-    // }
-    // .program__title {
-    //   margin-bottom: @d31px;
-    //   padding-right: @d20px;
-
-    //   font-weight: 700;
-    //   line-height: @d30px;
-    //   letter-spacing: 0.15px;
-    // }
-    // .program__description {
-    //   width: @d260px;
-
-    //   font-size: @d19px;
-    //   line-height: @d25px;
-    //   letter-spacing: 0.1px;
-
-    //   &--under {
-    //     text-decoration: underline;
-    //   }
-    // }
+      font-size: @m30px;
+      line-height: @m34px;
+      letter-spacing: 0.15px;
+    }
   }
 
   .program--detox-treatment {

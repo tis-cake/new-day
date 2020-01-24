@@ -30,6 +30,19 @@
   color: #747474;
 }
 
+@media (max-width: @mobile-width) {
+  .breadcrumbs {
+    margin-bottom: @m92px;
+  }
+  .breadcrumbs__item {
+    margin-right: @m42px;
+    font-size: @m27px;
+    &::before {
+      right: -@m30px;
+    }
+  }
+}
+
 @media  (min-width: @max-desktop-width) {
   .breadcrumbs {
     margin-bottom: 93px;

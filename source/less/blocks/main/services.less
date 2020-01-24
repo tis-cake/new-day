@@ -90,6 +90,32 @@
   }
 }
 
+.active.services__item .services__text {
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    bottom: -@d16px;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border: @d16px solid #14b250;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: @d20px;
+    border-bottom-width: 0;
+
+    box-shadow: 0 0 87px rgba(2, 7, 32, 0.05);
+
+    // width: 20px;
+    // height: 20px;
+    // background-color: red;
+  }
+}
+
 .services__sub-menu {
   position: absolute;
   bottom: 0px;
@@ -188,6 +214,17 @@
     &--game {
       width: 22px;
       height: 22px;
+    }
+  }
+
+  .active.services__item .services__text {
+    &::before {
+      bottom: -16px;
+      border: 16px solid #14b250;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-top-width: 20px;
+      border-bottom-width: 0;
     }
   }
 

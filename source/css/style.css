@@ -33,31 +33,6 @@
   font-weight: 300;
   font-style: normal;
 }
-.dws-progress-bar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-}
-.progress-percentage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  font-family: 'Circe', 'Arial', sans-serif;
-  font-weight: bold;
-  color: #14b250;
-}
-#preloader {
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
 body {
   margin: 0;
   padding: 0;
@@ -123,6 +98,11 @@ input {
   width: 63.02vw;
   padding-top: 1.0416vw;
 }
+@media (max-width: 755px) {
+  .detox-column-wrapper {
+    width: 678px;
+  }
+}
 @media (min-width: 1921px) {
   .detox-column-wrapper {
     width: 1210px;
@@ -133,10 +113,23 @@ input {
   width: 19.89vw;
   padding-top: 1.0416vw;
 }
+@media (max-width: 755px) {
+  .detox-aside-wrapper {
+    display: none;
+  }
+}
 @media (min-width: 1921px) {
   .detox-aside-wrapper {
     width: 382px;
     padding-top: 20px;
+  }
+}
+.detox-mobile-block {
+  display: none;
+}
+@media (max-width: 755px) {
+  .detox-mobile-block {
+    display: block;
   }
 }
 .visually-hidden:not(:focus):not(:active),
@@ -1846,7 +1839,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 100%;
   height: 12.604vw;
-  background-image: url('../img/bg-green-big.png');
+  background-image: url('../img/bg/bg-green-big.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2635,6 +2628,13 @@ input[type="radio"].visually-hidden {
     padding-bottom: 5.733vw;
     font-size: 4vw;
     line-height: 4.399vw;
+  }
+  .program--detox .program__list {
+    overflow-x: scroll;
+  }
+  .program--detox-treatment .program__list {
+    flex-wrap: nowrap;
+    height: auto;
   }
 }
 @media (min-width: 1921px) {
@@ -4160,6 +4160,21 @@ input[type="radio"].visually-hidden {
 .active.services__item .services__img--white {
   visibility: visible;
 }
+.active.services__item .services__text::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -0.8333vw;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 0.8333vw solid #14b250;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-width: 1.0416vw;
+  border-bottom-width: 0;
+  box-shadow: 0 0 87px rgba(2, 7, 32, 0.05);
+}
 .services__sub-menu {
   position: absolute;
   bottom: 0px;
@@ -4235,6 +4250,14 @@ input[type="radio"].visually-hidden {
   .services__img--game {
     width: 22px;
     height: 22px;
+  }
+  .active.services__item .services__text::before {
+    bottom: -16px;
+    border: 16px solid #14b250;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 20px;
+    border-bottom-width: 0;
   }
   .services__sub-menu {
     height: 130px;
@@ -5486,6 +5509,7 @@ input[type="radio"].visually-hidden {
 }
 .calc__label,
 .calc__filter-handler {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -5501,7 +5525,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 10px 75px 17px rgba(5, 9, 48, 0.04);
   border-radius: 28px;
   background-color: #ffffff;
-  position: relative;
 }
 .calc__label::before,
 .calc__filter-handler::before,
@@ -5537,6 +5560,7 @@ input[type="radio"].visually-hidden {
 }
 .calc__input {
   position: absolute;
+  z-index: 20;
 }
 .calc__filter-list {
   display: none;

@@ -59,10 +59,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next--clinic',
       prevEl: '.swiper-button-prev--clinic',
@@ -327,7 +327,7 @@ $(document).ready(function () {
         // if ($('.calc__filter-list').hasClass('changed')) {
           // $(this).removeClass('.active');
 
-          // $(this).closest('.calc__filter-options').find('.calc__filter-handler').removeClass('.active'); // отключить класс ?
+          $(this).closest('.calc__filter-options').find('.calc__filter-handler').removeClass('active');
           $(this).closest('.calc__filter-options').find('.calc__filter-list').slideUp();
         // }
       }
@@ -338,6 +338,7 @@ $(document).ready(function () {
   $('.calc__link').on('click', function() {
 
     var priceArr = {
+      '0' : 0,
       'Мне' : 1000,
       'Моему близкому' : 1500,
       'Несовершеннолетний' : 1200,

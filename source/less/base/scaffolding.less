@@ -1,30 +1,30 @@
 // preloader
-.dws-progress-bar {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 100;
-}
-.progress-percentage {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
+// .dws-progress-bar {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  z-index: 100;
+// }
+// .progress-percentage {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
 
- font-size: 40px;
- font-family: @circe;
- font-weight: bold;
- color: #14b250;
-}
-#preloader {
- position: fixed;
- z-index: 100;
- left: 0;
- top: 0;
- right: 0;
- bottom: 0;
-}
+//  font-size: 40px;
+//  font-family: @circe;
+//  font-weight: bold;
+//  color: #14b250;
+// }
+// #preloader {
+//  position: fixed;
+//  z-index: 100;
+//  left: 0;
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+// }
 
 body {
   margin: 0;
@@ -100,6 +100,7 @@ input {
   padding-top: @d20px;
 
   @media (max-width: @mobile-width) {
+    width: 678px;
   }
 
   @media (min-width: @max-desktop-width) {
@@ -114,13 +115,20 @@ input {
   padding-top: @d20px;
 
   @media (max-width: @mobile-width) {
+    display: none;
   }
 
   @media (min-width: @max-desktop-width) {
     width: 382px;
     padding-top: 20px;
   }
+}
 
+.detox-mobile-block {
+  display: none;
+  @media (max-width: @mobile-width) {
+    display: block;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

@@ -1,6 +1,10 @@
 // https://github.com/Nebir/Circular-Progress-Bar
 
 $(document).ready(function () {
+
+  var width = $(window).width();
+  if (width >= 756) {                       // прелоадер только на десктопе
+
     var preloader    = $('#preloader'),     // селектор прелоадера
         imagesCount  = $('img').length,     // количество изображений
         dBody        = $('body'),           // обращаемся к body
@@ -45,7 +49,7 @@ $(document).ready(function () {
     } else {
         preloader.remove();
     }
-
+  }
 
 });
 

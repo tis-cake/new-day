@@ -100,7 +100,7 @@ input {
 }
 @media (max-width: 755px) {
   .detox-column-wrapper {
-    width: 678px;
+    width: 90.4vw;
   }
 }
 @media (min-width: 1921px) {
@@ -1241,6 +1241,32 @@ input[type="radio"].visually-hidden {
   .intro--price-category .intro__link {
     width: 20vw;
   }
+  .intro--banner-program {
+    width: 64vw;
+  }
+  .intro--banner-program .intro__title {
+    width: auto;
+    margin-bottom: 4.666vw;
+    line-height: 6.266vw;
+  }
+  .intro--banner-program .intro__description {
+    width: auto;
+    font-size: 3.599vw;
+    margin-bottom: 6.266vw;
+  }
+  .intro--contraindications {
+    width: auto;
+    margin-bottom: 11.2vw;
+  }
+  .intro--contraindications .intro__title {
+    margin-bottom: 4.666vw;
+  }
+  .intro--contraindications .intro__description {
+    width: 74.667vw;
+  }
+  .intro--master-swiper {
+    width: auto;
+  }
 }
 @media (min-width: 1921px) {
   .intro__title {
@@ -1863,6 +1889,7 @@ input[type="radio"].visually-hidden {
   margin-top: 2.1354vw;
   padding-left: 2.8645vw;
   border-radius: 45px;
+  background-color: #fff;
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
 }
 .get-help__consultation-phone {
@@ -1872,7 +1899,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.14px;
   color: #2f2f2f;
   background-color: transparent;
-  box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
 }
 .get-help__consultation-btn {
   max-width: none;
@@ -2019,6 +2045,60 @@ input[type="radio"].visually-hidden {
     width: 67.333vw;
     height: 10vw;
     font-size: 3.599vw;
+  }
+  .get-help__consultation-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 61.333vw;
+    height: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .get-help__consultation-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 61.067vw;
+    height: 10vw;
+    margin-bottom: 4.133vw;
+    font-size: 4vw;
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+    border-radius: 38px;
+    background-color: #ffffff;
+  }
+  .get-help__consultation-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 61.067vw;
+    height: 10vw;
+    font-size: 3.599vw;
+    letter-spacing: 0.27px;
+    box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
+    border-radius: 38px;
+    background-color: #1ab455;
+  }
+  .get-help--consultation {
+    margin-bottom: 27.067vw;
+    padding-top: 0;
+  }
+  .get-help--consultation .intro__title {
+    width: auto;
+    margin-bottom: 4.133vw;
+  }
+  .get-help--consultation .intro__description {
+    width: 48vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.599vw;
+    line-height: 4.266vw;
+    letter-spacing: 0.14px;
   }
 }
 @media (min-width: 1921px) {
@@ -2399,20 +2479,18 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  max-height: 407px;
-  height: 21.198vw;
   counter-reset: programItem;
 }
 .program__item {
   position: relative;
   box-sizing: border-box;
-  max-width: 660px;
-  max-height: 180px;
   width: 34.375vw;
-  height: 9.375vw;
+  min-height: 9.375vw;
+  margin-bottom: 2.4479vw;
   margin-left: 2.6041vw;
   padding-top: 2.3437vw;
   padding-left: 5.208vw;
+  padding-bottom: 1.5625vw;
   box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
   border-radius: 19px;
   background-color: #ffffff;
@@ -2489,8 +2567,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.15px;
 }
 .program__description {
-  max-width: 369px;
-  width: 19.219vw;
+  width: 19.271vw;
   font-size: 0.9895vw;
   line-height: 1.302vw;
   letter-spacing: 0.1px;
@@ -2500,13 +2577,11 @@ input[type="radio"].visually-hidden {
 }
 .program--detox .program__list {
   counter-reset: none;
-  max-height: none;
-  height: 34.271vw;
 }
 .program--detox .program__item {
-  max-height: none;
   width: 17.917vw;
-  height: 15.625vw;
+  min-height: 15.625vw;
+  margin-bottom: 3.0729vw;
   margin-left: 2.2395vw;
   padding-top: 2.0312vw;
   padding-left: 3.0208vw;
@@ -2600,13 +2675,11 @@ input[type="radio"].visually-hidden {
 }
 .program--detox-treatment .program__list {
   counter-reset: programItem;
-  max-height: none;
-  height: 34.896vw;
 }
 .program--detox-treatment .program__item {
   max-height: none;
   width: 27.083vw;
-  height: 9.688vw;
+  min-height: 9.688vw;
   margin-left: 2.7604vw;
   padding-top: 2.0312vw;
   padding-left: 5.1041vw;
@@ -2641,21 +2714,16 @@ input[type="radio"].visually-hidden {
   }
   .program__list {
     flex-direction: column;
-    max-width: none;
-    max-height: none;
-    height: auto;
     width: 100%;
   }
   .program__item {
-    max-width: none;
-    max-height: none;
     width: auto;
-    height: auto;
     margin-bottom: 5.866vw;
     margin-left: 6.8vw;
     padding-top: 5.2vw;
     padding-left: 12.8vw;
     padding-right: 1.066vw;
+    padding-bottom: 5.733vw;
   }
   .program__item::before {
     top: 2.666vw;
@@ -2680,11 +2748,7 @@ input[type="radio"].visually-hidden {
     font-size: 4.266vw;
   }
   .program__description {
-    max-width: none;
-    max-height: none;
     width: auto;
-    height: auto;
-    padding-bottom: 5.733vw;
     font-size: 4vw;
     line-height: 4.399vw;
   }
@@ -2693,14 +2757,14 @@ input[type="radio"].visually-hidden {
   }
   .program--detox .program__list {
     overflow-x: scroll;
-    max-height: none;
     height: 53.333vw;
     padding-top: 2.666vw;
   }
   .program--detox .program__item {
-    max-height: none;
+    display: flex;
+    flex-direction: column;
     width: 64.667vw;
-    height: auto;
+    min-height: 42vw;
     margin-left: 4.666vw;
     margin-right: 4.399vw;
     padding-top: 4vw;
@@ -2720,21 +2784,70 @@ input[type="radio"].visually-hidden {
     height: 4.533vw;
   }
   .program--detox .program__title {
-    margin-bottom: 1.73vw;
+    margin-bottom: 2.4vw;
+    padding-top: 1.2vw;
     padding-right: 0;
     font-size: 4.399vw;
-    line-height: normal;
+    line-height: 4.399vw;
     letter-spacing: 0.17px;
   }
   .program--detox .program__description {
-    width: auto;
+    width: 49.333vw;
+    padding-bottom: 0;
     font-size: 4vw;
     line-height: 4.533vw;
     letter-spacing: 0.15px;
   }
+  .program--signs .intro {
+    width: 85.333vw;
+  }
+  .program--signs .intro__description {
+    font-size: 4vw;
+    line-height: 5.066vw;
+    letter-spacing: 0.15px;
+  }
+  .program--signs .program__item:first-child .program__title {
+    padding-right: 0;
+  }
+  .program--signs .program__title {
+    padding-right: 0;
+  }
+  .program--detox-treatment .intro--program-detox {
+    margin-bottom: 10.26vw;
+  }
+  .program--detox-treatment .intro__description {
+    font-size: 4vw;
+  }
   .program--detox-treatment .program__list {
     flex-wrap: nowrap;
     height: auto;
+  }
+  .program--detox-treatment .program__item {
+    width: auto;
+    min-height: 35.733vw;
+    margin-left: 6.666vw;
+    margin-bottom: 4.399vw;
+    padding-top: 6vw;
+    padding-left: 13.3vw;
+  }
+  .program--detox-treatment .program__item__icon {
+    top: 13.06vw;
+    left: -8.666vw;
+    width: 13.3vw;
+    height: 13.3vw;
+  }
+  .program--detox-treatment .program__item__icon::before {
+    left: 45%;
+    font-size: 6.666vw;
+    letter-spacing: 0.25px;
+  }
+  .program--detox-treatment .program__title {
+    margin-bottom: 2.933vw;
+    line-height: 3.733vw;
+    letter-spacing: 0.17px;
+  }
+  .program--detox-treatment .program__description {
+    width: 62vw;
   }
 }
 @media (min-width: 1921px) {
@@ -2742,9 +2855,13 @@ input[type="radio"].visually-hidden {
     margin-bottom: 203px;
   }
   .program__item {
+    width: 660px;
+    min-height: 180px;
+    margin-bottom: 47px;
     margin-left: 50px;
     padding-top: 45px;
     padding-left: 100px;
+    padding-bottom: 30px;
   }
   .program__item::before {
     top: 21px;
@@ -2764,18 +2881,17 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
   }
   .program__description {
+    width: 370px;
     font-size: 19px;
     line-height: 25px;
   }
   .program--detox {
     margin-bottom: 191px;
   }
-  .program--detox .program__list {
-    height: 658px;
-  }
   .program--detox .program__item {
     width: 344px;
-    height: 300px;
+    min-height: 300px;
+    margin-bottom: 59px;
     margin-left: 43px;
     padding-top: 39px;
     padding-left: 58px;
@@ -2828,14 +2944,10 @@ input[type="radio"].visually-hidden {
   .program--detox-treatment .intro__description {
     font-size: 19px;
   }
-  .program--detox-treatment .program__list {
-    max-height: none;
-    height: 670px;
-  }
   .program--detox-treatment .program__item {
     max-height: none;
     width: 520px;
-    height: 186px;
+    min-height: 186px;
     margin-left: 53px;
     padding-top: 39px;
     padding-left: 98px;
@@ -3006,6 +3118,7 @@ input[type="radio"].visually-hidden {
   .banners__description {
     max-width: none;
     width: 51.067vw;
+    width: 51.6vw;
     font-size: 4vw;
     line-height: 5.2vw;
   }
@@ -5006,7 +5119,7 @@ input[type="radio"].visually-hidden {
     left: -6.4vw;
     width: 2.933vw;
     height: 1.33vw;
-    border: 3px solid #5a5a5a;
+    border: 0.4vw solid #5a5a5a;
     border-color: #14b250;
     border-top-style: none;
     border-right-style: none;
@@ -5206,6 +5319,7 @@ input[type="radio"].visually-hidden {
   width: 37.344vw;
   padding-top: 2.8125vw;
   padding-left: 3.6458vw;
+  padding-bottom: 1.5625vw;
 }
 .banner-program__list {
   display: flex;
@@ -5213,12 +5327,12 @@ input[type="radio"].visually-hidden {
   align-items: space-between;
   flex-wrap: wrap;
   width: 29.948vw;
-  height: 7.5vw;
   margin-top: 1.7708vw;
 }
 .banner-program__item {
   position: relative;
   width: 9.896vw;
+  margin-bottom: 1.5625vw;
   padding-left: 1.875vw;
   font-size: 0.9895vw;
 }
@@ -5293,6 +5407,115 @@ input[type="radio"].visually-hidden {
 .banner-program--transit .intro__description {
   width: 28.125vw;
 }
+@media (max-width: 755px) {
+  .banner-program {
+    margin-bottom: 27.333vw;
+    box-shadow: 0 0 87px rgba(2, 7, 32, 0.04);
+  }
+  .banner-program__wrapper {
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  .banner-program__img-wrapper {
+    width: auto;
+    height: 54.933vw;
+  }
+  .banner-program__img {
+    border-radius: 20px 20px 0 0;
+  }
+  .banner-program__text-wrapper {
+    width: auto;
+    padding-top: 9.066vw;
+    padding-left: 4.266vw;
+    padding-bottom: 8vw;
+  }
+  .banner-program__list {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+  }
+  .banner-program__item {
+    width: 72.533vw;
+    margin-bottom: 4vw;
+    padding-left: 7.199vw;
+    font-size: 4vw;
+    letter-spacing: 0.15px;
+  }
+  .banner-program__item:nth-child(2n) {
+    width: 72.533vw;
+  }
+  .banner-program__item::before {
+    top: 1.33vw;
+    left: 0.266vw;
+    width: 2.666vw;
+    height: 1.2vw;
+    border: 0.4vw solid #5a5a5a;
+    border-color: #14b250;
+    border-top-style: none;
+    border-right-style: none;
+  }
+  .banner-program__consultation-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    width: 53.333vw;
+    height: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 45px;
+  }
+  .banner-program__consultation-phone {
+    margin-bottom: 6.666vw;
+    font-size: 6vw;
+    font-weight: 700;
+    letter-spacing: 0.14px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .banner-program__consultation-btn {
+    width: 53.333vw;
+    height: 10vw;
+    font-size: 3.599vw;
+    border: none;
+    border-radius: 45px;
+  }
+  .banner-program--intens .banner-program__item:nth-child(2) {
+    padding-right: 0;
+  }
+  .banner-program--intens .banner-program__item:last-child {
+    width: auto;
+  }
+  .banner-program--transit {
+    height: auto;
+    text-align: center;
+    box-shadow: none;
+  }
+  .banner-program--transit .banner-program__img-wrapper {
+    width: 69.333vw;
+    height: 53.333vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+  }
+  .banner-program--transit .banner-program__text-wrapper {
+    padding-top: 6.133vw;
+    padding-left: 0;
+  }
+  .banner-program--transit .intro--banner-program {
+    width: auto;
+  }
+  .banner-program--transit .intro__title {
+    width: auto;
+    margin-bottom: 5.866vw;
+  }
+  .banner-program--transit .intro__description {
+    width: 72vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4vw;
+  }
+}
 @media (min-width: 1921px) {
   .banner-program {
     margin-bottom: 84px;
@@ -5304,14 +5527,15 @@ input[type="radio"].visually-hidden {
     width: 717px;
     padding-top: 54px;
     padding-left: 70px;
+    padding-bottom: 30px;
   }
   .banner-program__list {
     width: 575px;
-    height: 144px;
     margin-top: 34px;
   }
   .banner-program__item {
     width: 190px;
+    margin-bottom: 30px;
     padding-left: 36px;
     font-size: 19px;
   }
@@ -5378,7 +5602,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
-  height: 12.344vw;
 }
 .contraindications__item {
   display: flex;
@@ -5386,6 +5609,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 14.583vw;
   height: 5.365vw;
+  margin-bottom: 1.6145vw;
   color: #2f2f2f;
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.06);
   border-radius: 19px;
@@ -5396,16 +5620,28 @@ input[type="radio"].visually-hidden {
   font-size: 0.9375vw;
   text-align: center;
 }
+@media (max-width: 755px) {
+  .contraindications {
+    margin-bottom: 25.733vw;
+  }
+  .contraindications__item {
+    width: 42.8vw;
+    height: 19.6vw;
+    margin-bottom: 4.399vw;
+  }
+  .contraindications__text {
+    width: 34vw;
+    font-size: 3.599vw;
+  }
+}
 @media (min-width: 1921px) {
   .contraindications {
     margin-bottom: 202px;
   }
-  .contraindications__list {
-    height: 237px;
-  }
   .contraindications__item {
     width: 280px;
     height: 103px;
+    margin-bottom: 31px;
   }
   .contraindications__text {
     width: 165px;
@@ -5809,6 +6045,7 @@ input[type="radio"].visually-hidden {
 .aside-banner__bg-wrapper {
   width: 100%;
   height: 13.021vw;
+  margin-top: auto;
   border-radius: 0 0 19px 19px;
 }
 .aside-banner--family .aside-banner__bg-wrapper {
@@ -5837,16 +6074,6 @@ input[type="radio"].visually-hidden {
     transform: translateX(-50%);
     width: 9.333vw;
     height: 9.333vw;
-  }
-  .aside-banner--btn .aside-banner__container {
-    padding-top: 16.8vw;
-    text-align: center;
-  }
-  .aside-banner--bg {
-    margin-bottom: 4.2187vw;
-  }
-  .aside-banner--bg .aside-banner__container {
-    padding-bottom: 0px;
   }
   .aside-banner__container {
     padding-top: 5.333vw;
@@ -5881,27 +6108,35 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
   }
   .articles-wrapper .aside-banner__container {
-    padding-top: 4.666vw;
+    padding-top: 4.933vw;
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 6.666vw;
   }
   .articles-wrapper .aside-banner__title {
     width: auto;
-    margin-bottom: 37px;
+    margin-bottom: 4.933vw;
+    line-height: 5.066vw;
+  }
+  .aside-banner--cards .aside-banner__cards-wrapper {
+    width: auto;
+  }
+  .aside-banner--cards .aside-banner__card-wrapper {
+    width: 9.333vw;
+    height: 9.333vw;
+  }
+  .aside-banner--btn .aside-banner__container {
+    padding-top: 16.8vw;
+    text-align: center;
+  }
+  .aside-banner--bg {
+    margin-bottom: 0;
   }
   .aside-banner--bg .aside-banner__container {
     padding-bottom: 0px;
   }
   .aside-banner--bg .aside-banner__bg-wrapper {
     height: 16vw;
-  }
-  .aside-banner__cards-wrapper {
-    width: auto;
-  }
-  .aside-banner__card-wrapper {
-    width: 9.333vw;
-    height: 9.333vw;
   }
   .aside-banner__banners-category {
     width: auto;
@@ -5913,6 +6148,29 @@ input[type="radio"].visually-hidden {
   }
   .aside-banner__banners-category .banners__content-wrapper {
     width: 100%;
+  }
+  .aside-banner--anonymity .aside-banner__container {
+    padding-top: 17.467vw;
+    text-align: left;
+  }
+  .aside-banner--anonymity .aside-banner__title {
+    margin-bottom: 2.4vw;
+    line-height: 4.399vw;
+  }
+  .aside-banner--anonymity::before {
+    top: 4.666vw;
+    left: 4vw;
+    transform: translateX(0);
+  }
+  .aside-banner--sick-leave .aside-banner__container {
+    padding-top: 5.333vw;
+  }
+  .aside-banner--sick-leave .aside-banner__title {
+    margin-bottom: 3.066vw;
+    line-height: 4.399vw;
+  }
+  .aside-banner--sick-leave .aside-banner__bg-wrapper {
+    height: 24vw;
   }
 }
 @media (min-width: 1921px) {

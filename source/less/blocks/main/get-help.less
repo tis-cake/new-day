@@ -174,8 +174,10 @@
   color: #ffffff;
 }
 
-.get-help--detox {
-  margin-bottom: @d154px;
+.double-main-wrapper {
+  .get-help {
+    margin-bottom: @d154px;
+  }
 }
 
 .get-help--consultation {
@@ -302,6 +304,46 @@
     background-color: #1ab455;
   }
 
+  .get-help__header {
+    height: @m270px;
+    padding-top: @m77px;
+    &::before {
+      height: @m270px;
+      background-image: url('../img/bg/bg-green-small.png');
+    }
+  }
+
+  .get-help__icon {
+    top: -@m45px;
+    width: @m90px;
+    height: @m90px;
+    &::before {
+      width: @m46px;
+      height: @m46px;
+    }
+  }
+
+  .get-help__header-text {
+    width: @m400px;
+  }
+
+  .get-help__header-title {
+    margin-bottom: @m15px;
+    font-weight: 400;
+    font-size: @m20px;
+  }
+
+  .get-help__header-phone {
+    font-size: @m45px;
+    color: #ffffff;
+  }
+
+  .double-main-wrapper {
+    .get-help {
+      margin-bottom: @m154px;
+    }
+  }
+
   .get-help--consultation {
     margin-bottom: @m203px;
     padding-top: 0;
@@ -315,6 +357,39 @@
       font-size: @m27px;
       line-height: @m32px;
       letter-spacing: 0.14px;
+    }
+  }
+
+  .get-help--green {
+    padding-top: 0;
+    padding-bottom: @m40px;
+
+    .intro--get-help {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: @m650px;
+      margin-top: @m30px;
+    }
+    .intro__title {
+      width: @m570px;
+      margin-bottom: @m43px;
+      font-size: @m40px;
+      line-height: @m43px;
+      letter-spacing: 0.03px;
+    }
+    .intro__description {
+      width: @m540px;
+    }
+    .get-help__consultation-wrapper {
+      margin-top: @m10px;
+    }
+    .get-help__consultation-btn {
+      position: absolute;
+      bottom: -@m75px;
+      width: @m400px;
+      margin-top: 0px;
+      font-size: @m27px;
     }
   }
 }
@@ -391,8 +466,10 @@
     font-size: 32px;
   }
 
-  .get-help--detox {
-    margin-bottom: 154px;
+  .double-main-wrapper {
+    .get-help {
+      margin-bottom: 154px;
+    }
   }
 
   .get-help--consultation {

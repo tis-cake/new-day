@@ -76,62 +76,6 @@ input {
   overflow: hidden !important;
   height: 100% !important;
 }
-.container {
-  max-width: 1625px;
-  width: 84.6%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 755px) {
-  .container {
-    width: auto;
-    padding-left: 4.666vw;
-    padding-right: 4.666vw;
-  }
-}
-.detox-main-wrapper {
-  display: flex;
-  justify-content: space-between;
-  min-height: 1500px;
-}
-.detox-column-wrapper {
-  width: 63.02vw;
-  padding-top: 1.0416vw;
-}
-@media (max-width: 755px) {
-  .detox-column-wrapper {
-    width: 90.4vw;
-  }
-}
-@media (min-width: 1921px) {
-  .detox-column-wrapper {
-    width: 1210px;
-    padding-top: 20px;
-  }
-}
-.detox-aside-wrapper {
-  width: 19.89vw;
-  padding-top: 1.0416vw;
-}
-@media (max-width: 755px) {
-  .detox-aside-wrapper {
-    display: none;
-  }
-}
-@media (min-width: 1921px) {
-  .detox-aside-wrapper {
-    width: 382px;
-    padding-top: 20px;
-  }
-}
-.detox-mobile-block {
-  display: none;
-}
-@media (max-width: 755px) {
-  .detox-mobile-block {
-    display: block;
-  }
-}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -146,15 +90,34 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  max-width: 1625px;
+  width: 84.6%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.double-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.double-column-wrapper {
+  width: 63.02vw;
+  padding-top: 1.0416vw;
+}
+.double-aside-wrapper {
+  width: 19.896vw;
+  padding-top: 1.0416vw;
+}
+.hidden-mobile-block {
+  display: none;
+}
 .btn {
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 243px;
-  max-height: 55px;
-  width: 12.648vw;
-  height: 2.864583vw;
+  width: 12.656vw;
+  height: 2.8645vw;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.9375vw;
@@ -166,6 +129,20 @@ input[type="radio"].visually-hidden {
   border-radius: 19px;
 }
 @media (max-width: 755px) {
+  .container {
+    width: auto;
+    padding-left: 4.666vw;
+    padding-right: 4.666vw;
+  }
+  .double-column-wrapper {
+    width: 90.4vw;
+  }
+  .double-aside-wrapper {
+    display: none;
+  }
+  .hidden-mobile-block {
+    display: block;
+  }
   .btn {
     max-width: none;
     max-height: none;
@@ -176,7 +153,17 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1921px) {
+  .double-column-wrapper {
+    width: 1210px;
+    padding-top: 20px;
+  }
+  .double-aside-wrapper {
+    width: 382px;
+    padding-top: 20px;
+  }
   .btn {
+    width: 243px;
+    height: 55px;
     font-size: 18px;
   }
 }
@@ -1266,6 +1253,15 @@ input[type="radio"].visually-hidden {
   }
   .intro--master-swiper {
     width: auto;
+    margin-bottom: 9.333vw;
+  }
+  .intro--faq {
+    width: 72vw;
+    margin-bottom: 6.666vw;
+  }
+  .intro--faq .intro__title {
+    margin-bottom: 4.666vw;
+    line-height: 6vw;
   }
 }
 @media (min-width: 1921px) {
@@ -1975,7 +1971,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
 }
-.get-help--detox {
+.double-main-wrapper .get-help {
   margin-bottom: 8.021vw;
 }
 .get-help--consultation {
@@ -2084,6 +2080,38 @@ input[type="radio"].visually-hidden {
     border-radius: 38px;
     background-color: #1ab455;
   }
+  .get-help__header {
+    height: 36vw;
+    padding-top: 10.26vw;
+  }
+  .get-help__header::before {
+    height: 36vw;
+    background-image: url('../img/bg/bg-green-small.png');
+  }
+  .get-help__icon {
+    top: -6vw;
+    width: 12vw;
+    height: 12vw;
+  }
+  .get-help__icon::before {
+    width: 6.133vw;
+    height: 6.133vw;
+  }
+  .get-help__header-text {
+    width: 53.333vw;
+  }
+  .get-help__header-title {
+    margin-bottom: 2vw;
+    font-weight: 400;
+    font-size: 2.666vw;
+  }
+  .get-help__header-phone {
+    font-size: 6vw;
+    color: #ffffff;
+  }
+  .double-main-wrapper .get-help {
+    margin-bottom: 20.533vw;
+  }
   .get-help--consultation {
     margin-bottom: 27.067vw;
     padding-top: 0;
@@ -2099,6 +2127,37 @@ input[type="radio"].visually-hidden {
     font-size: 3.599vw;
     line-height: 4.266vw;
     letter-spacing: 0.14px;
+  }
+  .get-help--green {
+    padding-top: 0;
+    padding-bottom: 5.333vw;
+  }
+  .get-help--green .intro--get-help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 86.667vw;
+    margin-top: 4vw;
+  }
+  .get-help--green .intro__title {
+    width: 76vw;
+    margin-bottom: 5.733vw;
+    font-size: 5.333vw;
+    line-height: 5.733vw;
+    letter-spacing: 0.03px;
+  }
+  .get-help--green .intro__description {
+    width: 72vw;
+  }
+  .get-help--green .get-help__consultation-wrapper {
+    margin-top: 1.33vw;
+  }
+  .get-help--green .get-help__consultation-btn {
+    position: absolute;
+    bottom: -10vw;
+    width: 53.333vw;
+    margin-top: 0px;
+    font-size: 3.599vw;
   }
 }
 @media (min-width: 1921px) {
@@ -2159,7 +2218,7 @@ input[type="radio"].visually-hidden {
   .get-help__header-phone {
     font-size: 32px;
   }
-  .get-help--detox {
+  .double-main-wrapper .get-help {
     margin-bottom: 154px;
   }
   .get-help--consultation .intro__title {
@@ -2290,38 +2349,38 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 100%;
 }
-.detox-page .rehab-swiper {
+.double-main-wrapper .rehab-swiper {
   margin-bottom: 10.729vw;
 }
-.detox-page .swiper-container {
+.double-main-wrapper .swiper-container {
   box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
 }
-.detox-page .rehab-swiper__img-wrapper {
+.double-main-wrapper .rehab-swiper__img-wrapper {
   height: 14.479vw;
 }
-.detox-page .rehab-swiper__text-wrapper {
+.double-main-wrapper .rehab-swiper__text-wrapper {
   padding-top: 1.5104vw;
   padding-left: 1.7187vw;
   padding-right: 1.7187vw;
   padding-bottom: 1.1979vw;
 }
-.detox-page .rehab-swiper__city {
+.double-main-wrapper .rehab-swiper__city {
   font-size: 1.0416vw;
 }
-.detox-page .rehab-swiper__street {
+.double-main-wrapper .rehab-swiper__street {
   margin-bottom: 0.10416vw;
   font-size: 1.1458vw;
 }
-.detox-page .rehab-swiper__place-description {
+.double-main-wrapper .rehab-swiper__place-description {
   margin-bottom: 0.46875vw;
   font-size: 0.7291vw;
   line-height: normal;
 }
-.detox-page .rehab-swiper__price {
+.double-main-wrapper .rehab-swiper__price {
   font-size: 0.8854vw;
   line-height: normal;
 }
-.detox-page .rehab-swiper__link-page {
+.double-main-wrapper .rehab-swiper__link-page {
   bottom: 1.25vw;
   right: 2.3437vw;
   width: 1.302vw;
@@ -2402,6 +2461,47 @@ input[type="radio"].visually-hidden {
     width: 4.399vw;
     height: 4.399vw;
   }
+  .double-main-wrapper .rehab-swiper {
+    margin-bottom: 23.067vw;
+    margin-bottom: 23.467vw;
+  }
+  .double-main-wrapper .swiper-container {
+    box-shadow: 0 0 153px 27px rgba(17, 30, 66, 0.05);
+  }
+  .double-main-wrapper .rehab-swiper__img-wrapper {
+    height: 49.6vw;
+  }
+  .double-main-wrapper .rehab-swiper__text-wrapper {
+    padding-top: 4.933vw;
+    padding-left: 4.933vw;
+    padding-right: 3.066vw;
+    padding-bottom: 5.333vw;
+  }
+  .double-main-wrapper .rehab-swiper__city {
+    font-size: 3.599vw;
+  }
+  .double-main-wrapper .rehab-swiper__street {
+    padding-bottom: 4.666vw;
+    font-size: 4vw;
+  }
+  .double-main-wrapper .rehab-swiper__place-description {
+    margin-bottom: 0;
+    min-height: 0;
+    padding-bottom: 3.333vw;
+    font-size: 3.599vw;
+    line-height: 3.733vw;
+  }
+  .double-main-wrapper .rehab-swiper__price {
+    font-size: 4vw;
+    line-height: normal;
+    letter-spacing: 0.23px;
+  }
+  .double-main-wrapper .rehab-swiper__link-page {
+    right: 28px;
+    bottom: 6.266vw;
+    width: 4.399vw;
+    height: 4.399vw;
+  }
 }
 @media (min-width: 1921px) {
   .rehab-swiper {
@@ -2436,35 +2536,35 @@ input[type="radio"].visually-hidden {
     bottom: 50px;
     right: 72px;
   }
-  .detox-page .rehab-swiper {
+  .double-main-wrapper .rehab-swiper {
     margin-bottom: 206px;
   }
-  .detox-page .rehab-swiper__img-wrapper {
+  .double-main-wrapper .rehab-swiper__img-wrapper {
     height: 278px;
   }
-  .detox-page .rehab-swiper__text-wrapper {
+  .double-main-wrapper .rehab-swiper__text-wrapper {
     padding-top: 29px;
     padding-left: 33px;
     padding-right: 33px;
     padding-bottom: 23px;
   }
-  .detox-page .rehab-swiper__city {
+  .double-main-wrapper .rehab-swiper__city {
     font-size: 20px;
   }
-  .detox-page .rehab-swiper__street {
+  .double-main-wrapper .rehab-swiper__street {
     margin-bottom: 2px;
     font-size: 22px;
   }
-  .detox-page .rehab-swiper__place-description {
+  .double-main-wrapper .rehab-swiper__place-description {
     margin-bottom: 9px;
     font-size: 14px;
     line-height: normal;
   }
-  .detox-page .rehab-swiper__price {
+  .double-main-wrapper .rehab-swiper__price {
     font-size: 17px;
     line-height: normal;
   }
-  .detox-page .rehab-swiper__link-page {
+  .double-main-wrapper .rehab-swiper__link-page {
     bottom: 24px;
     right: 45px;
     width: 25px;
@@ -2572,13 +2672,13 @@ input[type="radio"].visually-hidden {
   line-height: 1.302vw;
   letter-spacing: 0.1px;
 }
-.program--detox {
+.double-main-wrapper .program {
   margin-bottom: 9.948vw;
 }
-.program--detox .program__list {
+.double-main-wrapper .program__list {
   counter-reset: none;
 }
-.program--detox .program__item {
+.double-main-wrapper .program__item {
   width: 17.917vw;
   min-height: 15.625vw;
   margin-bottom: 3.0729vw;
@@ -2586,69 +2686,69 @@ input[type="radio"].visually-hidden {
   padding-top: 2.0312vw;
   padding-left: 3.0208vw;
 }
-.program--detox .program__item::before {
+.double-main-wrapper .program__item::before {
   content: none;
 }
-.program--detox .program__item__icon {
+.double-main-wrapper .program__item__icon {
   position: absolute;
   top: 3.75vw;
   left: -2.7083vw;
   width: 3.6458vw;
   height: 3.6458vw;
 }
-.program--detox .program__item__icon::before {
+.double-main-wrapper .program__item__icon::before {
   width: 1.6666vw;
   height: 1.6666vw;
 }
-.program--detox .program__item__icon--danger::before {
+.double-main-wrapper .program__item__icon--danger::before {
   width: 1.875vw;
   height: 1.6666vw;
   background-image: url('../img/program/danger.svg');
 }
-.program--detox .program__item__icon--sad::before {
+.double-main-wrapper .program__item__icon--sad::before {
   background-image: url('../img/program/sad.svg');
 }
-.program--detox .program__item__icon--time::before {
+.double-main-wrapper .program__item__icon--time::before {
   background-image: url('../img/program/time.svg');
 }
-.program--detox .program__item__icon--check::before {
+.double-main-wrapper .program__item__icon--check::before {
   background-image: url('../img/program/check.svg');
 }
-.program--detox .program__item__icon--vip::before {
+.double-main-wrapper .program__item__icon--vip::before {
   background-image: url('../img/program/vip.svg');
 }
-.program--detox .program__item__icon--more::before {
+.double-main-wrapper .program__item__icon--more::before {
   background-image: url('../img/program/more.svg');
 }
-.program--detox .program__item__icon--oculus::before {
+.double-main-wrapper .program__item__icon--oculus::before {
   background-image: url('../img/program/oculus.svg');
 }
-.program--detox .program__item__icon--hypnos::before {
+.double-main-wrapper .program__item__icon--hypnos::before {
   background-image: url('../img/program/hypnos.svg');
 }
-.program--detox .program__item__icon--catlery::before {
+.double-main-wrapper .program__item__icon--catlery::before {
   background-image: url('../img/program/catlery.svg');
 }
-.program--detox .program__item__icon--snow::before {
+.double-main-wrapper .program__item__icon--snow::before {
   background-image: url('../img/program/snow.svg');
 }
-.program--detox .program__item__icon--share::before {
+.double-main-wrapper .program__item__icon--share::before {
   background-image: url('../img/program/share.svg');
 }
-.program--detox .program__title {
+.double-main-wrapper .program__title {
   margin-bottom: 1.6145vw;
   padding-right: 1.0416vw;
   font-weight: 700;
   line-height: 1.5625vw;
   letter-spacing: 0.15px;
 }
-.program--detox .program__description {
+.double-main-wrapper .program__description {
   width: 13.542vw;
   font-size: 0.9895vw;
   line-height: 1.302vw;
   letter-spacing: 0.1px;
 }
-.program--detox .program__description--under {
+.double-main-wrapper .program__description--under {
   text-decoration: underline;
 }
 .program--signs .intro {
@@ -2664,19 +2764,19 @@ input[type="radio"].visually-hidden {
 .program--signs .program__title {
   padding-right: 1.5625vw;
 }
-.program--detox-treatment {
+.program--stages {
   margin-bottom: 9.948vw;
 }
-.program--detox-treatment .intro--program-detox {
+.program--stages .intro--program-detox {
   margin-bottom: 4.0104vw;
 }
-.program--detox-treatment .intro__description {
+.program--stages .intro__description {
   font-size: 0.9895vw;
 }
-.program--detox-treatment .program__list {
+.program--stages .program__list {
   counter-reset: programItem;
 }
-.program--detox-treatment .program__item {
+.program--stages .program__item {
   max-height: none;
   width: 27.083vw;
   min-height: 9.688vw;
@@ -2684,27 +2784,29 @@ input[type="radio"].visually-hidden {
   padding-top: 2.0312vw;
   padding-left: 5.1041vw;
 }
-.program--detox-treatment .program__item::before {
+.program--stages .program__item::before {
   content: none;
 }
-.program--detox-treatment .program__item__icon {
+.program--stages .program__item__icon {
   position: absolute;
   top: 4.5833vw;
   left: -3.3854vw;
   width: 5.208vw;
   height: 5.208vw;
 }
-.program--detox-treatment .program__item__icon::before {
+.program--stages .program__item__icon::before {
   counter-increment: programItem;
   content: counter(programItem, decimal-leading-zero);
   position: absolute;
+  width: auto;
+  height: auto;
   font-family: 'GothamPro', 'Arial', sans-serif;
   font-size: 2.0833vw;
   font-weight: 700;
   letter-spacing: 0.2px;
   color: #ffffff;
 }
-.program--detox-treatment .program__title {
+.program--stages .program__title {
   margin-bottom: 0.5208vw;
   line-height: 1.5625vw;
 }
@@ -2752,15 +2854,15 @@ input[type="radio"].visually-hidden {
     font-size: 4vw;
     line-height: 4.399vw;
   }
-  .program--detox {
+  .double-main-wrapper .program {
     margin-bottom: 10vw;
   }
-  .program--detox .program__list {
+  .double-main-wrapper .program__list {
     overflow-x: scroll;
     height: 53.333vw;
     padding-top: 2.666vw;
   }
-  .program--detox .program__item {
+  .double-main-wrapper .program__item {
     display: flex;
     flex-direction: column;
     width: 64.667vw;
@@ -2773,17 +2875,17 @@ input[type="radio"].visually-hidden {
     padding-bottom: 7.466vw;
     box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
   }
-  .program--detox .program__item__icon {
+  .double-main-wrapper .program__item__icon {
     top: 9.866vw;
     left: -6vw;
     width: 9.333vw;
     height: 9.333vw;
   }
-  .program--detox .program__item__icon::before {
+  .double-main-wrapper .program__item__icon::before {
     width: 4.533vw;
     height: 4.533vw;
   }
-  .program--detox .program__title {
+  .double-main-wrapper .program__title {
     margin-bottom: 2.4vw;
     padding-top: 1.2vw;
     padding-right: 0;
@@ -2791,7 +2893,7 @@ input[type="radio"].visually-hidden {
     line-height: 4.399vw;
     letter-spacing: 0.17px;
   }
-  .program--detox .program__description {
+  .double-main-wrapper .program__description {
     width: 49.333vw;
     padding-bottom: 0;
     font-size: 4vw;
@@ -2812,17 +2914,17 @@ input[type="radio"].visually-hidden {
   .program--signs .program__title {
     padding-right: 0;
   }
-  .program--detox-treatment .intro--program-detox {
+  .program--stages .intro--program-detox {
     margin-bottom: 10.26vw;
   }
-  .program--detox-treatment .intro__description {
+  .program--stages .intro__description {
     font-size: 4vw;
   }
-  .program--detox-treatment .program__list {
+  .program--stages .program__list {
     flex-wrap: nowrap;
     height: auto;
   }
-  .program--detox-treatment .program__item {
+  .program--stages .program__item {
     width: auto;
     min-height: 35.733vw;
     margin-left: 6.666vw;
@@ -2830,23 +2932,24 @@ input[type="radio"].visually-hidden {
     padding-top: 6vw;
     padding-left: 13.3vw;
   }
-  .program--detox-treatment .program__item__icon {
+  .program--stages .program__item__icon {
     top: 13.06vw;
     left: -8.666vw;
     width: 13.3vw;
     height: 13.3vw;
   }
-  .program--detox-treatment .program__item__icon::before {
-    left: 45%;
+  .program--stages .program__item__icon::before {
+    width: auto;
+    height: auto;
     font-size: 6.666vw;
     letter-spacing: 0.25px;
   }
-  .program--detox-treatment .program__title {
+  .program--stages .program__title {
     margin-bottom: 2.933vw;
     line-height: 3.733vw;
     letter-spacing: 0.17px;
   }
-  .program--detox-treatment .program__description {
+  .program--stages .program__description {
     width: 62vw;
   }
 }
@@ -2885,10 +2988,10 @@ input[type="radio"].visually-hidden {
     font-size: 19px;
     line-height: 25px;
   }
-  .program--detox {
+  .double-main-wrapper .program {
     margin-bottom: 191px;
   }
-  .program--detox .program__item {
+  .double-main-wrapper .program__item {
     width: 344px;
     min-height: 300px;
     margin-bottom: 59px;
@@ -2896,28 +2999,28 @@ input[type="radio"].visually-hidden {
     padding-top: 39px;
     padding-left: 58px;
   }
-  .program--detox .program__item__icon {
+  .double-main-wrapper .program__item__icon {
     top: 72px;
     left: -52px;
     width: 70px;
     height: 70px;
   }
-  .program--detox .program__item__icon::before {
+  .double-main-wrapper .program__item__icon::before {
     width: 32px;
     height: 32px;
   }
-  .program--detox .program__item__icon--danger::before {
+  .double-main-wrapper .program__item__icon--danger::before {
     max-width: 36px;
     max-height: 32px;
     width: 36px;
     height: 32px;
   }
-  .program--detox .program__title {
+  .double-main-wrapper .program__title {
     margin-bottom: 31px;
     padding-right: 20px;
     line-height: 30px;
   }
-  .program--detox .program__description {
+  .double-main-wrapper .program__description {
     width: 260px;
     font-size: 19px;
     line-height: 25px;
@@ -2935,16 +3038,16 @@ input[type="radio"].visually-hidden {
   .program--signs .program__title {
     padding-right: 30px;
   }
-  .program--detox-treatment {
+  .program--stages {
     margin-bottom: 191px;
   }
-  .program--detox-treatment .intro--program-detox {
+  .program--stages .intro--program-detox {
     margin-bottom: 77px;
   }
-  .program--detox-treatment .intro__description {
+  .program--stages .intro__description {
     font-size: 19px;
   }
-  .program--detox-treatment .program__item {
+  .program--stages .program__item {
     max-height: none;
     width: 520px;
     min-height: 186px;
@@ -2952,16 +3055,18 @@ input[type="radio"].visually-hidden {
     padding-top: 39px;
     padding-left: 98px;
   }
-  .program--detox-treatment .program__item__icon {
+  .program--stages .program__item__icon {
     top: 88px;
     left: -65px;
     width: 100px;
     height: 100px;
   }
-  .program--detox-treatment .program__item__icon::before {
+  .program--stages .program__item__icon::before {
+    width: auto;
+    height: auto;
     font-size: 40px;
   }
-  .program--detox-treatment .program__title {
+  .program--stages .program__title {
     margin-bottom: 10px;
     line-height: 30px;
   }
@@ -3284,21 +3389,21 @@ input[type="radio"].visually-hidden {
   font-size: 0.9375vw;
   letter-spacing: 0.046vw;
 }
-.detox-page .reviews__blockquote {
+.double-main-wrapper .reviews__blockquote {
   margin-left: 0.7812vw;
 }
-.detox-page .reviews__text-block {
+.double-main-wrapper .reviews__text-block {
   width: 19.375vw;
   margin-bottom: 3.3333vw;
   padding-top: 2.3958vw;
   padding-left: 3.8541vw;
 }
-.detox-page .reviews__blockquote-text {
+.double-main-wrapper .reviews__blockquote-text {
   width: 14.583vw;
   padding-top: 1.0416vw;
   padding-bottom: 1.0416vw;
 }
-.detox-page .reviews__author-wrapper {
+.double-main-wrapper .reviews__author-wrapper {
   padding-left: 0.9375vw;
 }
 @media (max-width: 755px) {
@@ -3381,6 +3486,30 @@ input[type="radio"].visually-hidden {
     font-size: 3.599vw;
     letter-spacing: 0.14px;
   }
+  .double-main-wrapper .reviews__blockquote {
+    margin-right: 8.666vw;
+  }
+  .double-main-wrapper .reviews__blockquote:first-child {
+    margin-left: 2vw;
+  }
+  .double-main-wrapper .reviews__blockquote:last-child {
+    padding-right: 4.666vw;
+  }
+  .double-main-wrapper .reviews__text-block {
+    width: auto;
+    margin-bottom: 6vw;
+    padding-top: 3.599vw;
+    padding-left: 11.33vw;
+    padding-bottom: 5.733vw;
+  }
+  .double-main-wrapper .reviews__blockquote-text {
+    width: 46.133vw;
+    padding-top: 2.533vw;
+    padding-bottom: 0px;
+  }
+  .double-main-wrapper .reviews__author-wrapper {
+    padding-left: 2vw;
+  }
 }
 @media (min-width: 1921px) {
   .reviews {
@@ -3433,21 +3562,21 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     letter-spacing: 0.9px;
   }
-  .detox-page .reviews__blockquote {
+  .double-main-wrapper .reviews__blockquote {
     margin-left: 15px;
   }
-  .detox-page .reviews__text-block {
+  .double-main-wrapper .reviews__text-block {
     width: 372px;
     margin-bottom: 64px;
     padding-top: 46px;
     padding-left: 74px;
   }
-  .detox-page .reviews__blockquote-text {
+  .double-main-wrapper .reviews__blockquote-text {
     width: 280px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .detox-page .reviews__author-wrapper {
+  .double-main-wrapper .reviews__author-wrapper {
     padding-left: 18px;
   }
 }
@@ -3645,35 +3774,35 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 28px;
 }
-.warning--detox .warning__img-wrapper {
+.double-main-wrapper .warning__img-wrapper {
   max-width: none;
   width: 28.594vw;
 }
-.warning--detox .warning__form-wrapper {
+.double-main-wrapper .warning__form-wrapper {
   width: 34.375vw;
   padding-top: 4.5833vw;
   padding-left: 2.4479vw;
   padding-bottom: 0;
 }
-.warning--detox .intro--warning {
+.double-main-wrapper .intro--warning {
   width: 27.604vw;
 }
-.warning--detox .intro__title {
+.double-main-wrapper .intro--warning .intro__title {
   margin-bottom: 1.6666vw;
   line-height: 2.6041vw;
 }
-.warning--detox .warning__form {
+.double-main-wrapper .warning__form {
   justify-content: space-between;
   width: 29.167vw;
   margin-top: 1.9791vw;
   margin-bottom: 2.8645vw;
 }
-.warning--detox .warning__input {
+.double-main-wrapper .warning__input {
   max-width: none;
   width: 9.375vw;
   padding-left: 2.6041vw;
 }
-.warning--detox .warning__btn {
+.double-main-wrapper .warning__btn {
   max-width: none;
   width: 12.604vw;
 }
@@ -3727,6 +3856,42 @@ input[type="radio"].visually-hidden {
     border-radius: 35px;
     font-size: 3.599vw;
   }
+  .double-main-wrapper .warning__img-wrapper {
+    max-width: none;
+    width: 100%;
+    height: 63.6vw;
+  }
+  .double-main-wrapper .warning__form-wrapper {
+    width: auto;
+    padding-top: 5.6vw;
+    padding-left: 4.266vw;
+    padding-right: 4.266vw;
+    padding-bottom: 6.8vw;
+  }
+  .double-main-wrapper .intro--warning {
+    max-width: none;
+    width: 100%;
+  }
+  .double-main-wrapper .intro--warning .intro__title {
+    width: 68vw;
+    margin-bottom: 3.599vw;
+    line-height: normal;
+  }
+  .double-main-wrapper .warning__form {
+    justify-content: center;
+    flex-direction: column;
+    max-width: none;
+    width: 100%;
+    margin-top: 3.2vw;
+    box-shadow: none;
+  }
+  .double-main-wrapper .warning__input {
+    width: 100%;
+    padding-left: 0;
+  }
+  .double-main-wrapper .warning__btn {
+    width: 100%;
+  }
 }
 @media (min-width: 1921px) {
   .warning {
@@ -3744,34 +3909,34 @@ input[type="radio"].visually-hidden {
   .warning__input {
     font-size: 19px;
   }
-  .warning--detox .warning__img-wrapper {
+  .double-main-wrapper .warning__img-wrapper {
     max-width: none;
     width: 549px;
   }
-  .warning--detox .warning__form-wrapper {
+  .double-main-wrapper .warning__form-wrapper {
     width: 660px;
     padding-top: 88px;
     padding-left: 47px;
     padding-bottom: 0;
   }
-  .warning--detox .intro--warning {
+  .double-main-wrapper .intro--warning {
     width: 530px;
   }
-  .warning--detox .intro__title {
+  .double-main-wrapper .intro--warning .intro__title {
     margin-bottom: 32px;
     line-height: 50px;
   }
-  .warning--detox .warning__form {
+  .double-main-wrapper .warning__form {
     width: 560px;
     margin-top: 38px;
     margin-bottom: 55px;
   }
-  .warning--detox .warning__input {
+  .double-main-wrapper .warning__input {
     max-width: none;
     width: 180px;
     padding-left: 50px;
   }
-  .warning--detox .warning__btn {
+  .double-main-wrapper .warning__btn {
     max-width: none;
     width: 242px;
   }
@@ -5488,6 +5653,7 @@ input[type="radio"].visually-hidden {
   }
   .banner-program--transit {
     height: auto;
+    margin-bottom: 25.6vw;
     text-align: center;
     box-shadow: none;
   }
@@ -5689,6 +5855,7 @@ input[type="radio"].visually-hidden {
 .master-swiper__little-img-wrapper {
   width: 6.198vw;
   height: 6.406vw;
+  border-radius: 19px 0 0 19px;
 }
 .master-swiper__little-img {
   width: 100%;
@@ -5750,12 +5917,16 @@ input[type="radio"].visually-hidden {
 .master-swiper__main-position {
   margin-bottom: 2.0833vw;
 }
-.master-swiper__main-description {
+.master-swiper__main-description,
+.master-swiper__main-work {
   margin-bottom: 1.302vw;
   line-height: 1.302vw;
 }
 .master-swiper__main-experience {
   margin-bottom: 0.41666vw;
+}
+.master-swiper__main-experience-mobile {
+  display: none;
 }
 .master-swiper__main-experience-current {
   display: flex;
@@ -5766,6 +5937,107 @@ input[type="radio"].visually-hidden {
   color: #fff;
   border-radius: 19px;
   background-color: #14af4f;
+}
+.master-swiper__main-more-btn {
+  display: none;
+}
+@media (max-width: 755px) {
+  .master-swiper {
+    margin-bottom: 22.8vw;
+  }
+  .swiper-container-horizontal > .swiper-scrollbar {
+    display: none;
+  }
+  .master-swiper__main-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9.896vw;
+  }
+  .master-swiper__little-swiper {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 40vw;
+  }
+  .master-swiper__little-swiper .swiper-wrapper {
+    box-sizing: border-box;
+    height: 40vw;
+    padding-top: 6.666vw;
+    padding-bottom: 6.666vw;
+  }
+  .master-swiper__little-swiper .swiper-slide.swiper-slide-active {
+    transform: scale(1.2);
+  }
+  .master-swiper__little-item {
+    width: auto;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 0;
+    box-shadow: none;
+    background-color: transparent;
+    border: 19px;
+  }
+  .master-swiper__little-img-wrapper {
+    width: 26.667vw;
+    height: 26.667vw;
+    border-radius: 19px;
+    box-shadow: none;
+  }
+  .master-swiper__little-img {
+    border-radius: 19px;
+  }
+  .master-swiper__little-text-wrapper {
+    display: none;
+  }
+  .master-swiper__main-swiper {
+    width: auto;
+    font-size: 4vw;
+  }
+  .master-swiper__main-swiper .swiper-wrapper {
+    height: auto;
+  }
+  .master-swiper__main-content-wrapper {
+    height: auto;
+  }
+  .master-swiper__main-img-wrapper {
+    display: none;
+  }
+  .master-swiper__main-text-wrapper {
+    width: auto;
+    margin-top: 4vw;
+    font-size: 4vw;
+  }
+  .master-swiper__main-name {
+    margin-bottom: 1.86vw;
+    font-size: 4.399vw;
+    text-decoration: none;
+  }
+  .master-swiper__main-position {
+    margin-bottom: 4.666vw;
+    font-size: 3.599vw;
+  }
+  .master-swiper__main-description {
+    margin-bottom: 8.799vw;
+    font-size: 4vw;
+    line-height: 5.066vw;
+  }
+  .master-swiper__main-work {
+    display: none;
+  }
+  .master-swiper__main-experience-mobile {
+    display: inline-block;
+    margin-bottom: 4vw;
+  }
+  .master-swiper__main-experience-current {
+    display: none;
+  }
+  .master-swiper__main-more-btn {
+    display: flex;
+    width: 40vw;
+    height: 10vw;
+    border-radius: 38px;
+    background-color: #14af4f;
+  }
 }
 @media (min-width: 1921px) {
   .master-swiper__main-wrapper {
@@ -5832,7 +6104,8 @@ input[type="radio"].visually-hidden {
   .master-swiper__main-position {
     margin-bottom: 40px;
   }
-  .master-swiper__main-description {
+  .master-swiper__main-description,
+  .master-swiper__main-work {
     margin-bottom: 25px;
     line-height: 25px;
   }
@@ -5906,6 +6179,51 @@ input[type="radio"].visually-hidden {
   line-height: 1.7708vw;
   letter-spacing: 0.09px;
   color: #747474;
+}
+@media (max-width: 755px) {
+  .faq {
+    margin-bottom: 26.133vw;
+  }
+  .faq__wrapper {
+    margin-bottom: 3.2vw;
+    padding-top: 3.466vw;
+    padding-left: 4.666vw;
+    padding-right: 4.666vw;
+    padding-bottom: 3.466vw;
+    border-radius: 0;
+  }
+  .faq__wrapper--q {
+    border-radius: 50px;
+  }
+  .faq__wrapper--q::before,
+  .faq__wrapper--q::after {
+    top: 50%;
+    width: 2.666vw;
+    height: 0.4vw;
+  }
+  .faq__wrapper--q::before {
+    right: 4.266vw;
+  }
+  .faq__wrapper--q::after {
+    right: 5.866vw;
+  }
+  .faq__wrapper--a {
+    border-radius: 4.666vw;
+    padding-top: 6.933vw;
+    padding-bottom: 6.933vw;
+  }
+  .faq__question {
+    font-size: 3.599vw;
+    line-height: 4.533vw;
+    letter-spacing: 0.14px;
+  }
+  .faq__answer {
+    width: auto;
+    font-size: 4vw;
+    line-height: 5.333vw;
+    letter-spacing: 0.15px;
+    border-radius: 35px;
+  }
 }
 @media (min-width: 1921px) {
   .faq {
@@ -6475,6 +6793,85 @@ input[type="radio"].visually-hidden {
 }
 .calc__link:focus {
   padding: 0;
+}
+@media (max-width: 755px) {
+  .calc {
+    margin-bottom: 33.067vw;
+    padding-top: 10.4vw;
+    padding-left: 4.933vw;
+    padding-right: 4.933vw;
+    padding-bottom: 9.333vw;
+  }
+  .calc__title {
+    margin-bottom: 6.666vw;
+    font-size: 6vw;
+    line-height: 6vw;
+    letter-spacing: 0.23px;
+    text-align: center;
+  }
+  .calc__form {
+    margin-bottom: 7.066vw;
+  }
+  .calc__label,
+  .calc__filter-handler {
+    height: 10vw;
+    margin-bottom: 4vw;
+    padding-left: 6.666vw;
+    padding-right: 6.666vw;
+    font-size: 3.599vw;
+    line-height: 4.533vw;
+    letter-spacing: 0.14px;
+    border-radius: 38px;
+  }
+  .calc__label::before,
+  .calc__filter-handler::before,
+  .calc__label::after,
+  .calc__filter-handler::after {
+    top: 5.066vw;
+    width: 2.666vw;
+    height: 0.4vw;
+  }
+  .calc__label::before,
+  .calc__filter-handler::before {
+    right: 6.933vw;
+  }
+  .calc__label::after,
+  .calc__filter-handler::after {
+    right: 8.533vw;
+  }
+  .calc__filter-list {
+    margin-bottom: 4vw;
+    padding-top: 4vw;
+    padding-left: 6.666vw;
+    padding-right: 6.666vw;
+    padding-bottom: 4vw;
+    font-size: 3.599vw;
+    line-height: 4.533vw;
+    letter-spacing: 0.14px;
+    border-radius: 35px;
+  }
+  .calc__filter-list-item:not(:last-child) {
+    margin-bottom: 4vw;
+  }
+  .calc__price-wrapper {
+    justify-content: center;
+  }
+  .calc__price {
+    margin-top: 0;
+    font-size: 6vw;
+    line-height: normal;
+    letter-spacing: 0.23px;
+  }
+  .calc__price-icon {
+    margin-top: 0.533vw;
+    margin-left: 1.066vw;
+    font-size: 4vw;
+  }
+  .calc__link {
+    width: 81.333vw;
+    height: 10vw;
+    border-radius: 38px;
+  }
 }
 @media (min-width: 1921px) {
   .calc {

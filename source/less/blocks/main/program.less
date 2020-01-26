@@ -129,8 +129,10 @@
   letter-spacing: 0.1px;
 }
 
-.program--detox {
-  margin-bottom: @d191px;
+.double-main-wrapper {
+  .program {
+    margin-bottom: @d191px;
+  }
   .program__list {
     counter-reset: none;
   }
@@ -244,7 +246,7 @@
  }
 }
 
-.program--detox-treatment {
+.program--stages {
   margin-bottom: @d191px;
   .intro--program-detox {
     margin-bottom: @d77px;
@@ -279,6 +281,8 @@
       content: counter(programItem, decimal-leading-zero);
 
       position: absolute;
+      width: @a;
+      height: @a;
 
       font-family: @gotham;
       font-size: @d40px;
@@ -345,8 +349,10 @@
     line-height: @m33px;
   }
 
-  .program--detox {
-    margin-bottom: @m75px;
+  .double-main-wrapper {
+    .program {
+      margin-bottom: @m75px;
+    }
     .program__list {
       overflow-x: scroll;
       // max-height: none;
@@ -419,7 +425,7 @@
    }
   }
 
-  .program--detox-treatment {
+  .program--stages {
     .intro--program-detox {
       margin-bottom: @m77px;
     }
@@ -445,7 +451,8 @@
       width: @m100px;
       height: @m100px;
       &::before {
-        left: 45%;
+        width: @a;
+        height: @a;
         font-size: @m50px;
         letter-spacing: 0.25px;
       }
@@ -506,8 +513,10 @@
     line-height: 25px;
   }
 
-  .program--detox {
-    margin-bottom: 191px;
+  .double-main-wrapper {
+    .program {
+      margin-bottom: 191px;
+    }
     .program__list {
       // height: 658px;
     }
@@ -567,7 +576,7 @@
    }
   }
 
-  .program--detox-treatment {
+  .program--stages {
     margin-bottom: 191px;
     .intro--program-detox {
       margin-bottom: 77px;
@@ -575,10 +584,6 @@
     .intro__description {
       font-size: 19px;
     }
-    // .program__list {
-    //   max-height: none;
-    //   height: 670px;
-    // }
     .program__item {
       max-height: none;
       width: 520px;
@@ -594,6 +599,8 @@
       width: 100px;
       height: 100px;
       &::before {
+        width: @a;
+        height: @a;
         font-size: 40px;
       }
     }

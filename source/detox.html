@@ -21,9 +21,9 @@
   </head>
   <body>
 
-    <div id="preloader">
+<!--     <div id="preloader">
       <div class="dws-progress-bar"></div>
-    </div>
+    </div> -->
 
     <header class="header">
       <div class="header__mobile">
@@ -85,9 +85,9 @@
         </div>
       </div>
 
-      <div class="header__desktop container">
+      <div class="header__desktop">
 
-        <div class="header__desktop-top">
+        <div class="header__desktop-top container">
           <div class="header__nav-info nav-info">
 
             <a class="nav-info__logo logo" href="index.html">
@@ -124,68 +124,69 @@
         </div>
 
         <div class="header__desktop-bottom header__mob-menu--nojs">
-          <nav class="header__nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="centers.html">Реабилитационные центры</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="clinics.html">Клиники</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="detox.html">Наркомания</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="detox.html">Алкоголизм</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Услуги</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="about.html">О нас</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="database.html">Публикации</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="family.html">Родственникам</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="contacts.html">Контакты</a>
-              </li>
-            </ul>
+          <div class="header__desktop-bottom-wrapper container">
+            <nav class="header__nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="centers.html">Реабилитационные центры</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="clinics.html">Клиники</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="detox.html">Наркомания</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="detox.html">Алкоголизм</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Услуги</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="about.html">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="database.html">Публикации</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="family.html">Родственникам</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
 
-          </nav>
+            <div class="header__consultation-phone">
+              <span class="header__consultation-phone--text">Бесплатная консультация</span>
+              <a class="header__consultation-phone--link" href="tel:+79004562345">8 (900) 456-23-45</a>
+            </div>
 
-          <div class="header__consultation-phone">
-            <span class="header__consultation-phone--text">Бесплатная консультация</span>
-            <a class="header__consultation-phone--link" href="tel:+79004562345">8 (900) 456-23-45</a>
-          </div>
+            <div class="header__callback">
+              <a class="header__callback--link btn" href="#">
+                Обратный звонок
+              </a>
+            </div>
 
-          <div class="header__callback">
-            <a class="header__callback--link btn" href="#">
-              Обратный звонок
-            </a>
-          </div>
+            <div class="header__features features-block">
+              <ul class="features-block__list features-block__list--header-mobile">
+                <li class="features-block__item features-block__item--anon">
+                  <h3 class="features-block__title">Анонимно</h3>
+                  <p class="features-block__description">Все звонки бесплатные и строго конфиденциальные</p>
+                </li>
 
-          <div class="header__features features-block">
-            <ul class="features-block__list features-block__list--header-mobile">
-              <li class="features-block__item features-block__item--anon">
-                <h3 class="features-block__title">Анонимно</h3>
-                <p class="features-block__description">Все звонки бесплатные и строго конфиденциальные</p>
-              </li>
-
-              <li class="features-block__item features-block__item--free">
-                <h3 class="features-block__title">Бесплатно</h3>
-                <p class="features-block__description">Консультация проводится на безвозмездной основе</p>
-              </li>
-            </ul>
+                <li class="features-block__item features-block__item--free">
+                  <h3 class="features-block__title">Бесплатно</h3>
+                  <p class="features-block__description">Консультация проводится на безвозмездной основе</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="main detox-page double-wrapper-page">
+    <main class="main double-wrapper-page">
 
       <section class="main-info main-info--detox">
         <div class="main-info__bg-wrapper">
@@ -232,10 +233,10 @@
           <li class="services__item" data-id='1'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-1-med-gray.svg">
-                <img class="services__img" src="img/services/s-1-med-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-1-gray.svg">
+                <img class="services__img" src="img/services/s-1-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-1-med-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-1-white.svg" alt="" width="30" height="30">
               <span class="services__text">Лечение наркомании</span>
             </a>
           </li>
@@ -243,10 +244,10 @@
           <li class="services__item active" data-id='2'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-2-wine-gray.svg">
-                <img class="services__img" src="img/services/s-2-wine-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-2-gray.svg">
+                <img class="services__img" src="img/services/s-2-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-2-wine-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-2-white.svg" alt="" width="30" height="30">
               <span class="services__text">Лечение алкоголизма</span>
             </a>
 
@@ -304,10 +305,10 @@
           <li class="services__item" data-id='3'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-3-detox-gray.svg">
-                <img class="services__img" src="img/services/s-3-detox-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-3-gray.svg">
+                <img class="services__img" src="img/services/s-3-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-3-detox-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-3-white.svg" alt="" width="30" height="30">
               <span class="services__text">Детоксикация</span>
             </a>
           </li>
@@ -315,10 +316,10 @@
           <li class="services__item" data-id='4'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-4-outpat-gray.svg">
-                <img class="services__img" src="img/services/s-4-outpat-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-4-gray.svg">
+                <img class="services__img" src="img/services/s-4-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-4-outpat-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-4-white.svg" alt="" width="30" height="30">
               <span class="services__text">Амбулаторное лечение</span>
             </a>
           </li>
@@ -326,10 +327,10 @@
           <li class="services__item" data-id='5'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-5-salt-gray.svg">
-                <img class="services__img" src="img/services/s-5-salt-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-5-gray.svg">
+                <img class="services__img" src="img/services/s-5-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-5-salt-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-5-white.svg" alt="" width="30" height="30">
               <span class="services__text">Солевая зависимость</span>
             </a>
           </li>
@@ -337,10 +338,10 @@
           <li class="services__item" data-id='6'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-6-resoc-gray.svg">
-                <img class="services__img" src="img/services/s-6-resoc-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-6-gray.svg">
+                <img class="services__img" src="img/services/s-6-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-6-resoc-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-6-white.svg" alt="" width="30" height="30">
               <span class="services__text">Ресоциализация</span>
             </a>
           </li>
@@ -348,10 +349,10 @@
           <li class="services__item" data-id='7'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-7-game-gray.svg">
-                <img class="services__img services__img--game" src="img/services/s-7-game-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-7-gray.svg">
+                <img class="services__img services__img--game" src="img/services/s-7-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-7-game-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-7-white.svg" alt="" width="30" height="30">
               <span class="services__text">Игровая зависимость</span>
             </a>
           </li>
@@ -359,10 +360,10 @@
           <li class="services__item" data-id='8'>
             <a class="services__link" href="#">
               <picture class="services__picture">
-                <source media="(max-width: 750px)" srcset="img/services/s-8-option-gray.svg">
-                <img class="services__img" src="img/services/s-8-option-black.svg" alt="" width="30" height="30">
+                <source media="(max-width: 750px)" srcset="img/services/s-8-gray.svg">
+                <img class="services__img" src="img/services/s-8-black.svg" alt="" width="30" height="30">
               </picture>
-              <img class="services__img services__img--white" src="img/services/s-8-option-white.svg" alt="" width="30" height="30">
+              <img class="services__img services__img--white" src="img/services/s-8-white.svg" alt="" width="30" height="30">
               <span class="services__text">Дополнительно</span>
             </a>
           </li>
@@ -905,7 +906,7 @@
             <div class="banner-program__wrapper">
               <div class="banner-program__img-wrapper">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/banner-program/detox-banner3-m.webp"> -->
+                  <source type="image/webp" media="(max-width: 750px)" srcset="img/banner-program/detox-banner3-m.webp">
                   <source media="(max-width: 750px)" srcset="img/banner-program/detox-banner3-m.png">
                   <source type="image/webp" srcset="img/banner-program/detox-banner3.webp">
                   <img class="banner-program__img" src="img/banner-program/detox-banner3.png" alt="Бесплатная транспортировка пациента в стационар">
@@ -935,7 +936,7 @@
 
             <div class="master-swiper__main-wrapper">
               <div class="master-swiper__little-swiper">
-                <div class="swiper-container" id="little-master-swiper">
+                <div class="swiper-container" id="little-master-swiper--double-wrapper-page">
                   <div class="swiper-scrollbar"></div>
                   <div class="swiper-wrapper">
 
@@ -1010,7 +1011,7 @@
                     <div class="swiper-slide">
                       <div class="master-swiper__main-content-wrapper">
                         <div class="master-swiper__main-img-wrapper">
-                          <img class="master-swiper__main-img" src="img/master-swiper/master2-b.png" alt="">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master2-b.jpg" alt="">
                         </div>
                         <div class="master-swiper__main-text-wrapper">
                           <h3 class="master-swiper__main-name">Петр Васильев</h3>
@@ -1027,13 +1028,14 @@
                     <div class="swiper-slide">
                       <div class="master-swiper__main-content-wrapper">
                         <div class="master-swiper__main-img-wrapper">
-                          <img class="master-swiper__main-img" src="img/master-swiper/master2-b.png" alt="">
+                          <img class="master-swiper__main-img" src="img/master-swiper/master2-b.jpg" alt="">
                         </div>
                         <div class="master-swiper__main-text-wrapper">
                           <h3 class="master-swiper__main-name">Дарья Ветрова</h3>
                           <p class="master-swiper__main-position">врач-нарколог</p>
-                          <p class="master-swiper__main-description">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых</p>
+                          <p class="master-swiper__main-description">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых предложений. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров.</p>
                           <p class="master-swiper__main-work">Автор 20 авторских статей на тему наркологии.</p>
+                          <p class="master-swiper__main-description">Работает в клинике 5 лет.</p>
                           <p class="master-swiper__main-experience">Стаж работы <span class="master-swiper__main-experience-mobile">4 года.</span></p>
                           <div class="master-swiper__main-experience-current">4 года</div>
                           <a class="master-swiper__main-more-btn btn" href="#">Подробнее</a>
@@ -1174,8 +1176,8 @@
             <h2 class="calc__title">Калькулятор стоимости лечения</h2>
             <form class="calc__form" action="#" method="post">
               <div class="calc__filter-options">
-                <!-- <label class="calc__label" for="filter-whom">Кому нужна помощь?</label> -->
-                <input class="calc__input visually-hidden" type="text" name="WHOM" value="0" data-id="" id="filter-whom">
+                <!-- <label class="calc__label" for="filter-whom-mob">Кому нужна помощь?</label> -->
+                <input class="calc__input visually-hidden" type="text" name="WHOM" value="0" data-id="" id="filter-whom-mob">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="40">Кому нужна помощь?</a>
                 <ul class="calc__filter-list" data-id="40">
                   <li class="calc__filter-list-item">
@@ -1188,8 +1190,8 @@
               </div>
 
               <div class="calc__filter-options">
-                <!-- <label class="calc__label" for="filter-old">Возраст зависимого</label> -->
-                <input class="calc__input visually-hidden" type="text" name="OLD" value="0" data-id="" id="filter-old">
+                <!-- <label class="calc__label" for="filter-old-mob">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="OLD" value="0" data-id="" id="filter-old-mob">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="41">Возраст зависимого</a>
                 <ul class="calc__filter-list" data-id="41">
                   <li class="calc__filter-list-item">
@@ -1211,8 +1213,8 @@
               </div>
 
               <div class="calc__filter-options">
-                <!-- <label class="calc__label" for="filter-subst">Возраст зависимого</label> -->
-                <input class="calc__input visually-hidden" type="text" name="SUBSTANCE" value="0" data-id="" id="filter-subst">
+                <!-- <label class="calc__label" for="filter-subst-mob">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="SUBSTANCE" value="0" data-id="" id="filter-subst-mob">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="42">Вещество</a>
                 <ul class="calc__filter-list" data-id="42">
                   <li class="calc__filter-list-item">
@@ -1225,8 +1227,8 @@
               </div>
 
               <div class="calc__filter-options">
-                <!-- <label class="calc__label" for="filter-region">Возраст зависимого</label> -->
-                <input class="calc__input visually-hidden" type="text" name="REGION" value="0" data-id="" id="filter-region">
+                <!-- <label class="calc__label" for="filter-region-mob">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="REGION" value="0" data-id="" id="filter-region-mob">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="43">Регион</a>
                 <ul class="calc__filter-list" data-id="43">
                   <li class="calc__filter-list-item">
@@ -1239,8 +1241,8 @@
               </div>
 
               <div class="calc__filter-options">
-                <!-- <label class="calc__label" for="filter-time">Возраст зависимого</label> -->
-                <input class="calc__input visually-hidden" type="text" name="TIME" value="0" data-id="" id="filter-time">
+                <!-- <label class="calc__label" for="filter-time-mob">Возраст зависимого</label> -->
+                <input class="calc__input visually-hidden" type="text" name="TIME" value="0" data-id="" id="filter-time-mob">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="44">Стаж употребления</a>
                 <ul class="calc__filter-list" data-id="44">
                   <li class="calc__filter-list-item">
@@ -1466,36 +1468,36 @@
             </div>
           </article>
 
-          <section class="documents-swiper documents-swiper--little">
-            <h2 class="documents-swiper__title">Лицензии</h2>
-            <div class="documents-swiper__wrapper">
-              <div class="documents-swiper-navigation">
-                <div class="swiper-button-prev swiper-button-prev--documents"></div>
-                <div class="swiper-button-next swiper-button-next--documents"></div>
+          <section class="document-swiper document-swiper--little">
+            <h2 class="document-swiper__title">Лицензии</h2>
+            <div class="document-swiper__wrapper">
+              <div class="document-swiper-navigation">
+                <div class="swiper-button-prev swiper-button-prev--document"></div>
+                <div class="swiper-button-next swiper-button-next--document"></div>
               </div>
-              <div class="swiper-container" id="little-documents-swiper">
+              <div class="swiper-container" id="little-document-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="documents-swiper__img-wrapper">
-                      <img class="documents-swiper__img" src="img/documents/document1.png" alt="">
+                    <div class="document-swiper__img-wrapper">
+                      <img class="document-swiper__img" src="img/documents/document1.png" alt="">
                     </div>
                   </div>
 
                   <div class="swiper-slide">
-                    <div class="documents-swiper__img-wrapper">
-                      <img class="documents-swiper__img" src="img/documents/document2.png" alt="">
+                    <div class="document-swiper__img-wrapper">
+                      <img class="document-swiper__img" src="img/documents/document2.png" alt="">
                     </div>
                   </div>
 
                   <div class="swiper-slide">
-                    <div class="documents-swiper__img-wrapper">
-                      <img class="documents-swiper__img" src="img/documents/document3.png" alt="">
+                    <div class="document-swiper__img-wrapper">
+                      <img class="document-swiper__img" src="img/documents/document3.png" alt="">
                     </div>
                   </div>
 
                   <div class="swiper-slide">
-                    <div class="documents-swiper__img-wrapper">
-                      <img class="documents-swiper__img" src="img/documents/document4.png" alt="">
+                    <div class="document-swiper__img-wrapper">
+                      <img class="document-swiper__img" src="img/documents/document4.png" alt="">
                     </div>
                   </div>
                 </div>

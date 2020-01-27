@@ -48,7 +48,7 @@ gulp.task("img", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/banner-program/*")
+  return gulp.src("source/img/sss/*")
   // return gulp.src('source/img/articles-block/*.{png,jpg}')
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img/webp"));

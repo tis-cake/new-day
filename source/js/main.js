@@ -1,6 +1,6 @@
 // [index-page]
 // если открыта главная
-if($(".main").hasClass("index")) {
+if ($(".main").hasClass("index")) {
   $('.header').addClass('index');
 }
 
@@ -8,18 +8,22 @@ if($(".main").hasClass("index")) {
 $('.header__desktop-bottom').removeClass('header__mob-menu--nojs');
 
 // мобильное меню
-$('.header__menu-toggle').click(function () {
-  $(this).toggleClass('active');
-  $('.nav-section').toggleClass('active');
-  $('.header__desktop-bottom').toggleClass('active');
+$(document).ready(function () {
+  $('.header__menu-toggle').click(function () {
+    $(this).toggleClass('active');
+    $('.nav-section').toggleClass('active');
+    $('.header__desktop-bottom').toggleClass('active');
+  });
 });
 
 // убрать index при открытом меню
-if($(".header").hasClass("index")) {
-  $('.header__menu-toggle').click(function () {
-    $('.header').toggleClass('index');
-  });
-}
+$(document).ready(function () {
+  if($(".header").hasClass("index")) {
+    $('.header__menu-toggle').click(function () {
+      $('.header').toggleClass('index');
+    });
+  }
+});
 
 // слайдер центров
 $(document).ready(function () {
@@ -42,8 +46,8 @@ $(document).ready(function () {
     breakpoints: {
       752: {
         slidesPerView: '3',
-        spaceBetween: 42,
-        loop: true,
+        spaceBetween: 30,
+        // loop: true
       }
     }
   });
@@ -71,7 +75,7 @@ $(document).ready(function () {
       752: {
         slidesPerView: '3',
         spaceBetween: 30,
-        loop: true
+        // loop: true
       }
     }
   });
@@ -83,19 +87,13 @@ $(document).ready(function () {
   $("#phone").mask("+7 (  999  ) 999  99  99");
 });
 
-// inputmask
-// $(document).ready(function(){
-//   $("#phone").inputmask({"mask": "+7 (  999  ) 999  99  99"});
-// });
-
-
 // троеточие при избыточности символов на мобильном разрешении в rehab-swiper
 // $(document).ready(function () {
 
 //   var width = $(window).width(); // ширина экрана
 //   var size = 43; // кол-во символов
 
-//   if (width <= 752) {
+//   if (width <= 755) {
 //     $('.rehab-swiper__place-description').each(function () {
 //       var rehabText = $(this).text();
 
@@ -112,7 +110,7 @@ $(document).ready(function () {
 //   var width = $(window).width();
 //   var size = 64; // кол-во символов
 
-//   if (width <= 752) {
+//   if (width <= 755) {
 //     $('.intro--database-preview--sub .intro__description').each(function () {
 //       var databaseText = $(this).text();
 
@@ -128,10 +126,12 @@ $(document).ready(function () {
 $('.database-search__list').removeClass('database-search__list--nojs');
 
 // меню со статьями
-$('.database-search__list-toggle').click(function () {
-  $('.database-search__close-btn').toggleClass('active');
-  $('.database-search__list-toggle').toggleClass('active');
-  $('.database-search__list').toggleClass('active');
+$(document).ready(function () {
+  $('.database-search__list-toggle').click(function () {
+    $('.database-search__close-btn').toggleClass('active');
+    $('.database-search__list-toggle').toggleClass('active');
+    $('.database-search__list').toggleClass('active');
+  });
 });
 
 // троеточие при избыточности символов на мобильном разрешении в article-block
@@ -140,7 +140,7 @@ $(document).ready(function () {
   var width = $(window).width(); // ширина экрана
   var size = 189; // кол-во символов
 
-  if (width <= 752) {
+  if (width <= 755) {
     $('.articles-block .intro__description').each(function () {
       var rehabText = $(this).text();
 
@@ -172,50 +172,57 @@ $(document).ready(function () {
     breakpoints: {
       752: {
         slidesPerView: '3',
-        // spaceBetween: 20,
         spaceBetween: 0,
         centeredSlides: true,
-        slidesOffsetBefore: 14,
-        loop: true
+        slidesOffsetBefore: 14
       }
     }
   });
 });
 
 // [detox-page]
+
+// если js подключён - меню скрыто
+$('.services__list').removeClass('services__list--nojs');
+
 // переключатель меню
-$('.services__item').click(function (evt) {
-  evt.preventDefault();
+$(document).ready(function () {
+  $('.services__item').click(function (evt) {
+    evt.preventDefault();
 
-  // $('.services__list').toggleClass('active');
+    // $('.services__list').toggleClass('active');
 
-  if($(".services__item").hasClass("active")) {                // по дефолту:
-    $('.services__item').not(this).removeClass('active');      //   удалить у всех li класс acitve (кроме данного, т.к. у него впереди самое интересное)
-    $('.services__sub-menu').removeClass('active');            //   закрыть все другие подменю
-  }
+    if($(".services__item").hasClass("active")) {                // по дефолту:
+      $('.services__item').not(this).removeClass('active');      //   удалить у всех li класс acitve (кроме данного, т.к. у него впереди самое интересное)
+      $('.services__sub-menu').removeClass('active');            //   закрыть все другие подменю
+    }
 
-  $(this).toggleClass('active');
+    $(this).toggleClass('active');
 
-  if($(this).hasClass("active")) {
-    var data = $(this).data('id');
-    $(this).find($('.services__sub-menu[data-id='+data+']').toggleClass('active'));
-  }
+    if($(this).hasClass("active")) {
+      var data = $(this).data('id');
+      $(this).find($('.services__sub-menu[data-id='+data+']').toggleClass('active'));
+    }
+  });
 });
 
-// слайдер врачей
+// слайдер врачей (3 персоны на маленьком)
 $(document).ready(function () {
-  var galleryThumbs = new Swiper('#little-master-swiper', {
-    slidesPerView: '2.4',
+  var galleryThumbsDoublePage = new Swiper('#little-master-swiper--double-wrapper-page', {
+    // thumbs: {
+    //   swiper: galleryThumbs
+    // },
+    slidesPerView: '3',
     touchRatio: 1,
     loop: true,
     centeredSlides: true,
-    // spaceBetween: 0,
+    spaceBetween: 40,
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
       dragSize: 48
     },
-    slidesOffsetBefore: '40',
+    // slidesOffsetBefore: '40',
 
     // freeMode: true,
     // autoplay: {
@@ -230,9 +237,6 @@ $(document).ready(function () {
         spaceBetween: '35',
         slidesOffsetBefore: '0',
         loop: false
-      },
-      thumbs: {
-        swiper: galleryThumbs,
       }
     }
   });
@@ -240,10 +244,8 @@ $(document).ready(function () {
   var mainMasterSwiper = new Swiper('#main-master-swiper', {
 
     thumbs: {
-      swiper: galleryThumbs,
+      swiper: galleryThumbsDoublePage,
     },
-
-    // direction: 'vertical',
     slidesPerView: '1',
     // spaceBetween: 15,
     touchRatio: 1,
@@ -265,11 +267,9 @@ $(document).ready(function () {
 
 // слайдер документов
 $(document).ready(function () {
-  var documentsSwiper = new Swiper('#little-documents-swiper', {
+  var documentsSwiper = new Swiper('#little-document-swiper', {
       slidesPerView: '1',
-      // centeredSlides: true,
       touchRatio: 1,
-      // spaceBetween: 12,
       // freeMode: true,
       // autoplay: {
       //   delay: 3000,
@@ -277,16 +277,9 @@ $(document).ready(function () {
       // },
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next--documents',
-        prevEl: '.swiper-button-prev--documents',
+        nextEl: '.swiper-button-next--document',
+        prevEl: '.swiper-button-prev--document',
       }
-      // breakpoints: {
-      //   752: {
-      //     slidesPerView: '3',
-      //     spaceBetween: 42,
-      //     loop: true,
-      //   }
-      // }
   });
 });
 
@@ -338,6 +331,7 @@ $(document).ready(function () {
 
   // расчёт стоимости
   $('.calc__link').on('click', function() {
+    var width = $(window).width();
 
     var priceArr = {
       '0' : 0,
@@ -358,11 +352,26 @@ $(document).ready(function () {
       'Более 3 лет' : 10000
     }
 
-    var whomPrice = $('#filter-whom').val();
-    var oldPrice = $('#filter-old').val();
-    var substPrice = $('#filter-subst').val();
-    var regionPrice = $('#filter-region').val();
-    var timePrice = $('#filter-time').val();
+    var whomPrice,
+        oldPrice,
+        substPrice,
+        regionPrice,
+        timePrice;
+
+    if (width > 755) {
+      whomPrice = $('#filter-whom').val();
+      oldPrice = $('#filter-old').val();
+      substPrice = $('#filter-subst').val();
+      regionPrice = $('#filter-region').val();
+      timePrice = $('#filter-time').val();
+
+    } else if (width <= 755) {
+      whomPrice = $('#filter-whom-mob').val();
+      oldPrice = $('#filter-old-mob').val();
+      substPrice = $('#filter-subst-mob').val();
+      regionPrice = $('#filter-region-mob').val();
+      timePrice = $('#filter-time-mob').val();
+    }
 
     var priceArrCurrent = [whomPrice, oldPrice, substPrice, regionPrice, timePrice];
 
@@ -375,13 +384,98 @@ $(document).ready(function () {
   });
 });
 
-// если js подключён - меню скрыто
-
-$('.services__list').removeClass('services__list--nojs');
-
 // меню с услугами
-$('#btn-list-detox').click(function () {
-  $('.btn-list__close-btn').toggleClass('active');
-  $('.btn-list__list-toggle').toggleClass('active');
-  $('.services__list').toggleClass('active');
+$(document).ready(function () {
+  $('#btn-list-detox').click(function () {
+    $('.btn-list__close-btn').toggleClass('active');
+    $('.btn-list__list-toggle').toggleClass('active');
+    $('.services__list').toggleClass('active');
+  });
+});
+
+// [doctor-page]
+// слайдер документов
+$(document).ready(function () {
+  var documentsSwiper = new Swiper('#document-swiper', {
+    slidesPerView: '2',
+    touchRatio: 1,
+    centeredSlides: true,
+    // freeMode: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next--document',
+      prevEl: '.swiper-button-prev--document',
+    },
+    breakpoints: {
+
+      755: {
+        slidesPerView: '4',
+        centeredSlides: false
+        // spaceBetween: 30
+        // loop: false
+      }
+    }
+  });
+});
+
+// слайдер врачей (4 персоны на маленьком)
+$(document).ready(function () {
+  var galleryThumbs = new Swiper('#little-master-swiper', {
+    slidesPerView: '3',
+    touchRatio: 1,
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: 40,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      dragSize: 48
+    },
+    // slidesOffsetBefore: '40',
+
+    // freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    breakpoints: {
+      755: {
+        direction: 'vertical',
+        slidesPerView: '4',
+        centeredSlides: false,
+        spaceBetween: '35',
+        slidesOffsetBefore: '0',
+        loop: false
+      }
+      // thumbs: {
+      //   swiper: galleryThumbs,
+      // }
+    }
+  });
+
+  var mainMasterSwiper = new Swiper('#main-master-swiper', {
+
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+    slidesPerView: '1',
+    touchRatio: 1,
+    // freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    loop: true,
+    breakpoints: {
+      755: {
+        direction: 'vertical',
+        spaceBetween: 30,
+        loop: false
+      }
+    }
+  });
 });

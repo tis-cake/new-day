@@ -83,9 +83,18 @@
   margin-bottom: @d87px;
 }
 
-// .about-two {
-//   margin-bottom: 180px;
-// }
+.about--doctor {
+  padding-top: @d89px;
+  margin-bottom: @d135px;
+  .about__img-wrapper {
+    width: @d616px;
+    height: @d745px;
+    &::after {
+      width: 44.7%;
+      height: 63.7%;
+    }
+  }
+}
 
 @media  (max-width: @mobile-width) {
   .about {
@@ -152,6 +161,20 @@
   .about--detox {
     margin-bottom: @m155px;
   }
+
+  .about--doctor {
+    padding-top: @m98px;
+    margin-bottom: @m275px;
+    .about__img-wrapper {
+      width: @a;
+      height: @m745px;
+      padding-top: @m87px;
+      &::after {
+        width: 44.7%;
+        height: 57.4%;
+      }
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -205,5 +228,13 @@
 
   .about--detox {
     margin-bottom: 87px;
+  }
+  .about--doctor {
+    padding-top: 89px;
+    margin-bottom: 135px;
+    .about__img-wrapper {
+      width: 616px;
+      height: 745px;
+    }
   }
 }

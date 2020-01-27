@@ -1,3 +1,70 @@
+.intro__title {
+  margin-bottom: @d42px;
+
+  font-size: @d45px;
+  font-weight: 700;
+  letter-spacing: 0.23px;
+
+  color: #2f2f2f;
+}
+
+.intro__description {
+  font-size: @d19px;
+  font-weight: 400;
+  line-height: @d28px;
+  letter-spacing: 0.1px;
+
+  color: #747474;
+}
+
+.intro__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__link {
+  position: relative;
+  max-width: 129px;
+  width: @d129px;
+  margin-top: auto;
+
+  font-size: @d19px;
+  letter-spacing: 0.1px;
+  color: #1ab455;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -@d3px;
+    right: 0;
+
+    max-width: 8px;
+    max-height: 26px;
+    width: @d8px;
+    height: @d26px;
+
+    background-image: url('../img/svg/arrow-m.svg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.intro__subtitle {
+  margin-bottom: @d12px;
+
+  font-size: @d27px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+}
+
+.intro__counter {
+  padding-left: @d10px;
+  color: #747474;
+  font-size: @d30px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
 .intro {
   &--about {
     max-width: 890px;
@@ -177,73 +244,37 @@
     width: @d950px;
     margin-bottom: @d70px;
   }
-}
 
-.intro__title {
-  margin-bottom: @d42px;
-
-  font-size: @d45px;
-  font-weight: 700;
-  letter-spacing: 0.23px;
-
-  color: #2f2f2f;
-}
-
-.intro__description {
-  font-size: @d19px;
-  font-weight: 400;
-  line-height: @d28px;
-  letter-spacing: 0.1px;
-
-  color: #747474;
-}
-
-.intro__link-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.intro__link {
-  position: relative;
-  max-width: 129px;
-  width: @d129px;
-  margin-top: auto;
-
-  font-size: @d19px;
-  letter-spacing: 0.1px;
-  color: #1ab455;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -@d3px;
-    right: 0;
-
-    max-width: 8px;
-    max-height: 26px;
-    width: @d8px;
-    height: @d26px;
-
-    background-image: url('../img/svg/arrow-m.svg');
-    background-position: center;
-    background-size: cover;
+  &--about-doctor {
+    width: @d620px;
+    padding-top: @d50px;
+    .intro__subtitle {
+      margin-bottom: @d28px;
+      font-size: @d20px;
+      font-weight: 400;
+    }
+    .intro__title {
+      font-size: @d60px;
+      line-height: @d63px;
+      margin-bottom: @d40px;
+    }
+    .intro__description {
+      margin-bottom: @d30px;
+      font-size: @d20px;
+      line-height: @d30px;
+    }
+    .intro__work-experience {
+      font-size: @d20px;
+      line-height: @d30px;
+      letter-spacing: 0.1px;
+    }
   }
-}
 
-.intro__subtitle {
-  margin-bottom: @d12px;
-
-  font-size: @d27px;
-  font-weight: 700;
-  letter-spacing: 0.14px;
-}
-
-.intro__counter {
-  padding-left: @d10px;
-  color: #747474;
-  font-size: @d30px;
-  font-weight: 400;
-  letter-spacing: 0.15px;
+  &--document {
+    .intro__description {
+      width: @d970px;
+    }
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -486,6 +517,39 @@
       line-height: @m45px;
     }
   }
+
+  .intro--about-doctor {
+    width: @a;
+    padding-top: 0px;
+    .intro__subtitle {
+      margin-bottom: @m27px;
+      font-size: @m27px;
+    }
+    .intro__title {
+      margin-bottom: @m40px;
+      font-size: @m60px;
+      line-height: @m63px;
+    }
+    .intro__description {
+      margin-bottom: @m34px;
+      font-size: @m30px;
+      line-height: @m38px;
+      letter-spacing: 0.15px;
+    }
+    .intro__work-experience {
+      font-size: @m30px;
+      line-height: @m38px;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .intro--document {
+    margin-bottom: @m100px;
+    .intro__description {
+      width: @a;
+    }
+  }
+
 }
 
 @media (min-width: @max-desktop-width) {
@@ -638,5 +702,36 @@
   .intro--faq {
     width: 770px;
     margin-bottom: 70px;
+  }
+
+  .intro--about-doctor {
+    width: 620px;
+    padding-top: 50px;
+    .intro__subtitle {
+      margin-bottom: 28px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .intro__title {
+      font-size: 60px;
+      line-height: 63px;
+      margin-bottom: 40px;
+    }
+    .intro__description {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .intro__work-experience {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  .intro--document {
+    .intro__description {
+      width: 970px;
+    }
   }
 }

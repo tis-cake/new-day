@@ -5,6 +5,7 @@
 
   letter-spacing: 0.2px;
   color: @light-black;
+  background-color: #fff;
 }
 
 .header__mobile {
@@ -23,20 +24,15 @@
 
 .header__desktop-top {
   display: block;
-  padding-bottom: @d40px;
+  padding-bottom: @d20px;
 }
 
-// .header__desktop-top {
-//   display: block;
-//   padding-bottom: @d20px;
-// }
-
-// .header__desktop-bottom {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//   background-color: #fcfcfd;
-//   // .b(red);
-// }
+.header__desktop-bottom {
+  padding-top: @d30px;
+  padding-bottom: @d30px;
+  background-color: #f8f8f8;
+  // .b(red);
+}
 
 .header__consultation-phone {
   display: none;
@@ -89,6 +85,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+  background-color: transparent;
+}
+
+.header.index .header__desktop-bottom {
+  background-color: transparent;
 }
 
 .header.index,
@@ -304,8 +305,17 @@
     padding-top: 30px;
   }
 
+  // .header__desktop-top {
+  //   padding-bottom: 40px;
+  // }
+
   .header__desktop-top {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  .header__desktop-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .index-bg {

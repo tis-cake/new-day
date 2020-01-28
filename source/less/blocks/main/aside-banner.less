@@ -125,6 +125,33 @@
   border-radius: 0 0 19px 19px;
 }
 
+.aside-banner__more-link {
+  position: relative;
+  max-width: 129px;
+  width: @d129px;
+  margin-top: auto;
+
+  font-size: @d19px;
+  letter-spacing: 0.1px;
+  color: #1ab455;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -@d3px;
+    right: 0;
+
+    max-width: 8px;
+    max-height: 26px;
+    width: @d8px;
+    height: @d26px;
+
+    background-image: url('../img/svg/arrow-m.svg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .aside-banner--family {
   .aside-banner__bg-wrapper {
     height: @d175px;

@@ -241,10 +241,10 @@ $(document).ready(function () {
     }
   });
 
-  var mainMasterSwiper = new Swiper('#main-master-swiper', {
+  var mainMasterSwiper = new Swiper('#main-master-swiper--double-wrapper-page', {
 
     thumbs: {
-      swiper: galleryThumbsDoublePage,
+      swiper: galleryThumbsDoublePage
     },
     slidesPerView: '1',
     // spaceBetween: 15,

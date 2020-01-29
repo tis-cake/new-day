@@ -208,17 +208,18 @@
             <a class="breadcrumbs__link" href="database.html">База знаний</a>
           </li>
           <li class="breadcrumbs__item breadcrumbs__item--current">
-            Детоксикация
+            Лечение наркомании
           </li>
         </ul>
 
         <div class="social-panel">
           <div class="social-panel__date">
-            <p class="social-panel__date-text">Дата публиликации:</p>
-            <time class="social-panel__datetime" datetime="2019-03-12">12.03.19</time>
+            <p class="social-panel__date-text">Дата публикации:
+              <time class="social-panel__datetime" datetime="2019-03-12">12.03.19</time>
+            </p>
           </div>
           <div class="social-panel__views-count">
-            603
+            <span class="social-panel__views-count-number" id="views-count">603</span>
           </div>
           <div class="social-panel__share">
             <p class="social-panel__share-title">Поделиться:</p>
@@ -227,15 +228,15 @@
 
             <ul class="social-panel__list">
               <li class="social-panel__item">
-                <a class="social-panel__link" href="#">Telegram</a>
+                <span class="visually-hidden">Поделиться в Telegram</span>
                 <div class="ya-share2" data-services="telegram"></div>
               </li>
               <li class="social-panel__item">
-                <a class="social-panel__link" href="#">Twitter</a>
+                <span class="visually-hidden">Поделиться в Twitter</span>
                 <div class="ya-share2" data-services="twitter"></div>
               </li>
               <li class="social-panel__item">
-                <a class="social-panel__link" href="#">Facebook</a>
+                <span class="visually-hidden">Поделиться в Facebook</span>
                 <div class="ya-share2" data-services="facebook"></div>
               </li>
             </ul>
@@ -250,36 +251,36 @@
           <section class="article">
             <h2 class="article__title">Лечение от героиновой зависимости</h2>
             <ol class="article__sections-list">
-              <li class="article__sections-item">
-                Устранение физической зависимости
+              <li class="article__sections-title">
+                <a class="article__link" href="#section1"><span class="article__secions-title-text">Устранение физической зависимости</span></a>
                 <ul class="article__sections-sublist">
-                  <li class="article__sections-subitem">Детоксикация</li>
-                  <li class="article__sections-subitem">Использование антидотов</li>
-                  <li class="article__sections-subitem">Лечение вегетативных и психических расстройств
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section1.1">Детоксикация</a></li>
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section1.2">Использование антидотов</a></li>
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section1.3">Лечение вегетативных и психических расстройств</a>
                     <ul class="article__sections-sublist">
-                      <li class="article__sections-subitem">Адреномиметики</li>
-                      <li class="article__sections-subitem">Седативные средства</li>
-                      <li class="article__sections-subitem">УБОД</li>
+                      <li class="article__sections-subitem"><a class="article__sublink" href="#section1.3.1">Адреномиметики</a></li>
+                      <li class="article__sections-subitem"><a class="article__sublink" href="#section1.3.2">Седативные средства</a></li>
+                      <li class="article__sections-subitem"><a class="article__sublink" href="#section1.3.3">УБОД</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li class="article__sections-item">
-                Заместительная терапия
+              <li class="article__sections-title">
+                <a class="article__link" href="#section2"><span class="article__secions-title-text">Заместительная терапия</span></a>
                 <ul class="article__sections-sublist">
-                  <li class="article__sections-subitem">Метадон</li>
-                  <li class="article__sections-subitem">Бупренорфин</li>
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section2.1">Метадон</a></li>
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section2.2">Бупренорфин</a></li>
                 </ul>
               </li>
-              <li class="article__sections-item">
-                Нелекарственные методы лечения
+              <li class="article__sections-title">
+                <a class="article__link" href="#section3"><span class="article__secions-title-text">Нелекарственные методы лечения</span></a>
                 <ul class="article__sections-sublist">
-                  <li class="article__sections-subitem">Психотерапия</li>
-                  <li class="article__sections-subitem">Социальная реабилитация</li>
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section3.1">Психотерапия</a></li>
+                  <li class="article__sections-subtitle"><a class="article__sublink" href="#section3.2">Социальная реабилитация</a></li>
                 </ul>
               </li>
-              <li class="article__sections-item">
-                Заключение
+              <li class="article__sections-title">
+                <a class="article__link" href="#section4"><span class="article__secions-title-text">Заключение</span></a>
               </li>
             </ol>
 
@@ -291,23 +292,21 @@
               </p>
             </blockquote>
 
-            <!-- <video src="https://youtu.be/_Yhyp-_hX2s" width="1000" height="900"> -->
-              <!-- <source src="https://youtu.be/_Yhyp-_hX2s"> -->
-            <!-- </video> -->
-            <!-- <video controls preload="metadata" width="400" height="225" src="https://youtu.be/_Yhyp-_hX2s"></video> -->
-
-            <!-- <iframe width="1000" height="605" src="https://www.youtube.com/embed/_Yhyp-_hX2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <div class="article__video">
+              <iframe src="https://www.youtube.com/embed/_Yhyp-_hX2s" allowfullscreen></iframe>
+            </div>
 
             <p class="article__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление. Первая решается довольно легко, так как физическое привыкание уходит вместе с выведенным наркотиком. А вот вторая задача гораздо более трудная и не всегда выполнимая. Она заключается в преодолении психической тяги и достижения длительной ремиссии. К тому же, без сильной мотивации со стороны наркомана и его желания покончить с болезнью любая терапия будет бесполезна.</p>
-            <h3 class="article__subtitle">Устранение физической зависимости</h3>
+
+            <h3 class="article__subtitle" id="section1">Устранение физической зависимости</h3>
 
             <p class="article__description">Лечение от героина, а точнее зависимости от этого наркотика, состоит из двух основных этапов. Вначале требуется вывести вещество из организма и купировать абстинентный синдром. А после принять меры для предупреждения повторного применения.</p>
 
-            <h3 class="article__subtitle">Детоксикация</h3>
+            <h4 class="article__subtitle" id="section1.1">Детоксикация</h4>
 
             <p class="article__description">Этот метод необходим для выведения диацетилморфина из организма быстрее, чем это происходит натуральным путем. С этой целью применяется внутривенное вливание коллоидных растворов с одновременным использованием седативных средств и антагонистов опиоидных рецепторов. Так как наркоманы часто поступают на лечение в состоянии обезвоживания, то вливание глюкозы и других препаратов помогает восстановить объем циркулирующей крови, снизить вероятность тромбоза и предупредить резкое снижение давления.</p>
 
-            <h3 class="article__subtitle">Использование антидотов</h3>
+            <h4 class="article__subtitle" id="section1.2">Использование антидотов</h4>
 
             <p class="article__description">Единственным патогенетическим методом лечения героиновой зависимости является использования антагонистов (Налоксон, Налтрексон). В отличие от препаратов для заместительной терапии, они не вызывают нового привыкания. При конкурентной блокировки опиатных рецепторов в результате применения данных средств наркотик уже не способен давать ощущения эйфории, к которой так стремится пациент.</p>
 
@@ -331,7 +330,7 @@
 
             <p class="article__description">После выведения героина (детоксикации) применяются препараты для устранения проблем с болями, вегетативными расстройствами и нарушением сна. Абстинентный синдром еще быстрее развивается на фоне использования антидота.</p>
 
-            <h3 class="article__subtitle">Седативные средства</h3>
+            <h4 class="article__subtitle" id="section1.3.2">Седативные средства</h4>
             <p class="article__description">Для купирования приступов немотивированной тревоги, часто вызванной не столько болью и плохим состоянием, сколько их ожиданием, по указанию и под контролем врача используется некоторые группы лекарственных препаратов. Психопатологические проявления снимаются с помощью применения:</p>
 
             <ul class="article__list">
@@ -343,7 +342,7 @@
 
             <p class="article__description">Снизить уровень тревожности и страха, улучшить сон помогают производные бензодиазепина. Одновременно для лечения героиновой ломки применяются нейролептики (Азалептин). Использование антидепрессантов в этот период оспаривается многими специалистами, так как эта группа начинает действовать только через две недели от начала приема и может вызывать неспецифическое стимулирующее воздействие.</p>
 
-            <h3 class="article__subtitle">УБОД</h3>
+            <h4 class="article__subtitle" id="section1.3.3">УБОД</h4>
             <p class="article__description">Если в клинике есть реанимационное отделение и специалист-анестезиолог, то может проводиться УБОД (ультра-быстрая опийная детоксикация) с помощью внутривенного наркоза. Такая тактика помогает человеку пережить острое состояние ломки и позволяет использовать ускоренный вариант детоксикации. Введение в сон под наркозом применяют в таких случаях:</p>
 
             <ul class="article__list">
@@ -353,14 +352,16 @@
               <li class="article__item">стойкое отсутствие сна</li>
             </ul>
 
+            <p class="article__description">Противопоказано использование наркоза у людей пожилого возраста и при наличии почечной или сердечной недостаточности.</p>
+
             <figure class="article__img-wrapper">
-              <img class="article__img" src="img/article1.png" alt="">
+              <img class="article__img" src="img/article/article1.png" alt="">
               <figcaption class="article__img-description"></figcaption>
             </figure>
 
-            <p class="article__description">Противопоказано использование наркоза у людей пожилого возраста и при наличии почечной или сердечной недостаточности.</p>
+            <h3 class="article__subtitle visually-hidden" id="section2">Заместительная терапия</h3>
 
-            <h3 class="article__subtitle">Бупренорфин</h3>
+            <h4 class="article__subtitle" id="section2.2">Бупренорфин</h4>
             <p class="article__description">Ряд специалистов рассматривает Бупренофин как средство для заместительной терапии. Препарат находит применение во Франции, США и некоторых других странах. У него наркогенный потенциал намного меньше, чем у Метадона, большим недостатком является его высокая стоимость. Как показывает опыт использования, Бупренофин может иногда вызывать абстинентный синдром. Являясь частичным агонистом, он позволяет отказаться от приема героина, а потом перейти на антагонисты и воздержание от героиновой зависимости. В России использование наркотических средств для лечения привыкания запрещается законом. В исключительных случаях при тяжелой форме наркомании может использоваться схема терапии с Трамадолом или Стадолом.</p>
 
             <blockquote class="article__blockquote article__blockquote--light-white">
@@ -368,11 +369,13 @@
               <cite class="article__blockquote-author">Антон Суворов</cite>
             </blockquote>
 
-            <h3 class="article__subtitle">Психотерапия</h3>
+            <h3 class="article__subtitle visually-hidden" id="section3">Нелекарственные методы лечения</h3>
+
+            <h4 class="article__subtitle" id="section3.1">Психотерапия</h4>
 
             <p class="article__description">Работа психотерапевта направляется на закрепление результатов медикаментозной терапии и максимальное продление ремиссии. К каждому пациенту требуется в данном случае индивидуальный подход. Лучше всего иметь своего постоянного психолога, который хорошо знает все особенности и причины болезни. В клиниках также практикуются групповые сеансы и встречи с бывшими наркоманами, которым удалось победить пагубное пристрастие. Так как для полного излечения очень важно иметь здоровый климат в семье, психотерапевты проводят отдельные беседы с родственниками. Это помогает наладить отношения и уберечь зависимого от возвращения к потреблению героина.</p>
 
-            <h3 class="article__subtitle">Заключение</h3>
+            <h3 class="article__subtitle" id="section4">Заключение</h3>
 
             <p class="article__description">Лечение героиновой наркомании должно проходить комплексно. При поступлении пациента в медицинское учреждение врачи выбирают способ выведения опиата и медикаменты, в зависимости от частоты и длительности употребления психоактивного вещества. Отказ от приема диацетилморфина и использование антидотов приводит к развитию абстинентного синдрома. Оказание помощи в таком состоянии заключается в нормализации психических проявлений ломки и применения симптоматической терапии. Сразу после наступления улучшения требуется длительная работа психотерапевта для закрепления результата и предупреждения рецидива.</p>
 

@@ -381,6 +381,7 @@ $(document).ready(function () {
     }
 
     $('span#final-price').text(currentSum);
+    $('span#final-price-mob').text(currentSum);
   });
 });
 

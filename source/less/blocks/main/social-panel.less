@@ -1,41 +1,152 @@
 .social-wrapper {
-  // .bred();
   display: flex;
   justify-content: space-between;
+  margin-bottom: @d68px;
 }
 
 .social-panel {
   display: flex;
-  justify-content: space-between;
-  width: 705px;
-  .b(blue);
+  width: @d705px;
+  font-size: @d19px;
 }
 
 .social-panel__date {
-  .bred();
   display: flex;
-  font-size: 19px;
+  margin-right: @a;
 }
+
 .social-panel__date-text {
   letter-spacing: 0.1px;
 }
+
 .social-panel__datetime {
   font-weight: 700;
   letter-spacing: 0.1px;
   color: #2f2f2f;
 }
+
 .social-panel__views-count {
-  font-size: 19px;
+  position: relative;
+  margin-right: @d77px;
+
+  font-size: @d19px;
   font-weight: 700;
   letter-spacing: 0.1px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -@d47px;
+    width: @d34px;
+    height: @d21px;
+
+    background-image: url('../img/social-panel/view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
+
 .social-panel__share {
   display: flex;
 }
+
+.social-panel__share-title {
+  margin-right: @d15px;
+  letter-spacing: 0.1px;
+}
+
 .social-panel__list {
+  display: flex;
 }
+
 .social-panel__item {
+  margin-left: @d15px;
 }
-.social-panel__link {
-  // font-size: 0;
+
+.ya-share2__item_service_telegram .ya-share2__badge,
+.ya-share2__item_service_twitter .ya-share2__badge,
+.ya-share2__item_service_facebook .ya-share2__badge {
+  position: relative;
+  top:-@d4px;
+  background-color: transparent!important;
+}
+
+.ya-share2__item_service_telegram .ya-share2__icon {
+  background-image: url('../img/social-panel/telegram.svg')!important;
+  width: @d27px!important;
+  height: @d27px!important;
+}
+
+.ya-share2__item_service_twitter .ya-share2__icon {
+  background-image: url('../img/social-panel/twitter.svg')!important;
+  width: @d27px!important;
+  height: @d27px!important;
+}
+
+.ya-share2__item_service_facebook .ya-share2__icon {
+  background-image: url('../img/social-panel/facebook.svg')!important;
+  width: @d22px!important;
+  height: @d22px!important;
+}
+
+.ya-share2__item_service_facebook .ya-share2__badge {
+  top: -@d2px;
+}
+
+@media (min-width: @max-desktop-width) {
+  .social-wrapper {
+    margin-bottom: 68px;
+  }
+
+  .social-panel {
+    width: 705px;
+    font-size: 19px;
+  }
+
+  .social-panel__views-count {
+    margin-right: 77px;
+
+    font-size: 19px;
+
+    &::before {
+      left: -47px;
+      width: 34px;
+      height: 21px;
+    }
+  }
+
+  .social-panel__share-title {
+    margin-right: 15px;
+  }
+
+  .social-panel__item {
+    margin-left: 15px;
+  }
+
+  .ya-share2__item_service_telegram .ya-share2__badge,
+  .ya-share2__item_service_twitter .ya-share2__badge,
+  .ya-share2__item_service_facebook .ya-share2__badge {
+    top:-4px;
+  }
+
+  .ya-share2__item_service_telegram .ya-share2__icon {
+    width: 27px!important;
+    height: 27px!important;
+  }
+
+  .ya-share2__item_service_twitter .ya-share2__icon {
+    width: 27px!important;
+    height: 27px!important;
+  }
+
+  .ya-share2__item_service_facebook .ya-share2__icon {
+    width: 22px!important;
+    height: 22px!important;
+  }
+
+  .ya-share2__item_service_facebook .ya-share2__badge {
+    top: -2px;
+  }
 }

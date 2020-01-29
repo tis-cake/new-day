@@ -1,0 +1,148 @@
+.article {
+  .get-help {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 87px;
+  }
+}
+
+.article__title {
+  margin-top: -8px;
+
+  margin-bottom: 34px;
+  font-size: 45px;
+  letter-spacing: 0.23px;
+}
+
+.article__sections-list {
+  margin-bottom: 64px;
+  padding-left: 18px;
+  font-size: 19px;
+}
+
+.article__sections-title {
+  margin-bottom: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.article__secions-title-text {
+  text-decoration: underline;
+}
+
+.article__sections-subtitle {
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  color: #747474;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.article__sublink {
+  color: #747474;
+}
+
+.article__sections-sublist {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.article__sections-subitem {
+  padding-bottom: 8px;
+  padding-left: 16px;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.article__blockquote {
+  margin: 0;
+  margin-left: 29px;
+  font-size: 25px;
+
+  &--bold-green {
+    .article__blockquote-text {
+      position: relative;
+      margin-bottom: 80px;
+
+      font-weight: 700;
+      line-height: 35px;
+      letter-spacing: 0.13px;
+      color: #2f2f2f;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -27px;
+
+        height: 100%;
+        width: 8px;
+
+        border-radius: 2px;
+        background-color: #14b250;
+      }
+    }
+  }
+
+  &--bold-green {
+
+  }
+}
+
+.article__video {
+  overflow: hidden;
+  height: 605px;
+  margin-bottom: 62px;
+
+  box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
+  border-radius: 27px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+  // .ytp-large-play-button {
+  //   border: 1px solid green!important;
+  // }
+
+.article__subtitle {
+  margin-bottom: 10px;
+  font-size: 25px;
+  letter-spacing: 0.13px;
+}
+
+.article__description {
+  margin-bottom: 25px;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.article__list {
+  margin-left: 40px;
+  margin-bottom: 30px;
+
+  font-size: 19px;
+  line-height: 28px;
+  color: #747474;
+}
+
+.article__item {
+  position: relative;
+  &::before {
+    content:  "-";
+    position: relative;
+    left:     -5px;
+  }
+}
+
+.article__img-wrapper {
+  margin-top: 60px;
+  margin-bottom: 65px;
+  text-align: center;
+}

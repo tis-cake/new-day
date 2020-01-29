@@ -480,3 +480,14 @@ $(document).ready(function () {
     }
   });
 });
+
+// [article-page]
+// плавное перемещение на якорях в оглавлении
+$(document).ready(function(){
+  $(".article__sections-list" ).on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
+});

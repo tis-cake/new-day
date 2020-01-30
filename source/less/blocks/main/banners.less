@@ -63,7 +63,6 @@
   border-radius: 19px;
 }
 
-
 .banners__subtitle {
   max-width: 128px;
   width: @d128px;
@@ -126,6 +125,21 @@
   padding-top: @d15px;
   font-size: @d32px;
   font-weight: 700;
+}
+
+.double-aside-wrapper {
+  .banners__item {
+    max-width: none;
+    width: 100%;
+  }
+  .banners__img-wrapper {
+    max-width: none;
+    width: 100%;
+  }
+  .banners__content-wrapper {
+    max-width: none;
+    width: @a;
+  }
 }
 
 @media (max-width: @mobile-width) {

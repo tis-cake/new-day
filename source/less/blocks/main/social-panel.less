@@ -66,6 +66,8 @@
 }
 
 .ya-share2__item_service_telegram .ya-share2__badge,
+.ya-share2__item_service_vkontakte .ya-share2__badge,
+.ya-share2__item_service_whatsapp .ya-share2__badge,
 .ya-share2__item_service_twitter .ya-share2__badge,
 .ya-share2__item_service_facebook .ya-share2__badge {
   position: relative;
@@ -73,16 +75,40 @@
   background-color: transparent!important;
 }
 
+.ya-share2__item_service_facebook .ya-share2__badge {
+  top: -2px;
+}
+
+.ya-share2__item_service_telegram .ya-share2__icon,
+.ya-share2__item_service_vkontakte .ya-share2__icon,
+.ya-share2__item_service_whatsapp .ya-share2__icon,
+.ya-share2__item_service_twitter .ya-share2__icon,
+.ya-share2__item_service_facebook .ya-share2__icon {
+  width: 27px!important;
+  height: 27px!important;
+
+  background-position: center;
+  background-size: cover;
+}
+
 .ya-share2__item_service_telegram .ya-share2__icon {
   background-image: url('../img/social-panel/telegram.svg')!important;
-  width: @d27px!important;
-  height: @d27px!important;
+  // width: @d27px!important;
+  // height: @d27px!important;
+}
+
+.ya-share2__item_service_vkontakte .ya-share2__icon {
+  background-image: url('../img/social-panel/vk.svg')!important;
+}
+
+.ya-share2__item_service_whatsapp .ya-share2__icon {
+  background-image: url('../img/social-panel/whatsapp.svg')!important;
 }
 
 .ya-share2__item_service_twitter .ya-share2__icon {
   background-image: url('../img/social-panel/twitter.svg')!important;
-  width: @d27px!important;
-  height: @d27px!important;
+  // width: @d27px!important;
+  // height: @d27px!important;
 }
 
 .ya-share2__item_service_facebook .ya-share2__icon {
@@ -91,9 +117,9 @@
   height: @d22px!important;
 }
 
-.ya-share2__item_service_facebook .ya-share2__badge {
-  top: -@d2px;
-}
+// .ya-share2__item_service_facebook .ya-share2__badge {
+//   top: -@d2px;
+// }
 
 @media (min-width: @max-desktop-width) {
   .social-wrapper {
@@ -126,17 +152,23 @@
   }
 
   .ya-share2__item_service_telegram .ya-share2__badge,
+  .ya-share2__item_service_vkontakte .ya-share2__badge,
+  .ya-share2__item_service_whatsapp .ya-share2__badge,
   .ya-share2__item_service_twitter .ya-share2__badge,
   .ya-share2__item_service_facebook .ya-share2__badge {
     top:-4px;
   }
 
-  .ya-share2__item_service_telegram .ya-share2__icon {
-    width: 27px!important;
-    height: 27px!important;
+  .ya-share2__item_service_facebook .ya-share2__badge {
+    top: -2px;
   }
 
-  .ya-share2__item_service_twitter .ya-share2__icon {
+
+  .ya-share2__item_service_telegram .ya-share2__icon,
+  .ya-share2__item_service_vkontakte .ya-share2__icon,
+  .ya-share2__item_service_whatsapp .ya-share2__icon,
+  .ya-share2__item_service_twitter .ya-share2__icon,
+  .ya-share2__item_service_facebook .ya-share2__icon {
     width: 27px!important;
     height: 27px!important;
   }
@@ -144,9 +176,5 @@
   .ya-share2__item_service_facebook .ya-share2__icon {
     width: 22px!important;
     height: 22px!important;
-  }
-
-  .ya-share2__item_service_facebook .ya-share2__badge {
-    top: -2px;
   }
 }

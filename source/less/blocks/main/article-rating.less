@@ -1,0 +1,53 @@
+.article-rating {
+  display: flex;
+  margin-bottom: 67px;
+}
+
+.article-rating__title {
+  margin-top: 3px;
+  margin-right: 20px;
+
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+.article-rating__area {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  width: 165px;
+}
+.article-rating__area:not(:checked) > input {
+  display: none;
+}
+.article-rating__area:not(:checked) > label {
+  position: relative;
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+.article-rating__area:not(:checked) > label::before {
+  content: '';
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg/star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// .article-rating__area > input:checked ~ label::before {
+//   background-image: url("../img/svg/star-gold.svg");
+// }
+.article-rating__area > input:checked ~ label::before,
+.article-rating__area:not(:checked) > label:hover,
+.article-rating__area:not(:checked) > label:hover ~ label {
+  background-image: url("../img/svg/star-gold.svg");
+}

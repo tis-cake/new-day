@@ -1,8 +1,14 @@
 .article {
+  margin-bottom: 52px;
   .get-help {
     margin-top: 60px;
     margin-bottom: 60px;
     padding-top: 87px;
+  }
+
+  .warning {
+    margin-top: 90px;
+    margin-bottom: 60px;
   }
 }
 
@@ -59,36 +65,79 @@
 
 .article__blockquote {
   margin: 0;
-  margin-left: 29px;
   font-size: 25px;
 
   &--bold-green {
-    .article__blockquote-text {
-      position: relative;
-      margin-bottom: 80px;
+    position: relative;
+    margin-left: 29px;
+    margin-bottom: 80px;
 
+    .article__blockquote-text {
       font-weight: 700;
       line-height: 35px;
       letter-spacing: 0.13px;
       color: #2f2f2f;
+    }
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -27px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -27px;
 
-        height: 100%;
-        width: 8px;
+      height: 100%;
+      width: 8px;
 
-        border-radius: 2px;
-        background-color: #14b250;
-      }
+      border-radius: 2px;
+      background-color: #14b250;
     }
   }
 
-  &--bold-green {
+  &--light-white {
+    box-sizing: border-box;
+    position: relative;
 
+    margin-top: 52px;
+    margin-left: 20px;
+    margin-bottom: 68px;
+    padding-top: 46px;
+    padding-left: 76px;
+    padding-right: 45px;
+    padding-bottom: 50px;
+
+
+    box-shadow: 0 0 55px 5px rgba(11, 13, 65, 0.04);
+    border-radius: 19px;
+    background-color: #ffffff;
+
+    .article__blockquote-text {
+      margin-bottom: 23px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 32px;
+      letter-spacing: 0.13px;
+    }
+
+    .article__blockquote-author {
+      font-size: 18px;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 31px;
+      left: -20px;
+
+      width: 60px;
+      height: 50px;
+
+      background-image: url('../img/svg/commas.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
 
@@ -124,20 +173,28 @@
 }
 
 .article__list {
-  margin-left: 40px;
   margin-bottom: 30px;
 
   font-size: 19px;
-  line-height: 28px;
   color: #747474;
-}
 
-.article__item {
-  position: relative;
-  &::before {
-    content:  "-";
-    position: relative;
-    left:     -5px;
+  &--dash {
+    margin-left: 40px;
+    line-height: 28px;
+    .article__item {
+      position: relative;
+      &::before {
+        content:  "-";
+        position: relative;
+        left:     -5px;
+      }
+    }
+  }
+
+  &--bibliography {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 35px;
   }
 }
 

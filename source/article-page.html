@@ -229,15 +229,23 @@
             <ul class="social-panel__list">
               <li class="social-panel__item">
                 <span class="visually-hidden">Поделиться в Telegram</span>
-                <div class="ya-share2" data-services="telegram"></div>
+                <div class="ya-share2" data-services="telegram" aria-label="Поделиться в Telegram"></div>
+              </li>
+              <!-- <li class="social-panel__item">
+                <span class="visually-hidden">Поделиться в Twitter</span>
+                <div class="ya-share2" data-services="twitter" aria-label="Поделиться в Twitter"></div>
+              </li> -->
+              <li class="social-panel__item">
+                <span class="visually-hidden">Поделиться в ВКонтакте</span>
+                <div class="ya-share2" data-services="vkontakte" aria-label="Поделиться во ВКонтакте"></div>
               </li>
               <li class="social-panel__item">
-                <span class="visually-hidden">Поделиться в Twitter</span>
-                <div class="ya-share2" data-services="twitter"></div>
+                <span class="visually-hidden">Поделиться в WhatsApp</span>
+                <div class="ya-share2" data-services="whatsapp" aria-label="Поделиться в WhatsApp"></div>
               </li>
               <li class="social-panel__item">
                 <span class="visually-hidden">Поделиться в Facebook</span>
-                <div class="ya-share2" data-services="facebook"></div>
+                <div class="ya-share2" data-services="facebook" aria-label="Поделиться в Facebook"></div>
               </li>
             </ul>
           </div>
@@ -333,7 +341,7 @@
             <h4 class="article__subtitle" id="section1-3-2">Седативные средства</h4>
             <p class="article__description">Для купирования приступов немотивированной тревоги, часто вызванной не столько болью и плохим состоянием, сколько их ожиданием, по указанию и под контролем врача используется некоторые группы лекарственных препаратов. Психопатологические проявления снимаются с помощью применения:</p>
 
-            <ul class="article__list">
+            <ul class="article__list article__list--dash">
               <li class="article__item">нейролептиков</li>
               <li class="article__item">транквилизаторов</li>
               <li class="article__item">антидепрессанты</li>
@@ -345,7 +353,7 @@
             <h4 class="article__subtitle" id="section1-3-3">УБОД</h4>
             <p class="article__description">Если в клинике есть реанимационное отделение и специалист-анестезиолог, то может проводиться УБОД (ультра-быстрая опийная детоксикация) с помощью внутривенного наркоза. Такая тактика помогает человеку пережить острое состояние ломки и позволяет использовать ускоренный вариант детоксикации. Введение в сон под наркозом применяют в таких случаях:</p>
 
-            <ul class="article__list">
+            <ul class="article__list article__list--dash">
               <li class="article__item">неукротимое влечение к наркотику</li>
               <li class="article__item">выраженное психомоторное возбуждение</li>
               <li class="article__item">отсутствие объективной оценки пациентом своего состояния, ипохондрический синдром</li>
@@ -403,23 +411,153 @@
             </article>
 
             <h3 class="article__subtitle">Список литературы</h3>
-            <ol class="article__list">
+            <ol class="article__list article__list--bibliography">
               <li class="article__item">Работа психотерапевта направляется</li>
               <li class="article__item">Закрепление результатов медикаментозной </li>
               <li class="article__item">Терапии и максимальное продление ремиссии</li>
             </ol>
-
-
-            <div>
-              STARS
-            </div>
-
           </section>
 
+          <article class="article-rating">
+            <h2 class="article-rating__title">Оцените эту статью</h2>
+            <div class="article-rating__area">
+
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+
+            </div>
+          </article>
+
+          <article class="article-author">
+            <div class="article-author__column-left">
+              <div class="article-author__block">
+                <a class="article-author__link" href="#"><p class="article-author__post">Автор статьи</p></a>
+                <a class="article-author__link" href="#"><h3 class="article-author__name">Иван Петров</h3></a>
+              </div>
+              <div class="article-author__block">
+                <a class="article-author__link" href="#"><p class="article-author__post">Редактор</p></a>
+                <a class="article-author__link" href="#"><h3 class="article-author__name">Петр Иванов</h3></a>
+              </div>
+            </div>
+
+            <div class="article-author__column-right">
+              <p class="article-author__description">Вся информация на этой странице была рассмотрена и проверена сертифицированным профессионалом: <time class="article-author__datetime" datetime="2019-06-26">2019-06-26</time>
+
+                <div class="article-author__wrapper">
+                  <div class="article-author__img-wrapper">
+                    <img class="article-author__img" src="img/article-author/author1.jpg" alt="Автор статьи">
+                  </div>
+                  <div class="article-author__text-wrapper">
+                    <p class="article-author__post">Дипломированный психолог-консультант, психолог по работе с зависимостями</p>
+                    <h2 class="article-author__name">Ксения Ветрова Михайловна</h2>
+                    <a class="article-author__link" href="#">О специалисте</a>
+                  </div>
+                </div>
+            </p>
 
 
 
+            </div>
+          </article>
 
+          <section class="comments">
+            <h2 class="comments__title">Комментарии <span class="comments__count">(<span id="comments-count">2</span>)</span></h2>
+
+            <div class="comments__content">
+              <div class="comments__block">
+                <h3 class="comments__name">Дарья</h3>
+                <time class="comments__datetime" datetime="2019-06-26">5 месяцев назад</time>
+                <p class="comments__text">При поступлении пациента в медицинское учреждение врачи выбирают способ выведения опиата и медикаменты, в зависимости от частоты и длительности употребления психоактивного вещества.</p>
+              </div>
+
+              <div class="comments__block">
+                <h3 class="comments__name">Февроний</h3>
+                <time class="comments__datetime" datetime="2019-06-26">5 месяцев назад</time>
+                <p class="comments__text">При поступлении пациента в медицинское учреждение врачи выбирают способ выведения опиата и медикаменты, в зависимости от частоты и длительности употребления психоактивного вещества.</p>
+              </div>
+            </div>
+
+            <template id="comment-template">
+              <div class="comments__block">
+                <h3 class="comments__name"></h3>
+                <time class="comments__datetime" datetime=""></time>
+                <p class="comments__text"></p>
+              </div>
+            </template>
+
+            <h3 class="comments__subtitle">Ваш комментарий</h3>
+            <form class="comments__form">
+              <input class="comments__form-name" type="text" value="" name="NAME" placeholder="Ваше имя" aria-label="Ваше имя" required>
+              <input class="comments__form-text" type="text" value="" name="TEXT" placeholder="Комментарий" aria-label="Ваш комментарий" required>
+              <button class="comments__btn btn">Отправить</button>
+            </form>
+          </section>
+
+          <section class="article-more">
+            <div class="article-more__intro-wrapper">
+              <h2 class="article-more__main-title">Читайте также</h2>
+              <a class="article-more__more-link" href="#">Все статьи</a>
+            </div>
+            <div class="article-more__main-wrapper">
+              <article class="article-more__item">
+                <a class="article-more__link" href="#">
+                  <div class="article-more__img-wrapper">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="img/article-more/article-more1.webp"> -->
+                      <img class="article-more__img" src="img/article-more/article-more1.jpg" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="article-more__text-wrapper">
+                    <h2 class="article-more__title">Запой и белая горячка</h2>
+                    <p class="article-more__description">При злоупотреблении алкоголем возникают опасные последствия для организма. Запой предполагает длительное поступление и накопление в крови токсических веществ — продуктов распада этанола. Употребление высоких доз</p>
+                  </div>
+                </a>
+              </article>
+              <article class="article-more__item">
+                <a class="article-more__link" href="#">
+                  <div class="article-more__img-wrapper">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="img/article-more/article-more2.webp"> -->
+                      <img class="article-more__img" src="img/article-more/article-more2.jpg" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="article-more__text-wrapper">
+                    <h2 class="article-more__title">Как перестать пить без кодирования</h2>
+                    <p class="article-more__description">При злоупотреблении алкоголем возникают опасные последствия для организма. Запой предполагает длительное поступление и накопление в крови токсических веществ — продуктов распада</p>
+                  </div>
+                </a>
+              </article>
+              <article class="article-more__item">
+                <a class="article-more__link" href="#">
+                  <div class="article-more__img-wrapper">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="img/article-more/article-more3.webp"> -->
+                      <img class="article-more__img" src="img/article-more/article-more3.jpg" alt="">
+                    </picture>
+                  </div>
+
+                  <div class="article-more__text-wrapper">
+                    <h2 class="article-more__title">Побочные действия Флюанксола</h2>
+                    <p class="article-more__description">При злоупотреблении алкоголем возникают опасные последствия для организма. Запой предполагает длительное поступление и накопление в крови токсических веществ — продуктов распада</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </section>
         </div>
 
 
@@ -442,45 +580,40 @@
             </div>
           </article>
 
-          <div class="aside-banner__recom-wrapper">
-            <h3 class="aside-banner__recom-title">Рекомендации</h3>
-            <article class="aside-banner aside-banner--recom">
-              <!-- <div class="warning__wrapper"> -->
-              <div class="aside-banner__recom-img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/warning/warn1.webp">
-                  <img class="aside-banner__img" src="img/warning/warn1.jpg" alt="">
-                </picture>
-              </div>
+          <div class="article-more__aside-wrapper">
+            <h3 class="article-more-title">Рекомендации</h3>
+            <article class="article-more__item">
+              <a class="article-more__link" href="#">
+                <div class="article-more__img-wrapper">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="img/article-more/article-more1.webp"> -->
+                    <img class="article-more__img" src="img/article-more/article-more4.jpg" alt="">
+                  </picture>
+                </div>
 
-              <div class="aside-banner__text-wrapper">
-                <!-- <div class="intro intro--warning"> -->
-                  <h2 class="aside-banner__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
-                  <p class="aside-banner__description">Наркотическая зависимость - опасное заболевание, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
-                <!-- </div> -->
-              </div>
-              <!-- </div> -->
+                <div class="article-more__text-wrapper">
+                  <h2 class="article-more__title">Профилактика подросткового алкоголизма</h2>
+                  <p class="article-more__description">При злоупотреблении алкоголем возникают опасные последствия для организма. Запой предполагает длительное поступление и накопление в крови токсических веществ — продуктов распада этанола. Употребление высоких доз</p>
+                </div>
+              </a>
+            </article>
+            <article class="article-more__item">
+              <a class="article-more__link" href="#">
+                <div class="article-more__img-wrapper">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="img/article-more/article-more1.webp"> -->
+                    <img class="article-more__img" src="img/article-more/article-more5.jpg" alt="">
+                  </picture>
+                </div>
+
+                <div class="article-more__text-wrapper">
+                  <h2 class="article-more__title">Как жить с мужем-алкоголиком</h2>
+                  <p class="article-more__description">При злоупотреблении алкоголем возникают опасные последствия для организма. Запой предполагает длительное поступление и накопление в крови токсических веществ — продуктов распада этанола. Употребление высоких доз</p>
+                </div>
+              </a>
             </article>
 
-            <article class="aside-banner aside-banner--recom">
-              <!-- <div class="warning__wrapper"> -->
-              <div class="aside-banner__recom-img-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/warning/warn1.webp">
-                  <img class="aside-banner__img" src="img/warning/warn1.jpg" alt="">
-                </picture>
-              </div>
-
-              <div class="aside-banner__text-wrapper">
-                <!-- <div class="intro intro--warning"> -->
-                  <h2 class="aside-banner__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
-                  <p class="aside-banner__description">Наркотическая зависимость - опасное заболевание, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
-                <!-- </div> -->
-              </div>
-              <!-- </div> -->
-            </article>
-
-            <a class="aside-banner__more-link" href="database.html">Все статьи</a>
+            <a class="article-more__more-link" href="database.html">Все статьи</a>
 
           </div>
 
@@ -622,7 +755,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <!-- <script src="js/jquery.inputmask.min.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>

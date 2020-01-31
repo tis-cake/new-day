@@ -75,8 +75,8 @@
   background-color: transparent!important;
 }
 
-.ya-share2__item_service_facebook .ya-share2__badge {
-  top: -2px;
+.ya-share2__item_service_vkontakte .ya-share2__badge {
+  top: -@d10px;
 }
 
 .ya-share2__item_service_telegram .ya-share2__icon,
@@ -84,8 +84,8 @@
 .ya-share2__item_service_whatsapp .ya-share2__icon,
 .ya-share2__item_service_twitter .ya-share2__icon,
 .ya-share2__item_service_facebook .ya-share2__icon {
-  width: 27px!important;
-  height: 27px!important;
+  width: @d27px!important;
+  height: @d27px!important;
 
   background-position: center;
   background-size: cover;
@@ -93,11 +93,11 @@
 
 .ya-share2__item_service_telegram .ya-share2__icon {
   background-image: url('../img/social-panel/telegram.svg')!important;
-  // width: @d27px!important;
-  // height: @d27px!important;
 }
 
 .ya-share2__item_service_vkontakte .ya-share2__icon {
+  width: @d37px!important;
+  height: @d37px!important;
   background-image: url('../img/social-panel/vk.svg')!important;
 }
 
@@ -107,19 +107,81 @@
 
 .ya-share2__item_service_twitter .ya-share2__icon {
   background-image: url('../img/social-panel/twitter.svg')!important;
-  // width: @d27px!important;
-  // height: @d27px!important;
 }
 
 .ya-share2__item_service_facebook .ya-share2__icon {
   background-image: url('../img/social-panel/facebook.svg')!important;
-  width: @d22px!important;
-  height: @d22px!important;
 }
 
-// .ya-share2__item_service_facebook .ya-share2__badge {
-//   top: -@d2px;
-// }
+@media (max-width: @mobile-width) {
+  .social-wrapper {
+    margin-bottom: @m91px;
+    flex-wrap: wrap;
+    .breadcrumbs {
+      margin-bottom: @m78px;
+    }
+  }
+
+  .social-panel {
+    flex-wrap: wrap;
+    width: @a;
+    font-size: @m27px;
+  }
+
+  .social-panel__date {
+    width: @a;
+    margin-bottom: @m67px;
+  }
+
+  .social-panel__views-count {
+    margin-right: @m167px;
+    font-size: @m27px;
+
+    &::before {
+      top: -@m2px;
+      left: -@m67px;
+      width: @m54px;
+      height: @m33px;
+    }
+  }
+
+  .social-panel__share-title {
+    margin-top: @m4px;
+    margin-right: @m10px;
+    font-size: @m33px;
+    letter-spacing: 0.17px;
+  }
+
+  .social-panel__item {
+    margin-left: @m34px;
+  }
+
+  .ya-share2__item_service_telegram .ya-share2__badge,
+  .ya-share2__item_service_vkontakte .ya-share2__badge,
+  .ya-share2__item_service_whatsapp .ya-share2__badge,
+  .ya-share2__item_service_twitter .ya-share2__badge,
+  .ya-share2__item_service_facebook .ya-share2__badge {
+    top:0px;
+  }
+
+  .ya-share2__item_service_vkontakte .ya-share2__badge {
+    top: -@m8px;
+  }
+
+  .ya-share2__item_service_telegram .ya-share2__icon,
+  .ya-share2__item_service_vkontakte .ya-share2__icon,
+  .ya-share2__item_service_whatsapp .ya-share2__icon,
+  .ya-share2__item_service_twitter .ya-share2__icon,
+  .ya-share2__item_service_facebook .ya-share2__icon {
+    width: @m48px!important;
+    height: @m48px!important;
+  }
+
+  .ya-share2__item_service_vkontakte .ya-share2__icon {
+    width: @m62px!important;
+    height: @m62px!important;
+  }
+}
 
 @media (min-width: @max-desktop-width) {
   .social-wrapper {
@@ -157,12 +219,12 @@
   .ya-share2__item_service_twitter .ya-share2__badge,
   .ya-share2__item_service_facebook .ya-share2__badge {
     top:-4px;
+    // background-color: transparent!important;
   }
 
-  .ya-share2__item_service_facebook .ya-share2__badge {
-    top: -2px;
+  .ya-share2__item_service_vkontakte .ya-share2__badge {
+    top: -10px;
   }
-
 
   .ya-share2__item_service_telegram .ya-share2__icon,
   .ya-share2__item_service_vkontakte .ya-share2__icon,
@@ -173,8 +235,8 @@
     height: 27px!important;
   }
 
-  .ya-share2__item_service_facebook .ya-share2__icon {
-    width: 22px!important;
-    height: 22px!important;
+  .ya-share2__item_service_vkontakte .ya-share2__icon {
+    width: 37px!important;
+    height: 37px!important;
   }
 }

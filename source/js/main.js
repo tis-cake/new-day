@@ -495,52 +495,53 @@ $(document).ready(function(){
 // комментарии
 $(document).ready(function(){
   var commentForm = document.querySelector('.comments__form');
-  var commentInput = commentForm.querySelector('.comments__btn');
-  var commentContainer = document.querySelector('.comments__content'); // секция, куда добавляем коммент
+  if (commentForm) {
+    var commentInput = commentForm.querySelector('.comments__btn');
+    var commentContainer = document.querySelector('.comments__content'); // секция, куда добавляем коммент
 
-  // находим шаблон, определяем его контент (document-fragment)
-  var commentTemplate = document.querySelector('#comment-template').content;
-  // всё содержимое шаблона записываем в переменную
-  var commentBlock = commentTemplate.querySelector('.comments__block');
+    // находим шаблон, определяем его контент (document-fragment)
+    var commentTemplate = document.querySelector('#comment-template').content;
+    // всё содержимое шаблона записываем в переменную
+    var commentBlock = commentTemplate.querySelector('.comments__block');
 
-  commentForm.addEventListener('submit', function (evt) {
-    evt.preventDefault();
+    commentForm.addEventListener('submit', function (evt) {
+      evt.preventDefault();
 
-    // значение введённых данных
-    var commentNameValue = commentForm.querySelector(".comments__form-name").value,
-        commentTextValue = commentForm.querySelector(".comments__form-text").value;
+      // значение введённых данных
+      var commentNameValue = commentForm.querySelector(".comments__form-name").value,
+          commentTextValue = commentForm.querySelector(".comments__form-text").value;
 
-    // актуальная дата
-    var commentDate = new Date();
-    var currentDay = commentDate.getDate(),
-        currentMounth = commentDate.getMonth()+1,
-        currentYear = commentDate.getFullYear();
-        // currentHour = commentDate.getHours(),
-        // currentMinute = commentDate.getMinutes();
+      // актуальная дата
+      var commentDate = new Date();
+      var currentDay = commentDate.getDate(),
+          currentMounth = commentDate.getMonth()+1,
+          currentYear = commentDate.getFullYear();
+          // currentHour = commentDate.getHours(),
+          // currentMinute = commentDate.getMinutes();
 
-        if (currentMounth < 10) {
-          currentMounth = '0' + currentMounth;
-        }
+          if (currentMounth < 10) {
+            currentMounth = '0' + currentMounth;
+          }
 
-    // работа с шаблоном
-    var commentTemplateDate = commentBlock.querySelector('.comments__datetime'),
-        commentTemplateName = commentBlock.querySelector('.comments__name'),
-        commentTemplateText = commentBlock.querySelector('.comments__text');
+      // работа с шаблоном
+      var commentTemplateDate = commentBlock.querySelector('.comments__datetime'),
+          commentTemplateName = commentBlock.querySelector('.comments__name'),
+          commentTemplateText = commentBlock.querySelector('.comments__text');
 
-    // commentTemplateDate.textContent = currentDay + '.' + currentMounth + '.' + currentYear + ' ' + currentHour + ':' + currentMinute;
-    commentTemplateDate.textContent = currentDay + '.' + currentMounth + '.' + currentYear;
-    commentTemplateName.textContent = commentNameValue;
-    commentTemplateText.textContent = commentTextValue;
+      // commentTemplateDate.textContent = currentDay + '.' + currentMounth + '.' + currentYear + ' ' + currentHour + ':' + currentMinute;
+      commentTemplateDate.textContent = currentDay + '.' + currentMounth + '.' + currentYear;
+      commentTemplateName.textContent = commentNameValue;
+      commentTemplateText.textContent = commentTextValue;
 
-    // клонируем весь шаблон и добавляем в секцию с комментариями
-    var comment = commentBlock.cloneNode(true);
-    commentContainer.appendChild(comment);
+      // клонируем весь шаблон и добавляем в секцию с комментариями
+      var comment = commentBlock.cloneNode(true);
+      commentContainer.appendChild(comment);
 
-    //счётчик комментариев
-    var commentCount = document.querySelector("#comments-count");
-    commentCount.textContent++
+      //счётчик комментариев
+      var commentCount = document.querySelector("#comments-count");
+      commentCount.textContent++
 
-    commentForm.reset();
-  });
-
+      commentForm.reset();
+    });
+  }
 });

@@ -179,17 +179,18 @@
 
     <main class="main">
 
-      <section class="main-info main-info--database">
+      <section class="main-info main-info--contacts">
         <div class="main-info__bg-wrapper">
           <picture>
-            <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/database-m.webp"> -->
-            <!-- <source media="(max-width: 750px)" srcset="img/main-info/database-m.jpg"> -->
+            <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/contacts-m.webp">
+            <source media="(max-width: 750px)" srcset="img/main-info/contacts-m.jpg">
             <source type="image/webp" srcset="img/main-info/contacts-d.webp">
             <img class="main-info__bg-img" src="img/main-info/contacts-d.jpg" alt="">
           </picture>
         </div>
 
         <div class="container">
+          <a class="main-info__contact-link" href="#">Санкт-Петербург</a>
           <h1 class="main-info__title">Специалисты нашей сети всегда на связи!</h1>
           <p class="main-info__description">Мы поможем вам подобрать подходящий реабилитационный центр или клинику, предоставим бесплатную консультацию</p>
           <a class="main-info__callback btn" href="#">Получить консультацию</a>
@@ -200,12 +201,48 @@
         <h2 class="contacts-map__title">Контакты реабилитационных центров и клиник</h2>
         <p class="contacts-map__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития</p>
 
-        <div class="contacts-map__wrapper">
-          <img src="img/map.png" alt="">
+        <div class="contacts-map__container">
+          <div class="contacts-map__wrapper map" id="map">
+            <!-- <img src="img/map.png" alt=""> -->
+          </div>
+
+          <div class="contacts-map__local-container">
+            <a class="contacts-map__local-link" href="#">Санкт-Петербург</a>
+            <ul class="contacts-map__list">
+
+              <li class="contacts-map__item">
+                <a class="contacts-map__link" href="#">
+                  <h3 class="contacts-map__category">Реабилитационный центр</h3>
+                  <p class="contacts-map__city">г. Санкт-Петербург</p>
+                  <p class="contacts-map__street">Ул. Рижский проезд, 17 стр. 2</p>
+                  <a class="contacts-map__number" href="tel:+79005656633">8 (900) 565-66-33 </a>
+                  <a class="contacts-map__mail" href="mailto:info@newday.ru">info@newday.ru</a>
+                </a>
+              </li>
+              <li class="contacts-map__item">
+                <a class="contacts-map__link" href="#">
+                  <h3 class="contacts-map__category">Наркологическая клиника</h3>
+                  <p class="contacts-map__city">г. Санкт-Петербург</p>
+                  <p class="contacts-map__street">Ул. Рижский проезд, 17 стр. 2</p>
+                  <a class="contacts-map__number" href="tel:+79005656633">8 (900) 565-66-33 </a>
+                  <a class="contacts-map__mail" href="mailto:info@newday.ru">info@newday.ru</a>
+                </a>
+              </li>
+              <li class="contacts-map__item">
+                <a class="contacts-map__link" href="#">
+                  <h3 class="contacts-map__category">Реабилитационный центр</h3>
+                  <p class="contacts-map__city">г. Санкт-Петербург</p>
+                  <p class="contacts-map__street">Ул. Рижский проезд, 17 стр. 2</p>
+                  <a class="contacts-map__number" href="tel:+79005656633">8 (900) 565-66-33 </a>
+                  <a class="contacts-map__mail" href="mailto:info@newday.ru">info@newday.ru</a>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="warning container">
+      <article class="warning container">
         <div class="warning__wrapper">
           <div class="warning__img-wrapper">
             <picture>
@@ -216,7 +253,7 @@
 
           <div class="warning__form-wrapper">
             <div class="intro intro--warning">
-              <h2 class="intro__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
+              <h2 class="intro__title">Наркотики - деградация личности. Помогите своему близкому!</h2>
               <p class="intro__description">Наркотическая зависимость считается наиболее опасным заболеванием, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
             </div>
 
@@ -226,7 +263,7 @@
             </form>
           </div>
         </div>
-      </section>
+      </article>
 
       <section class="database-preview">
         <div class="intro intro--database-preview container">
@@ -415,5 +452,9 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- карта -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

@@ -106,6 +106,41 @@
   padding-bottom: @d87px;
 }
 
+.main-info__contact-link {
+  position: relative;
+  margin-left: @d42px;
+
+  font-size: @d18px;
+  letter-spacing: 0.09px;
+
+  color: #ffffff;
+  border-bottom: @d1px solid #fff;
+  &::before {
+    content: '';
+    position: absolute;
+
+    top: -@d4px;
+    left: -@d41px;
+
+    width: @d26px;
+    height: @d33px;
+
+    background-image: url('../img/svg/point-white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.main-info--contacts {
+  .container {
+    padding-top: @d180px;
+  }
+  .main-info__title {
+    margin-top: @d59px;
+  }
+}
+
 .main-info--database {
   margin-bottom: @d99px;
 }
@@ -128,7 +163,7 @@
     height: 103.33vw; //775px
     width: 100%;
 
-    margin-top: @m8px;
+    margin-top: 0;
     margin-bottom: @m173px;
   }
 
@@ -255,6 +290,20 @@
     padding-bottom: 0;
   }
 
+    .main-info__contact-link {
+      margin-left: @m52px;
+
+      font-size: @m27px;
+      letter-spacing: 0.14px;
+      border-bottom: @m1px solid #fff;
+      &::before {
+        top: 0px;
+        left: -@m52px;
+        width: @m34px;
+        height: @m44px;
+      }
+    }
+
   .main-info--reviews {
     .container {
       padding-top: @m192px;
@@ -286,6 +335,15 @@
 
   .main-info--database {
     margin-bottom: @m96px;
+  }
+
+  .main-info--contacts {
+    .container {
+      padding-top: @m175px;
+    }
+    .main-info__title {
+      margin-top: @m103px;
+    }
   }
 }
 
@@ -335,6 +393,28 @@
   .main-info__features {
     padding-bottom: 87px;
   }
+
+  .main-info__contact-link {
+    margin-left: 42px;
+    font-size: 18px;
+
+    border-bottom: 1px solid #fff;
+    &::before {
+      top: -4px;
+      left: -41px;
+      width: 26px;
+      height: 33px;
+    }
+  }
+
+.main-info--contacts {
+  .container {
+    padding-top: 180px;
+  }
+  .main-info__title {
+    margin-top: 59px;
+  }
+}
 
   .main-info--detox {
     margin-bottom: 97px;

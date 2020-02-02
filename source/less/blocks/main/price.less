@@ -84,6 +84,37 @@
   border-radius: 28px;
 }
 
+.price__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price__item {
+  margin-bottom: @d26px;
+}
+
+.price__subtitle {
+  margin-bottom: @d4px;
+  font-size: @d22px;
+  // font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+.price__description {
+  width: @d350px;
+  font-size: @d19px;
+  line-height: @d27px;
+  letter-spacing: 0.1px;
+}
+
+.price--list {
+  .price__column {
+    .padding-inline(@d61px);
+  }
+}
+
+
 @media  (max-width: @mobile-width) {
   .price {
     margin-bottom: 23.733vw;
@@ -147,6 +178,36 @@
     width: @m330px;
     border-radius: 38px;
   }
+
+  .price__item {
+    text-align: left;
+    margin-bottom: @m42px;
+  }
+
+  .price__subtitle {
+    margin-bottom: @m1px;
+    font-size: @m32px;
+    letter-spacing: 0.16px;
+  }
+
+  .price__description {
+    width: @m550px;
+    font-size: @m30px;
+    line-height: @m36px;
+    letter-spacing: 0.15px;
+  }
+
+  .price--list {
+    .price__column {
+      .padding-inline(@m31px);
+    }
+    .price__wrapper {
+      margin-top: @m90px;
+    }
+    .price__title {
+      margin-bottom: @m78px;
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -174,5 +235,26 @@
   .price__table td {
     font-size: 19px;
     padding-bottom: 29px;
+  }
+
+  .price__item {
+    margin-bottom: 26px;
+  }
+
+  .price__subtitle {
+    margin-bottom: 4px;
+    font-size: 22px;
+  }
+
+  .price__description {
+    width: 350px;
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .price--list {
+    .price__column {
+      .padding-inline(61px);
+    }
   }
 }

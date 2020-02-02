@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
+
     <header class="header">
       <div class="header__mobile">
 
@@ -176,67 +178,85 @@
     </header>
 
     <main class="main">
-      <section class="about about--doctor container">
-        <h1 class="visually-hidden">О докторе</h1>
+      <section class="main-info main-info--about">
+        <div class="main-info__bg-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/about-m.webp">
+            <source media="(max-width: 750px)" srcset="img/main-info/about-m.jpg">
+            <source type="image/webp" srcset="img/main-info/about-d.webp">
+            <img class="main-info__bg-img" src="img/main-info/about-d.jpg" alt="">
+          </picture>
+        </div>
+
+        <div class="container">
+          <h1 class="main-info__title">Сеть реабилитационных центров и клиник по России</h1>
+          <p class="main-info__description">Наши специалисты помогут вам подобрать реабилитационный центр или клинику или предоставят бесплатную консультацию.</p>
+          <p class="main-info__description">Мы работаем круглосуточно, на анонимной основе</p>
+          <p class="main-info__description main-info__description--mobile">Лечение зависимости проводится на анонимной основе, вся информация о лечении строго конфиденциальна.</p>
+          <a class="main-info__callback btn" href="#">Получить консультацию</a>
+        </div>
+      </section>
+
+      <section class="about about--page container">
         <div class="about__column-left">
-          <div class="intro intro--about-doctor">
-            <h3 class="intro__subtitle">врач-психотерапевт</h3>
-            <h2 class="intro__title">Петров Геннадий Васильевич</h2>
-            <p class="intro__description">Кандидат медицинских наук. Доцент.Лауреат премии правительства Москвы в области здравоохранения. Главный эксперт программы Точка трезвости; член Национального наркологического общества.</p>
-            <p class="intro__work-experience">Опыт работы: 8 лет.</p>
+          <div class="intro intro--about-page">
+            <h2 class="intro__title">О нас</h2>
+
+            <p class="intro__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании соответствующий условий активизации.</p>
+
+            <p class="intro__description">Повседневная практика показывает, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Равным образом дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций</p>
           </div>
 
-          <a class="main-info__callback btn" href="#">Получить консультацию</a>
+          <!-- <a class="main-info__callback btn" href="#">Получить консультацию</a> -->
         </div>
 
         <div class="about__column-right">
           <div class="about__img-wrapper">
             <picture>
-              <source type="image/webp" srcset="img/about/about-doctor1.webp">
-              <img class="about__img" src="img/about/about-doctor1.jpg" alt="Врач-психотерапевт Петров Геннадий Васильевич">
+              <source type="image/webp" srcset="img/about/about-page.webp">
+              <img class="about__img" src="img/about/about-page.jpg" alt="">
             </picture>
           </div>
         </div>
       </section>
 
-      <section class="document-swiper">
-        <div class="intro intro--document container">
-          <h2 class="intro__title">Документы и лицензии</h2>
-          <p class="intro__description">Мы работаем открыто и легально, постоянно развиваемся и видим свою миссию в том, чтобы делиться знаниями и повышать качество реабилитации в России</p>
+      <section class="program program--about container">
+        <div class="intro intro--program">
+          <h2 class="intro__title">Почему мы?</h2>
+          <p class="intro__description">Индивидуальный подход к каждому пациенту – не просто модная фраза, а действительно отличительная черта работы нашей клиники</p>
         </div>
-        <div class="arrow-container">
-          <div class="swiper-container container" id="document-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="document-swiper__img-wrapper">
-                  <img class="document-swiper__img" src="img/documents/document1.png" alt="">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="document-swiper__img-wrapper">
-                  <img class="document-swiper__img" src="img/documents/document2.png" alt="">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="document-swiper__img-wrapper">
-                  <img class="document-swiper__img" src="img/documents/document3.png" alt="">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="document-swiper__img-wrapper">
-                  <img class="document-swiper__img" src="img/documents/document4.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-prev swiper-button-prev--document"></div>
-          <div class="swiper-button-next swiper-button-next--document"></div>
-
-        </div>
+        <ul class="program__list">
+          <li class="program__item">
+            <div class="program__item__icon program__item__icon--request"></div>
+            <h3 class="program__title">Лучшее медикаментозное лечение зависимостей</h3>
+            <p class="program__description">При борьбе с зависимостью специализированные препараты используются для физического и психологического воздействия. Лекарства назначаются индивидуально в зависимости от состояния</p>
+          </li>
+          <li class="program__item">
+            <div class="program__item__icon program__item__icon--assure"></div>
+            <h3 class="program__title">Работаем с близкими и родственниками</h3>
+            <p class="program__description">Работа с родственниками наркозависимых – ничуть не менее важный этап борьбы с наркоманией, чем лечение самого зависимого. Именно поэтому  психологи плотно работают с ближайшим окружением </p>
+          </li>
+          <li class="program__item">
+            <div class="program__item__icon program__item__icon--plan"></div>
+            <h3 class="program__title">Оказываем психологическую помощь зависимым</h3>
+            <p class="program__description">Психологическая поддержка – метод, который помогает зависимому полноценного избавиться от болезненного пристрастия к употреблению. Помощь проводится не только при лечении, но также до и после восстановления</p>
+          </li>
+          <li class="program__item">
+            <div class="program__item__icon program__item__icon--contract"></div>
+            <h3 class="program__title">Ресоциализация после лечения</h3>
+            <p class="program__description">Восстановление социальных коммуникаций организуется в форме бесед, тренингов, обучающих программ. Пациент лишь периодически посещает клинику, без отрыва от семьи и работы</p>
+          </li>
+          <li class="program__item">
+            <div class="program__item__icon program__item__icon--request"></div>
+            <h3 class="program__title">База знаний о лечении зависимостей</h3>
+            <p class="program__description">На нашем сайте представлено собрание публикаций, посвященное проблемам наркомании и алкоголизма, их лечении, об особенностях реабилитации и восстановления</p>
+          </li>
+          <li class="program__item">
+            <div class="program__item__icon program__item__icon--request"></div>
+            <h3 class="program__title">100% анонимность и гарантия</h3>
+            <p class="program__description">Мы не ставим наших клиентов на государственный наркологический учёт и не передаем их данные в какие-либо гос. структуры. А наши наркологи приезжают к пациентам без спецформы на обычном транспорте</p>
+          </li>
+        </ul>
       </section>
 
       <section class="master-swiper container">
@@ -328,8 +348,8 @@
                     <div class="master-swiper__main-text-wrapper">
                       <h3 class="master-swiper__main-name">Петр Васильев</h3>
                       <p class="master-swiper__main-position">врач-нарколог</p>
-                      <p class="master-swiper__main-description">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых</p>
-                      <p class="master-swiper__main-work">Автор 20 авторских статей на тему наркологии.</p>
+                      <p class="">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых</p>
+                      <p class="">Автор 20 авторских статей на тему наркологии.</p>
                       <p class="master-swiper__main-experience">Стаж работы <span class="master-swiper__main-experience-mobile">2 года.</span></p>
                       <div class="master-swiper__main-experience-current">2 года</div>
                       <a class="master-swiper__main-more-btn btn" href="#">Подробнее</a>
@@ -345,8 +365,8 @@
                     <div class="master-swiper__main-text-wrapper">
                       <h3 class="master-swiper__main-name">Дарья Ветрова</h3>
                       <p class="master-swiper__main-position">врач-нарколог</p>
-                      <p class="master-swiper__main-description">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых</p>
-                      <p class="master-swiper__main-work">Автор 20 авторских статей на тему наркологии.</p>
+                      <p class="">Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки новых</p>
+                      <p class="">Автор 20 авторских статей на тему наркологии.</p>
                       <p class="master-swiper__main-experience">Стаж работы <span class="master-swiper__main-experience-mobile">4 года.</span></p>
                       <div class="master-swiper__main-experience-current">4 года</div>
                       <a class="master-swiper__main-more-btn btn" href="#">Подробнее</a>
@@ -362,8 +382,8 @@
                     <div class="master-swiper__main-text-wrapper">
                       <h3 class="master-swiper__main-name">Эдуард Воробьев</h3>
                       <p class="master-swiper__main-position">врач-психотерапевт</p>
-                      <p class="master-swiper__main-description"></p>
-                      <p class="master-swiper__main-work"></p>
+                      <p class=""></p>
+                      <p class=""></p>
                       <p class="master-swiper__main-experience">Стаж работы <span class="master-swiper__main-experience-mobile">9 лет.</span></p>
                       <div class="master-swiper__main-experience-current">9 лет</div>
                       <a class="master-swiper__main-more-btn btn" href="#">Подробнее</a>
@@ -379,8 +399,8 @@
                     <div class="master-swiper__main-text-wrapper">
                       <h3 class="master-swiper__main-name">Хью Лори</h3>
                       <p class="master-swiper__main-position">в завязке</p>
-                      <p class="master-swiper__main-description"></p>
-                      <p class="master-swiper__main-work"></p>
+                      <p class=""></p>
+                      <p class=""></p>
                       <p class="master-swiper__main-experience">Стаж работы <span class="master-swiper__main-experience-mobile">1 год.</span></p>
                       <div class="master-swiper__main-experience-current">1 год</div>
                       <a class="master-swiper__main-more-btn btn" href="#">Подробнее</a>
@@ -396,8 +416,8 @@
                     <div class="master-swiper__main-text-wrapper">
                       <h3 class="master-swiper__main-name">Dr. Acula</h3>
                       <p class="master-swiper__main-position">в завязке</p>
-                      <p class="master-swiper__main-description"></p>
-                      <p class="master-swiper__main-work"></p>
+                      <p class=""></p>
+                      <p class=""></p>
                       <p class="master-swiper__main-experience">Стаж работы <span class="master-swiper__main-experience-mobile">1000 лет.</span></p>
                       <div class="master-swiper__main-experience-current">1000 лет</div>
                       <a class="master-swiper__main-more-btn btn" href="#">Подробнее</a>
@@ -411,9 +431,165 @@
         </div>
       </section>
 
+      <section class="warning container">
+        <div class="warning__wrapper">
+          <div class="warning__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/warning/warn3.webp">
+              <img class="warning__img" src="img/warning/warn3.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="warning__form-wrapper">
+            <div class="intro intro--warning">
+              <h2 class="intro__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
+              <p class="intro__description">Наркотическая зависимость считается наиболее опасным заболеванием, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
+            </div>
+
+            <form class="warning__form" action="/echo" method="post">
+              <input id="phone" class="warning__input" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+              <button class="warning__btn btn">Позвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="document-swiper">
+        <div class="intro intro--document container">
+          <h2 class="intro__title">Наши лицензии</h2>
+          <p class="intro__description">Мы работаем открыто и легально, постоянно развиваемся и видим свою миссию в том, чтобы делиться знаниями и повышать качество реабилитации в России</p>
+        </div>
+        <div class="arrow-container">
+          <div class="swiper-container container" id="document-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="document-swiper__img-wrapper">
+                  <img class="document-swiper__img" src="img/documents/document1.png" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="document-swiper__img-wrapper">
+                  <img class="document-swiper__img" src="img/documents/document2.png" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="document-swiper__img-wrapper">
+                  <img class="document-swiper__img" src="img/documents/document3.png" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="document-swiper__img-wrapper">
+                  <img class="document-swiper__img" src="img/documents/document4.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev swiper-button-prev--document"></div>
+          <div class="swiper-button-next swiper-button-next--document"></div>
+
+        </div>
+      </section>
+
+      <section class="price price--list container">
+        <div class="intro intro--price">
+          <h2 class="intro__title">Наши услуги</h2>
+          <p class="intro__description">Современные методики реабилитации,  квалифицированный персонал, достойные условия проживания и питание,  отвественность за обеспечение безопасности</p>
+        </div>
+
+        <div class="price__wrapper">
+
+          <div class="price__column">
+            <h3 class="price__title"><img class="price__icon-img price__icon-img--narco" src="img/svg/medicine-green.svg" alt=" " width="35" height="35">Лечение наркомании</h3>
+
+            <ul class="price__list">
+              <li class="price__item">
+                <h4 class="price__subtitle">Реабилитация</h4>
+                <p class="price__description">для каждого пациента свой план с учетом случая и потребности</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Детоксикация</h4>
+                <p class="price__description">очищение организма от наркотических препаратов и их шлаков</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Cолевая зависимость</h4>
+                <p class="price__description">симптоматическое лечение, рекомендовано проводить в стационаре</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Снятие ломки</h4>
+                <p class="price__description">очищение организма от наркотических препаратов и их шлаков</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">УБОД</h4>
+                <p class="price__description">очищение опиоидных рецепторов головного мозга</p>
+              </li>
+            </ul>
+            <a class="price__link btn" href="#">Все услуги</a>
+          </div>
+
+          <div class="price__column">
+            <h3 class="price__title"><img class="price__icon-img price__icon-img--alco" src="img/svg/wine.svg" alt=" " width="35" height="35">Лечение алкоголизма</h3>
+            <ul class="price__list">
+              <li class="price__item">
+                <h4 class="price__subtitle">Реабилитация</h4>
+                <p class="price__description">для каждого пациента свой план с учетом случая и потребности</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Детоксикация</h4>
+                <p class="price__description">очищение организма от наркотических препаратов и их шлаков</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Вывод из запоя</h4>
+                <p class="price__description">снятие интоксикации, регидратация, психологическая помощь</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Нарколог на дом</h4>
+                <p class="price__description">нарколог назначает курс лечения, которому больной следует на дому</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Кодирование</h4>
+                <p class="price__description">эффективная форма терапии, которая сокращает потребление алкоголя</p>
+              </li>
+            </ul>
+            <a class="price__link btn" href="#">Все услуги</a>
+          </div>
+
+          <div class="price__column">
+            <h3 class="price__title"><img class="price__icon-img price__icon-img--other" src="img/svg/pharmacy-green.svg" alt=" " width="35" height="35">Другие услуги</h3>
+            <ul class="price__list">
+              <li class="price__item">
+                <h4 class="price__subtitle">Амбулаторное лечение</h4>
+                <p class="price__description">для каждого пациента свой план с учетом случая и потребности</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Ресоциализация</h4>
+                <p class="price__description">очищение организма от наркотических препаратов и их шлаков</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Лечение за границей</h4>
+                <p class="price__description">симптоматическое лечение, рекомендовано проводить в стационаре</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">VIP лечение</h4>
+                <p class="price__description">очищение организма от наркотических препаратов и их шлаков</p>
+              </li>
+              <li class="price__item">
+                <h4 class="price__subtitle">Игровая зависимость</h4>
+                <p class="price__description">очищение опиоидных рецепторов головного мозга</p>
+              </li>
+            </ul>
+            <a class="price__link btn" href="#">Все услуги</a>
+          </div>
+
+        </div>
+      </section>
+
       <section class="database-preview">
         <div class="intro intro--database-preview container">
-          <h2 class="intro__title">Публикации, проверенные специалистом</h2>
+          <h2 class="intro__title">Это важно знать</h2>
           <div class="intro__link-wrapper">
             <p class="intro__description">В нашей базе знаний можно найти всю необходимую информацию и ответ на любой интересующий вопрос</p>
             <a class="intro__link" href="database.html">Все статьи</a>
@@ -476,29 +652,6 @@
                 <p class="intro__description">Изначально «соли» попали на рынок как препараты для лечения переутомления и стресса</p>
               </div>
             </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="warning container">
-        <div class="warning__wrapper">
-          <div class="warning__img-wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/warning/warn2.webp">
-              <img class="warning__img" src="img/warning/warn2.jpg" alt="">
-            </picture>
-          </div>
-
-          <div class="warning__form-wrapper">
-            <div class="intro intro--warning">
-              <h2 class="intro__title">Наркотики - деградация личности. Помогите своему близкому!</h2>
-              <p class="intro__description">Наркотическая зависимость считается наиболее опасным заболеванием, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
-            </div>
-
-            <div class="warning__consultation-wrapper">
-              <div class="warning__consultation-phone">+7 (900) 456-23-45</div>
-              <button class="warning__consultation-btn btn">Позвоните мне</button>
-            </div>
           </div>
         </div>
       </section>

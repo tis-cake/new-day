@@ -28,11 +28,11 @@
   position: relative;
 
   width: @d470px;
-  height: @d650px;
+  height: @d670px;
 }
 
 .master-swiper__little-swiper .swiper-wrapper {
-  height: @d650px;
+  height: @d670px;
 }
 
 .master-swiper__little-item {
@@ -40,7 +40,8 @@
   display: flex;
 
   width: @a;
-  height: @d140px;
+  // height: @d140px;
+  // .bred;
   margin-left: @d40px;
   margin-bottom: 0;
 
@@ -64,8 +65,13 @@
 }
 
 .master-swiper__little-text-wrapper {
-  padding-top: @d36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: @d230px;
+  // padding-top: @d36px;
   padding-left: @d38px;
+  // padding-bottom: 20px;
 }
 
 .master-swiper__little-title {
@@ -82,7 +88,9 @@
 
 .master-swiper__main-swiper {
   width: 55.41vw; //1064px
+  // width: 740px;
   font-size: @d19px;
+  // .bred;
 }
 
 .master-swiper__main-swiper .swiper-wrapper {
@@ -97,8 +105,8 @@
 }
 
 .master-swiper__main-img-wrapper {
-  width: @d507px;
-  height: @d650px;
+  width: @d450px;
+  // height: @d650px;
 }
 
 .master-swiper__main-img {
@@ -163,24 +171,24 @@
 
 .double-wrapper-page {
   .master-swiper__little-swiper {
-    width: @d400px;
-    height: @d430px;
+    width: @d430px;
+    height: @d500px;
   }
   .master-swiper__little-swiper .swiper-wrapper {
-    height: @d430px;
+    height: @d500px;
   }
   .master-swiper__little-item {
-    width: @d345px;
-    height: @d123px;
+    // width: @d345px;
+    // height: @d123px;
     margin-left: @d40px;
     margin-bottom: 0;
   }
   .master-swiper__little-img-wrapper {
     width: @d119px;
-    height: @d123px;
+    // height: @d123px;
   }
   .master-swiper__little-text-wrapper {
-    padding-top: @d32px;
+    // padding-top: @d32px;
     padding-left: @d23px;
   }
   .master-swiper__little-title {
@@ -193,22 +201,27 @@
     letter-spacing: 0.09px;
   }
   .master-swiper__main-swiper {
-    width: @d797px;
+    width: @d735px;
     font-size: @d18px;
   }
   .master-swiper__main-swiper .swiper-wrapper {
-    height: @d432px;
+    height: @d500px;
   }
   .master-swiper__main-content-wrapper {
-    height: @d432px;
+    height: @d500px;
   }
   .master-swiper__main-img-wrapper {
-    width: @d384px;
-    height: @d432px;
+    width: @d360px;
+    // height: @d500px;
   }
   .master-swiper__main-text-wrapper {
-    width: @d384px;
+    width: @d330px;
     padding-top: @d13px;
+
+    & p:not(.master-swiper__main-position) {
+      margin-bottom: @d25px;
+      line-height: @d25px;
+    }
   }
   .master-swiper__main-name {
     margin-bottom: @d16px;
@@ -382,16 +395,16 @@
 
   .master-swiper__little-swiper {
     width: 470px;
-    height: 650px;
+    height: 670px;
   }
 
   .master-swiper__little-swiper .swiper-wrapper {
-    height: 650px;
+    height: 670px;
   }
 
   .master-swiper__little-item {
     width: @a;
-    height: 140px;
+    // height: 140px;
     margin-left: 40px;
     margin-bottom: 0;
   }
@@ -402,7 +415,8 @@
   }
 
   .master-swiper__little-text-wrapper {
-    padding-top: 36px;
+    width: 230px;
+    // padding-top: 36px;
     padding-left: 38px;
   }
 
@@ -429,8 +443,8 @@
   }
 
   .master-swiper__main-img-wrapper {
-    width: 507px;
-    height: 650px;
+    width: 450px;
+    // height: 650px;
   }
 
   .master-swiper__main-text-wrapper {
@@ -466,25 +480,21 @@
   }
 
   .double-wrapper-page {
-    .master-swiper__little-swiper {
-      width: 400px;
-      height: 430px;
+   .master-swiper__little-swiper {
+      width: 430px;
+      height: 500px;
     }
     .master-swiper__little-swiper .swiper-wrapper {
-      height: 430px;
+      height: 500px;
     }
     .master-swiper__little-item {
-      width: 345px;
-      height: 123px;
       margin-left: 40px;
       margin-bottom: 0;
     }
     .master-swiper__little-img-wrapper {
       width: 119px;
-      height: 123px;
     }
     .master-swiper__little-text-wrapper {
-      padding-top: 32px;
       padding-left: 23px;
     }
     .master-swiper__little-title {
@@ -495,22 +505,25 @@
       font-size: 18px;
     }
     .master-swiper__main-swiper {
-      width: 797px;
+      width: 735px;
       font-size: 18px;
     }
     .master-swiper__main-swiper .swiper-wrapper {
-      height: 432px;
+      height: 500px;
     }
     .master-swiper__main-content-wrapper {
-      height: 432px;
+      height: 500px;
     }
     .master-swiper__main-img-wrapper {
-      width: 384px;
-      height: 432px;
+      width: 360px;
     }
     .master-swiper__main-text-wrapper {
-      width: 384px;
+      width: 330px;
       padding-top: 13px;
+      & p:not(.master-swiper__main-position) {
+        margin-bottom: 25px;
+        line-height: 25px;
+      }
     }
     .master-swiper__main-name {
       margin-bottom: 16px;

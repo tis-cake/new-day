@@ -45,14 +45,14 @@ var height = document.documentElement.clientHeight;
 var zoomValue;
 // var iconSize = [];
 
-if (width > 755) {
+if (width > 756) {
     zoomValue = 12;
     // iconSize = [30, 36];
-} else if (width > 450 && width <= 755) {
-    zoomValue = 10;
+} else if (width > 420 && width <= 755) {
+    zoomValue = 13;
     // iconSize = [28, 34];
 } else {
-    zoomValue = 10;
+    zoomValue = 11;
     // iconSize = [26, 32];
 }
 
@@ -111,6 +111,10 @@ function init() {
   } else if (width > 756 && width <= 1000) {
     zoomControl = new ymaps.control.ZoomControl({options: {
       position: { right: 30, top: 90 }
+    }});
+  } else if (width < 756) {
+    zoomControl = new ymaps.control.ZoomControl({options: {
+      position: { right: 30, top: 110 }
     }});
   }
 

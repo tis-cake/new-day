@@ -79,8 +79,44 @@
   }
 }
 
-.about--detox {
+.about--detox,
+.about--family {
+  flex-direction: column;
   margin-bottom: @d87px;
+  // width: @a;
+  h2 {
+    margin-bottom: @d48px;
+
+    font-size: @d45px;
+    font-weight: 700;
+    letter-spacing: 0.23px;
+
+    color: #2f2f2f;
+  }
+  h3 {
+    margin-bottom: @d14px;
+    font-size: @d27px;
+    line-height: @d29px;
+    letter-spacing: 0.14px;
+  }
+  p {
+    margin-bottom: @d25px;
+    font-size: @d18px;
+    font-weight: 400;
+    line-height: @d24px;
+    letter-spacing: 0.1px;
+
+    color: #747474;
+  }
+}
+
+.about--family {
+  // width: 76.56vw; // 1470px
+  margin-bottom: @d140px;
+  p {
+    margin-bottom: @d50px;
+    line-height: @d29px;
+  }
 }
 
 .about--doctor {
@@ -179,8 +215,29 @@
     }
   }
 
-  .about--detox {
+  .about--detox,
+  .about--family {
     margin-bottom: @m155px;
+    h2 {
+      margin-bottom: @m47px;
+      font-size: @m45px;
+    }
+    h3 {
+      margin-bottom: @m14px;
+      font-size: @m33px;
+      line-height: @m29px;
+      letter-spacing: 0.17px;
+    }
+    p {
+      margin-bottom: @m39px;
+      font-size: @m30px;
+      line-height: @m39px;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .about--family {
+    width: @a;
   }
 
   .about--doctor {
@@ -224,6 +281,12 @@
       }
     }
   }
+
+     // &.container {
+    //   width: auto;
+    //   .padding-inline(0);
+    //   .bred;
+    // }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -248,6 +311,35 @@
       right: -29px;
       border-bottom: 30px solid #1bbd59;
       border-right: 30px solid #1bbd59;
+    }
+  }
+
+  .about--detox,
+  .about--family {
+    margin-bottom: 87px;
+    // width: @a;
+    h2 {
+      margin-bottom: 48px;
+      font-size: 45px;
+    }
+    h3 {
+      margin-bottom: 14px;
+      font-size: 27px;
+      line-height: 29px;
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .about--family {
+    // width: 1470px;
+    margin-bottom: 140px;
+    p {
+      margin-bottom: 50px;
+      line-height: 29px;
     }
   }
 

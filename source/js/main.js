@@ -181,7 +181,6 @@ $(document).ready(function () {
 });
 
 // [detox-page]
-
 // если js подключён - меню скрыто
 $('.services__list').removeClass('services__list--nojs');
 
@@ -544,4 +543,46 @@ $(document).ready(function(){
       commentForm.reset();
     });
   }
+});
+
+
+// [centers-page]
+// список городов
+$(document).ready(function () {
+  $('.contacts-map__filter-handler').on('click', function(){
+
+    $(this).toggleClass('active');
+    $data = $(this).data('id');
+    $(this).find($('.contacts-map__filter-list[data-id='+$data+']').slideToggle());
+    // $('.contacts-map__filter-options').toggleClass('active');
+
+    $('.contacts-map__filter-item').click(function () {
+      $value = $(this).text();
+      $(this).addClass('active');
+
+      $(this).closest('.contacts-map__filter-options').find('.contacts-map__filter-handler').text($value); // находим ближайшее поле ввода (ссылку)
+                                                                                          //  и подставляем выбранное значение из списка
+
+      $(this).closest('.contacts-map__filter-options').find('input').val($value);        // находим поле ввода и вставляем туда же текст
+      if ($(this).closest('.contacts-map__filter-options').find('input').change()) {    // если поле было изменено - скрыть
+        $(this).closest('.contacts-map__filter-options').find('.contacts-map__filter-handler').removeClass('active');
+        $(this).closest('.contacts-map__filter-options').find('.contacts-map__filter-list').slideUp();
+      }
+    });
+  });
+});
+
+// фильт стоимости
+$(document).ready(function () {
+  $("#filter-range").slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val(ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽");
+      }
+    });
+    $( "#amount" ).val( "₽" + $( "#filter-range" ).slider( "values", 0 ) +
+      " - ₽" + $( "#filter-range" ).slider( "values", 1 ) );
 });

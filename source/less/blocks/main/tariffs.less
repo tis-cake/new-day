@@ -182,6 +182,75 @@
   border-radius: 0 0 20px 20px;
 }
 
+.tariffs__link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tariffs__link {
+  position: relative;
+  display: inline-block;
+
+  margin-bottom: @d17px;
+
+  font-size: @d19px;
+  line-height: @d27px;
+  letter-spacing: 0.1px;
+
+  color: #747474;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -@d3px;
+    right: -@d45px;
+    width: @d27px;
+    height: @d27px;
+
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.tariffs--contacts {
+  margin-bottom: @d188px;
+  .tariffs__column {
+    width: @d506px;
+  }
+  .tariffs__header {
+    height: @d245px;
+    &::before {
+      height: @d225px;
+      background-image: url('../img/tariffs/bg-green-big-full.png');
+    }
+  }
+  .tariffs__icon {
+    top: -@d46px;
+    right: @d70px;
+    width: @d100px;
+    height: @d100px;
+  }
+  .tariffs__header-text {
+    padding-top: @d46px;
+    .padding-inline(@d55px);
+  }
+  .tariffs__main {
+    margin-bottom: @d31px;
+    padding-left: @d60px;
+    padding-right: @d40px;
+  }
+  .tariffs__list {
+    margin-top: @d54px;
+    margin-bottom: @d59px;
+  }
+  .tariffs__item {
+    margin-bottom: @d20px;
+  }
+}
+
 @media  (max-width: @mobile-width) {
   .tariffs {
     margin-bottom: @m174px;
@@ -378,5 +447,53 @@
 
   .tariffs__footer {
     height: 142px;
+  }
+
+  .tariffs__link {
+    margin-bottom: 17px;
+
+    font-size: 19px;
+    line-height: 27px;
+    &::before {
+      top: -3px;
+      right: -45px;
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .tariffs--contacts {
+    margin-bottom: 188px;
+    .tariffs__column {
+      width: 506px;
+    }
+    .tariffs__header {
+      height: 245px;
+      &::before {
+        height: 225px;
+      }
+    }
+    .tariffs__icon {
+      top: -46px;
+      right: 70px;
+      width: 100px;
+      height: 100px;
+    }
+    .tariffs__header-text {
+      padding-top: 46px;
+      .padding-inline(55px);
+    }
+    .tariffs__main {
+      margin-bottom: 31px;
+      padding-left: 60px;
+      padding-right: 40px;
+    }
+    .tariffs__list {
+      margin-top: 54px;
+      margin-bottom: 59px;
+    }
+    .tariffs__item {
+      margin-bottom: 20px;
+    }
   }
 }

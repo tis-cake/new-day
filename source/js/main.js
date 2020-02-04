@@ -572,17 +572,88 @@ $(document).ready(function () {
   });
 });
 
-// фильт стоимости
+// фильтр стоимости
 $(document).ready(function () {
   $("#filter-range").slider({
       range: true,
       min: 0,
-      max: 500,
-      values: [ 75, 300 ],
+      max: 100000,
+      values: [ 10000, 30000 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val(ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽");
+        // $( "#amount" ).val(ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽");
+        $( "#range-toggle-min" ).val(ui.values[ 0 ] + " ₽");
+        $( "#range-toggle-max" ).val(ui.values[ 1 ] + " ₽");
       }
     });
-    $( "#amount" ).val( "₽" + $( "#filter-range" ).slider( "values", 0 ) +
-      " - ₽" + $( "#filter-range" ).slider( "values", 1 ) );
+    $( "#range-toggle-min" ).val($( "#filter-range" ).slider( "values", 0 ) + " ₽");
+    $( "#range-toggle-max" ).val($( "#filter-range" ).slider( "values", 1 ) + " ₽");
+});
+
+// слайдер центров в 2 ряда
+$(document).ready(function () {
+  var mySwiper = new Swiper('#center-swiper-row-first', {
+    slidesPerView: '1.5',
+    centeredSlides: true,
+    speed: 3000,
+    spaceBetween: 25,
+    touchRatio: 1,
+    loop: true,
+    freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: '.swiper-button-next--center',
+      prevEl: '.swiper-button-prev--center',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    },
+    breakpoints: {
+      752: {
+        slidesPerView: '4',
+        spaceBetween: 30,
+        centeredSlides: false
+        // loop: true
+      }
+    }
+  });
+
+  var mySwiper = new Swiper('#center-swiper-row-second', {
+    slidesPerView: '1.5',
+    centeredSlides: true,
+    speed: 3000,
+    spaceBetween: 25,
+    touchRatio: 1,
+    loop: true,
+    freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: '.swiper-button-next--center',
+      prevEl: '.swiper-button-prev--center',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    },
+    breakpoints: {
+      752: {
+        slidesPerView: '4',
+        spaceBetween: 30,
+        centeredSlides: false
+        // loop: true
+      }
+    }
+  });
 });

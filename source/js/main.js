@@ -1,4 +1,4 @@
-// [index-page]
+// [index]
 // если открыта главная
 if ($(".main").hasClass("index")) {
   $('.header').addClass('index');
@@ -121,7 +121,7 @@ $(document).ready(function () {
 //   }
 // });
 
-// [database-page]
+// [database]
 // если js подключён - меню скрыто
 $('.database-search__list').removeClass('database-search__list--nojs');
 
@@ -151,7 +151,7 @@ $(document).ready(function () {
   }
 });
 
-// [reviews-page]
+// [reviews]
 // слайдер отзывов
 $(document).ready(function () {
   var mySwiper = new Swiper('#review-swiper', {
@@ -180,7 +180,7 @@ $(document).ready(function () {
   });
 });
 
-// [detox-page]
+// [detox]
 // если js подключён - меню скрыто
 $('.services__list').removeClass('services__list--nojs');
 
@@ -545,7 +545,7 @@ $(document).ready(function(){
   }
 });
 
-// [centers-page]
+// [clinics/centers]
 // список городов
 $(document).ready(function () {
   $('.contacts-map__filter-handler').on('click', function(){
@@ -651,6 +651,36 @@ $(document).ready(function () {
         spaceBetween: 30,
         centeredSlides: false
         // loop: true
+      }
+    }
+  });
+});
+
+// [clinic-page]
+// слайдер документов
+$(document).ready(function () {
+  var documentsSwiper = new Swiper('#gallery-swiper', {
+    slidesPerView: '2',
+    touchRatio: 1,
+    centeredSlides: true,
+    spaceBetween: 30,
+    // freeMode: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next--gallery',
+      prevEl: '.swiper-button-prev--gallery',
+    },
+    breakpoints: {
+
+      756: {
+        slidesPerView: '4',
+        centeredSlides: false,
+        spaceBetween: 0
+        // loop: false
       }
     }
   });

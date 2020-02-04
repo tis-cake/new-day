@@ -1,9 +1,12 @@
-.document-swiper {
+.document-swiper,
+.gallery-swiper {
   margin-bottom: @d212px;
+  .intro__description {
+    width: @d970px;
+  }
   .swiper-slide {
     margin-top: @d30px;
   }
-
   .arrow-container {
     margin-top: @d60px;
     .container {
@@ -15,6 +18,18 @@
 .document-swiper__img-wrapper {
   width: @d326px;
   height: @d460px;
+  border-radius: 14px;
+}
+
+.gallery-swiper__img-wrapper {
+  width: @d368px;
+  height: @d500px;
+  border-radius: 14px;
+}
+
+.document-swiper__img,
+.gallery-swiper__img {
+  border-radius: 14px;
 }
 
 .double-wrapper-page {
@@ -82,11 +97,6 @@
     font-size: @d24px!important;
   }
 
-  .document-swiper .swiper-slide {
-    // width: 283px!important;
-    // .b(red);
-  }
-
   .document-swiper__img-wrapper {
     width: @d283px;
     height: @d399px;
@@ -100,33 +110,49 @@
 }
 
 @media (max-width: @mobile-width) {
-  .document-swiper {
+  .document-swiper,
+  .gallery-swiper {
     margin-bottom: @m265px;
+    .intro--document,
+    .intro--gallery {
+      margin-bottom: @m100px;
+    }
+    .intro__description {
+      width: @a;
+    }
     .swiper-container {
       padding-top: @m30px;
       padding-bottom: @m40px;
     }
   }
-  .document-swiper__img-wrapper {
-    border-radius: 14px;
-
+  .document-swiper__img-wrapper,
+  .gallery-swiper__img-wrapper {
     width: @m326px;
     height: @m460px;
   }
 
-  .document-swiper__img {
+  .gallery-swiper__img-wrapper {
+    // width: @m375px;
+    // height: @m500px;
+  }
+
+  .document-swiper__img,
+  .gallery-swiper__img {
     box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
     border-radius: 14px;
   }
 }
 
 @media (min-width: @max-desktop-width) {
-  .document-swiper {
+  .document-swiper,
+  .gallery-swiper {
     margin-bottom: 212px;
+    .intro__description {
+      width: 970px;
+    }
     .swiper-slide {
       margin-top: 30px;
     }
-
     .arrow-container {
       margin-top: 60px;
       .container {
@@ -138,6 +164,11 @@
   .document-swiper__img-wrapper {
     width: 326px;
     height: 460px;
+  }
+
+  .gallery-swiper__img-wrapper {
+    width: 368px;
+    height: 500px;
   }
 
   .double-wrapper-page {

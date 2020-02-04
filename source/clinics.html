@@ -184,14 +184,14 @@
           <picture>
             <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/clinics-m.webp"> -->
             <!-- <source media="(max-width: 750px)" srcset="img/main-info/clinics-m.jpg"> -->
-            <!-- <source type="image/webp" srcset="img/main-info/clinics-d.webp"> -->
+            <source type="image/webp" srcset="img/main-info/clinics-d.webp">
             <img class="main-info__bg-img" src="img/main-info/clinics-d.jpg" alt="">
           </picture>
         </div>
 
         <div class="container">
           <a class="main-info__contact-link change-region" href="#">Санкт-Петербург</a>
-          <h1 class="main-info__title">Реабилитационные центры в Санкт-Петербурге</h1>
+          <h1 class="main-info__title">Наркологические клиники в Санкт-Петербурге</h1>
           <p class="main-info__description">Лечение зависимости проводится на анонимной основе, вся информация о лечении строго конфиденциальна.</p>
           <a class="main-info__callback btn" href="#">Получить консультацию</a>
         </div>
@@ -394,7 +394,7 @@
       <section class="rehab-swiper rehab-swiper--two-row rehab-swiper--centers">
         <div class="container">
           <h2 class="visually-hidden">Наши реабилитационные центры</h2>
-          <div class="swiper-container" id="center-swiper-row-first">
+          <div class="swiper-container swiper-container-first" id="center-swiper-row-first">
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
@@ -474,7 +474,7 @@
 
             </div>
           </div>
-          <div class="swiper-container" id="center-swiper-row-second">
+          <div class="swiper-container swiper-container-second" id="center-swiper-row-second">
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
@@ -856,8 +856,11 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/jquery.ui-slider.js"></script>
-    <script src="js/jquery.ui-touch-punch.js"></script>
+
+    <!-- ползунок-фильтр -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
     <script src="js/main.js"></script>
 
     <!-- карта -->

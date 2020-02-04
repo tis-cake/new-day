@@ -169,24 +169,15 @@
 @media (max-width: @mobile-width) {
 
   .review-swiper {
-    // .swiper-slide {
-    //   margin-top: @d30px;
-    // }
-
     .arrow-container {
-      // margin-top: @d70px;
       .container {
         padding-top: @m20px;
       }
-      .reviews__text-block {
-      }
     }
-
     .reviews__blockquote {
       width: @m529px;
     }
   }
-
 
   .reviews {
     margin-bottom: @m137px;
@@ -199,15 +190,19 @@
     overflow-x: scroll;
   }
 
-  .reviews__blockquote {
+
+  .reviews__blockquote,
+  .double-main-wrapper .reviews__blockquote {
     margin-right: @m65px;
   }
 
-  .reviews__blockquote:first-child {
+  .reviews__blockquote:first-child,
+  .double-main-wrapper .reviews__blockquote:first-child {
     margin-left: @m11px;
   }
 
-  .reviews__blockquote:last-child {
+  .reviews__blockquote:last-child,
+  .double-main-wrapper .reviews__blockquote:last-child {
     padding-right: @m35px;
   }
 
@@ -215,7 +210,8 @@
     .margin-inline(0);
   }
 
-  .reviews__text-block {
+  .reviews__text-block,
+  .double-main-wrapper .reviews__text-block {
     max-width: none;
     width: auto;
     margin-bottom: @m45px;
@@ -248,7 +244,8 @@
     font-size: @m25px;
   }
 
-  .reviews__blockquote-text {
+  .reviews__blockquote-text,
+  .double-main-wrapper .reviews__blockquote-text {
     max-width: none;
     width: @m346px;
     margin-right: @m62px;
@@ -264,7 +261,8 @@
     height: @m153px;
   }
 
-  .reviews__author-wrapper {
+  .reviews__author-wrapper,
+  .double-main-wrapper .reviews__author-wrapper {
     padding-left: @m15px;
     line-height: @m30px;
     letter-spacing: normal;
@@ -280,31 +278,19 @@
   }
 
   .double-main-wrapper {
-    .reviews__blockquote {
-      margin-right: @m65px;
-    }
     .reviews__blockquote:first-child {
       margin-left: @m15px;
     }
-
-    .reviews__blockquote:last-child {
-      padding-right: @m35px;
-    }
-    .reviews__text-block {
-      width: auto;
-      margin-bottom: @m45px;
-      padding-top: @m27px;
-      padding-left: @m85px;
-      padding-bottom: @m43px;
-    }
-    .reviews__blockquote-text {
-      width: @m346px;
-      padding-top: @m19px;
-      padding-bottom: 0px;
-    }
-    .reviews__author-wrapper {
-      padding-left: @m15px;
-    }
+    // .reviews__text-block {
+      // padding-bottom: @m43px;
+    // }
+    // .reviews__blockquote-text {
+    //   padding-top: @m19px;
+    //   padding-bottom: 0px;
+    // }
+    // .reviews__author-wrapper {
+      // padding-left: @m15px;
+    // }
   }
 }
 

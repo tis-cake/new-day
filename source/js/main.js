@@ -44,7 +44,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev--center',
     },
     breakpoints: {
-      752: {
+      756: {
         slidesPerView: '3',
         spaceBetween: 30,
         // loop: true
@@ -72,7 +72,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev--clinic',
     },
     breakpoints: {
-      752: {
+      756: {
         slidesPerView: '3',
         spaceBetween: 30,
         // loop: true
@@ -170,7 +170,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev--review',
     },
     breakpoints: {
-      752: {
+      756: {
         slidesPerView: '3',
         spaceBetween: 0,
         centeredSlides: true,
@@ -229,7 +229,7 @@ $(document).ready(function () {
     //   disableOnInteraction: false,
     // },
     breakpoints: {
-      755: {
+      756: {
         direction: 'vertical',
         slidesPerView: '3',
         centeredSlides: false,
@@ -255,7 +255,7 @@ $(document).ready(function () {
     // },
     loop: true,
     breakpoints: {
-      755: {
+      756: {
         direction: 'vertical',
         spaceBetween: 30,
         loop: false
@@ -412,7 +412,7 @@ $(document).ready(function () {
     },
     breakpoints: {
 
-      755: {
+      756: {
         slidesPerView: '4',
         centeredSlides: false
         // spaceBetween: 30
@@ -443,7 +443,7 @@ $(document).ready(function () {
     //   disableOnInteraction: false,
     // },
     breakpoints: {
-      755: {
+      756: {
         direction: 'vertical',
         slidesPerView: '4',
         centeredSlides: false,
@@ -471,7 +471,7 @@ $(document).ready(function () {
     // },
     loop: true,
     breakpoints: {
-      755: {
+      756: {
         direction: 'vertical',
         spaceBetween: 30,
         loop: false
@@ -545,7 +545,6 @@ $(document).ready(function(){
   }
 });
 
-
 // [centers-page]
 // список городов
 $(document).ready(function () {
@@ -580,7 +579,6 @@ $(document).ready(function () {
       max: 100000,
       values: [ 10000, 30000 ],
       slide: function( event, ui ) {
-        // $( "#amount" ).val(ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽");
         $( "#range-toggle-min" ).val(ui.values[ 0 ] + " ₽");
         $( "#range-toggle-max" ).val(ui.values[ 1 ] + " ₽");
       }
@@ -599,10 +597,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next--center',
       prevEl: '.swiper-button-prev--center',
@@ -615,7 +613,7 @@ $(document).ready(function () {
       }
     },
     breakpoints: {
-      752: {
+      756: {
         slidesPerView: '4',
         spaceBetween: 30,
         centeredSlides: false
@@ -632,10 +630,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next--center',
       prevEl: '.swiper-button-prev--center',
@@ -648,7 +646,7 @@ $(document).ready(function () {
       }
     },
     breakpoints: {
-      752: {
+      756: {
         slidesPerView: '4',
         spaceBetween: 30,
         centeredSlides: false

@@ -195,7 +195,6 @@
   }
 }
 
-
 .ui-slider {
   position: relative;
   height: @d4px;
@@ -256,7 +255,7 @@
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-  border: @d1px solid #cccccc;
+  border: @d1px solid #14b250;
   background: #ededed;
   font-weight: normal;
   color: #2b2b2b;
@@ -426,16 +425,142 @@
     letter-spacing: 0.15px;
   }
 
-  // .contacts-map__container {
-  //   border-radius: 28px;
-  // }
+
+  .contacts-map__filter-container {
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-bottom: @m90px;
+    padding-top: @m100px;
+    .padding-inline(@m23px);
+    padding-bottom: @m100px;
+  }
+
+  .contacts-map__filter-handler {
+    height: @m92px;
+    margin-bottom: @m48px;
+    .padding-inline (@m50px);
+
+    font-size: @m30px;
+    line-height: @m34px;
+    letter-spacing: 0.14px;
+
+    border-radius: 46px;
+    &::before,
+    &::after {
+      top: @m38px;
+      width: @m20px;
+      height: @m3px;
+    }
+    &::before {
+      right: @m52px;
+    }
+    &::after {
+      right: @m64px;
+    }
+  }
+
+  .contacts-map__filter-options {
+    width: @a;
+    border-radius: 38px;
+    &--tariffs {
+      width: @a;
+    }
+  }
+
+  .contacts-map__filter-list {
+    margin-bottom: @m48px;
+    padding-top: @m30px;
+    .padding-inline (@m50px);
+    padding-bottom: @m30px;
+
+    font-size: @m30px;
+    line-height: @m34px;
+    letter-spacing: 0.14px;
+
+    border-radius: 46px;
+  }
+
+  .contacts-map__filter-list-item:not(:last-child) {
+    margin-bottom: @m30px;
+  }
+
+  .contacts-map__filter-range {
+    width: @a;
+    height: @m127px;
+    margin-bottom: @m48px;
+    padding-top: @m25px;
+    .padding-inline (@m50px);
+    padding-bottom: @m25px;
+
+    border-radius: 64px;
+
+    @media (max-width: 340px) {
+      height: @m150px;
+      border-radius: 24px;
+    }
+  }
+
+  .contacts-map__toggle-wrapper {
+    margin-bottom: @m23px;
+  }
+
+  .contacts-map__toggle {
+    font-size: @m30px;
+    letter-spacing: 0.15px;
+  }
+
+  .contacts-map__btn {
+    width: 100%;
+    height: @m92px;
+
+    border-radius: 46px;
+    background-color: #14b250;
+  }
+
+  .contacts-map__btn-text {
+    padding-left: @m68px;
+    &::before {
+      top: -@m4px;
+      left: @m4px;
+      width: @m35px;
+      height: @m35px;
+    }
+  }
+
+  .ui-slider {
+    height: @m4px;
+  }
+
+  .ui-slider .ui-slider-handle {
+    width: @m26px;
+    height: @m26px;
+    border: @m2px solid #e2e3ea;
+  }
+
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -@m12px;
+    margin-left: 0px;
+  }
+
+  .ui-state-hover,
+  .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover,
+  .ui-state-focus,
+  .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus,
+  .ui-button:hover,
+  .ui-button:focus {
+    border: @m2px solid #14b250;
+  }
+  .ui-corner-all {
+    border-radius: 3px;
+  }
 
   .contacts-map__wrapper {
     height: @m680px;
-
   }
 
-  // map controls
   .ymaps-2-1-75-zoom {
     height: 35px!important;
     @media (max-width: 310px) {

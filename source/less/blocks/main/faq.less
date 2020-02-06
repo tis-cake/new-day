@@ -80,19 +80,21 @@
   color: #747474;
 }
 
-.faq--aside {
+.faq-aside {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  .about__text-wrapper {
+  margin-bottom: @d275px;
+  .about--contacts {
     width: @d930px;
     & p {
       font-size: @d19px;
       line-height: @d29px;
     }
   }
-  .about__aside-faq {
+  .faq {
     width: @d500px;
+    margin-bottom: 0;
     padding-top: @d48px;
     padding-bottom: @d48px;
 
@@ -101,25 +103,21 @@
     background-color: #ffffff;
   }
   .faq__subtitle {
-    // display: inline-block;
-    // position: relative;
-    padding-left: @d20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .margin-inline(@a);
+    margin-bottom: @d18px;
 
     font-size: @d25px;
     letter-spacing: 0.13px;
     text-align: center;
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-
-    //   top: 0;
-    //   left: 0;
-    //   width: 32px;
-    //   height: 30px;
-
-
-    //   background-color: red;
-    // }
+  }
+  .faq__img {
+    width: @d30px;
+    height: @d30px;
+    padding-right: @d20px;
   }
   .faq__wrapper {
     margin-bottom: 0;
@@ -151,7 +149,6 @@
     padding-bottom: @m26px;
 
     border-radius: 0;
-
 
     &--q {
       border-radius: 50px;
@@ -191,9 +188,10 @@
     border-radius: 35px;
   }
 
-  .faq--aside {
+  .faq-aside {
     flex-direction: column;
-    .about__text-wrapper {
+    margin-bottom: @m196px;
+    .about--contacts {
       width: @a;
       margin-bottom: @m130px;
       & p {
@@ -201,18 +199,24 @@
         line-height: @m38px;
       }
     }
-    .about__aside-faq {
+    .faq {
       width: @a;
+      margin-bottom: 0;
       padding-top: @m54px;
       padding-bottom: @m54px;
     }
     .faq__subtitle {
-      margin-bottom: @m50px;
-      padding-left: @m72px;
+      // margin-bottom: @m50px;
+      margin-bottom: @m37px;
 
       font-size: @m40px;
       letter-spacing: 0.2px;
       text-align: center;
+    }
+    .faq__img {
+      width: @m55px;
+    height: @m55px;
+      padding-right: @d20px;
     }
     .faq__wrapper {
       margin-bottom: 0;
@@ -269,22 +273,29 @@
     line-height: 34px;
   }
 
-  .faq--aside {
-    .about__text-wrapper {
+  .faq-aside {
+    margin-bottom: 275px;
+    .about--contacts {
       width: 930px;
       & p {
         font-size: 19px;
         line-height: 29px;
       }
     }
-    .about__aside-faq {
+    .faq {
       width: 500px;
+      margin-bottom: 0;
       padding-top: 48px;
       padding-bottom: 48px;
     }
     .faq__subtitle {
-      padding-left: 20px;
+      margin-bottom: 18px;
       font-size: 25px;
+    }
+    .faq__img {
+      width: 30px;
+      height: 30px;
+      padding-right: 20px;
     }
     .faq__wrapper {
       margin-bottom: 0;

@@ -13,8 +13,39 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.nav-section').toggleClass('active');
     $('.header__desktop-bottom').toggleClass('active');
+    $("body").toggleClass('noscroll');
   });
 });
+
+var header = $('.header__mobile-bottom'),
+  scrollPrev = 0;
+
+$(window).scroll(function() {
+  var scrolled = $(window).scrollTop();
+
+  if ( scrolled > 100 && scrolled > scrollPrev ) {
+    header.addClass('out');
+    // header.slideUp();
+  } else {
+    header.removeClass('out');
+    // header.slideDown();
+  }
+  scrollPrev = scrolled;
+})
+
+// if($(".nav-section").hasClass("active")) {
+  // var element = document.querySelector(".header__mobile-bottom ");
+  // document.onscroll = function() {
+  //   if (document.body.scrollTop > 200 && document.body.scrollTop < (document.body.scrollHeight - 500))
+  //   {
+  //       element.style.display = "block";
+  //   }
+  //   else
+  //   {
+  //       element.style.display = "none";
+  //   }
+  // };
+// }
 
 // убрать index при открытом меню
 $(document).ready(function () {
@@ -379,8 +410,8 @@ $(document).ready(function () {
       currentSum += priceArr[priceArrCurrent[i]];
     }
 
-    $('span#final-price').text(currentSum);
-    $('span#final-price-mob').text(currentSum);
+    $('span.calc__price').text(currentSum);
+    // $('span#final-price-mob').text(currentSum);
   });
 });
 

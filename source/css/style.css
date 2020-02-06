@@ -310,13 +310,13 @@ input[type="radio"].visually-hidden {
   }
   .header__mobile {
     display: block;
-    background-color: #fff;
   }
   .header__mobile-top {
-    padding-top: 3.466vw;
-    padding-bottom: 3.466vw;
     z-index: 10;
     position: relative;
+    padding-top: 3.466vw;
+    padding-bottom: 3.466vw;
+    background-color: #fff;
   }
   .header__mobile-bottom {
     position: relative;
@@ -325,6 +325,16 @@ input[type="radio"].visually-hidden {
   .out.header__mobile-bottom {
     z-index: -1;
     transform: translateY(-100%);
+  }
+  .header.index {
+    position: absolute;
+    position: fixed;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #004f82 0%, #005c94 100%);
+  }
+  .header.index .header__mobile {
+    padding-bottom: 2.13vw;
+    background-color: transparent;
   }
   .header.index .header__mobile-top {
     background-image: linear-gradient(90deg, #004f82 0%, #005c94 100%);
@@ -347,15 +357,6 @@ input[type="radio"].visually-hidden {
   }
   .header.index .header__mobile-bottom::after {
     bottom: 0;
-  }
-  .header.index {
-    position: absolute;
-    position: fixed;
-    background-image: linear-gradient(90deg, #004f82 0%, #005c94 100%);
-  }
-  .header.index .header__mobile {
-    padding-bottom: 2.13vw;
-    background-color: transparent;
   }
   .header__desktop.container {
     padding-left: 0;
@@ -433,9 +434,6 @@ input[type="radio"].visually-hidden {
   .index-bg {
     max-height: none;
     height: 141vw;
-  }
-  .header.index {
-    background-color: transparent;
   }
 }
 @media (min-width: 1921px) {
@@ -1617,6 +1615,7 @@ input[type="radio"].visually-hidden {
     height: 103.33vw;
     width: 100%;
     margin-top: 0;
+    padding-top: 30.667vw;
     margin-bottom: 23.067vw;
   }
   .main.index .main-info {

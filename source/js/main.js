@@ -17,35 +17,23 @@ $(document).ready(function () {
   });
 });
 
-var header = $('.header__mobile-bottom'),
-  scrollPrev = 0;
+// появление нижнего блока меню
+$(document).ready(function () {
 
-$(window).scroll(function() {
-  var scrolled = $(window).scrollTop();
+  var headerBottomBlock = $('.header__mobile-bottom'),
+    scrollPrev = 0;
 
-  if ( scrolled > 100 && scrolled > scrollPrev ) {
-    header.addClass('out');
-    // header.slideUp();
-  } else {
-    header.removeClass('out');
-    // header.slideDown();
-  }
-  scrollPrev = scrolled;
-})
+  $(window).scroll(function() {
+    var scrolled = $(window).scrollTop();
 
-// if($(".nav-section").hasClass("active")) {
-  // var element = document.querySelector(".header__mobile-bottom ");
-  // document.onscroll = function() {
-  //   if (document.body.scrollTop > 200 && document.body.scrollTop < (document.body.scrollHeight - 500))
-  //   {
-  //       element.style.display = "block";
-  //   }
-  //   else
-  //   {
-  //       element.style.display = "none";
-  //   }
-  // };
-// }
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+      headerBottomBlock.addClass('out');
+    } else {
+      headerBottomBlock.removeClass('out');
+    }
+    scrollPrev = scrolled;
+  })
+});
 
 // убрать index при открытом меню
 $(document).ready(function () {

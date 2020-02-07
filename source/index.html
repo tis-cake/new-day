@@ -29,8 +29,8 @@
               <span class="logo__text--strong">Новый</span> День
             </p>
           </a>
-          <a class="header__search-link" href="index.html">
-          </a>
+          <button class="header__search-link">
+          </button>
         </div>
 
         <div class="header__mobile-bottom nav-section">
@@ -106,13 +106,20 @@
                 </a>
               </li>
               <li class="nav-info__item">
-                <a class="nav-info__link nav-info__link--callback btn" href="#">
+                <a class="nav-info__link nav-info__link--callback btn modal-callback" href="#">
                   Обратный звонок
                 </a>
               </li>
             </ul>
 
           </div>
+        </div>
+
+        <div class="container search-container">
+          <form class="header__search-link-form" action="/echo" method="post">
+            <button class="header__search-link-icon-btn" type="submit"></button>
+            <input class="header__search-link-input" type="search" name="database-search" placeholder="Поиск по сайту..">
+          </form>
         </div>
 
         <div class="header__desktop-bottom header__mob-menu--nojs">
@@ -198,7 +205,7 @@
           <p class="main-info__description main-info__description--desk">Лечение алкоголизма и наркомании в клинике проводится на анонимной основе, вся информация о результатах обследования и лечения является строго конфиденциальной.</p>
           <p class="main-info__description main-info__description--mob">Лечение алкоголизма и наркомании в клинике проводится на анонимной основе, вся информация строго конфиденциальна.</p>
 
-          <a class="main-info__callback btn" href="#">Оставить заявку</a>
+          <a class="main-info__callback btn modal-callback" href="#">Оставить заявку</a>
 
           <div class="main-info__features features-block features-block--main-info">
             <ul class="features-block__list features-block__list--header-desktop">
@@ -265,7 +272,7 @@
           <p class="get-help__text">Позвоните нам </p>
           <p class="get-help__number">8 900 456 23 45</p>
           <p class="get-help__text">или</p>
-          <a class="get-help__link btn" href="#">Позвоните мне</a>
+          <a class="get-help__link btn modal-callback" href="#">Позвоните мне</a>
         </div>
       </section>
 
@@ -922,7 +929,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -1038,7 +1044,26 @@
       </div>
     </footer>
 
+    <section class="modal modal--search">
+      <h2 class="modal__title">Поиск по сайту</h2>
+      <button class="modal__close">Закрыть окно</button>
+      <form class="modal__form" action="/echo" method="post">
+        <button class="modal__icon-btn" type="submit"></button>
+        <input class="modal__input" type="search" name="database-search" placeholder="Введите текст..">
+        <button class="modal__btn btn">Найти</button>
+      </form>
+    </section>
 
+    <section class="modal modal--callback">
+      <h2 class="modal__title">Введите ваш номер телефона</h2>
+      <button class="modal__close">Закрыть окно</button>
+      <form class="modal__form" action="/echo" method="post">
+        <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+        <button class="modal__btn btn">Заказать звонок</button>
+      </form>
+    </section>
+
+    <div class="overlay"></div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>

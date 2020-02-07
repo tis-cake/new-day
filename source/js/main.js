@@ -14,6 +14,11 @@ $(document).ready(function () {
     $('.nav-section').toggleClass('active');
     $('.header__desktop-bottom').toggleClass('active');
     $("body").toggleClass('noscroll');
+
+    $('.header__mobile-top').removeClass('search'); // тень над поиском у верхнего блока
+    $('.header__search-link').removeClass('active');
+    $('.search-container').removeClass('active');   // поиск
+    $('.search-container').removeClass('out');      // смещение за нижним блоком
   });
 });
 
@@ -21,18 +26,33 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   var headerBottomBlock = $('.header__mobile-bottom'),
-    scrollPrev = 0;
+      headerTopBlock = $('.header__mobile-top'),
+      headerSearch = $('.search-container'),
+      scrollPrev = 0;
 
   $(window).scroll(function() {
     var scrolled = $(window).scrollTop();
 
     if ( scrolled > 100 && scrolled > scrollPrev ) {
+      headerTopBlock.addClass('out');
       headerBottomBlock.addClass('out');
+      headerSearch.addClass('out');
     } else {
+      headerTopBlock.removeClass('out');
       headerBottomBlock.removeClass('out');
-    }
+      headerSearch.removeClass('out');
+    };
     scrollPrev = scrolled;
   })
+});
+
+// поиск
+$(document).ready(function () {
+  $('.header__search-link').click(function () {
+    $(this).toggleClass('active');
+    $('.search-container').toggleClass('active');
+    $('.header__mobile-top').toggleClass('search');
+  });
 });
 
 // убрать index при открытом меню
@@ -104,6 +124,7 @@ $(document).ready(function () {
 // maskedinput
 $(document).ready(function () {
   $("#phone").mask("+7 (  999  ) 999  99  99");
+  $(".phone-mask").mask("+7 (  999  ) 999  99  99");
 });
 
 // троеточие при избыточности символов на мобильном разрешении в rehab-swiper
@@ -703,4 +724,48 @@ $(document).ready(function () {
       }
     }
   });
+});
+
+// модальные окна
+$(document).ready(function () {
+
+  // поиск
+  $('.nav-info__item--search').click(function (evt) {
+    evt.preventDefault();
+    $('.overlay').fadeIn('active')
+    $('.modal--search').toggleClass('active');
+  });
+
+  // оставить заявку
+  $('.modal-callback').click(function (evt) {
+    evt.preventDefault();
+    $('.overlay').fadeIn('active')
+    $('.modal--callback').toggleClass('active');
+  });
+
+  // btn-close
+  $('.modal__close').click(function () {
+    $('.modal').removeClass('active');
+     $('.overlay').fadeOut('active')
+  });
+
+  // нажат esc
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if ($(".modal").hasClass("active")) {
+        $('.modal').removeClass('active');
+        $('.overlay').fadeOut('active')
+      }
+    }
+  });
+
+  // клик вне модального окна
+  $(document).mouseup(function (evt) {
+    var modal = $(".modal");
+    if (!modal.is(evt.target) && modal.has(evt.target).length === 0) {
+      $('.modal').removeClass('active');
+      $('.overlay').fadeOut('active')
+    }
+  });
+
 });

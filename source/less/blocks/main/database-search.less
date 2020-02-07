@@ -303,6 +303,9 @@
     box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
     border-radius: 37px;
     background-color: #fff;
+    @media (max-width: 380px) {
+      border-radius: 20px;
+    }
   }
 
   .database-search__item {
@@ -317,10 +320,16 @@
 
   .database-search__item:first-child {
     border-radius: 37px 37px 0 0;
+    @media (max-width: 380px) {
+      border-radius: 20px 20px 0 0;
+    }
   }
 
   .database-search__item:last-child {
     border-radius: 0 0 37px 37px;
+    @media (max-width: 380px) {
+      border-radius: 0 0 20px 20px;
+    }
   }
 
   .database-search__link {

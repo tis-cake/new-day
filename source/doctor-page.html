@@ -27,8 +27,8 @@
               <span class="logo__text--strong">Новый</span> День
             </p>
           </a>
-          <a class="header__search-link" href="index.html">
-          </a>
+          <button class="header__search-link">
+          </button>
         </div>
 
         <div class="header__mobile-bottom nav-section">
@@ -112,6 +112,13 @@
           </div>
         </div>
 
+        <div class="container search-container">
+          <form class="header__search-link-form" action="/echo" method="post">
+            <button class="header__search-link-icon-btn" type="submit"></button>
+            <input class="header__search-link-input" type="search" name="database-search" placeholder="Поиск по сайту..">
+          </form>
+        </div>
+
         <div class="header__desktop-bottom header__mob-menu--nojs">
           <div class="container">
             <nav class="header__nav main-nav">
@@ -186,7 +193,7 @@
             <p class="">Опыт работы: 8 лет.</p>
           </div>
 
-          <a class="main-info__callback btn" href="#">Получить консультацию</a>
+          <a class="main-info__callback btn modal-callback" href="#">Получить консультацию</a>
         </div>
 
         <div class="about__column-right">
@@ -616,6 +623,27 @@
 
       </div>
     </footer>
+
+    <section class="modal modal--search">
+      <h2 class="modal__title">Поиск по сайту</h2>
+      <button class="modal__close">Закрыть окно</button>
+      <form class="modal__form" action="/echo" method="post">
+        <button class="modal__icon-btn" type="submit"></button>
+        <input class="modal__input" type="search" name="database-search" placeholder="Введите текст..">
+        <button class="modal__btn btn">Найти</button>
+      </form>
+    </section>
+
+    <section class="modal modal--callback">
+      <h2 class="modal__title">Введите ваш номер телефона</h2>
+      <button class="modal__close">Закрыть окно</button>
+      <form class="modal__form" action="/echo" method="post">
+        <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+        <button class="modal__btn btn">Заказать звонок</button>
+      </form>
+    </section>
+
+    <div class="overlay"></div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>

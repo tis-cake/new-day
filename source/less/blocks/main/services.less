@@ -211,6 +211,9 @@
     box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
     border-radius: 37px;
     background-color: #fff;
+    @media (max-width: 380px) {
+      border-radius: 20px;
+    }
   }
 
   .services__item {
@@ -227,11 +230,17 @@
   .services__item:first-child {
     padding-top: @m44px;
     border-radius: 37px 37px 0 0;
+    @media (max-width: 380px) {
+      border-radius: 20px 20px 0 0;
+    }
   }
 
   .services__item:last-child {
     padding-bottom: @m44px;
     border-radius: 0 0 37px 37px;
+    @media (max-width: 380px) {
+      border-radius: 0 0 20px 20px;
+    }
   }
 
   .active.services__item {

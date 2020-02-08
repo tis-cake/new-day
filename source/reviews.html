@@ -200,7 +200,7 @@
           <h1 class="main-info__title">Личный опыт зависимых и их близких</h1>
           <p class="main-info__description">Здесь вы можете ознакомиться с отзывами людей, прошедших реабилитацию в наших центрах и клиниках или оставить свой отзыв</p>
 
-          <a class="main-info__callback btn" href="#">Оставить отзыв</a>
+          <a class="main-info__callback btn modal-review" href="#">Оставить отзыв</a>
         </div>
       </section>
 
@@ -505,6 +505,16 @@
       <form class="modal__form" action="/echo" method="post">
         <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
         <button class="modal__btn btn">Заказать звонок</button>
+      </form>
+    </section>
+
+    <section class="modal modal--review">
+      <h2 class="modal__title">Оставьте свой отзыв</h2>
+      <button class="modal__close">Закрыть окно</button>
+      <form class="modal__form" action="/echo" method="post">
+        <input class="modal__input" type="text" name="review-name" placeholder="Ваше имя">
+        <textarea class="modal__textarea" name="review-text" placeholder="Ваш отзыв"></textarea>
+        <button class="modal__btn btn">Отправить</button>
       </form>
     </section>
 

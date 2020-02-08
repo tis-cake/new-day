@@ -743,6 +743,13 @@ $(document).ready(function () {
     $('.modal--callback').toggleClass('active');
   });
 
+  // оставить отзыв
+  $('.modal-review').click(function (evt) {
+    evt.preventDefault();
+    $('.overlay').fadeIn('active')
+    $('.modal--review').toggleClass('active');
+  });
+
   // btn-close
   $('.modal__close').click(function () {
     $('.modal').removeClass('active');

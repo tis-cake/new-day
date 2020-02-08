@@ -808,22 +808,26 @@
     </footer>
 
     <section class="modal modal--search">
-      <h2 class="modal__title">Поиск по сайту</h2>
-      <button class="modal__close">Закрыть окно</button>
-      <form class="modal__form" action="/echo" method="post">
-        <button class="modal__icon-btn" type="submit"></button>
-        <input class="modal__input" type="search" name="database-search" placeholder="Введите текст..">
-        <button class="modal__btn btn">Найти</button>
-      </form>
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Поиск по сайту</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <button class="modal__icon-btn" type="submit"></button>
+          <input class="modal__input" type="search" name="search" placeholder="Введите текст..">
+          <button class="modal__btn btn">Найти</button>
+        </form>
+      </div>
     </section>
 
     <section class="modal modal--callback">
-      <h2 class="modal__title">Введите ваш номер телефона</h2>
-      <button class="modal__close">Закрыть окно</button>
-      <form class="modal__form" action="/echo" method="post">
-        <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
-        <button class="modal__btn btn">Заказать звонок</button>
-      </form>
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Введите ваш номер телефона</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+          <button class="modal__btn btn">Заказать звонок</button>
+        </form>
+      </div>
     </section>
 
     <div class="overlay"></div>

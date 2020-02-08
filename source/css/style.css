@@ -10730,6 +10730,11 @@ input[type="radio"].visually-hidden {
 .modal--review.active {
   display: block;
 }
+.modal-wrapper {
+  width: 48.958vw;
+  margin-left: auto;
+  margin-right: auto;
+}
 .modal__close {
   position: absolute;
   top: 1.7708vw;
@@ -10772,7 +10777,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 69.89vw;
+  width: auto;
   height: 4.6875vw;
   margin-left: auto;
   margin-right: auto;
@@ -10781,8 +10786,10 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
 }
 .modal__input {
+  box-sizing: border-box;
   width: 80%;
   padding-left: 3.3854vw;
+  padding-right: 3.3854vw;
   font-size: 1.4062vw;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -10825,7 +10832,7 @@ input[type="radio"].visually-hidden {
 }
 .modal__textarea {
   box-sizing: border-box;
-  width: 40.729vw;
+  width: 100%;
   height: 13.021vw;
   margin-bottom: 2.6041vw;
   padding-top: 1.5625vw;
@@ -10841,8 +10848,17 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border-color: transparent;
 }
-.modal--callback .modal__form {
+.modal__list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.modal--search .modal-wrapper {
+  width: 69.89vw;
+}
+.modal--callback .modal-wrapper {
   width: 43.594vw;
+}
+.modal--callback .modal__form {
   padding-left: 2.6041vw;
 }
 .modal--callback .modal__btn {
@@ -10853,11 +10869,13 @@ input[type="radio"].visually-hidden {
   width: 57.39vw;
   padding-bottom: 4.1666vw;
 }
+.modal--review .modal-wrapper {
+  width: 40.729vw;
+}
 .modal--review .modal__form {
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
-  width: auto;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -10866,11 +10884,9 @@ input[type="radio"].visually-hidden {
   box-shadow: none;
 }
 .modal--review .modal__input {
-  box-sizing: border-box;
-  width: 40.729vw;
+  width: 100%;
   height: 4.427vw;
   margin-bottom: 1.5625vw;
-  padding-left: 3.3854vw;
   font-size: 0.9895vw;
   background-color: #ffffff;
   box-shadow: 0 8px 68px rgba(15, 13, 47, 0.06);
@@ -10882,6 +10898,12 @@ input[type="radio"].visually-hidden {
   font-size: 0.9375vw;
   text-transform: uppercase;
   border-radius: 37px;
+}
+.modal--region {
+  top: 4.6875vw;
+}
+.modal--region .modal-wrapper {
+  width: 48.958vw;
 }
 @media (max-width: 755px) {
   .modal {
@@ -10941,6 +10963,9 @@ input[type="radio"].visually-hidden {
     padding-top: 105px;
     padding-bottom: 106px;
   }
+  .modal-wrapper {
+    width: 940px;
+  }
   .modal__close {
     top: 34px;
     right: 38px;
@@ -10958,12 +10983,13 @@ input[type="radio"].visually-hidden {
     font-size: 45px;
   }
   .modal__form {
-    width: 1342px;
+    width: auto;
     height: 90px;
     padding-left: 55px;
   }
   .modal__input {
     padding-left: 65px;
+    padding-right: 65px;
     font-size: 27px;
   }
   .modal__icon-btn {
@@ -10975,7 +11001,6 @@ input[type="radio"].visually-hidden {
     font-size: 27px;
   }
   .modal__textarea {
-    width: 782px;
     height: 250px;
     margin-bottom: 50px;
     padding-top: 30px;
@@ -10984,8 +11009,13 @@ input[type="radio"].visually-hidden {
     padding-bottom: 30px;
     font-size: 19px;
   }
-  .modal--callback .modal__form {
+  .modal--search .modal-wrapper {
+    width: 1342px;
+  }
+  .modal--callback .modal-wrapper {
     width: 837px;
+  }
+  .modal--callback .modal__form {
     padding-left: 50px;
   }
   .modal--callback .modal__btn {
@@ -10996,11 +11026,12 @@ input[type="radio"].visually-hidden {
     width: 1102px;
     padding-bottom: 80px;
   }
-  .modal--review .modal__input {
+  .modal--review .modal-wrapper {
     width: 782px;
+  }
+  .modal--review .modal__input {
     height: 85px;
     margin-bottom: 30px;
-    padding-left: 65px;
     font-size: 19px;
   }
   .modal--review .modal__btn {

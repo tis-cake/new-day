@@ -197,7 +197,7 @@
         </div>
 
         <div class="container">
-          <a class="main-info__contact-link change-region" href="#">Санкт-Петербург</a>
+          <a class="main-info__contact-link modal-region" href="#">Санкт-Петербург</a>
           <h1 class="main-info__title">Реабилитационные центры в Санкт-Петербурге</h1>
           <p class="main-info__description">Лечение зависимости проводится на анонимной основе, вся информация о лечении строго конфиденциальна.</p>
           <a class="main-info__callback btn modal-callback" href="#">Получить консультацию</a>
@@ -363,40 +363,6 @@
           </form>
           <div class="contacts-map__wrapper map" id="map">
           </div>
-
-          <!-- <div class="contacts-map__local-container">
-            <a class="contacts-map__local-link change-region" href="#">Санкт-Петербург</a>
-            <ul class="contacts-map__list">
-
-              <li class="contacts-map__item">
-                <a class="contacts-map__link" href="#">
-                  <h3 class="contacts-map__category">Реабилитационный центр</h3>
-                  <p class="contacts-map__city">г. Санкт-Петербург</p>
-                  <p class="contacts-map__street">Ул. Рижский проезд, 17 стр. 2</p>
-                </a>
-                <a class="contacts-map__number" href="tel:+79005656633">8 (900) 565-66-33 </a>
-                <a class="contacts-map__mail" href="mailto:info@newday.ru">info@newday.ru</a>
-              </li>
-              <li class="contacts-map__item">
-                <a class="contacts-map__link" href="#">
-                  <h3 class="contacts-map__category">Наркологическая клиника</h3>
-                  <p class="contacts-map__city">г. Санкт-Петербург</p>
-                  <p class="contacts-map__street">Ул. Рижский проезд, 17 стр. 2</p>
-                </a>
-                <a class="contacts-map__number" href="tel:+79005656633">8 (900) 565-66-33 </a>
-                <a class="contacts-map__mail" href="mailto:info@newday.ru">info@newday.ru</a>
-              </li>
-              <li class="contacts-map__item">
-                <a class="contacts-map__link" href="#">
-                  <h3 class="contacts-map__category">Реабилитационный центр</h3>
-                  <p class="contacts-map__city">г. Санкт-Петербург</p>
-                  <p class="contacts-map__street">Ул. Рижский проезд, 17 стр. 2</p>
-                </a>
-                <a class="contacts-map__number" href="tel:+79005656633">8 (900) 565-66-33 </a>
-                <a class="contacts-map__mail" href="mailto:info@newday.ru">info@newday.ru</a>
-              </li>
-            </ul>
-          </div> -->
         </div>
       </section>
 
@@ -917,6 +883,70 @@
           <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
           <button class="modal__btn btn">Заказать звонок</button>
         </form>
+      </div>
+    </section>
+
+    <section class="modal modal--region">
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Выберите свой регион</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <button class="modal__icon-btn" type="submit"></button>
+          <input class="modal__input" type="search" name="region" placeholder="Поиск региона..">
+        </form>
+        <div class="modal__list-wrapper">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Москва и МО</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Тверь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Пермь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Казань</a>
+            </li>
+          </ul>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Москва и МО</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Тверь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Пермь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Казань</a>
+            </li>
+          </ul>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Москва и МО</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Тверь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Пермь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Казань</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

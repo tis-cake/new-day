@@ -197,7 +197,7 @@
         </div>
 
         <div class="container">
-          <a class="main-info__contact-link change-region" href="#">Санкт-Петербург</a>
+          <a class="main-info__contact-link modal-region" href="#">Санкт-Петербург</a>
           <h1 class="main-info__title">Наркологические клиники в Санкт-Петербурге</h1>
           <p class="main-info__description">Лечение зависимости проводится на анонимной основе, вся информация о лечении строго конфиденциальна.</p>
           <a class="main-info__callback btn modal-callback" href="#">Получить консультацию</a>
@@ -876,6 +876,70 @@
           <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
           <button class="modal__btn btn">Заказать звонок</button>
         </form>
+      </div>
+    </section>
+
+    <section class="modal modal--region">
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Выберите свой регион</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <button class="modal__icon-btn" type="submit"></button>
+          <input class="modal__input" type="search" name="region" placeholder="Поиск региона..">
+        </form>
+        <div class="modal__list-wrapper">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Москва и МО</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Тверь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Пермь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Казань</a>
+            </li>
+          </ul>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Москва и МО</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Тверь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Пермь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Казань</a>
+            </li>
+          </ul>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Москва и МО</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Тверь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Пермь</a>
+            </li>
+            <li class="modal__item">
+              <a class="modal__item-link" href="#">Казань</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

@@ -750,6 +750,13 @@ $(document).ready(function () {
     $('.modal--review').toggleClass('active');
   });
 
+  // изменить регион
+  $('.modal-region').click(function (evt) {
+    evt.preventDefault();
+    $('.overlay').fadeIn('active')
+    $('.modal--region').toggleClass('active');
+  });
+
   // btn-close
   $('.modal__close').click(function () {
     $('.modal').removeClass('active');

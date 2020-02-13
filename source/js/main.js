@@ -462,6 +462,25 @@ $(document).ready(function () {
   });
 });
 
+// слайдер документов у рецензентов/врачей
+$(document).ready(function () {
+  var documentsSwiper = new Swiper('#review-document', {
+    slidesPerView: '2',
+    touchRatio: 1,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.swiper-button-next--document',
+      prevEl: '.swiper-button-prev--document',
+    },
+    breakpoints: {
+      756: {
+        slidesPerView: '4',
+        centeredSlides: false
+      }
+    }
+  });
+});
+
 // слайдер врачей (4 персоны на маленьком)
 $(document).ready(function () {
   var galleryThumbs = new Swiper('#little-master-swiper', {

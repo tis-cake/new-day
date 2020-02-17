@@ -1179,7 +1179,7 @@
             <h2 class="calc__title">Рассчитайте стоимость вызова</h2>
             <form class="calc__form" action="#" method="post">
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="WHOM" value="0" data-id="" id="filter-whom-mob">
+                <input class="calc__input visually-hidden filter-whom" type="text" name="WHOM" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="40">Кому нужна помощь?</a>
                 <ul class="calc__filter-list" data-id="40">
                   <li class="calc__filter-list-item">
@@ -1192,7 +1192,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="OLD" value="0" data-id="" id="filter-old-mob">
+                <input class="calc__input visually-hidden filter-old" type="text" name="OLD" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="41">Возраст зависимого</a>
                 <ul class="calc__filter-list" data-id="41">
                   <li class="calc__filter-list-item">
@@ -1214,7 +1214,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="SUBSTANCE" value="0" data-id="" id="filter-subst-mob">
+                <input class="calc__input visually-hidden filter-subst" type="text" name="SUBSTANCE" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="42">Вещество</a>
                 <ul class="calc__filter-list" data-id="42">
                   <li class="calc__filter-list-item">
@@ -1227,7 +1227,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="REGION" value="0" data-id="" id="filter-region-mob">
+                <input class="calc__input visually-hidden filter-region" type="text" name="REGION" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="43">Регион</a>
                 <ul class="calc__filter-list" data-id="43">
                   <li class="calc__filter-list-item">
@@ -1240,7 +1240,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="TIME" value="0" data-id="" id="filter-time-mob">
+                <input class="calc__input visually-hidden filter-time" type="text" name="TIME" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="44">Стаж употребления</a>
                 <ul class="calc__filter-list" data-id="44">
                   <li class="calc__filter-list-item">
@@ -1260,7 +1260,7 @@
             </form>
 
             <div class="calc__price-wrapper">
-              <span class="calc__price" id="final-price-mob">0</span><span class="calc__price-icon">&#8381;</span>
+              <span class="calc__price final-price">0</span><span class="calc__price-icon">&#8381;</span>
             </div>
 
             <button class="calc__link btn" disabled>Рассчитать стоимость</button>
@@ -1510,11 +1510,11 @@
             </div>
           </article>
 
-          <section class="calc">
+          <section class="calc calc-desktop">
             <h2 class="calc__title">Рассчитайте стоимость вызова</h2>
             <form class="calc__form" action="#" method="post">
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="WHOM" value="0" data-id="" id="filter-whom">
+                <input class="calc__input visually-hidden filter-whom" type="text" name="WHOM" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="40">Кому нужна помощь?</a>
                 <ul class="calc__filter-list" data-id="40">
                   <li class="calc__filter-list-item">
@@ -1527,7 +1527,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="OLD" value="0" data-id="" id="filter-old">
+                <input class="calc__input visually-hidden filter-old" type="text" name="OLD" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="41">Возраст зависимого</a>
                 <ul class="calc__filter-list" data-id="41">
                   <li class="calc__filter-list-item">
@@ -1549,7 +1549,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="SUBSTANCE" value="0" data-id="" id="filter-subst">
+                <input class="calc__input visually-hidden filter-subst" type="text" name="SUBSTANCE" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="42">Вещество</a>
                 <ul class="calc__filter-list" data-id="42">
                   <li class="calc__filter-list-item">
@@ -1562,7 +1562,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="REGION" value="0" data-id="" id="filter-region">
+                <input class="calc__input visually-hidden filter-region" type="text" name="REGION" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="43">Регион</a>
                 <ul class="calc__filter-list" data-id="43">
                   <li class="calc__filter-list-item">
@@ -1575,7 +1575,7 @@
               </div>
 
               <div class="calc__filter-options">
-                <input class="calc__input visually-hidden" type="text" name="TIME" value="0" data-id="" id="filter-time">
+                <input class="calc__input visually-hidden filter-time" type="text" name="TIME" value="0" data-id="">
                 <a class="calc__filter-handler" href="javascript:void(0);" data-id="44">Стаж употребления</a>
                 <ul class="calc__filter-list" data-id="44">
                   <li class="calc__filter-list-item">
@@ -1595,7 +1595,7 @@
             </form>
 
             <div class="calc__price-wrapper">
-              <span class="calc__price" id="final-price">0</span><span class="calc__price-icon">&#8381;</span>
+              <span class="calc__price final-price">0</span><span class="calc__price-icon">&#8381;</span>
             </div>
 
             <button class="calc__link btn" disabled>Рассчитать стоимость</button>

@@ -343,6 +343,7 @@ $(document).ready(function () {
 
 // калькулятор
 $(document).ready(function () {
+  $('.calc__link').attr('disabled', 'disabled'); // блокируем кнопку пока не выбран ни один пункт
   // взаимодействие с меню
   $('.calc__filter-handler').on('click', function(){
 
@@ -371,9 +372,7 @@ $(document).ready(function () {
         $(this).closest('.calc__filter-options').find('.calc__filter-handler').removeClass('active');
         $(this).closest('.calc__filter-options').find('.calc__filter-list').slideUp();
 
-        // $('span.calc__price').removeAttr('disabled');
         $('.calc__link').removeAttr('disabled');
-        // $('.calc__link').addClass('beath');
       }
     });
   });
@@ -382,25 +381,6 @@ $(document).ready(function () {
   $('.calc__link').on('click', function() {
     var width = $(window).width();
 
-    var priceArr = {
-      '0' : 0,
-      'Мне' : 3000,
-      'Моему близкому' : 3000,
-      'Несовершеннолетний' : 3000,
-      '18-25' : 3500,
-      '25-35' : 4000,
-      '35-50' : 4500,
-      '50+' : 5000,
-      'Алкоголь' : 3000,
-      'Наркотики' : 3000,
-      'Москва' : 3000,
-      'Московская область' : 2500,
-      'Несколько дней' : 3000,
-      'До года' : 3000,
-      'От 1 до 3 лет' : 3000,
-      'Более 3 лет' : 3000
-    }
-
     var whomPrice,
         oldPrice,
         substPrice,
@@ -408,23 +388,41 @@ $(document).ready(function () {
         timePrice;
 
     if (width > 755) {
-      whomPrice = $('#filter-whom').val();
-      oldPrice = $('#filter-old').val();
-      substPrice = $('#filter-subst').val();
-      regionPrice = $('#filter-region').val();
-      timePrice = $('#filter-time').val();
-
+      whomPrice = $('.calc-desktop .filter-whom').val();
+      oldPrice = $('.calc-desktop .filter-old').val();
+      substPrice = $('.calc-desktop .filter-subst').val();
+      regionPrice = $('.calc-desktop .filter-region').val();
+      timePrice = $('.calc-desktop .filter-time').val();
     } else if (width <= 755) {
-      whomPrice = $('#filter-whom-mob').val();
-      oldPrice = $('#filter-old-mob').val();
-      substPrice = $('#filter-subst-mob').val();
-      regionPrice = $('#filter-region-mob').val();
-      timePrice = $('#filter-time-mob').val();
+      whomPrice = $('.hidden-mobile-block .filter-whom').val();
+      oldPrice = $('.hidden-mobile-block .filter-old').val();
+      substPrice = $('.hidden-mobile-block .filter-subst').val();
+      regionPrice = $('.hidden-mobile-block .filter-region').val();
+      timePrice = $('.hidden-mobile-block .filter-time').val();
     }
 
-    var priceArrCurrent = [whomPrice, oldPrice, substPrice, regionPrice, timePrice];
-
     // для сложения (старый вариант)
+    // var priceArr = {
+    //   '0' : 0,
+    //   'Мне' : 3000,
+    //   'Моему близкому' : 3000,
+    //   'Несовершеннолетний' : 3000,
+    //   '18-25' : 3500,
+    //   '25-35' : 4000,
+    //   '35-50' : 4500,
+    //   '50+' : 5000,
+    //   'Алкоголь' : 3000,
+    //   'Наркотики' : 3000,
+    //   'Москва' : 3000,
+    //   'Московская область' : 2500,
+    //   'Несколько дней' : 3000,
+    //   'До года' : 3000,
+    //   'От 1 до 3 лет' : 3000,
+    //   'Более 3 лет' : 3000
+    // }
+
+    // var priceArrCurrent = [whomPrice, oldPrice, substPrice, regionPrice, timePrice];
+
     // var currentSum = 0;
     // for (var i = 0; i < priceArrCurrent.length; i++) {
       // currentSum += priceArr[priceArrCurrent[i]];
@@ -448,8 +446,7 @@ $(document).ready(function () {
     }
     // новый вариант end
 
-    $('span.calc__price').text(currentSum);
-    // $('span#final-price-mob').text(currentSum);
+    $('.final-price').text(currentSum);
   });
 });
 

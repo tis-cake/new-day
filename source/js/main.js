@@ -74,10 +74,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.swiper-button-next--center',
       prevEl: '.swiper-button-prev--center',
@@ -174,22 +174,32 @@ $(document).ready(function () {
   });
 });
 
-// троеточие при избыточности символов на мобильном разрешении в article-block
-$(document).ready(function () {
-
-  var width = $(window).width(); // ширина экрана
-  var size = 189; // кол-во символов
-
-  if (width <= 755) {
-    $('.articles-block .intro__description').each(function () {
-      var rehabText = $(this).text();
-
-      if(rehabText.length > size){
-        $(this).text(rehabText.slice(0, size) + ' ...');
-      }
-    });
-  }
+// плавное перемещение на якорях
+$(document).ready(function(){
+  $(".database-search__list" ).on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
 });
+
+// троеточие при избыточности символов на мобильном разрешении в article-block
+// $(document).ready(function () {
+
+//   var width = $(window).width(); // ширина экрана
+//   var size = 189; // кол-во символов
+
+//   if (width <= 755) {
+//     $('.articles-block .intro__description').each(function () {
+//       var rehabText = $(this).text();
+
+//       if(rehabText.length > size){
+//         $(this).text(rehabText.slice(0, size) + ' ...');
+//       }
+//     });
+//   }
+// });
 
 // [reviews]
 // слайдер отзывов

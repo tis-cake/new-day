@@ -367,13 +367,13 @@ $(document).ready(function () {
 
       $(this).closest('.calc__filter-options').find('input').val($value);        // находим поле ввода и вставляем туда же текст
       if ($(this).closest('.calc__filter-options').find('input').change()) {    // если поле было изменено - скрыть
-        // $(this).closest('.calc__filter-options').find('.calc__filter-list').addClass('changed');
-        // if ($('.calc__filter-list').hasClass('changed')) {
-          // $(this).removeClass('.active');
 
-          $(this).closest('.calc__filter-options').find('.calc__filter-handler').removeClass('active');
-          $(this).closest('.calc__filter-options').find('.calc__filter-list').slideUp();
-        // }
+        $(this).closest('.calc__filter-options').find('.calc__filter-handler').removeClass('active');
+        $(this).closest('.calc__filter-options').find('.calc__filter-list').slideUp();
+
+        // $('span.calc__price').removeAttr('disabled');
+        $('.calc__link').removeAttr('disabled');
+        // $('.calc__link').addClass('beath');
       }
     });
   });
@@ -384,21 +384,21 @@ $(document).ready(function () {
 
     var priceArr = {
       '0' : 0,
-      'Мне' : 1000,
-      'Моему близкому' : 1500,
-      'Несовершеннолетний' : 1200,
-      '18-25' : 150,
-      '25-35' : 200,
-      '35-50' : 30,
-      '50+' : 35,
-      'Алкоголь' : 200,
-      'Наркотики' : 400,
+      'Мне' : 3000,
+      'Моему близкому' : 3000,
+      'Несовершеннолетний' : 3000,
+      '18-25' : 3500,
+      '25-35' : 4000,
+      '35-50' : 4500,
+      '50+' : 5000,
+      'Алкоголь' : 3000,
+      'Наркотики' : 3000,
       'Москва' : 3000,
-      'Замкадье' : 2000,
-      'Несколько дней' : 300,
-      'До года' : 1000,
-      'От 1 до 3 лет' : 4000,
-      'Более 3 лет' : 10000
+      'Московская область' : 2500,
+      'Несколько дней' : 3000,
+      'До года' : 3000,
+      'От 1 до 3 лет' : 3000,
+      'Более 3 лет' : 3000
     }
 
     var whomPrice,
@@ -424,10 +424,29 @@ $(document).ready(function () {
 
     var priceArrCurrent = [whomPrice, oldPrice, substPrice, regionPrice, timePrice];
 
-    var currentSum = 0;
-    for (var i = 0; i < priceArrCurrent.length; i++) {
-      currentSum += priceArr[priceArrCurrent[i]];
+    // для сложения (старый вариант)
+    // var currentSum = 0;
+    // for (var i = 0; i < priceArrCurrent.length; i++) {
+      // currentSum += priceArr[priceArrCurrent[i]];
+    // }
+
+    // новый вариант start
+    var currentSum = 3000;
+
+    if (regionPrice === 'Московская область') {
+      currentSum -= 500;
     }
+
+    if (oldPrice === '18-25') {
+      currentSum += 500;
+    } else if (oldPrice === '25-35') {
+      currentSum += 1000;
+    } else if (oldPrice === '35-50') {
+      currentSum += 1500;
+    } else if (oldPrice === '50+') {
+      currentSum += 2000;
+    }
+    // новый вариант end
 
     $('span.calc__price').text(currentSum);
     // $('span#final-price-mob').text(currentSum);

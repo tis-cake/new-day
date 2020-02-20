@@ -24,13 +24,17 @@
 
 .reviews__blockquote-wrapper {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   margin-top: @d60px;
 }
 
 .reviews__blockquote {
   margin: 0;
+  margin-right: @d70px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .reviews__text-block {
@@ -149,6 +153,10 @@
 .double-main-wrapper {
   .reviews__blockquote {
     margin-left: @d15px;
+    margin-right: @d15px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   .reviews__text-block {
     width: @d372px;
@@ -308,6 +316,13 @@
     }
   }
 
+  .reviews__blockquote {
+    margin-right: 70px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   .reviews__blockquote-wrapper {
     margin-top: 60px;
   }
@@ -362,6 +377,10 @@
   .double-main-wrapper {
     .reviews__blockquote {
       margin-left: 15px;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
     .reviews__text-block {
       width: 372px;

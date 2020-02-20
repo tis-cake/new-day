@@ -204,8 +204,11 @@
     box-shadow: none;
   }
   .get-help__consultation-btn {
-    width: 281px;
+    // width: @d430px;
+    width: @a;
     margin-top: 0px;
+    padding-left: @d50px;
+    padding-right: @d50px;
     font-size: @d16px;
   }
 }
@@ -387,9 +390,20 @@
     .get-help__consultation-btn {
       position: absolute;
       bottom: -@m75px;
-      width: @m400px;
+      // bottom: -@m90px;
+
+      // width: @m400px;
+      width: @m650px;
+      height: @a;
+      padding-top: @m20px;
+      padding-bottom: @m20px;
+      padding-left: @m50px;
+      padding-right: @m50px;
       margin-top: 0px;
+
       font-size: @m27px;
+      hyphens: auto;
+      border-radius: 28px;
     }
   }
 }
@@ -493,7 +507,10 @@
       margin-top: 30px;
     }
     .get-help__consultation-btn {
-      width: 281px;
+      // width: 430px;
+      width: @a;
+      padding-left: 50px;
+      padding-right: 50px;
       font-size: 16px;
     }
   }

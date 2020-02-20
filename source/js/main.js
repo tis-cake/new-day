@@ -1,3 +1,5 @@
+var width = $(window).width();
+
 // [index]
 // если открыта главная
 if ($(".main").hasClass("index")) {
@@ -64,6 +66,28 @@ $(document).ready(function () {
   }
 });
 
+// тень для слайдера если элементов <= 2 (центры)
+// $(document).ready(function () {
+//   var swiperContainerCenters = $('.rehab-swiper--centers .swiper-container');
+//   var swiperWrapperCenters = $('.rehab-swiper--centers .swiper-wrapper');
+//   if(swiperWrapperCenters.length <= 2 && width > 756) {
+//     swiperContainerCenters.addClass('two-slides');
+//   } else {
+//     swiperContainerCenters.removeClass('two-slides');
+//   }
+// });
+
+// // тень для слайдера если элементов <= 2 (клиники)
+// $(document).ready(function () {
+//   var swiperContainerClinics = $('.rehab-swiper--clinics .swiper-container');
+//   var swiperWrapperClinics = $('.rehab-swiper--clinics .swiper-wrapper');
+//   if(swiperWrapperClinics.length <= 2 && width > 756) {
+//     swiperContainerClinics.addClass('two-slides');
+//   } else {
+//     swiperContainerClinics.removeClass('two-slides');
+//   }
+// });
+
 // слайдер центров
 $(document).ready(function () {
   var mySwiper = new Swiper('#center-swiper', {
@@ -86,10 +110,20 @@ $(document).ready(function () {
       756: {
         slidesPerView: '3',
         spaceBetween: 30,
-        // loop: true
+        loop: false,
+	      centeredSlides: false
       }
     }
   });
+
+  // if ($('.rehab-swiper--centers .swiper-wrapper').length == 1 && width <= 755) {
+    // mySwiper.params.loop = false;
+    // mySwiper.params.slidesPerView = 1;
+    // mySwiper.params.centeredSlides = false;
+    // mySwiper.params.spaceBetween = 25;
+    // $('.rehab-swiper--centers .swiper-container').removeClass('two-slides');
+    // mySwiper.update();
+  // }
 });
 
 // слайдер клиник
@@ -102,10 +136,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    //autoplay: {
+      //delay: 3000,
+      //disableOnInteraction: false,
+    //},
     navigation: {
       nextEl: '.swiper-button-next--clinic',
       prevEl: '.swiper-button-prev--clinic',
@@ -115,9 +149,25 @@ $(document).ready(function () {
         slidesPerView: '3',
         spaceBetween: 30,
         // loop: true
+        loop: false,
+        centeredSlides: false
       }
     }
   });
+
+  // var swiperWrapperClinics = $('.rehab-swiper--clinics .swiper-wrapper');
+  // if(swiperWrapperClinics.length > 1 && width < 756) {
+  //   console.log(swiperWrapperClinics)
+  // }
+
+  // if ($('.rehab-swiper--clinics .swiper-wrapper').length < 2 && width <= 755) {
+    // mySwiper.params.slidesPerView = 1;
+    // mySwiper.params.loop = false;
+    // mySwiper.params.centeredSlides = false;
+    // $('.rehab-swiper--clinics .swiper-container').removeClass('two-slides');
+    // mySwiper.update();
+    // console.log($('.rehab-swiper--clinics .swiper-wrapper').length);
+  // }
 });
 
 // маска для поля ввода номера
@@ -324,7 +374,7 @@ $(document).ready(function () {
       //   delay: 3000,
       //   disableOnInteraction: false,
       // },
-      loop: true,
+      //loop: true,
       navigation: {
         nextEl: '.swiper-button-next--document',
         prevEl: '.swiper-button-prev--document',
@@ -467,11 +517,11 @@ $(document).ready(function () {
     touchRatio: 1,
     centeredSlides: true,
     // freeMode: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    loop: true,
+    //autoplay: {
+    //  delay: 3000,
+    //  disableOnInteraction: false,
+    //},
+    //loop: true,
     navigation: {
       nextEl: '.swiper-button-next--document',
       prevEl: '.swiper-button-prev--document',
@@ -782,35 +832,35 @@ $(document).ready(function () {
   // поиск
   $('.nav-info__item--search').click(function (evt) {
     evt.preventDefault();
-    $('.overlay').fadeIn('active')
+    $('.overlay').fadeIn('active');
     $('.modal--search').toggleClass('active');
   });
 
   // оставить заявку
   $('.modal-callback').click(function (evt) {
     evt.preventDefault();
-    $('.overlay').fadeIn('active')
+    $('.overlay').fadeIn('active');
     $('.modal--callback').toggleClass('active');
   });
 
   // оставить отзыв
   $('.modal-review').click(function (evt) {
     evt.preventDefault();
-    $('.overlay').fadeIn('active')
+    $('.overlay').fadeIn('active');
     $('.modal--review').toggleClass('active');
   });
 
   // изменить регион
   $('.modal-region').click(function (evt) {
     evt.preventDefault();
-    $('.overlay').fadeIn('active')
+    $('.overlay').fadeIn('active');
     $('.modal--region').toggleClass('active');
   });
 
   // btn-close
   $('.modal__close').click(function () {
     $('.modal').removeClass('active');
-     $('.overlay').fadeOut('active')
+    $('.overlay').fadeOut('active');
   });
 
   // нажат esc
@@ -818,7 +868,7 @@ $(document).ready(function () {
     if (evt.keyCode === 27) {
       if ($(".modal").hasClass("active")) {
         $('.modal').removeClass('active');
-        $('.overlay').fadeOut('active')
+        $('.overlay').fadeOut('active');
       }
     }
   });
@@ -828,7 +878,7 @@ $(document).ready(function () {
     var modal = $(".modal");
     if (!modal.is(evt.target) && modal.has(evt.target).length === 0) {
       $('.modal').removeClass('active');
-      $('.overlay').fadeOut('active')
+      $('.overlay').fadeOut('active');
     }
   });
 

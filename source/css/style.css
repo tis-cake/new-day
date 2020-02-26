@@ -3531,11 +3531,26 @@ input[type="radio"].visually-hidden {
 .program__item__icon--ambulance-car::before {
   background-image: url('../img/program/ambulance-car.svg');
 }
-.program__item__icon--mood::before {
-  background-image: url('../img/program/mood.svg');
+.program__item__icon--dropper::before {
+  background-image: url('../img/program/dropper.svg');
 }
-.program__item__icon--mood::before {
-  background-image: url('../img/program/mood.svg');
+.program__item__icon--infinity::before {
+  background-image: url('../img/program/infinity.svg');
+}
+.program__item__icon--empty-sad::before {
+  background-image: url('../img/program/empty-sad.svg');
+}
+.program__item__icon--friend::before {
+  background-image: url('../img/program/friend.svg');
+}
+.program__item__icon--sleep-bed::before {
+  background-image: url('../img/program/sleep-bed.svg');
+}
+.program__item__icon--game-mouse::before {
+  background-image: url('../img/program/game-mouse.svg');
+}
+.program__item__icon--suicide::before {
+  background-image: url('../img/program/suicide.svg');
 }
 .program__title {
   margin-bottom: 0.20833vw;
@@ -6458,15 +6473,21 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 2.4479vw;
+  height: 2.6562vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-position: center;
   background-repeat: no-repeat;
 }
 .service-item__icon--lite::before {
-  width: 2.4479vw;
-  height: 2.6562vw;
   background-image: url('../img/svg/transf-white.svg');
+}
+.service-item__icon--phone-call::before {
+  background-image: url('../img/svg/phone-call-white.svg');
+}
+.service-item__icon--ruble::before {
+  background-image: url('../img/svg/ruble-white.svg');
 }
 .service-item__title {
   margin-bottom: 0.8854vw;
@@ -6512,7 +6533,7 @@ input[type="radio"].visually-hidden {
     width: 13.3vw;
     height: 13.3vw;
   }
-  .service-item__icon--lite::before {
+  .service-item__icon::before {
     width: 6.666vw;
     height: 7.733vw;
   }
@@ -6555,7 +6576,7 @@ input[type="radio"].visually-hidden {
     width: 100px;
     height: 100px;
   }
-  .service-item__icon--lite::before {
+  .service-item__icon::before {
     width: 47px;
     height: 53px;
   }

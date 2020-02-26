@@ -36,16 +36,25 @@
     top: 50%;
     left: 50%;
 
+    width: @d47px;
+    height: @d51px;
+
     transform: translate(-50%, -50%);
 
     background-position: center;
     background-repeat: no-repeat;
   }
-  &--lite::before {
-    width: @d47px;
-    height: @d51px;
 
+  &--lite::before {
     background-image: url('../img/svg/transf-white.svg');
+  }
+
+  &--phone-call::before {
+    background-image: url('../img/svg/phone-call-white.svg');
+  }
+
+  &--ruble::before {
+    background-image: url('../img/svg/ruble-white.svg');
   }
 }
 
@@ -105,7 +114,7 @@
     width: @m100px;
     height: @m100px;
 
-    &--lite::before {
+    &::before {
       width: @m50px;
       height: @m58px;
     }
@@ -161,7 +170,7 @@
     width: 100px;
     height: 100px;
 
-    &--lite::before {
+    &::before {
       width: 47px;
       height: 53px;
     }

@@ -303,6 +303,10 @@ $(document).ready(function () {
       $(this).find($('.services__sub-menu[data-id='+data+']').toggleClass('active'));
     }
   });
+
+  $('.services__sub-item').click(function (evt) {
+    evt.stopPropagation();
+  });
 });
 
 // слайдер врачей (3 персоны на маленьком)

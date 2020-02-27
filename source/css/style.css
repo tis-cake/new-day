@@ -1756,8 +1756,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 5.052vw;
 }
 .main-info--detox .main-info__title {
-  width: 36.563vw;
+  width: 57.29vw;
+  max-width: none;
   margin-bottom: 1.4062vw;
+}
+.main-info--detox .main-info__title span {
+  display: block;
 }
 .main-info--detox .main-info__callback {
   margin-top: 2.0833vw;
@@ -2017,7 +2021,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 97px;
   }
   .main-info--detox .main-info__title {
-    width: 702px;
+    width: 1100px;
     margin-bottom: 27px;
   }
   .main-info--detox .main-info__callback {
@@ -3569,14 +3573,20 @@ input[type="radio"].visually-hidden {
 }
 .double-main-wrapper .program__list {
   counter-reset: none;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
 }
 .double-main-wrapper .program__item {
   width: 17.917vw;
   min-height: 15.625vw;
   margin-bottom: 3.0729vw;
   margin-left: 2.2395vw;
+  margin-right: 0.625vw;
   padding-top: 2.0312vw;
   padding-left: 3.0208vw;
+}
+.double-main-wrapper .program__item:nth-child(3n) {
+  margin-right: 0;
 }
 .double-main-wrapper .program__item::before {
   content: none;
@@ -3666,6 +3676,8 @@ input[type="radio"].visually-hidden {
   font-size: 0.9895vw;
 }
 .program--stages .program__list {
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   counter-reset: programItem;
 }
 .program--stages .program__item {
@@ -3673,6 +3685,7 @@ input[type="radio"].visually-hidden {
   width: 27.083vw;
   min-height: 9.688vw;
   margin-left: 2.7604vw;
+  margin-right: 0;
   padding-top: 2.0312vw;
   padding-left: 5.1041vw;
   padding-right: 2.0833vw;
@@ -4084,6 +4097,10 @@ input[type="radio"].visually-hidden {
     margin-left: 43px;
     padding-top: 39px;
     padding-left: 58px;
+    margin-right: 12px;
+  }
+  .double-main-wrapper .program__item:nth-child(3n) {
+    margin-right: 0;
   }
   .double-main-wrapper .program__item__icon {
     top: 72px;
@@ -4141,6 +4158,7 @@ input[type="radio"].visually-hidden {
     padding-top: 39px;
     padding-left: 98px;
     padding-right: 40px;
+    margin-right: 0;
   }
   .program--stages .program__item__icon {
     top: 88px;
@@ -5239,7 +5257,6 @@ input[type="radio"].visually-hidden {
     width: 100%;
   }
   .double-main-wrapper .intro--warning .intro__title {
-    width: 68vw;
     margin-bottom: 3.599vw;
     line-height: normal;
   }

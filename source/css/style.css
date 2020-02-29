@@ -504,21 +504,25 @@ input[type="radio"].visually-hidden {
     display: none;
   }
   /*при отключённом js*/
+  .no-js .header__desktop-bottom,
   .active.header__desktop-bottom {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
     padding-left: 4.666vw;
     padding-right: 4.666vw;
     padding-bottom: 16vw;
     background-color: #fff;
   }
-  /**/
+  .no-js.header {
+    position: relative;
+    height: 253.33vw;
+  }
   .active.header__desktop-bottom {
     position: absolute;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     box-shadow: 0 10px 10px 0px rgba(5, 9, 48, 0.05);
   }
   .header__consultation-phone {
@@ -2586,6 +2590,9 @@ input[type="radio"].visually-hidden {
   font-size: 1.6666vw;
   font-weight: 700;
   color: #ffffff;
+}
+.get-help__header-phone a {
+  color: #fff;
 }
 .get-help--consultation {
   box-shadow: none;

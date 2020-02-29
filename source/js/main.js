@@ -1,13 +1,14 @@
 var width = $(window).width();
 
+// при отключённом js - показывать меню
+$('.header').removeClass('no-js');
+
+
 // [index]
 // если открыта главная
 if ($(".main").hasClass("index")) {
   $('.header').addClass('index');
 }
-
-// если js подключён - меню скрыто
-$('.header__desktop-bottom').removeClass('header__mob-menu--nojs');
 
 // мобильное меню
 $(document).ready(function () {

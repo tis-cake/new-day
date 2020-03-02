@@ -529,6 +529,15 @@
   }
 }
 
+.program__list--height-empty {
+  .program__title {
+    margin-bottom: 0;
+  }
+  .program__item {
+    min-height: 0;
+  }
+}
+
 @media (max-width: @mobile-width) {
 
   .program {
@@ -791,6 +800,12 @@
       }
     }
   }
+
+  .program__list--height-empty {
+    .program__item {
+      min-height: @m215px;
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -1011,6 +1026,15 @@
         border-top-style: none;
         border-right-style: none;
       }
+    }
+  }
+
+  .program__list--height-empty {
+    .program__title {
+      margin-bottom: 0;
+    }
+    .program__item {
+      min-height: 0;
     }
   }
 }

@@ -167,10 +167,124 @@ input[type="radio"].visually-hidden {
 
   border: none;
   border-radius: 19px;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.7);
+    -moz-appearance: none;
+ -webkit-appearance: none;
+         appearance: none;
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .btn:active {
   padding: 0;
+}
+
+.phone-mask:invalid {
+  // box-shadow: none;
+}
+
+// .warning__input:-moz-submit-invalid,
+.warning__input:-moz-ui-invalid,
+.phone-mask:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.logo,
+.header .nav-info__link:not(.nav-info__link--callback),
+.header .main-nav__link,
+.intro__link,
+.main-info__contact-link,
+.rehab-swiper__slide .rehab-swiper__text-wrapper,
+.swiper-pagination-bullet,
+.swiper-button-next,
+.swiper-button-prev,
+.price__service-link,
+.breadcrumbs__link,
+.tariffs__link,
+.contacts-map__filter-handler,
+.contacts-map__filter-item,
+.calc__filter-handler,
+.calc__filter-item,
+.other-region__link,
+.database-search__icon-btn,
+.database-search__link,
+.faq__wrapper--q,
+.contacts-map__local-link,
+.contacts-map__link,
+.contacts-map__number,
+.contacts-map__mail,
+.footer__link,
+.footer__number-link {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+    -moz-appearance: none;
+ -webkit-appearance: none;
+         appearance: none;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.services__link:hover .services__img,
+.services__link:focus .services__img,
+.contacts-map__btn:hover .contacts-map__btn-text::before,
+.contacts-map__btn:focus .contacts-map__btn-text::before {
+  opacity: 0.7;
+}
+
+.contacts-map__btn:active .contacts-map__btn-text::before {
+  opacity: 0.5;
+}
+
+.database-preview__item {
+  &:hover,
+  &:focus {
+    outline: none;
+    .intro--database-preview--sub {
+      opacity: 0.7;
+    }
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.articles-block__main-item-content {
+  &:hover,
+  &:focus {
+      outline: none;
+    .articles-block__text-wrapper {
+      opacity: 0.7;
+    }
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.articles-block__item {
+  &:hover {
+    opacity: 0.7;
+  }
+  .intro--artice:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+  &:active {
+    opacity: 0.5;
+    outline: none;
+  }
 }
 
 @media (max-width: @mobile-width) {

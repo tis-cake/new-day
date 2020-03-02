@@ -71,8 +71,9 @@ $(document).ready(function () {
 // $(document).ready(function () {
 //   var swiperContainerCenters = $('.rehab-swiper--centers .swiper-container');
 //   var swiperWrapperCenters = $('.rehab-swiper--centers .swiper-wrapper');
-//   if(swiperWrapperCenters.length <= 2 && width > 756) {
+//   if(swiperWrapperCenters.children().length <= 2 && width > 756) {
 //     swiperContainerCenters.addClass('two-slides');
+//     console.log(swiperWrapperCenters.children().length);
 //   } else {
 //     swiperContainerCenters.removeClass('two-slides');
 //   }
@@ -91,7 +92,7 @@ $(document).ready(function () {
 
 // слайдер центров
 $(document).ready(function () {
-  var mySwiper = new Swiper('#center-swiper', {
+  var centerSwiper = new Swiper('#center-swiper', {
     slidesPerView: '1.5',
     centeredSlides: true,
     speed: 3000,
@@ -117,19 +118,31 @@ $(document).ready(function () {
     }
   });
 
-  // if ($('.rehab-swiper--centers .swiper-wrapper').length == 1 && width <= 755) {
-    // mySwiper.params.loop = false;
-    // mySwiper.params.slidesPerView = 1;
-    // mySwiper.params.centeredSlides = false;
-    // mySwiper.params.spaceBetween = 25;
-    // $('.rehab-swiper--centers .swiper-container').removeClass('two-slides');
-    // mySwiper.update();
-  // }
+  // тень для слайдера если элементов <= 2
+  var swiperContainerCenters = $('.rehab-swiper--centers .swiper-container'),
+      swiperWrapperCenters = $('.rehab-swiper--centers .swiper-wrapper');
+
+  if (width > 756) {
+    if (swiperWrapperCenters.children().length <= 2) {
+      swiperContainerCenters.addClass('two-slides');
+      // console.log(swiperWrapperCenters.children().length);
+    } else {
+      swiperContainerCenters.removeClass('two-slides');
+    }
+  } else if (width <= 755) {
+    if (swiperWrapperCenters.children().length <= 3) {
+      // console.log(swiperWrapperCenters.children().length);
+      centerSwiper.params.loop = false;
+      // centerSwiper.params.slidesPerView = 1;
+      // centerSwiper.params.centeredSlides = false;
+      // centerSwiper.update();
+    }
+  }
 });
 
 // слайдер клиник
 $(document).ready(function () {
-  var mySwiper = new Swiper('#clinic-swiper', {
+  var clinicSwiper = new Swiper('#clinic-swiper', {
     slidesPerView: '1.5',
     centeredSlides: true,
     speed: 3000,
@@ -156,19 +169,23 @@ $(document).ready(function () {
     }
   });
 
-  // var swiperWrapperClinics = $('.rehab-swiper--clinics .swiper-wrapper');
-  // if(swiperWrapperClinics.length > 1 && width < 756) {
-  //   console.log(swiperWrapperClinics)
-  // }
+  // тень для слайдера если элементов <= 2
+  var swiperContainerClinics = $('.rehab-swiper--clinics .swiper-container'),
+      swiperWrapperClinics = $('.rehab-swiper--clinics .swiper-wrapper');
 
-  // if ($('.rehab-swiper--clinics .swiper-wrapper').length < 2 && width <= 755) {
-    // mySwiper.params.slidesPerView = 1;
-    // mySwiper.params.loop = false;
-    // mySwiper.params.centeredSlides = false;
-    // $('.rehab-swiper--clinics .swiper-container').removeClass('two-slides');
-    // mySwiper.update();
-    // console.log($('.rehab-swiper--clinics .swiper-wrapper').length);
-  // }
+  if (width > 756) {
+    if (swiperWrapperClinics.children().length <= 2) {
+      swiperContainerClinics.addClass('two-slides');
+      // console.log(swiperWrapperCenters.children().length);
+    } else {
+      swiperContainerClinics.removeClass('two-slides');
+    }
+  } else if (width <= 755) {
+    if (swiperWrapperClinics.children().length <= 3) {
+      clinicSwiper.params.loop = false;
+    }
+  }
+
 });
 
 // маска для поля ввода номера
@@ -742,10 +759,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.swiper-button-next--center',
       prevEl: '.swiper-button-prev--center',
@@ -775,10 +792,10 @@ $(document).ready(function () {
     touchRatio: 1,
     loop: true,
     freeMode: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.swiper-button-next--center',
       prevEl: '.swiper-button-prev--center',

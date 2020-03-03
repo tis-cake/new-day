@@ -392,7 +392,17 @@
 
 .contacts-map__list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts-map__item {
+  width: @d300px;
+  margin-right: @d170px;
+  margin-bottom: @d60px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .contacts-map__category {
@@ -442,7 +452,6 @@
     line-height: @m38px;
     letter-spacing: 0.15px;
   }
-
 
   .contacts-map__filter-container {
     flex-direction: column;
@@ -847,6 +856,15 @@
   .contacts-map__category {
     margin-bottom: 24px;
     font-size: 25px;
+  }
+
+  .contacts-map__item {
+    width: 300px;
+    margin-right: 170px;
+    margin-bottom: 60px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   .contacts-map__city,

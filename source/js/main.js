@@ -245,7 +245,7 @@ $(document).ready(function () {
 // плавное перемещение на якорях
 $(document).ready(function(){
   $(".database-search__list" ).on("click","a", function (event) {
-    event.preventDefault();
+    // event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1000);

@@ -72,11 +72,11 @@ function init() {
     },
     {
       iconLayout: 'default#image',
-      // iconImageHref: 'https://psv4.userapi.com/c856228/u30750589/docs/d15/8b07c7a6a89b/icon-map1.png?extra=3CkRUTuBNoiLjA7eP-2y0P09LudZ83tvZ82hI6SlhaAV6u7MKc8DIWLalPoiWZmLAutH1rEzaEy2NpwkfatEt1LTC8V-MPICYtkLpkXjatLcTQWfhLK67T4K95UPNDT_6w8g9RgBYoKezYoZQeA5SAM',
       iconImageHref: 'https://svgshare.com/i/Hg2.svg',
-      // iconImageOffset: [],             // смещение иконки
-      // iconImageSize: [100, 115]
       iconImageSize: [30, 36]
+      // iconImageHref: 'img/1локация.png',
+      // iconImageSize: [98, 98]
+      // iconImageOffset: [],             // смещение иконки
       });
     map.geoObjects.add(placemark);
   })

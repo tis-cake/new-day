@@ -2767,6 +2767,12 @@ input[type="radio"].visually-hidden {
   padding-left: 0;
   box-shadow: none;
 }
+.get-help--green .get-help__consultation-phone {
+  padding-left: 0;
+}
+.get-help--green .get-help__consultation-phone a {
+  color: #fff;
+}
 .get-help--green .get-help__consultation-btn {
   width: auto;
   margin-top: 0px;
@@ -8274,6 +8280,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   border: none;
   width: 100%;
+  font-weight: 700;
   text-align: left;
   cursor: pointer;
 }
@@ -11136,8 +11143,15 @@ a.article-author__link {
 .contacts-map__list {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacts-map__item {
+  width: 15.625vw;
+  margin-right: 8.854vw;
+  margin-bottom: 3.125vw;
+}
+.contacts-map__item:nth-child(3n) {
+  margin-right: 0;
 }
 .contacts-map__category {
   margin-bottom: 1.25vw;
@@ -11540,6 +11554,14 @@ a.article-author__link {
   .contacts-map__category {
     margin-bottom: 24px;
     font-size: 25px;
+  }
+  .contacts-map__item {
+    width: 300px;
+    margin-right: 170px;
+    margin-bottom: 60px;
+  }
+  .contacts-map__item:nth-child(3n) {
+    margin-right: 0;
   }
   .contacts-map__city,
   .contacts-map__street,

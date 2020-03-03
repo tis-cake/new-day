@@ -157,6 +157,10 @@
   flex-direction: column;
   width: @d280px;
   .margin-inline(@a);
+
+  // & a {
+  //   color: #fff;
+  // }
 }
 
 .get-help__header-title {
@@ -206,6 +210,18 @@
     margin-top: @d30px;
     padding-left: 0;
     box-shadow: none;
+  }
+  // .get-help__header-phone {
+  //   & a {
+  //     color: #fff;
+  //   }
+  // }
+
+  .get-help__consultation-phone {
+    padding-left: 0;
+    & a {
+      color: #fff;
+    }
   }
   .get-help__consultation-btn {
     // width: @d430px;

@@ -7897,7 +7897,7 @@ input[type="radio"].visually-hidden {
   padding-top: 4.4791vw;
   font-size: 0.9895vw;
 }
-.master-swiper__main-text-wrapper p:not(.master-swiper__main-position) {
+.master-swiper__main-text-wrapper p:not(.master-swiper__main-position):not(.master-swiper__main-experience) {
   margin-bottom: 1.302vw;
   line-height: 1.302vw;
 }
@@ -7910,7 +7910,7 @@ input[type="radio"].visually-hidden {
   color: #2f2f2f;
 }
 .master-swiper__main-position {
-  margin-bottom: 2.3437vw;
+  margin-bottom: 1.302vw;
 }
 .master-swiper__main-description,
 .master-swiper__main-work {
@@ -7982,7 +7982,7 @@ input[type="radio"].visually-hidden {
   width: 17.188vw;
   padding-top: 0.677vw;
 }
-.double-wrapper-page .master-swiper__main-text-wrapper p:not(.master-swiper__main-position) {
+.double-wrapper-page .master-swiper__main-text-wrapper p:not(.master-swiper__main-position):not(.master-swiper__main-experience) {
   margin-bottom: 1.302vw;
   line-height: 1.302vw;
 }
@@ -7990,7 +7990,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0.8333vw;
 }
 .double-wrapper-page .master-swiper__main-position {
-  margin-bottom: 2.0833vw;
+  margin-bottom: 1.302vw;
 }
 .double-wrapper-page .master-swiper__main-description,
 .double-wrapper-page .master-swiper__main-work {
@@ -8178,7 +8178,7 @@ input[type="radio"].visually-hidden {
     padding-top: 86px;
     font-size: 19px;
   }
-  .master-swiper__main-text-wrapper p:not(.master-swiper__main-position) {
+  .master-swiper__main-text-wrapper p:not(.master-swiper__main-position):not(.master-swiper__main-experience) {
     margin-bottom: 25px;
     line-height: 25px;
   }
@@ -8187,7 +8187,7 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
   }
   .master-swiper__main-position {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
   .master-swiper__main-description,
   .master-swiper__main-work {
@@ -8242,7 +8242,7 @@ input[type="radio"].visually-hidden {
     width: 330px;
     padding-top: 13px;
   }
-  .double-wrapper-page .master-swiper__main-text-wrapper p:not(.master-swiper__main-position) {
+  .double-wrapper-page .master-swiper__main-text-wrapper p:not(.master-swiper__main-position):not(.master-swiper__main-experience) {
     margin-bottom: 25px;
     line-height: 25px;
   }
@@ -8250,7 +8250,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 16px;
   }
   .double-wrapper-page .master-swiper__main-position {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .double-wrapper-page .master-swiper__main-description,
   .double-wrapper-page .master-swiper__main-work {
@@ -11698,7 +11698,8 @@ a.article-author__link {
 .modal--callback.active,
 .modal--search.active,
 .modal--review.active,
-.modal--region.active {
+.modal--region.active,
+.modal--region-here.active {
   display: block;
 }
 .modal-wrapper {
@@ -11894,17 +11895,21 @@ a.article-author__link {
   text-transform: uppercase;
   border-radius: 37px;
 }
-.modal--region {
+.modal--region,
+.modal--region-here {
   top: 4.6875vw;
 }
-.modal--region .modal-wrapper {
+.modal--region .modal-wrapper,
+.modal--region-here .modal-wrapper {
   width: 48.958vw;
 }
-.modal--region .modal__icon-btn {
+.modal--region .modal__icon-btn,
+.modal--region-here .modal__icon-btn {
   left: 6.4%;
   background-image: url("../img/svg/point-green.svg");
 }
-.modal--region .modal__input {
+.modal--region .modal__input,
+.modal--region-here .modal__input {
   width: 100%;
 }
 @media (max-width: 755px) {
@@ -11988,7 +11993,8 @@ a.article-author__link {
   .modal--search .modal-wrapper,
   .modal--callback .modal-wrapper,
   .modal--review .modal-wrapper,
-  .modal--region .modal-wrapper {
+  .modal--region .modal-wrapper,
+  .modal--region-here .modal-wrapper {
     width: 90.667vw;
   }
   .modal--callback .modal__form {
@@ -12015,7 +12021,8 @@ a.article-author__link {
     font-size: 4.399vw;
     border-radius: 45px;
   }
-  .modal--region {
+  .modal--region,
+  .modal--region-here {
     padding-top: 14.667vw;
     padding-bottom: 9.333vw;
   }
@@ -12126,10 +12133,12 @@ a.article-author__link {
     height: 74px;
     font-size: 18px;
   }
-  .modal--region {
+  .modal--region,
+  .modal--region-here {
     top: 90px;
   }
-  .modal--region .modal-wrapper {
+  .modal--region .modal-wrapper,
+  .modal--region-here .modal-wrapper {
     width: 940px;
   }
 }

@@ -242,6 +242,23 @@ $(document).ready(function () {
   });
 });
 
+// автофокус поиска
+$(document).ready(function () {
+  if ($("section").hasClass("database-search") && width > 755) {
+    var windowHeight = $(window).height();
+    var search = $('.database-search__input');
+    var height = search.offset().top + search.height();
+
+    $(document).on('scroll', function() {
+    // если расстояние до поиска + его высота >= расстоянию,
+    //  которое пользователь пролистал + высота окна
+      if ($(document).scrollTop() + windowHeight >= height) {
+        search.focus();
+      }
+    });
+  }
+});
+
 // плавное перемещение на якорях
 $(document).ready(function(){
   $(".database-search__list" ).on("click","a", function (event) {
@@ -701,10 +718,10 @@ $(document).ready(function(){
   //   });
   // }
 
-  $('.comments__btn').on('click', function() {
-    $('.comments__form').toggleClass('active');
-    $('.comments__subtitle').text('Ваш комментарий отправлен');
-  })
+  // $('.comments__btn').on('click', function() {
+  //   $('.comments__form').toggleClass('active');
+  //   $('.comments__subtitle').text('Ваш комментарий отправлен');
+  // })
 });
 
 // [clinics/centers]
@@ -778,8 +795,8 @@ $(document).ready(function () {
       756: {
         slidesPerView: '4',
         spaceBetween: 30,
-        centeredSlides: false
-        // loop: true
+        centeredSlides: false,
+        loop: false
       }
     }
   });
@@ -811,8 +828,8 @@ $(document).ready(function () {
       756: {
         slidesPerView: '4',
         spaceBetween: 30,
-        centeredSlides: false
-        // loop: true
+        centeredSlides: false,
+        loop: false
       }
     }
   });
@@ -856,6 +873,7 @@ $(document).ready(function () {
     evt.preventDefault();
     $('.overlay').fadeIn('active');
     $('.modal--search').toggleClass('active');
+    $('.modal__input').focus();
   });
 
   // оставить заявку
@@ -863,6 +881,7 @@ $(document).ready(function () {
     evt.preventDefault();
     $('.overlay').fadeIn('active');
     $('.modal--callback').toggleClass('active');
+    $('.modal__input-phone').focus();
   });
 
   // оставить отзыв
@@ -870,14 +889,32 @@ $(document).ready(function () {
     evt.preventDefault();
     $('.overlay').fadeIn('active');
     $('.modal--review').toggleClass('active');
+    $('.modal__input').focus();
   });
 
-  // изменить регион
+  // изменить город
   $('.modal-region').click(function (evt) {
     evt.preventDefault();
     $('.overlay').fadeIn('active');
     $('.modal--region').toggleClass('active');
+    $('.modal__input').focus();
   });
+
+  // изменить регион
+  $('.contacts-map__container').click(function (evt) {
+    if (evt.target.matches('.modal-region-here')) {
+      evt.preventDefault();
+      $('.overlay').fadeIn('active');
+      $('.modal--region-here').toggleClass('active');
+      $('.modal__input').focus();
+    }
+  });
+
+  // $('.modal-region-here').click(function (evt) {
+  //   evt.preventDefault();
+  //   $('.overlay').fadeIn('active');
+  //   $('.modal--region-here').toggleClass('active');
+  // });
 
   // btn-close
   $('.modal__close').click(function () {

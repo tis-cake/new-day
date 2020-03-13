@@ -20,7 +20,8 @@
 .modal--callback.active,
 .modal--search.active,
 .modal--review.active,
-.modal--region.active {
+.modal--region.active,
+.modal--region-here.active {
   display: block;
 }
 
@@ -253,7 +254,8 @@
   }
 }
 
-.modal--region {
+.modal--region,
+.modal--region-here {
   top: @d90px;
   .modal-wrapper {
     width: @d940px;
@@ -374,7 +376,8 @@
   .modal--search,
   .modal--callback,
   .modal--review,
-  .modal--region {
+  .modal--region,
+  .modal--region-here {
     .modal-wrapper {
       width: @m680px;
     }
@@ -414,7 +417,8 @@
     }
   }
 
-  .modal--region {
+  .modal--region,
+  .modal--region-here {
     padding-top: @m110px;
     padding-bottom: @m70px;
   }
@@ -542,7 +546,8 @@
     }
   }
 
-  .modal--region {
+  .modal--region,
+  .modal--region-here {
     top: 90px;
     .modal-wrapper {
       width: 940px;

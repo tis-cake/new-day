@@ -259,13 +259,19 @@ $(document).ready(function () {
   }
 });
 
-// плавное перемещение на якорях
-$(document).ready(function(){
+// плавное перемещение на якорях и фоновое белое изображение
+$(document).ready(function() {
   $(".database-search__list" ).on("click","a", function (event) {
     // event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1000);
+
+    if($(".database-search__link").hasClass("active")) {
+      $('.database-search__link').not(this).removeClass('active');
+    }
+
+    $(this).toggleClass('active');
   });
 });
 

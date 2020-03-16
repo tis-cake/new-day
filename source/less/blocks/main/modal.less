@@ -106,6 +106,12 @@
   color: #747474;
   background-color: transparent;
   border: none;
+
+    -moz-appearance: none;
+ -webkit-appearance: none;
+         appearance: none;
+
+    outline: none;
 }
 
 .modal__input {
@@ -318,7 +324,9 @@
   .modal__input,
   .modal__input-phone {
     .padding-inline(@m50px);
-    font-size: @m33px;
+    // font-size: @m33px;
+    font-size: @m30px;
+    line-height: @m50px;
   }
 
   .modal__input-phone {
@@ -327,8 +335,9 @@
   }
 
   .modal__icon-btn {
-    width: @m32px;
-    height: @m32px;
+    width: @m42px;
+    height: @m42px;
+    background-size: contain;
   }
 
   .modal__btn {

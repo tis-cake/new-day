@@ -212,23 +212,6 @@ $(document).ready(function () {
 //   }
 // });
 
-// троеточие при избыточности символов на мобильном разрешении в database-preview
-// $(document).ready(function () {
-
-//   var width = $(window).width();
-//   var size = 64; // кол-во символов
-
-//   if (width <= 755) {
-//     $('.intro--database-preview--sub .intro__description').each(function () {
-//       var databaseText = $(this).text();
-
-//       if(databaseText.length > size){
-//         $(this).text(databaseText.slice(0, size) + ' ...');
-//       }
-//     });
-//   }
-// });
-
 // [database]
 // если js подключён - меню скрыто
 $('.database-search__list').removeClass('database-search__list--nojs');
@@ -318,6 +301,16 @@ $(document).ready(function () {
         slidesOffsetBefore: 14
       }
     }
+  });
+});
+
+// скрытый отзыв
+// вывести в консоль колличество элементов !
+$(document).ready(function () {
+  $('.reviews__text-block').on('click', function () {
+    $('.reviews__blockquote-text').toggleClass('active');
+    console.log($('.reviews__blockquote-text').length);
+    console.log(this.target);
   });
 });
 
@@ -922,28 +915,44 @@ $(document).ready(function () {
   //   $('.modal--region-here').toggleClass('active');
   // });
 
+  function closeModal() {
+    if ($(".modal").hasClass("active")) {
+      $('.modal').removeClass('active');
+      $('.overlay').fadeOut('active');
+    }
+  }
+
   // btn-close
   $('.modal__close').click(function () {
-    $('.modal').removeClass('active');
-    $('.overlay').fadeOut('active');
+    closeModal();
+    // $('.modal').removeClass('active');
+    // $('.overlay').fadeOut('active');
   });
 
   // нажат esc
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if ($(".modal").hasClass("active")) {
-        $('.modal').removeClass('active');
-        $('.overlay').fadeOut('active');
-      }
+      // if ($(".modal").hasClass("active")) {
+      //   $('.modal').removeClass('active');
+      //   $('.overlay').fadeOut('active');
+      // }
+      closeModal();
     }
   });
 
   // клик вне модального окна
-  $(document).mouseup(function (evt) {
+  // $(document).mouseup(function (evt) {
+  //   var modal = $(".modal");
+  //   if (!modal.is(evt.target) && modal.has(evt.target).length === 0) {
+  //     $('.modal').removeClass('active');
+  //     $('.overlay').fadeOut('active');
+  //   }
+  // });
+
+  $(document).on('mouseup touchstart', function (evt) {
     var modal = $(".modal");
     if (!modal.is(evt.target) && modal.has(evt.target).length === 0) {
-      $('.modal').removeClass('active');
-      $('.overlay').fadeOut('active');
+      closeModal();
     }
   });
 

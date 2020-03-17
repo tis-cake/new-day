@@ -247,44 +247,72 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
-.database-preview__item {
-  // &:hover,
-  // &:focus {
-  //   outline: none;
-  //   .intro--database-preview--sub {
-  //     opacity: 0.7;
-  //   }
-  // }
-  // &:active {
-  //   opacity: 0.5;
-  // }
-}
+.go-top-btn {
+  &.active {
+    opacity: 1;
+  }
+  position: fixed;
+  z-index: 50;
+  
+  transition-duration: 1s;
+  opacity: 0;
 
-.articles-block__main-item-content {
-  // &:hover,
-  // &:focus {
-  //     outline: none;
-  //   .articles-block__text-wrapper {
-  //     opacity: 0.7;
-  //   }
-  // }
-  // &:active {
-  //   opacity: 0.5;
-  // }
-}
+  left: 50%;
+  // transform: translateX(-@d940px);
+  transform: translateX(@d835px);
+  bottom: @d100px;
 
-.articles-block__item {
-  // &:hover {
-  //   opacity: 0.7;
+  width: @d103px;
+  height: @d103px;
+  padding: 0;
+
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  // box-shadow: 0 8px 68px rgba(15, 13, 47, 0.09);
+  box-shadow: 0 8px 68px rgba(15, 13, 47, 0.15);
+
+  cursor: pointer;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+
+  //   top: 50%;
+  //   left: 50%;
+
+  //   transform: translate(-50%, -50%) rotate(-90deg);
+
+  //   width: 70px;
+  //   height: 100px;
+
+  //   outline: 1px solid red;
+  //   background-image: url('../img/svg/arrow-brown.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
   // }
-  // .intro--artice:focus {
-  //   opacity: 0.7;
-  //   outline: none;
-  // }
-  // &:active {
-  //   opacity: 0.5;
-  //   outline: none;
-  // }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    width: @d35px;
+    height: @d3px;
+
+    background-color: #271711;
+  }
+
+  &::before {
+    left: 20%;
+    transform: rotate(-40deg);
+  }
+  &::after {
+    right: 20%;
+    transform: rotate(40deg);
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -311,11 +339,13 @@ input[type="radio"].visually-hidden {
     font-size: @m27px;
     border-radius: 38px;
   }
+  .go-top-btn {
+    display: none!important;
+  }
 }
 
 @media (min-width: @max-desktop-width) {
   .double-column-wrapper {
-    // width: 1210px;
     width: 1190px;
     padding-top: 20px;
   }
@@ -327,5 +357,18 @@ input[type="radio"].visually-hidden {
     width: 243px;
     height: 55px;
     font-size: 18px;
+  }
+  .go-top-btn {
+    // transform: translateX(-940px);
+    transform: translateX(835px);
+    bottom: 100px;
+    width: 103px;
+    height: 103px;
+
+    &::before,
+    &::after {
+      width: 35px;
+      height: 3px;
+    }
   }
 }

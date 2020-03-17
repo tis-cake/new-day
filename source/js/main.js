@@ -720,20 +720,20 @@ $(document).ready(function () {
 });
 
 // фильтр стоимости
-$(document).ready(function () {
-  $("#filter-range").slider({
-      range: true,
-      min: 0,
-      max: 100000,
-      values: [ 10000, 30000 ],
-      slide: function( event, ui ) {
-        $( "#range-toggle-min" ).val(ui.values[ 0 ] + " ₽");
-        $( "#range-toggle-max" ).val(ui.values[ 1 ] + " ₽");
-      }
-    });
-    $( "#range-toggle-min" ).val($( "#filter-range" ).slider( "values", 0 ) + " ₽");
-    $( "#range-toggle-max" ).val($( "#filter-range" ).slider( "values", 1 ) + " ₽");
-});
+// $(document).ready(function () {
+//   $("#filter-range").slider({
+//       range: true,
+//       min: 0,
+//       max: 100000,
+//       values: [ 10000, 30000 ],
+//       slide: function( event, ui ) {
+//         $( "#range-toggle-min" ).val(ui.values[ 0 ] + " ₽");
+//         $( "#range-toggle-max" ).val(ui.values[ 1 ] + " ₽");
+//       }
+//     });
+//     $( "#range-toggle-min" ).val($( "#filter-range" ).slider( "values", 0 ) + " ₽");
+//     $( "#range-toggle-max" ).val($( "#filter-range" ).slider( "values", 1 ) + " ₽");
+// });
 
 // слайдер центров в 2 ряда
 $(document).ready(function () {
@@ -925,5 +925,36 @@ $(document).ready(function () {
       closeModal();
     }
   });
+});
 
+$(function () {
+  $.fn.scrollToTop = function () {
+    // изначально скрыть
+    // $(this).hide();
+
+    // если прокрутили - показать
+    if ($(window).scrollTop() != '0') {
+      $(this).fadeIn('slow');
+    }
+
+    var btnScrollTop = $(this);
+    $(window).scroll(function () {
+      // если прокртука < 440 - скрыть, >= - показать
+      if ($(window).scrollTop() < '440') {
+        // $(btnScrollTop).fadeOut('slow');
+        $(btnScrollTop).removeClass('active');
+      } else if ($(window).scrollTop() >= '440') {
+        // $(btnScrollTop).fadeIn('slow');
+        $(btnScrollTop).addClass('active');
+      }
+    });
+
+    $(this).click(function () {
+      $('html, body').animate({scrollTop: 0}, 1500);
+    })
+  }
+});
+
+$(function () {
+  $('.go-top-btn').scrollToTop();
 });

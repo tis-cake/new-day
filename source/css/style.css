@@ -274,6 +274,47 @@ input[type="radio"].visually-hidden {
 .contacts-map__btn:active .contacts-map__btn-text::before {
   opacity: 0.5;
 }
+.go-top-btn {
+  position: fixed;
+  z-index: 50;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  opacity: 0;
+  left: 50%;
+  -webkit-transform: translateX(43.49vw);
+          transform: translateX(43.49vw);
+  bottom: 5.208vw;
+  width: 5.365vw;
+  height: 5.365vw;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 68px rgba(15, 13, 47, 0.15);
+  cursor: pointer;
+}
+.go-top-btn.active {
+  opacity: 1;
+}
+.go-top-btn::before,
+.go-top-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 1.8229vw;
+  height: 0.15625vw;
+  background-color: #271711;
+}
+.go-top-btn::before {
+  left: 20%;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+.go-top-btn::after {
+  right: 20%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
 @media (max-width: 755px) {
   .container {
     width: auto;
@@ -300,6 +341,9 @@ input[type="radio"].visually-hidden {
     font-size: 3.599vw;
     border-radius: 38px;
   }
+  .go-top-btn {
+    display: none!important;
+  }
 }
 @media (min-width: 1921px) {
   .double-column-wrapper {
@@ -314,6 +358,18 @@ input[type="radio"].visually-hidden {
     width: 243px;
     height: 55px;
     font-size: 18px;
+  }
+  .go-top-btn {
+    -webkit-transform: translateX(835px);
+            transform: translateX(835px);
+    bottom: 100px;
+    width: 103px;
+    height: 103px;
+  }
+  .go-top-btn::before,
+  .go-top-btn::after {
+    width: 35px;
+    height: 3px;
   }
 }
 /*header*/

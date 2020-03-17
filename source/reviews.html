@@ -519,6 +519,26 @@
         <form class="modal__form" action="/echo" method="post">
           <input class="modal__input" type="text" name="review-name" placeholder="Ваше имя">
           <textarea class="modal__textarea" name="review-text" placeholder="Ваш отзыв"></textarea>
+          <div class="modal__rating-wrap">
+            <p class="modal__rating-title">Ваша оценка</p>
+            <div class="modal__rating-area article-rating__area">
+
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label for="star-5" title="Оценка «5»"></label>
+
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label for="star-4" title="Оценка «4»"></label>
+
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label for="star-3" title="Оценка «3»"></label>
+
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2" title="Оценка «2»"></label>
+
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+          </div>
           <button class="modal__btn btn">Отправить</button>
         </form>
       </div>

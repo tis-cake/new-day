@@ -11855,8 +11855,8 @@ a.article-author__link {
   position: absolute;
   top: 1.7708vw;
   right: 1.9791vw;
-  width: 2.2916vw;
-  height: 2.2916vw;
+  width: 1.8229vw;
+  height: 1.8229vw;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -11869,7 +11869,7 @@ a.article-author__link {
   position: absolute;
   top: 1.0937vw;
   right: 0;
-  width: 2.2916vw;
+  width: 1.8229vw;
   height: 0.15625vw;
   background-color: #000;
   border-radius: 2px;
@@ -11884,7 +11884,7 @@ a.article-author__link {
 }
 .modal__title {
   margin-bottom: 1.927vw;
-  font-size: 2.3437vw;
+  font-size: 2.1875vw;
   font-weight: 700;
   letter-spacing: 0.23px;
   text-align: center;
@@ -11909,8 +11909,8 @@ a.article-author__link {
 .modal__input,
 .modal__input-phone {
   box-sizing: border-box;
-  padding-left: 3.3854vw;
-  padding-right: 3.3854vw;
+  padding-left: 2.1875vw;
+  padding-right: 2.1875vw;
   font-size: 1.4062vw;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -11959,11 +11959,11 @@ a.article-author__link {
 .modal__textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 13.021vw;
+  height: 11.458vw;
   margin-bottom: 2.6041vw;
   padding-top: 1.5625vw;
-  padding-left: 3.3854vw;
-  padding-right: 3.3854vw;
+  padding-left: 2.1875vw;
+  padding-right: 2.1875vw;
   padding-bottom: 1.5625vw;
   font-family: 'Circe', 'Arial', sans-serif;
   font-size: 0.9895vw;
@@ -11989,6 +11989,30 @@ a.article-author__link {
 .modal__item-link {
   color: #747474;
 }
+.modal__rating-wrap {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 2.8645vw;
+  margin-bottom: 2.0833vw;
+  padding-left: 2.1875vw;
+  padding-right: 2.1875vw;
+  font-size: 0.9895vw;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  color: #747474;
+  background-color: #ffffff;
+  box-shadow: 0 8px 68px rgba(15, 13, 47, 0.06);
+  border-radius: 43px;
+}
+.modal__rating-area {
+  width: 8.438vw;
+}
 .modal--search .modal-wrapper {
   width: 69.89vw;
 }
@@ -12006,11 +12030,13 @@ a.article-author__link {
 }
 .modal--review {
   top: 4.6875vw;
-  width: 57.39vw;
+  width: 41.927vw;
+  /**/
   padding-bottom: 4.1666vw;
 }
 .modal--review .modal-wrapper {
-  width: 40.729vw;
+  width: 26.771vw;
+  /**/
 }
 .modal--review .modal__form {
   -webkit-box-orient: vertical;
@@ -12029,19 +12055,37 @@ a.article-author__link {
 }
 .modal--review .modal__input {
   width: 100%;
-  height: 4.427vw;
-  margin-bottom: 1.5625vw;
+  height: 2.8645vw;
+  /**/
+  margin-bottom: 1.0416vw;
+  /**/
   font-size: 0.9895vw;
   background-color: #ffffff;
   box-shadow: 0 8px 68px rgba(15, 13, 47, 0.06);
   border-radius: 43px;
 }
+.modal--review .modal__textarea {
+  margin-bottom: 1.0416vw;
+  /**/
+  padding-top: 1.0416vw;
+  /**/
+}
 .modal--review .modal__btn {
-  width: 17.292vw;
-  height: 3.8541vw;
+  width: 10.521vw;
+  /**/
+  height: 2.8645vw;
+  /**/
   font-size: 0.9375vw;
   text-transform: uppercase;
-  border-radius: 37px;
+  border-radius: 28px;
+}
+.modal--review .article-rating__area:not(:checked) > label::before {
+  background-image: url("../img/svg/star-stroke-gray.svg");
+}
+.modal--review .article-rating__area > input:checked ~ label::before,
+.modal--review .article-rating__area:not(:checked) > label:hover,
+.modal--review .article-rating__area:not(:checked) > label:hover ~ label {
+  background-image: url("../img/svg/star-fill-gray.svg");
 }
 .modal--region,
 .modal--region-here {
@@ -12140,6 +12184,21 @@ a.article-author__link {
   .modal__item {
     margin-bottom: 2vw;
   }
+  .modal__rating-wrap {
+    height: 12.8vw;
+    margin-bottom: 4vw;
+    padding-left: 6.666vw;
+    padding-right: 6.666vw;
+    font-size: 4vw;
+  }
+  .modal__rating-wrap .article-rating__area:not(:checked) > label,
+  .modal__rating-wrap .article-rating__area:not(:checked) > label::before {
+    width: 6vw;
+    height: 6vw;
+  }
+  .modal__rating-area {
+    width: 42.667vw;
+  }
   .modal--search .modal-wrapper,
   .modal--callback .modal-wrapper,
   .modal--review .modal-wrapper,
@@ -12154,7 +12213,7 @@ a.article-author__link {
     width: 38.667vw;
   }
   .modal--review {
-    top: 20%;
+    top: 0;
     padding-top: 13.3vw;
     padding-bottom: 9.333vw;
   }
@@ -12170,6 +12229,12 @@ a.article-author__link {
     height: 12.8vw;
     font-size: 4.399vw;
     border-radius: 45px;
+  }
+  .modal--review .modal__textarea {
+    margin-bottom: 4vw;
+    /**/
+    padding-top: 2.666vw;
+    /**/
   }
   .modal--region,
   .modal--region-here {
@@ -12200,18 +12265,18 @@ a.article-author__link {
   .modal__close {
     top: 34px;
     right: 38px;
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
   }
   .modal__close::before,
   .modal__close::after {
     top: 21px;
-    width: 44px;
+    width: 35px;
     height: 3px;
   }
   .modal__title {
     margin-bottom: 37px;
-    font-size: 45px;
+    font-size: 42px;
   }
   .modal__form {
     width: auto;
@@ -12220,8 +12285,8 @@ a.article-author__link {
   }
   .modal__input,
   .modal__input-phone {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 42px;
+    padding-right: 42px;
     font-size: 27px;
   }
   .modal__input-phone {
@@ -12238,11 +12303,11 @@ a.article-author__link {
     font-size: 27px;
   }
   .modal__textarea {
-    height: 250px;
+    height: 220px;
     margin-bottom: 50px;
     padding-top: 30px;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 42px;
+    padding-right: 42px;
     padding-bottom: 30px;
     font-size: 19px;
   }
@@ -12252,6 +12317,20 @@ a.article-author__link {
   }
   .modal__item {
     margin-bottom: 30px;
+  }
+  .modal__rating-wrap {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  .modal__rating-wrap {
+    height: 55px;
+    margin-bottom: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 19px;
+  }
+  .modal__rating-area {
+    width: 162px;
   }
   .modal--search .modal-wrapper {
     width: 1342px;
@@ -12267,20 +12346,24 @@ a.article-author__link {
   }
   .modal--review {
     top: 90px;
-    width: 1102px;
+    width: 805px;
     padding-bottom: 80px;
   }
   .modal--review .modal-wrapper {
-    width: 782px;
+    width: 514px;
   }
   .modal--review .modal__input {
-    height: 85px;
-    margin-bottom: 30px;
+    height: 55px;
+    margin-bottom: 20px;
     font-size: 19px;
   }
+  .modal--review .modal__textarea {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
   .modal--review .modal__btn {
-    width: 332px;
-    height: 74px;
+    width: 202px;
+    height: 55px;
     font-size: 18px;
   }
   .modal--region,

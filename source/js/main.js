@@ -67,29 +67,6 @@ $(document).ready(function () {
   }
 });
 
-// тень для слайдера если элементов <= 2 (центры)
-// $(document).ready(function () {
-//   var swiperContainerCenters = $('.rehab-swiper--centers .swiper-container');
-//   var swiperWrapperCenters = $('.rehab-swiper--centers .swiper-wrapper');
-//   if(swiperWrapperCenters.children().length <= 2 && width > 756) {
-//     swiperContainerCenters.addClass('two-slides');
-//     console.log(swiperWrapperCenters.children().length);
-//   } else {
-//     swiperContainerCenters.removeClass('two-slides');
-//   }
-// });
-
-// // тень для слайдера если элементов <= 2 (клиники)
-// $(document).ready(function () {
-//   var swiperContainerClinics = $('.rehab-swiper--clinics .swiper-container');
-//   var swiperWrapperClinics = $('.rehab-swiper--clinics .swiper-wrapper');
-//   if(swiperWrapperClinics.length <= 2 && width > 756) {
-//     swiperContainerClinics.addClass('two-slides');
-//   } else {
-//     swiperContainerClinics.removeClass('two-slides');
-//   }
-// });
-
 // слайдер центров
 $(document).ready(function () {
   var centerSwiper = new Swiper('#center-swiper', {
@@ -258,23 +235,6 @@ $(document).ready(function() {
   });
 });
 
-// троеточие при избыточности символов на мобильном разрешении в article-block
-// $(document).ready(function () {
-
-//   var width = $(window).width(); // ширина экрана
-//   var size = 189; // кол-во символов
-
-//   if (width <= 755) {
-//     $('.articles-block .intro__description').each(function () {
-//       var rehabText = $(this).text();
-
-//       if(rehabText.length > size){
-//         $(this).text(rehabText.slice(0, size) + ' ...');
-//       }
-//     });
-//   }
-// });
-
 // [reviews]
 // слайдер отзывов
 $(document).ready(function () {
@@ -304,13 +264,23 @@ $(document).ready(function () {
   });
 });
 
-// скрытый отзыв
-// вывести в консоль колличество элементов !
+// показать весь отзыв
 $(document).ready(function () {
-  $('.reviews__text-block').on('click', function () {
-    $('.reviews__blockquote-text').toggleClass('active');
-    console.log($('.reviews__blockquote-text').length);
-    console.log(this.target);
+  var reviewsArr = document.querySelectorAll('.reviews__blockquote-text');
+  var size = 155; // кол-во символов
+
+  // добавляем кнопку "показать ещё" для отзывов, длина которых > 155 символов
+  for (var i = 0; i < reviewsArr.length; i++) {
+    if (reviewsArr[i].textContent.length > size) {
+      var currentRevieBlock = reviewsArr[i].closest('.reviews__text-block');
+      currentRevieBlock.querySelector('.reviews__btn-more').classList.add('active');
+    }
+  } 
+
+  // показываем отзыв
+  $('.reviews__btn-more').on('click', function () {
+    $(this).closest('.reviews__text-block').find('.reviews__blockquote-text').addClass('active');
+    $(this).addClass('hidden');
   });
 });
 

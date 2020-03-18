@@ -124,6 +124,11 @@ input[type="radio"].visually-hidden {
   .margin-inline(@a);
 }
 
+.container-out-right {
+  width: 92.187vw; // 1770px 
+  margin-left: @a;
+}
+
 .double-main-wrapper {
   display: flex;
   justify-content: space-between;
@@ -315,7 +320,8 @@ input[type="radio"].visually-hidden {
 }
 
 @media (max-width: @mobile-width) {
-  .container {
+  .container,
+  .container-out-right {
     width: auto;
     .padding-inline(@m35px);
   }
@@ -344,6 +350,13 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: @max-desktop-width) {
+  
+  .container-out-right {
+    width: 1770px;
+    margin-right: @a;
+    transform: translateX(75px);
+  }
+
   .double-column-wrapper {
     width: 1190px;
     padding-top: 20px;

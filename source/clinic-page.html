@@ -185,45 +185,60 @@
     </header>
 
     <main class="main">
-
-      <section class="main-info main-info--contacts">
-        <div class="main-info__bg-wrapper">
-          <picture>
-            <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/clinic-page-m.webp">
-            <source media="(max-width: 750px)" srcset="img/main-info/clinic-page-m.jpg">
-            <source type="image/webp" srcset="img/main-info/clinic-page-d.webp">
-            <img class="main-info__bg-img" src="img/main-info/clinic-page-d.jpg" alt="">
-          </picture>
-        </div>
-
-        <div class="container">
-          <h1 class="main-info__title">Наркологическая клиника в Санкт-Петербурге</h1>
-          <p class="main-info__description">Улица Рижский проезд, 17 стр. 2</p>
-          <p class="main-info__description">Лечение от 3 500 &#8381; в сутки</p>
-          <a class="main-info__callback btn modal-callback" href="#">Получить консультацию</a>
+      <section class="main-info main-info--rehab-page">
+        <div class="container-out-right">
+          <div class="main-info__main-wrapper">
+            <div class="main-info__content-wrapper">
+              <p class="main-info__subtitle">Реабилитационный центр</p>
+              <h1 class="main-info__title">Аврора <span>г.Санкт-Петербург</span></h1>
+              <p class="main-info__description">Улица Рижский проезд, 17 стр. 2</p>
+              <p class="main-info__description">Лечение от 3 500 &#8381; в сутки</p>
+              <a class="main-info__callback btn modal-callback" href="#">Получить консультацию</a>
+            </div>
+            <div class="main-info__img-wrapper">
+              <img class="main-info__img" src="img/main-info/rehab/r1.jpg" alt="">
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="about about--clinic-page container">
-        <div class="about__column-left">
-          <div class="intro intro--about-page">
-            <h2 class="intro__title">Об этой клинике</h2>
-
-            <p class="intro__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании соответствующий условий активизации.</p>
-
-            <p class="intro__description">Повседневная практика показывает, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Равным образом дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций</p>
-          </div>
-
-          <!-- <a class="main-info__callback btn" href="#">Получить консультацию</a> -->
+      <section class="gallery-swiper">
+        <div class="intro intro--gallery container">
+          <h2 class="intro__title">Галерея</h2>
+          <p class="intro__description">Мы работаем открыто и легально, постоянно развиваемся и видим свою миссию в том, чтобы делиться знаниями и повышать качество реабилитации в России</p>
         </div>
+        <div class="arrow-container">
+          <div class="swiper-container container" id="gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-swiper__img-wrapper">
+                  <img class="gallery-swiper__img" src="img/gallery/gallery1.jpg" alt="">
+                </div>
+              </div>
 
-        <div class="about__column-right">
-          <div class="about__img-wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/about/about-clinic-page.webp">
-              <img class="about__img" src="img/about/about-clinic-page.jpg" alt="">
-            </picture>
+              <div class="swiper-slide">
+                <div class="gallery-swiper__img-wrapper">
+                  <img class="gallery-swiper__img" src="img/gallery/gallery2.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-swiper__img-wrapper">
+                  <img class="gallery-swiper__img" src="img/gallery/gallery3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-swiper__img-wrapper">
+                  <img class="gallery-swiper__img" src="img/gallery/gallery4.jpg" alt="">
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="swiper-button-prev swiper-button-prev--gallery"></div>
+          <div class="swiper-button-next swiper-button-next--gallery"></div>
+
         </div>
       </section>
 
@@ -399,7 +414,7 @@
         </div>
       </section>
 
-      <section class="document-swiper">
+      <!-- <section class="document-swiper">
         <div class="intro intro--document container">
           <h2 class="intro__title">Лицензии клиники</h2>
           <p class="intro__description">Мы работаем открыто и легально, постоянно развиваемся и видим свою миссию в том, чтобы делиться знаниями и повышать качество реабилитации в России</p>
@@ -437,11 +452,11 @@
           <div class="swiper-button-next swiper-button-next--document"></div>
 
         </div>
-      </section>
+      </section> -->
 
       <section class="program container">
         <div class="intro intro--program">
-          <h2 class="intro__title">Преимущества клиники</h2>
+          <h2 class="intro__title">Преимущества наших центров</h2>
           <p class="intro__description">Индивидуальный подход к каждому пациенту – не просто модная фраза, а действительно отличительная черта работы нашей клиники</p>
         </div>
         <ul class="program__list">
@@ -468,43 +483,26 @@
         </ul>
       </section>
 
-      <section class="gallery-swiper">
-        <div class="intro intro--gallery container">
-          <h2 class="intro__title">Галерея</h2>
-          <p class="intro__description">Мы работаем открыто и легально, постоянно развиваемся и видим свою миссию в том, чтобы делиться знаниями и повышать качество реабилитации в России</p>
-        </div>
-        <div class="arrow-container">
-          <div class="swiper-container container" id="gallery-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="gallery-swiper__img-wrapper">
-                  <img class="gallery-swiper__img" src="img/gallery/gallery1.jpg" alt="">
-                </div>
-              </div>
+      <section class="about about--clinic-page container">
+        <div class="about__column-left">
+          <div class="intro intro--about-page">
+            <h2 class="intro__title">Об этом центре</h2>
 
-              <div class="swiper-slide">
-                <div class="gallery-swiper__img-wrapper">
-                  <img class="gallery-swiper__img" src="img/gallery/gallery2.jpg" alt="">
-                </div>
-              </div>
+            <p class="intro__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании соответствующий условий активизации.</p>
 
-              <div class="swiper-slide">
-                <div class="gallery-swiper__img-wrapper">
-                  <img class="gallery-swiper__img" src="img/gallery/gallery3.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="gallery-swiper__img-wrapper">
-                  <img class="gallery-swiper__img" src="img/gallery/gallery4.jpg" alt="">
-                </div>
-              </div>
-            </div>
+            <p class="intro__description">Повседневная практика показывает, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Равным образом дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций</p>
           </div>
 
-          <div class="swiper-button-prev swiper-button-prev--gallery"></div>
-          <div class="swiper-button-next swiper-button-next--gallery"></div>
+          <!-- <a class="main-info__callback btn" href="#">Получить консультацию</a> -->
+        </div>
 
+        <div class="about__column-right">
+          <div class="about__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/about/about-clinic-page.webp">
+              <img class="about__img" src="img/about/about-clinic-page.jpg" alt="">
+            </picture>
+          </div>
         </div>
       </section>
 
@@ -873,7 +871,6 @@
           <div class="swiper-button-prev swiper-button-prev--clinic"></div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">

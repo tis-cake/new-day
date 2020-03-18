@@ -7,7 +7,7 @@
 
   margin-bottom: @d194px;
 
-  background-color: #6c6c6c;
+  // background-color: #6c6c6c;
 }
 
 .main.index .main-info {
@@ -26,6 +26,8 @@
   max-height: 775px;
   width: 100%;
   height: 40.364vw;
+
+  background-color: #6c6c6c;
 }
 
 .main-info__bg-img {
@@ -43,6 +45,22 @@
 
 .main.index .main-info .container {
   padding-top: 0;
+}
+
+.main-info__main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-info__img-wrapper {
+  width: @d946px;
+  height: @d572px;
+}
+
+.main-info__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main-info__services-link {
@@ -174,6 +192,32 @@
   }
 }
 
+.main-info--rehab-page {
+  max-height: none;
+  height: @a;
+
+  .main-info__content-wrapper {
+    padding-top: @d125px;
+  }
+
+  .main-info__subtitle {
+    margin-bottom: @d12px;
+    color: #747474;
+
+    font-size: @d22px;
+    letter-spacing: 0.11px;
+  }
+
+  .main-info__title,
+  .main-info__description {
+    color: #2f2f2f;
+  }
+
+  .main-info__title {
+    font-size: @d50px;
+  }
+}
+
 @media (max-width: @mobile-width) {
 
   .main-info {
@@ -208,6 +252,19 @@
     max-height: none;
     width: 100vw;
     height: 103.33vw;
+  }
+
+  .main-info__main-wrapper {
+    flex-direction: column;
+  }
+
+  .main-info__img-wrapper {
+    width: 100%;
+    height: @m524px;
+  }
+
+  .main-info__img {
+    border-radius: 15px;
   }
 
   .main-info__services-link {
@@ -356,15 +413,6 @@
     margin-bottom: @m96px;
   }
 
-  .main-info--contacts {
-    .container {
-      padding-top: @m175px;
-    }
-    .main-info__title {
-      margin-top: @m103px;
-    }
-  }
-
   .main-info--about {
     margin-bottom: @m173px;
     .container {
@@ -400,10 +448,37 @@
     .main-info__bg-wrapper {
       height: 123.33vw; // 925px
     }
+    .container {
+      padding-top: @m175px;
+    }
+    .main-info__title {
+      margin-top: @m103px;
+    }
+  }
+
+  .main-info--rehab-page {
+    height: @a;
+    .main-info__content-wrapper {
+      margin-bottom: @m100px;
+      padding-top: @m90px;
+    }
+    .main-info__subtitle {
+      margin-bottom: @m25px;
+      font-size: @m30px;
+    }
+    .main-info__title {
+      font-size: @m60px;
+      & span {
+        display: block;
+      }
+    }
+    .main-info__description {
+      margin-bottom: 0;
+    }
   }
 }
 
-@media  (min-width: @max-desktop-width) {
+@media (min-width: @max-desktop-width) {
   .main-info {
     width: 100%;
     margin-bottom: 194px;
@@ -420,6 +495,11 @@
 
   .main-info .container {
     padding-top: 210px;
+  }
+
+  .main-info__img-wrapper {
+    width: 946px;
+    height: 572px;
   }
 
   .main-info__title {
@@ -494,6 +574,19 @@
     .main-info__description {
       max-width: none;
       width: 630px;
+    }
+  }
+
+  .main-info--rehab-page {
+    .main-info__content-wrapper {
+      padding-top: 125px;
+    }
+    .main-info__subtitle {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+    .main-info__title {
+      font-size: 50px;
     }
   }
 }

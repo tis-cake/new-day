@@ -621,6 +621,9 @@ $(document).ready(function () {
       }
     }
   });
+
+  // galleryThumbs.controller.control = mainMasterSwiper;
+  // mainMasterSwiper.controller.control = galleryThumbs;
 });
 
 // [article-page]

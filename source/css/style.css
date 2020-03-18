@@ -120,6 +120,10 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: auto;
 }
+.container-out-right {
+  width: 92.187vw;
+  margin-left: auto;
+}
 .double-main-wrapper {
   display: -webkit-box;
   display: flex;
@@ -311,7 +315,8 @@ input[type="radio"].visually-hidden {
   background-size: cover;
 }
 @media (max-width: 755px) {
-  .container {
+  .container,
+  .container-out-right {
     width: auto;
     padding-left: 4.666vw;
     padding-right: 4.666vw;
@@ -341,6 +346,12 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1921px) {
+  .container-out-right {
+    width: 1770px;
+    margin-right: auto;
+    -webkit-transform: translateX(75px);
+            transform: translateX(75px);
+  }
   .double-column-wrapper {
     width: 1190px;
     padding-top: 20px;
@@ -1449,20 +1460,22 @@ input[type="radio"].visually-hidden {
   margin-bottom: 3.6458vw;
 }
 .intro--about-doctor {
-  width: 32.292vw;
   padding-top: 2.6041vw;
 }
 .intro--about-doctor .intro__subtitle {
   margin-bottom: 1.4583vw;
   font-size: 1.0416vw;
   font-weight: 400;
+  font-size: 1.1458vw;
+  color: #747474;
 }
 .intro--about-doctor .intro__title {
-  font-size: 3.125vw;
+  font-size: 2.8645vw;
   line-height: 3.2812vw;
   margin-bottom: 2.0833vw;
 }
 .intro--about-doctor p {
+  width: 32.292vw;
   margin-bottom: 1.5625vw;
   font-size: 1.0416vw;
   line-height: 1.5625vw;
@@ -1671,6 +1684,7 @@ input[type="radio"].visually-hidden {
     line-height: 8.4vw;
   }
   .intro--about-doctor p {
+    width: auto;
     margin-bottom: 4.533vw;
     font-size: 4vw;
     line-height: 5.066vw;
@@ -1789,20 +1803,20 @@ input[type="radio"].visually-hidden {
     margin-bottom: 70px;
   }
   .intro--about-doctor {
-    width: 620px;
     padding-top: 50px;
   }
   .intro--about-doctor .intro__subtitle {
     margin-bottom: 28px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
   }
   .intro--about-doctor .intro__title {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 63px;
     margin-bottom: 40px;
   }
   .intro--about-doctor p {
+    width: 620px;
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 30px;
@@ -1815,7 +1829,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 40.364vw;
   margin-bottom: 10.104vw;
-  background-color: #6c6c6c;
 }
 .main.index .main-info {
   width: auto;
@@ -1830,6 +1843,7 @@ input[type="radio"].visually-hidden {
   max-height: 775px;
   width: 100%;
   height: 40.364vw;
+  background-color: #6c6c6c;
 }
 .main-info__bg-img {
   position: absolute;
@@ -1844,6 +1858,22 @@ input[type="radio"].visually-hidden {
 }
 .main.index .main-info .container {
   padding-top: 0;
+}
+.main-info__main-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.main-info__img-wrapper {
+  width: 49.271vw;
+  height: 29.792vw;
+}
+.main-info__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-info__services-link {
   display: none;
@@ -1948,6 +1978,26 @@ input[type="radio"].visually-hidden {
 .main-info--about .main-info__description--mobile {
   display: none;
 }
+.main-info--rehab-page {
+  max-height: none;
+  height: auto;
+}
+.main-info--rehab-page .main-info__content-wrapper {
+  padding-top: 6.51vw;
+}
+.main-info--rehab-page .main-info__subtitle {
+  margin-bottom: 0.625vw;
+  color: #747474;
+  font-size: 1.1458vw;
+  letter-spacing: 0.11px;
+}
+.main-info--rehab-page .main-info__title,
+.main-info--rehab-page .main-info__description {
+  color: #2f2f2f;
+}
+.main-info--rehab-page .main-info__title {
+  font-size: 2.6041vw;
+}
 @media (max-width: 755px) {
   .main-info {
     max-width: none;
@@ -1975,6 +2025,18 @@ input[type="radio"].visually-hidden {
     max-height: none;
     width: 100vw;
     height: 103.33vw;
+  }
+  .main-info__main-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .main-info__img-wrapper {
+    width: 100%;
+    height: 69.867vw;
+  }
+  .main-info__img {
+    border-radius: 15px;
   }
   .main-info__services-link {
     position: relative;
@@ -2095,12 +2157,6 @@ input[type="radio"].visually-hidden {
   .main-info--database {
     margin-bottom: 12.8vw;
   }
-  .main-info--contacts .container {
-    padding-top: 23.333vw;
-  }
-  .main-info--contacts .main-info__title {
-    margin-top: 13.733vw;
-  }
   .main-info--about {
     margin-bottom: 23.067vw;
   }
@@ -2133,6 +2189,32 @@ input[type="radio"].visually-hidden {
   .main-info--contacts .main-info__bg-wrapper {
     height: 123.33vw;
   }
+  .main-info--contacts .container {
+    padding-top: 23.333vw;
+  }
+  .main-info--contacts .main-info__title {
+    margin-top: 13.733vw;
+  }
+  .main-info--rehab-page {
+    height: auto;
+  }
+  .main-info--rehab-page .main-info__content-wrapper {
+    margin-bottom: 13.3vw;
+    padding-top: 12vw;
+  }
+  .main-info--rehab-page .main-info__subtitle {
+    margin-bottom: 3.333vw;
+    font-size: 4vw;
+  }
+  .main-info--rehab-page .main-info__title {
+    font-size: 8vw;
+  }
+  .main-info--rehab-page .main-info__title span {
+    display: block;
+  }
+  .main-info--rehab-page .main-info__description {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1921px) {
   .main-info {
@@ -2148,6 +2230,10 @@ input[type="radio"].visually-hidden {
   }
   .main-info .container {
     padding-top: 210px;
+  }
+  .main-info__img-wrapper {
+    width: 946px;
+    height: 572px;
   }
   .main-info__title {
     margin-bottom: 36px;
@@ -2208,6 +2294,16 @@ input[type="radio"].visually-hidden {
   .main-info--about .main-info__description {
     max-width: none;
     width: 630px;
+  }
+  .main-info--rehab-page .main-info__content-wrapper {
+    padding-top: 125px;
+  }
+  .main-info--rehab-page .main-info__subtitle {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+  .main-info--rehab-page .main-info__title {
+    font-size: 50px;
   }
 }
 .about {
@@ -2331,7 +2427,7 @@ input[type="radio"].visually-hidden {
 }
 .about--doctor .about__img-wrapper {
   width: 32.083vw;
-  height: 38.802vw;
+  height: 35vw;
 }
 .about--doctor .about__img-wrapper::after {
   width: 44.7%;
@@ -2581,7 +2677,7 @@ input[type="radio"].visually-hidden {
   }
   .about--doctor .about__img-wrapper {
     width: 616px;
-    height: 745px;
+    height: 672px;
   }
   .about--page,
   .about--clinic-page {
@@ -9099,6 +9195,12 @@ input[type="radio"].visually-hidden {
 .document-swiper__img,
 .gallery-swiper__img {
   border-radius: 14px;
+}
+.gallery-swiper__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .double-wrapper-page .document-swiper {
   position: relative;

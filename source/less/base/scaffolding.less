@@ -26,25 +26,6 @@
 //  bottom: 0;
 // }
 
-/* увеличенная картинка */
-.huge-img {
-  display: none;
- 
-  z-index: 9999;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  max-width: 600px;
-  height: auto;
-}
- 
-.huge-img img {
-  width: 100%;
-  border-radius: 14px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -117,6 +98,24 @@ input {
 
 .active.overlay {
   display: block;
+}
+
+.huge-img {
+  display: none;
+ 
+  z-index: 200;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 600px;
+  height: auto;
+}
+ 
+.huge-img img {
+  width: 100%;
+  border-radius: 14px;
 }
 
 .visually-hidden:not(:focus):not(:active),

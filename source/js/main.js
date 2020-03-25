@@ -816,10 +816,10 @@ $(document).ready(function () {
     centeredSlides: true,
     spaceBetween: 30,
     // freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next--gallery',
@@ -858,20 +858,28 @@ $(document).ready(function () {
   });
 });
 
-// открытие изображения в отдельном окне
-$(document).ready(function () {
-  function imgOpen(imgClass) {
-    var imagePath = $(imgClass).attr('src');
-    $('body').append('<div class="huge-img"><img src="'+imagePath+'"></div>');
-    $('.overlay, .huge-img').fadeIn('active');
+// функция на открытие изображения в отдельном окне
+function imgOpen(imgClass) {
+  var imagePath = $(imgClass).attr('src');
+  $('body').append('<div class="huge-img"><img src="'+imagePath+'"></div>');
+  $('.overlay, .huge-img').fadeIn('active');
 
-    $('body').on('click', '.overlay', function(evt) {
+  // клик вне фото
+  $('body').on('click', '.overlay', function(evt) {
+    $('.overlay, .huge-img').fadeOut('active', function() {
+      $('.huge-img').remove();
+    });
+  });
+
+  // либо нажат esc
+  $(document).keydown(function(evt){
+    if (evt.which === 27) {
       $('.overlay, .huge-img').fadeOut('active', function() {
         $('.huge-img').remove();
       });
-    });
-  };
-});
+    };
+  });
+};
 
 // модальные окна
 $(document).ready(function () {

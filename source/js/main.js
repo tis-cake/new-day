@@ -879,6 +879,16 @@ function imgOpen(imgClass) {
       });
     };
   });
+
+  // клик на мобильном устройстве
+  $(document).on('touchstart', function (evt) {
+    var imgBlock = $(".huge-img");
+    if (!imgBlock.is(evt.target) && imgBlock.has(evt.target).length === 0) {
+      $('.overlay, .huge-img').fadeOut('active', function() {
+        $('.huge-img').remove();
+      });
+    }
+  });
 };
 
 // модальные окна

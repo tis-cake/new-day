@@ -9819,6 +9819,7 @@ input[type="radio"].visually-hidden {
   height: 1.4062vw !important;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .ya-share2__item_service_telegram .ya-share2__icon {
   background-image: url('../img/social-panel/telegram.svg') !important;

@@ -852,44 +852,56 @@ $(document).ready(function () {
 //   });
 // });
 
-$(document).ready(function () {
-  $('.gallery-swiper__img').click(function(evt) {
-    imgOpen(this);
-  });
+// изображение в отдельном окне
+
+$().fancybox({
+    // selector : '.gallery-swiper__img',
+    loop: true,
+    animationEffect: "zoom-in-out",
+    buttons : [
+        'fullScreen',
+        'close'
+    ]
 });
 
+// $(document).ready(function () {
+//   $('.gallery-swiper__img').click(function(evt) {
+//     imgOpen(this);
+//   });
+// });
+
 // функция на открытие изображения в отдельном окне
-function imgOpen(imgClass) {
-  var imagePath = $(imgClass).attr('src');
-  $('body').append('<div class="huge-img"><img src="'+imagePath+'"></div>');
-  $('.overlay, .huge-img').fadeIn('active');
+// function imgOpen(imgClass) {
+//   var imagePath = $(imgClass).attr('src');
+//   $('body').append('<div class="huge-img"><img src="'+imagePath+'"></div>');
+//   $('.overlay, .huge-img').fadeIn('active');
 
-  // клик вне фото
-  $('body').on('click', '.overlay', function(evt) {
-    $('.overlay, .huge-img').fadeOut('active', function() {
-      $('.huge-img').remove();
-    });
-  });
+//   // клик вне фото
+//   $('body').on('click', '.overlay', function(evt) {
+//     $('.overlay, .huge-img').fadeOut('active', function() {
+//       $('.huge-img').remove();
+//     });
+//   });
 
-  // либо нажат esc
-  $(document).keydown(function(evt){
-    if (evt.which === 27) {
-      $('.overlay, .huge-img').fadeOut('active', function() {
-        $('.huge-img').remove();
-      });
-    };
-  });
+//   // либо нажат esc
+//   $(document).keydown(function(evt){
+//     if (evt.which === 27) {
+//       $('.overlay, .huge-img').fadeOut('active', function() {
+//         $('.huge-img').remove();
+//       });
+//     };
+//   });
 
-  // клик на мобильном устройстве
-  $(document).on('touchstart', function (evt) {
-    var imgBlock = $(".huge-img");
-    if (!imgBlock.is(evt.target) && imgBlock.has(evt.target).length === 0) {
-      $('.overlay, .huge-img').fadeOut('active', function() {
-        $('.huge-img').remove();
-      });
-    }
-  });
-};
+//   // клик на мобильном устройстве
+//   $(document).on('touchstart', function (evt) {
+//     var imgBlock = $(".huge-img");
+//     if (!imgBlock.is(evt.target) && imgBlock.has(evt.target).length === 0) {
+//       $('.overlay, .huge-img').fadeOut('active', function() {
+//         $('.huge-img').remove();
+//       });
+//     }
+//   });
+// };
 
 // модальные окна
 $(document).ready(function () {

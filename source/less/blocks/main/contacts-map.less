@@ -92,10 +92,14 @@
 }
 
 .contacts-map__filter-options {
+  position: relative;
   width: @d391px;
   border-radius: 28px;
   &--tariffs {
     width: @d377px;
+    .contacts-map__filter-list {
+      width: @d377px;
+    }
   }
 }
 
@@ -115,8 +119,11 @@
 
 .contacts-map__filter-list {
   display: none;
+  position: absolute;
+  z-index: 20;
   box-sizing: border-box;
 
+  width: @d391px;
   margin-top: @d20px;
   padding-top: @d12px;
   .padding-inline (@d35px);
@@ -492,10 +499,16 @@
     border-radius: 38px;
     &--tariffs {
       width: @a;
+      .contacts-map__filter-list {
+        width: 100%;
+      }
     }
   }
 
   .contacts-map__filter-list {
+    // top: @m110px;
+    width: 100%;
+    margin-top: 0;
     margin-bottom: @m48px;
     padding-top: @m30px;
     .padding-inline (@m50px);
@@ -737,10 +750,14 @@
     border-radius: 28px;
     &--tariffs {
       width: 377px;
+      .contacts-map__filter-list {
+        width: 377px;
+      }
     }
   }
 
   .contacts-map__filter-list {
+    width: 391px;
     margin-top: 20px;
     padding-top: 12px;
     .padding-inline (35px);

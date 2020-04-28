@@ -35,6 +35,14 @@ body {
   background-color: #fcfcfd;
 }
 
+.img-desktop {
+  display: block;
+}
+
+.img-mobile {
+  display: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -338,6 +346,14 @@ input[type="radio"].visually-hidden {
 }
 
 @media (max-width: @mobile-width) {
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
+  
   .container,
   .container-out-right {
     width: auto;

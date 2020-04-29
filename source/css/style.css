@@ -3502,7 +3502,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
-  width: 15.625vw;
+  width: 23.958vw;
   height: 3.125vw;
   margin-left: auto;
   margin-right: auto;
@@ -3510,9 +3510,49 @@ input[type="radio"].visually-hidden {
 .rehab-swiper--two-row .swiper-pagination {
   display: -webkit-box;
   display: flex;
-  width: 100%;
   -webkit-box-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
+}
+.rehab-swiper--two-row .rehab-swiper__pagination-wrapper .swiper-button-prev,
+.rehab-swiper--two-row .rehab-swiper__pagination-wrapper .swiper-button-next {
+  position: static;
+  top: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.rehab-swiper--two-row .rehab-swiper__pagination-wrapper .swiper-button-prev::after,
+.rehab-swiper--two-row .rehab-swiper__pagination-wrapper .swiper-button-next::after {
+  font-size: 1.0416vw;
+}
+.rehab-swiper--two-row .rehab-swiper__caption {
+  display: -webkit-box;
+  display: flex;
+}
+.rehab-swiper--two-row .rehab-swiper__caption li {
+  position: relative;
+  margin-left: 1.0416vw;
+  margin-right: 1.0416vw;
+  font-size: 1.1979vw;
+  opacity: 0.2;
+}
+.rehab-swiper--two-row .rehab-swiper__caption .active {
+  color: #fff;
+  opacity: 1;
+}
+.rehab-swiper--two-row .rehab-swiper__caption .active::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 2.7083vw;
+  height: 2.7604vw;
+  background-color: #14b250;
+  border-radius: 50%;
+  opacity: 1;
 }
 .rehab-swiper--two-row .swiper-pagination-bullet {
   width: auto;
@@ -3544,6 +3584,20 @@ input[type="radio"].visually-hidden {
 .two-slides {
   box-shadow: none;
   overflow: visible;
+}
+.not-swiper .swiper-container {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: none;
+}
+.not-swiper .rehab-swiper__slide {
+  width: 20vw;
+  margin-right: 1.4583vw;
+  margin-bottom: 1.5625vw;
+}
+.not-swiper .rehab-swiper__slide:nth-child(4n) {
+  margin-right: 0;
 }
 @media (max-width: 755px) {
   .arrow-container {
@@ -3644,6 +3698,11 @@ input[type="radio"].visually-hidden {
   }
   .rehab-swiper--two-row .rehab-swiper__pagination-wrapper {
     display: none;
+  }
+  .not-swiper .rehab-swiper__slide {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 13.3vw;
   }
 }
 @media (min-width: 1921px) {
@@ -3757,8 +3816,17 @@ input[type="radio"].visually-hidden {
     margin-left: auto;
     margin-right: auto;
   }
+  .rehab-swiper--two-row .rehab-swiper__caption li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 23px;
+  }
+  .rehab-swiper--two-row .rehab-swiper__caption .active::before {
+    width: 52px;
+    height: 53px;
+  }
   .rehab-swiper--two-row .pagination {
-    width: 300px;
+    width: 460px;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -3769,6 +3837,15 @@ input[type="radio"].visually-hidden {
   .rehab-swiper--two-row .swiper-pagination-bullet-active::before {
     width: 52px;
     height: 53px;
+  }
+  .rehab-swiper__pagination-wrapper .swiper-button-prev::after,
+  .rehab-swiper__pagination-wrapper .swiper-button-next::after {
+    font-size: 20px;
+  }
+  .not-swiper .rehab-swiper__slide {
+    width: 384px;
+    margin-right: 28px;
+    margin-bottom: 30px;
   }
 }
 .rehab-swiper .swiper-slide {
@@ -11333,6 +11410,8 @@ a.article-author__link {
   position: absolute;
   z-index: 20;
   box-sizing: border-box;
+  max-height: 11.667vw;
+  overflow-y: scroll;
   width: 20.365vw;
   margin-top: 1.0416vw;
   padding-top: 0.625vw;
@@ -11653,6 +11732,7 @@ a.article-author__link {
     width: 100%;
   }
   .contacts-map__filter-list {
+    max-height: 224px;
     width: 100%;
     margin-top: 0;
     margin-bottom: 6.4vw;
@@ -11881,6 +11961,7 @@ a.article-author__link {
   }
   .contacts-map__filter-list {
     width: 391px;
+    max-height: 224px;
     margin-top: 20px;
     padding-top: 12px;
     padding-left: 35px;

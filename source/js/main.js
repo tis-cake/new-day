@@ -752,73 +752,73 @@ $(document).ready(function () {
 // });
 
 // слайдер центров в 2 ряда
-$(document).ready(function () {
-  var mySwiper = new Swiper('#center-swiper-row-first', {
-    slidesPerView: '1.5',
-    centeredSlides: true,
-    speed: 3000,
-    spaceBetween: 25,
-    touchRatio: 1,
-    // loop: true,
-    freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
-    navigation: {
-      nextEl: '.swiper-button-next--center',
-      prevEl: '.swiper-button-prev--center',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-    breakpoints: {
-      756: {
-        slidesPerView: '4',
-        spaceBetween: 30,
-        centeredSlides: false,
-        loop: false
-      }
-    }
-  });
+// $(document).ready(function () {
+//   var mySwiper = new Swiper('#center-swiper-row-first', {
+//     slidesPerView: '1.5',
+//     centeredSlides: true,
+//     speed: 3000,
+//     spaceBetween: 25,
+//     touchRatio: 1,
+//     // loop: true,
+//     freeMode: true,
+//     // autoplay: {
+//     //   delay: 3000,
+//     //   disableOnInteraction: false,
+//     // },
+//     navigation: {
+//       nextEl: '.swiper-button-next--center',
+//       prevEl: '.swiper-button-prev--center',
+//     },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//       renderBullet: function (index, className) {
+//         return '<span class="' + className + '">' + (index + 1) + '</span>';
+//       }
+//     },
+//     breakpoints: {
+//       756: {
+//         slidesPerView: '4',
+//         spaceBetween: 30,
+//         centeredSlides: false,
+//         loop: false
+//       }
+//     }
+//   });
 
-  var mySwiper = new Swiper('#center-swiper-row-second', {
-    slidesPerView: '1.5',
-    centeredSlides: true,
-    speed: 3000,
-    spaceBetween: 25,
-    touchRatio: 1,
-    // loop: true,
-    freeMode: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
-    navigation: {
-      nextEl: '.swiper-button-next--center',
-      prevEl: '.swiper-button-prev--center',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-    breakpoints: {
-      756: {
-        slidesPerView: '4',
-        spaceBetween: 30,
-        centeredSlides: false,
-        loop: false
-      }
-    }
-  });
-});
+//   var mySwiper = new Swiper('#center-swiper-row-second', {
+//     slidesPerView: '1.5',
+//     centeredSlides: true,
+//     speed: 3000,
+//     spaceBetween: 25,
+//     touchRatio: 1,
+//     // loop: true,
+//     freeMode: true,
+//     // autoplay: {
+//     //   delay: 3000,
+//     //   disableOnInteraction: false,
+//     // },
+//     navigation: {
+//       nextEl: '.swiper-button-next--center',
+//       prevEl: '.swiper-button-prev--center',
+//     },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//       renderBullet: function (index, className) {
+//         return '<span class="' + className + '">' + (index + 1) + '</span>';
+//       }
+//     },
+//     breakpoints: {
+//       756: {
+//         slidesPerView: '4',
+//         spaceBetween: 30,
+//         centeredSlides: false,
+//         loop: false
+//       }
+//     }
+//   });
+// });
 
 // [clinic-page]
 // слайдер документов

@@ -253,15 +253,60 @@
     justify-content: space-between;
     align-items: center;
 
-    width: @d300px;
+    width: @d460px;
     height: @d60px;
     .margin-inline(@a);
   }
 
   .swiper-pagination {
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .rehab-swiper__pagination-wrapper {
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      position: static;
+      top: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    & .swiper-button-prev::after,
+    & .swiper-button-next::after {
+      font-size: @d20px;
+    }
+  }
+
+  .rehab-swiper__caption {
+    display: flex;
+    & li {
+      position: relative;
+      .margin-inline(@d20px);
+      font-size: @d23px;
+      opacity: .2;
+    }
+
+    & .active {
+      color: #fff;
+      opacity: 1;
+    }
+
+    & .active::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -50%;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+      transform: translate(-50%);
+      width: @d52px;
+      height: @d53px;
+      background-color: #14b250;
+      border-radius: 50%;
+      opacity: 1;
+    }
   }
 
   .swiper-pagination-bullet {
@@ -300,6 +345,22 @@
 .two-slides {
   box-shadow: none;
   overflow: visible;
+}
+
+.not-swiper {
+  .swiper-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: none;
+  }
+  .rehab-swiper__slide {
+    width: @d384px;
+    margin-right: @d28px;
+    margin-bottom: @d30px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -431,6 +492,14 @@
     }
     .rehab-swiper__pagination-wrapper {
       display: none;
+    }
+  }
+
+  .not-swiper {
+    .rehab-swiper__slide {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: @m100px;
     }
   }
 }
@@ -569,8 +638,21 @@
     //   }
     // }
 
+    .rehab-swiper__caption {
+      & li {
+        .margin-inline(20px);
+        font-size: 23px;
+      }
+
+      & .active::before {
+        width: 52px;
+        height: 53px;
+      }
+    }
+
     .pagination {
-      width: 300px;
+      // width: 300px;
+      width: 460px;
       height: 60px;
       .margin-inline(@a);
     }
@@ -585,6 +667,22 @@
       }
     }
   }
+
+  .rehab-swiper__pagination-wrapper {
+    & .swiper-button-prev::after,
+    & .swiper-button-next::after {
+      font-size: 20px;
+    }
+  }
+
+  .not-swiper {
+    .rehab-swiper__slide {
+      width: 384px;
+      margin-right: 28px;
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 // при переполнении на десктопе

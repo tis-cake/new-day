@@ -736,20 +736,25 @@ $(document).ready(function () {
 });
 
 // фильтр стоимости
-// $(document).ready(function () {
-//   $("#filter-range").slider({
-//       range: true,
-//       min: 0,
-//       max: 100000,
-//       values: [ 10000, 30000 ],
-//       slide: function( event, ui ) {
-//         $( "#range-toggle-min" ).val(ui.values[ 0 ] + " ₽");
-//         $( "#range-toggle-max" ).val(ui.values[ 1 ] + " ₽");
-//       }
-//     });
-//     $( "#range-toggle-min" ).val($( "#filter-range" ).slider( "values", 0 ) + " ₽");
-//     $( "#range-toggle-max" ).val($( "#filter-range" ).slider( "values", 1 ) + " ₽");
-// });
+$(document).ready(function () {
+  $("#filter-range").slider({
+      range: true,
+      min: 0,
+      max: 100000,
+      values: [ 10000, 30000 ],
+      slide: function( event, ui ) {
+        $( "#range-toggle-min" ).val(ui.values[ 0 ] + " ₽");
+        $( "#range-toggle-max" ).val(ui.values[ 1 ] + " ₽");
+      }
+    });
+    $( "#range-toggle-min" ).val($( "#filter-range" ).slider( "values", 0 ) + " ₽");
+    $( "#range-toggle-max" ).val($( "#filter-range" ).slider( "values", 1 ) + " ₽");
+
+
+    $( "#range-toggle-min" ).mousemove(function()  {
+      console.log($( "#filter-range" ).slider( "values", 0));
+    });
+});
 
 // слайдер центров в 2 ряда
 // $(document).ready(function () {

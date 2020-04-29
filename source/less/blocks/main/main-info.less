@@ -82,7 +82,8 @@
   }
 }
 
-.main-info__description {
+.main-info__description,
+.main-info__price {
   max-width: 617px;
   width: @d617px;
   margin-bottom: @d4px;
@@ -150,6 +151,47 @@
   }
 }
 
+.main-info__price {
+  margin-top: @d35px;
+  margin-bottom: @d40px;
+  span {
+    display: block;
+    margin-top: @d10px;
+    font-weight: 700;
+    font-size: @d27px;
+    color: #2f2f2f;
+  }
+}
+
+.main-info__benefits-list {
+  display: flex;
+
+  font-size: @d19px;
+  color: #2f2f2f;
+}
+
+.main-info__benefits-item {
+  margin-left: @d30px;
+  margin-right: @d24px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: @d3px;
+    left: -@d27px;
+
+    width: @d16px;
+    height: @d6px;
+
+    border: @d2px solid #5a5a5a;
+    border-color: #14b250;
+    border-top-style: none;
+    border-right-style: none;
+
+    transform: rotate(-45deg);
+  }
+}
+
 .main-info--contacts {
   .container {
     padding-top: @d180px;
@@ -193,47 +235,70 @@
 }
 
 .main-info--rehab-page {
+  .container {
+    padding-top: 0;
+    border-radius: 30px;
+    box-shadow: 20.065px 18.067px 55.2px 4.8px rgba(5, 9, 48, 0.07);
+  }
+
   max-height: none;
   height: @a;
 
+  margin-top: @d65px;
+  .main-info__bg-img {
+    position: static;
+    border-radius: 0 30px 30px 0;
+  }
+
+  .main-info__img-wrapper {
+    width: @d794px;
+    // height: 554px;
+  }
+
+  .main-info__img {
+    border-radius: 0 30px 30px 0;
+  }
+
   .main-info__content-wrapper {
-    padding-top: @d125px;
+    box-sizing: border-box;
+    width: @d700px;
+    padding-top: @d70px;
+    padding-left: @d80px;
   }
 
   .main-info__subtitle {
-    margin-bottom: @d12px;
+    margin-bottom: @d20px;
     color: #747474;
 
     font-size: @d22px;
     letter-spacing: 0.11px;
   }
 
-  .main-info__title,
-  .main-info__description {
+  .main-info__title {
+    max-width: none;
+    width: auto;
     color: #2f2f2f;
   }
 
+  .main-info__description,
+  .main-info__price {
+    color: #747474;
+  }
+
   .main-info__title {
+    margin-bottom: 0;
     font-size: @d50px;
   }
-}
 
-.main-info--rehab-page {
-  .main-info__bg-img {
-    position: static;
-    border-radius: 0 0 0px 10px;
+  .main-info__callback {
+    width: @d284px;
+    height: @d65px;
+    margin-bottom: 0;
+    font-size: @d16px;
   }
 }
 
 @media (max-width: @mobile-width) {
-
-  .main-info--rehab-page {
-    .main-info__bg-img {
-      position: static;
-      border-radius: 10px;
-    }
-  }
-
   .main-info {
     .mn();
     height: 103.33vw; //775px
@@ -332,10 +397,14 @@
   }
 
   .main-info__description {
+    margin-bottom: @m50px;
+  }
+
+  .main-info__description,
+  .main-info__price {
     display: block;
     max-width: none;
     width: @m632px;
-    margin-bottom: @m50px;
 
     font-size: @m30px;
     line-height: @m38px;
@@ -391,6 +460,37 @@
       left: -@m52px;
       width: @m34px;
       height: @m44px;
+    }
+  }
+
+
+  .main-info__price {
+    margin-top: 0;
+    margin-bottom: @m40px;
+    span {
+      margin-top: @m10px;
+      font-size: @m27px;
+    }
+  }
+
+  .main-info__benefits-list {
+    flex-direction: column;
+    font-size: @m30px;
+  }
+
+  .main-info__benefits-item {
+    margin-bottom: @m20px;
+    margin-left: @m30px;
+    margin-right: 0;
+    &::before {
+      top: @m10px;
+      left: -@m27px;
+      width: @m16px;
+      height: @m6px;
+      border: 2px solid #5a5a5a;
+      border-color: #14b250;
+      border-top-style: none;
+      border-right-style: none;
     }
   }
 
@@ -471,16 +571,31 @@
   }
 
   .main-info--rehab-page {
+    padding-top: @m300px;
     height: @a;
+    .container {
+      padding-top: 0;
+      .padding-inline(0);
+      .margin-inline(@m35px);
+    }
+    .main-info__img {
+      border-radius: 30px 30px 0px 0;
+    }
+    .main-info__main-wrapper {
+      flex-direction: column-reverse;
+    }
     .main-info__content-wrapper {
-      margin-bottom: @m100px;
+      width: auto;
+      margin-bottom: @m75px;
       padding-top: @m90px;
+      .padding-inline(@m30px);
     }
     .main-info__subtitle {
       margin-bottom: @m25px;
       font-size: @m30px;
     }
     .main-info__title {
+      margin-bottom: @m20px;
       font-size: @m60px;
       & span {
         display: block;
@@ -488,6 +603,20 @@
     }
     .main-info__description {
       margin-bottom: 0;
+    }
+    .main-info__bg-img {
+      position: static;
+      border-radius: 30px 30px 0 0;
+    }
+    .main-info__img-wrapper {
+      width: 100%;
+      height: @m557px;
+
+    }
+    .main-info__callback {
+      width: @m470px;
+      height: @m75px;
+      font-size: @m27px;
     }
   }
 }
@@ -522,7 +651,8 @@
     line-height: 65px;
   }
 
-  .main-info__description {
+  .main-info__description,
+  .main-info__price {
     margin-bottom: 4px;
     font-size: 20px;
     line-height: 30px;
@@ -553,6 +683,36 @@
       left: -41px;
       width: 26px;
       height: 33px;
+    }
+  }
+
+  .main-info__price {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    span {
+      margin-top: 10px;
+      font-size: 27px;
+    }
+  }
+
+  .main-info__benefits-list {
+    font-size: 19px;
+  }
+
+  .main-info__benefits-item {
+    margin-left: 30px;
+    margin-right: 24px;
+    &::before {
+      top: 3px;
+      left: -27px;
+
+      width: 16px;
+      height: 6px;
+
+      border: 2px solid #5a5a5a;
+      border-color: #14b250;
+      border-top-style: none;
+      border-right-style: none;
     }
   }
 
@@ -592,15 +752,36 @@
   }
 
   .main-info--rehab-page {
-    .main-info__content-wrapper {
-      padding-top: 125px;
+    margin-top: 65px;
+    .container {
+      padding-top: 0;
     }
+
+    .main-info__img-wrapper {
+      width: 794px;
+      // height: 554px;
+    }
+
+    .main-info__content-wrapper {
+      width: 700px;
+      padding-top: 70px;
+      padding-left: 80px;
+    }
+
     .main-info__subtitle {
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       font-size: 22px;
     }
+
     .main-info__title {
       font-size: 50px;
+    }
+
+    .main-info__callback {
+      width: 284px;
+      height: 65px;
+      margin-bottom: 0;
+      font-size: 16px;
     }
   }
 }

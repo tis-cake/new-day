@@ -2008,7 +2008,8 @@ input[type="radio"].visually-hidden {
     width: 40.54vw;
   }
 }
-.main-info__description {
+.main-info__description,
+.main-info__price {
   max-width: 617px;
   width: 32.135vw;
   margin-bottom: 0.20833vw;
@@ -2061,6 +2062,42 @@ input[type="radio"].visually-hidden {
   background-position: center;
   background-size: cover;
 }
+.main-info__price {
+  margin-top: 1.8229vw;
+  margin-bottom: 2.0833vw;
+}
+.main-info__price span {
+  display: block;
+  margin-top: 0.5208vw;
+  font-weight: 700;
+  font-size: 1.4062vw;
+  color: #2f2f2f;
+}
+.main-info__benefits-list {
+  display: -webkit-box;
+  display: flex;
+  font-size: 0.9895vw;
+  color: #2f2f2f;
+}
+.main-info__benefits-item {
+  margin-left: 1.5625vw;
+  margin-right: 1.25vw;
+  position: relative;
+}
+.main-info__benefits-item::before {
+  content: '';
+  position: absolute;
+  top: 0.15625vw;
+  left: -1.4062vw;
+  width: 0.8333vw;
+  height: 0.3125vw;
+  border: 0.10416vw solid #5a5a5a;
+  border-color: #14b250;
+  border-top-style: none;
+  border-right-style: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 .main-info--contacts .container {
   padding-top: 9.375vw;
 }
@@ -2098,32 +2135,55 @@ input[type="radio"].visually-hidden {
 .main-info--rehab-page {
   max-height: none;
   height: auto;
+  margin-top: 3.3854vw;
+}
+.main-info--rehab-page .container {
+  padding-top: 0;
+  border-radius: 30px;
+  box-shadow: 20.065px 18.067px 55.2px 4.8px rgba(5, 9, 48, 0.07);
+}
+.main-info--rehab-page .main-info__bg-img {
+  position: static;
+  border-radius: 0 30px 30px 0;
+}
+.main-info--rehab-page .main-info__img-wrapper {
+  width: 41.354vw;
+}
+.main-info--rehab-page .main-info__img {
+  border-radius: 0 30px 30px 0;
 }
 .main-info--rehab-page .main-info__content-wrapper {
-  padding-top: 6.51vw;
+  box-sizing: border-box;
+  width: 36.458vw;
+  padding-top: 3.6458vw;
+  padding-left: 4.1666vw;
 }
 .main-info--rehab-page .main-info__subtitle {
-  margin-bottom: 0.625vw;
+  margin-bottom: 1.0416vw;
   color: #747474;
   font-size: 1.1458vw;
   letter-spacing: 0.11px;
 }
-.main-info--rehab-page .main-info__title,
-.main-info--rehab-page .main-info__description {
+.main-info--rehab-page .main-info__title {
+  max-width: none;
+  width: auto;
   color: #2f2f2f;
 }
+.main-info--rehab-page .main-info__description,
+.main-info--rehab-page .main-info__price {
+  color: #747474;
+}
 .main-info--rehab-page .main-info__title {
+  margin-bottom: 0;
   font-size: 2.6041vw;
 }
-.main-info--rehab-page .main-info__bg-img {
-  position: static;
-  border-radius: 0 0 0px 10px;
+.main-info--rehab-page .main-info__callback {
+  width: 14.792vw;
+  height: 3.3854vw;
+  margin-bottom: 0;
+  font-size: 0.8333vw;
 }
 @media (max-width: 755px) {
-  .main-info--rehab-page .main-info__bg-img {
-    position: static;
-    border-radius: 10px;
-  }
   .main-info {
     max-width: none;
     max-height: none;
@@ -2205,10 +2265,13 @@ input[type="radio"].visually-hidden {
     line-height: 7.6vw;
   }
   .main-info__description {
+    margin-bottom: 6.666vw;
+  }
+  .main-info__description,
+  .main-info__price {
     display: block;
     max-width: none;
     width: 84.267vw;
-    margin-bottom: 6.666vw;
     font-size: 4vw;
     line-height: 5.066vw;
   }
@@ -2254,6 +2317,35 @@ input[type="radio"].visually-hidden {
     left: -6.933vw;
     width: 4.533vw;
     height: 5.866vw;
+  }
+  .main-info__price {
+    margin-top: 0;
+    margin-bottom: 5.333vw;
+  }
+  .main-info__price span {
+    margin-top: 1.33vw;
+    font-size: 3.599vw;
+  }
+  .main-info__benefits-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    font-size: 4vw;
+  }
+  .main-info__benefits-item {
+    margin-bottom: 2.666vw;
+    margin-left: 4vw;
+    margin-right: 0;
+  }
+  .main-info__benefits-item::before {
+    top: 1.33vw;
+    left: -3.599vw;
+    width: 2.13vw;
+    height: 0.8vw;
+    border: 2px solid #5a5a5a;
+    border-color: #14b250;
+    border-top-style: none;
+    border-right-style: none;
   }
   .main-info--reviews .container {
     padding-top: 25.6vw;
@@ -2321,17 +2413,37 @@ input[type="radio"].visually-hidden {
     margin-top: 13.733vw;
   }
   .main-info--rehab-page {
+    padding-top: 40vw;
     height: auto;
   }
+  .main-info--rehab-page .container {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 4.666vw;
+    margin-right: 4.666vw;
+  }
+  .main-info--rehab-page .main-info__img {
+    border-radius: 30px 30px 0px 0;
+  }
+  .main-info--rehab-page .main-info__main-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
   .main-info--rehab-page .main-info__content-wrapper {
-    margin-bottom: 13.3vw;
+    width: auto;
+    margin-bottom: 10vw;
     padding-top: 12vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
   .main-info--rehab-page .main-info__subtitle {
     margin-bottom: 3.333vw;
     font-size: 4vw;
   }
   .main-info--rehab-page .main-info__title {
+    margin-bottom: 2.666vw;
     font-size: 8vw;
   }
   .main-info--rehab-page .main-info__title span {
@@ -2339,6 +2451,19 @@ input[type="radio"].visually-hidden {
   }
   .main-info--rehab-page .main-info__description {
     margin-bottom: 0;
+  }
+  .main-info--rehab-page .main-info__bg-img {
+    position: static;
+    border-radius: 30px 30px 0 0;
+  }
+  .main-info--rehab-page .main-info__img-wrapper {
+    width: 100%;
+    height: 74.267vw;
+  }
+  .main-info--rehab-page .main-info__callback {
+    width: 62.667vw;
+    height: 10vw;
+    font-size: 3.599vw;
   }
 }
 @media (min-width: 1921px) {
@@ -2365,7 +2490,8 @@ input[type="radio"].visually-hidden {
     font-size: 60px;
     line-height: 65px;
   }
-  .main-info__description {
+  .main-info__description,
+  .main-info__price {
     margin-bottom: 4px;
     font-size: 20px;
     line-height: 30px;
@@ -2392,6 +2518,31 @@ input[type="radio"].visually-hidden {
     left: -41px;
     width: 26px;
     height: 33px;
+  }
+  .main-info__price {
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+  .main-info__price span {
+    margin-top: 10px;
+    font-size: 27px;
+  }
+  .main-info__benefits-list {
+    font-size: 19px;
+  }
+  .main-info__benefits-item {
+    margin-left: 30px;
+    margin-right: 24px;
+  }
+  .main-info__benefits-item::before {
+    top: 3px;
+    left: -27px;
+    width: 16px;
+    height: 6px;
+    border: 2px solid #5a5a5a;
+    border-color: #14b250;
+    border-top-style: none;
+    border-right-style: none;
   }
   .main-info--contacts .container {
     padding-top: 180px;
@@ -2420,15 +2571,32 @@ input[type="radio"].visually-hidden {
     max-width: none;
     width: 630px;
   }
+  .main-info--rehab-page {
+    margin-top: 65px;
+  }
+  .main-info--rehab-page .container {
+    padding-top: 0;
+  }
+  .main-info--rehab-page .main-info__img-wrapper {
+    width: 794px;
+  }
   .main-info--rehab-page .main-info__content-wrapper {
-    padding-top: 125px;
+    width: 700px;
+    padding-top: 70px;
+    padding-left: 80px;
   }
   .main-info--rehab-page .main-info__subtitle {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     font-size: 22px;
   }
   .main-info--rehab-page .main-info__title {
     font-size: 50px;
+  }
+  .main-info--rehab-page .main-info__callback {
+    width: 284px;
+    height: 65px;
+    margin-bottom: 0;
+    font-size: 16px;
   }
 }
 .about {
@@ -11298,7 +11466,7 @@ a.article-author__link {
   }
 }
 .contacts-map {
-  margin-bottom: 6.25vw;
+  margin-bottom: 3.3854vw;
 }
 .contacts-map__title {
   margin-bottom: 2.0833vw;
@@ -11321,12 +11489,12 @@ a.article-author__link {
   -webkit-box-pack: justify;
           justify-content: space-between;
   margin-bottom: 3.3854vw;
-  padding-top: 3.3854vw;
+  padding-top: 2.0312vw;
   padding-left: 3.125vw;
   padding-right: 3.125vw;
-  padding-bottom: 3.3854vw;
+  padding-bottom: 2.0312vw;
   box-shadow: 0 0 75px 7px rgba(5, 9, 48, 0.04);
-  border-radius: 28px;
+  border-radius: 74px;
 }
 .contacts-map__filter-handler {
   position: relative;
@@ -11912,7 +12080,7 @@ a.article-author__link {
 }
 @media (min-width: 1921px) {
   .contacts-map {
-    margin-bottom: 120px;
+    margin-bottom: 65px;
   }
   .contacts-map__title {
     margin-bottom: 40px;
@@ -11926,10 +12094,10 @@ a.article-author__link {
   }
   .contacts-map__filter-container {
     margin-bottom: 65px;
-    padding-top: 65px;
+    padding-top: 39px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 65px;
+    padding-bottom: 39px;
   }
   .contacts-map__filter-handler {
     height: 74px;

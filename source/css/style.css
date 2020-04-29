@@ -203,8 +203,8 @@ input[type="radio"].visually-hidden {
 }
 .logo:hover,
 .header .nav-info__link:not(.nav-info__link--callback):hover,
-.header .main-nav__link:hover,
 .intro__link:hover,
+.main-nav__sub-link:hover,
 .main-info__contact-link:hover,
 .rehab-swiper__slide .rehab-swiper__text-wrapper:hover,
 .swiper-pagination-bullet:hover,
@@ -230,8 +230,8 @@ input[type="radio"].visually-hidden {
 .footer__number-link:hover,
 .logo:focus,
 .header .nav-info__link:not(.nav-info__link--callback):focus,
-.header .main-nav__link:focus,
 .intro__link:focus,
+.main-nav__sub-link:focus,
 .main-info__contact-link:focus,
 .rehab-swiper__slide .rehab-swiper__text-wrapper:focus,
 .swiper-pagination-bullet:focus,
@@ -263,8 +263,8 @@ input[type="radio"].visually-hidden {
 }
 .logo:active,
 .header .nav-info__link:not(.nav-info__link--callback):active,
-.header .main-nav__link:active,
 .intro__link:active,
+.main-nav__sub-link:active,
 .main-info__contact-link:active,
 .rehab-swiper__slide .rehab-swiper__text-wrapper:active,
 .swiper-pagination-bullet:active,
@@ -432,8 +432,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 1.0416vw;
 }
 .header__desktop-bottom {
-  padding-top: 1.5625vw;
-  padding-bottom: 1.5625vw;
   background-color: #f8f8f8;
 }
 .header__consultation-phone {
@@ -767,10 +765,6 @@ input[type="radio"].visually-hidden {
   .header__desktop-top {
     padding-bottom: 20px;
   }
-  .header__desktop-bottom {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
   .index-bg {
     min-height: 0;
     height: 950px;
@@ -924,34 +918,56 @@ input[type="radio"].visually-hidden {
 .main-nav__item:focus > .main-nav__sub-list {
   display: block;
 }
+.main-nav__item::before {
+  position: absolute;
+  content: '';
+  bottom: 21px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.main-nav__item:hover::before,
+.main-nav__item:focus::before {
+  background-color: #2f2f2f;
+}
+.index .main-nav__item:hover::before,
+.index .main-nav__item:focus::before {
+  background-color: #fff;
+}
+.index .main-nav__sub-list {
+  background-color: #00578a;
+}
 .main-nav__link {
+  display: block;
+  padding-top: 1.5625vw;
+  padding-bottom: 1.5625vw;
   color: #2f2f2f;
   text-decoration: none;
 }
 .main-nav__sub-list {
   box-sizing: border-box;
-  position: absolute;
   display: none;
+  position: absolute;
+  top: 4.2708vw;
+  width: 18.75vw;
+  z-index: 30;
+  padding-top: 1.4583vw;
+  padding-left: 1.8229vw;
+  padding-right: 1.8229vw;
+  padding-bottom: 1.4583vw;
+  font-size: 0.9375vw;
   border-radius: 15px;
-  background-color: #00578a;
   box-shadow: 16.038px 8.172px 26.6px 11.4px rgba(2, 7, 32, 0.04);
-  width: 360px;
-  z-index: 530;
-  margin-top: 22px;
-  padding-top: 28px;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 28px;
-  font-size: 18px;
+  background-color: #feffff;
 }
 .main-nav__sub-item {
-  margin-bottom: 14px;
+  margin-bottom: 0.7291vw;
 }
 .main-nav__sub-item:last-child {
   margin-bottom: 0;
 }
 .main-nav__sub-link {
-  display: inline-block;
+  display: block;
   color: inherit;
 }
 @media (max-width: 755px) {
@@ -968,18 +984,56 @@ input[type="radio"].visually-hidden {
     padding-top: 6.4vw;
   }
   .main-nav__item {
-    padding-bottom: 7.066vw;
+    width: 100%;
+    margin-bottom: 7.066vw;
+  }
+  .main-nav__item:hover > .main-nav__sub-list,
+  .main-nav__item:focus > .main-nav__sub-list {
+    display: none;
   }
   .main-nav__link {
+    padding-top: 0px;
+    padding-bottom: 0px;
     color: #2f2f2f;
   }
   .main-nav__item:last-child {
     padding-bottom: 0;
   }
+  .main-nav__sub-list {
+    position: static;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    padding-left: 2.666vw;
+    font-size: inherit;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .main-nav__sub-item {
+    margin-top: 7.066vw;
+    margin-bottom: 7.066vw;
+  }
 }
 @media (min-width: 1921px) {
   .main-nav {
     font-size: 20px;
+  }
+  .main-nav__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main-nav__sub-list {
+    top: 82px;
+    width: 360px;
+    padding-top: 28px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 28px;
+    font-size: 18px;
+  }
+  .main-nav__sub-item {
+    margin-bottom: 14px;
   }
 }
 .menu-toggle {

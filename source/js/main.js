@@ -25,6 +25,18 @@ $(document).ready(function () {
   });
 });
 
+// подменю на мобильном
+$(document).ready(function () {
+  if (width <= 756) {
+    $('.main-nav-sub').click(function(evt) {
+      evt.preventDefault();
+      var currentSublist = $(this).closest('.main-nav__item').find('.main-nav__sub-list');
+      $('.main-nav__sub-list').not(currentSublist).slideUp();
+      currentSublist.slideToggle();
+    });
+  }
+});
+
 // появление нижнего блока меню
 $(document).ready(function () {
 

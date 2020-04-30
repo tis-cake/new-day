@@ -221,9 +221,9 @@
     width: @d506px;
   }
   .tariffs__header {
-    height: @d216px;
+    height: @d245px;
     &::before {
-      height: @d205px;
+      height: @d225px;
       background-image: url('../img/tariffs/bg-green-big-full.png');
     }
   }
@@ -238,6 +238,7 @@
     .padding-inline(@d55px);
   }
   .tariffs__main {
+    margin-top: -@d15px;
     margin-bottom: @d31px;
     padding-left: @d60px;
     padding-right: @d40px;
@@ -384,6 +385,7 @@
 
   .tariffs--contacts {
     .tariffs__main {
+      margin-top: 0;
       padding-bottom: @m20px;
     }
   }
@@ -501,9 +503,12 @@
       width: 506px;
     }
     .tariffs__header {
-      height: 216px;
+      height: 245px;
+      // height: 216px;
       &::before {
-        height: 205px;
+        // height: 225px;
+        height: 225px;
+        // height: 205px;
       }
     }
     .tariffs__icon {
@@ -517,6 +522,7 @@
       .padding-inline(55px);
     }
     .tariffs__main {
+      margin-top: -15px;
       margin-bottom: 31px;
       padding-left: 60px;
       padding-right: 40px;

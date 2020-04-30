@@ -1,5 +1,8 @@
 .banners {
   margin-bottom: @d220px;
+  &--mt {
+    margin-top: @d90px;
+  }
 }
 
 .banners__list {
@@ -79,6 +82,10 @@
 
 .banners__content-wrapper .banners__subtitle--brown {
   color: #b89c88;
+}
+
+.banners__content-wrapper .banners__subtitle--gray {
+  color: #979e9d;
 }
 
 .banners__title,
@@ -259,6 +266,9 @@
 @media (min-width: @max-desktop-width) {
   .banners {
     margin-bottom: 220px;
+    &--mt {
+      margin-top: 90px;
+    }
   }
 
   .banners__content-wrapper {

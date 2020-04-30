@@ -1611,9 +1611,6 @@ input[type="radio"].visually-hidden {
   width: 44.792vw;
   margin-bottom: 3.6979vw;
 }
-.intro--contraindications .intro__title {
-  margin-bottom: 0.8854vw;
-}
 .intro--master-swiper {
   width: 44.792vw;
   margin-bottom: 3.6458vw;
@@ -1953,9 +1950,6 @@ input[type="radio"].visually-hidden {
   .intro--contraindications {
     width: 860px;
     margin-bottom: 71px;
-  }
-  .intro--contraindications .intro__title {
-    margin-bottom: 17px;
   }
   .intro--master-swiper {
     width: 950px;
@@ -3866,7 +3860,7 @@ input[type="radio"].visually-hidden {
 }
 .not-swiper .rehab-swiper__slide {
   width: 20vw;
-  margin-right: 1.4583vw;
+  margin-right: 1.302vw;
   margin-bottom: 1.5625vw;
 }
 .not-swiper .rehab-swiper__slide:nth-child(4n) {
@@ -4119,7 +4113,7 @@ input[type="radio"].visually-hidden {
   }
   .not-swiper .rehab-swiper__slide {
     width: 384px;
-    margin-right: 28px;
+    margin-right: 25px;
     margin-bottom: 30px;
   }
 }
@@ -5006,6 +5000,9 @@ input[type="radio"].visually-hidden {
 .banners {
   margin-bottom: 11.458vw;
 }
+.banners--mt {
+  margin-top: 4.6875vw;
+}
 .banners__list {
   display: -webkit-box;
   display: flex;
@@ -5073,6 +5070,9 @@ input[type="radio"].visually-hidden {
 }
 .banners__content-wrapper .banners__subtitle--brown {
   color: #b89c88;
+}
+.banners__content-wrapper .banners__subtitle--gray {
+  color: #979e9d;
 }
 .banners__title,
 .banners__content-wrapper p,
@@ -5224,6 +5224,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1921px) {
   .banners {
     margin-bottom: 220px;
+  }
+  .banners--mt {
+    margin-top: 90px;
   }
   .banners__content-wrapper {
     padding-top: 34px;
@@ -7780,10 +7783,10 @@ input[type="radio"].visually-hidden {
   width: 26.354vw;
 }
 .tariffs--contacts .tariffs__header {
-  height: 11.25vw;
+  height: 12.76vw;
 }
 .tariffs--contacts .tariffs__header::before {
-  height: 10.677vw;
+  height: 11.719vw;
   background-image: url('../img/tariffs/bg-green-big-full.png');
 }
 .tariffs--contacts .tariffs__icon {
@@ -7798,6 +7801,7 @@ input[type="radio"].visually-hidden {
   padding-right: 2.8645vw;
 }
 .tariffs--contacts .tariffs__main {
+  margin-top: -0.7812vw;
   margin-bottom: 1.6145vw;
   padding-left: 3.125vw;
   padding-right: 2.0833vw;
@@ -7931,6 +7935,7 @@ input[type="radio"].visually-hidden {
     height: 5.333vw;
   }
   .tariffs--contacts .tariffs__main {
+    margin-top: 0;
     padding-bottom: 2.666vw;
   }
 }
@@ -8030,10 +8035,10 @@ input[type="radio"].visually-hidden {
     width: 506px;
   }
   .tariffs--contacts .tariffs__header {
-    height: 216px;
+    height: 245px;
   }
   .tariffs--contacts .tariffs__header::before {
-    height: 205px;
+    height: 225px;
   }
   .tariffs--contacts .tariffs__icon {
     top: -46px;
@@ -8047,6 +8052,7 @@ input[type="radio"].visually-hidden {
     padding-right: 55px;
   }
   .tariffs--contacts .tariffs__main {
+    margin-top: -15px;
     margin-bottom: 31px;
     padding-left: 60px;
     padding-right: 40px;
@@ -8998,7 +9004,7 @@ input[type="radio"].visually-hidden {
   }
 }
 .faq {
-  margin-bottom: 14.323vw;
+  margin-bottom: 7.969vw;
 }
 .faq__wrapper {
   position: relative;
@@ -9228,7 +9234,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1921px) {
   .faq {
-    margin-bottom: 275px;
+    margin-bottom: 154px;
   }
   .faq__wrapper {
     margin-bottom: 20px;
@@ -11973,6 +11979,7 @@ a.article-author__link {
     padding-left: 3.066vw;
     padding-right: 3.066vw;
     padding-bottom: 13.3vw;
+    border-radius: 20px;
   }
   .contacts-map__filter-handler {
     height: 12.26vw;

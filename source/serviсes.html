@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Портал Новый День»">
+    <title>Новый День</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+
+    <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__mobile">
+
+        <div class="header__mobile-top container">
+          <button type="button" class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__menu-logo logo" href="index.html">
+            <p class="logo__text">
+              <span class="logo__text--strong">Новый</span> День
+            </p>
+          </a>
+          <button class="header__search-link">
+          </button>
+        </div>
+
+        <div class="header__mobile-bottom nav-section">
+          <div class="container">
+            <ul class="nav-section__list">
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="centers.html">
+                  <img class="nav-section__icon" src="img/svg/hospital-black.svg" alt="Центры" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/hospital-white.svg" alt="Центры" width="30" height="30">
+                  <p class="nav-section__title">Центры</p>
+                </a>
+              </li>
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="clinics.html">
+                  <img class="nav-section__icon" src="img/svg/heart-black.svg" alt="Клиники" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/heart-white.svg" alt="Клиники" width="30" height="30">
+                  <p class="nav-section__title">Клиники</p>
+                </a>
+              </li>
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="detox.html">
+                  <img class="nav-section__icon" src="img/svg/wine-glass-black.svg" alt="Алкоголизм" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/wine-glass-white.svg" alt="Алкоголизм" width="30" height="30">
+                  <p class="nav-section__title">Алкоголизм</p>
+                </a>
+              </li>
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="detox.html">
+                  <img class="nav-section__icon" src="img/svg/medicine-black.svg" alt="Наркомания" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/medicine-white.svg" alt="Наркомания" width="30" height="30">
+                  <p class="nav-section__title">Наркомания</p>
+                </a>
+              </li>
+              <li class="nav-section__item nav-section__item--services">
+                <a class="nav-section__link" href="#">
+                  <img class="nav-section__icon" src="img/svg/pharmacy-black.svg" alt="Услуги" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/pharmacy-white.svg" alt="Услуги" width="30" height="30">
+                  <p class="nav-section__title">Услуги</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__desktop">
+
+        <div class="header__desktop-top container">
+          <div class="header__nav-info nav-info">
+
+            <a class="nav-info__logo logo" href="index.html">
+              <p class="logo__text">
+                <span class="logo__text--strong">Новый</span> День
+              </p>
+            </a>
+
+            <ul class="nav-info__list">
+              <li class="nav-info__item nav-info__item--search">
+                <a class="nav-info__link" href="#">
+                  Поиск
+                </a>
+              </li>
+              <li class="nav-info__item">
+                Помощь <span class="nav-info__link--around-clock">24/7</span>
+              </li>
+              <li class="nav-info__item">
+                Анонимно
+              </li>
+              <li class="nav-info__item">
+                <a class="nav-info__link" href="tel:+79004562345">
+                  +7 (900) 456-23-45
+                </a>
+              </li>
+              <li class="nav-info__item">
+                <a class="nav-info__link nav-info__link--callback btn" href="#">
+                  Обратный звонок
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="container search-container">
+          <form class="header__search-link-form" action="/echo" method="post">
+            <button class="header__search-link-icon-btn" type="submit"></button>
+            <input class="header__search-link-input" type="search" name="database-search" placeholder="Поиск по сайту..">
+          </form>
+        </div>
+
+        <div class="header__desktop-bottom header__mob-menu--nojs">
+          <div class="container">
+            <nav class="header__nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="centers.html">Реабилитационные центры</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="clinics.html">Клиники</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav-sub" href="detox.html">Наркомания</a>
+                  <!-- <ul class="main-nav__sub-list">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Лечение наркомании</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Детоксикация</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Лечение солевой зависимости</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Лечение спайсовой зависимости</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Лечение героиновой зависимости</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Снятие ломки</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Амбулаторное лечение</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">УБОД</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Вызов нарколога на дом</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Адвокатская помощь</a>
+                    </li>
+                  </ul> -->
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="detox.html">Алкоголизм</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Услуги</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="about.html">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="database.html">Публикации</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="family.html">Родственникам</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__consultation-phone">
+              <span class="header__consultation-phone--text">Бесплатная консультация</span>
+              <a class="header__consultation-phone--link" href="tel:+79004562345">8 (900) 456-23-45</a>
+            </div>
+
+            <div class="header__callback">
+              <a class="header__callback--link btn" href="#">
+                Обратный звонок
+              </a>
+            </div>
+
+            <div class="header__features features-block">
+              <ul class="features-block__list features-block__list--header-mobile">
+                <li class="features-block__item features-block__item--anon">
+                  <h3 class="features-block__title">Анонимно</h3>
+                  <p class="features-block__description">Все звонки бесплатные и строго конфиденциальные</p>
+                </li>
+
+                <li class="features-block__item features-block__item--free">
+                  <h3 class="features-block__title">Бесплатно</h3>
+                  <p class="features-block__description">Консультация проводится на безвозмездной основе</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      
+      <article class="banners container banners--mt">
+        <ul class="banners__list">
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-drink.webp">
+                <img class="banners__img" src="img/banners/banner-drink.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Вывод из запоя</h3>
+              <p class="banners__description">Снятие интоксикации, регидратация, психологическая помощь</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-narco-prof.webp">
+                <img class="banners__img" src="img/banners/banner-narco-prof.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Нарколог на дом</h3>
+              <p class="banners__description">Приедем за 30 – 50 минут, гарантируем анонимность, круглосуточно, без выходных</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-encode.webp">
+                <img class="banners__img" src="img/banners/banner-encode.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Амбулаторное лечение</h3>
+              <p class="banners__description">эффективная форма терапии, которая сокращает потребление алкоголя</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-detox.webp">
+                <img class="banners__img" src="img/banners/banner-detox.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Детоксикация</h3>
+              <p class="banners__description">очищение организма от наркотических препаратов и их шлаков</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <article class="warning container">
+        <div class="warning__wrapper">
+          <div class="warning__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/warning/warn1.webp">
+              <img class="warning__img" src="img/warning/warn1.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="warning__form-wrapper">
+            <div class="intro intro--warning">
+              <h2 class="intro__title">Современные наркотики убивают быстрее, чем за 2 года</h2>
+              <p class="intro__description">Наркотическая зависимость считается наиболее опасным заболеванием, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
+            </div>
+
+            <form class="warning__form" action="/echo" method="post">
+              <input id="phone" class="warning__input" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+              <button class="warning__btn btn">Позвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <article class="banners container">
+        <ul class="banners__list">
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/hero.webp">
+                <img class="banners__img" src="img/banners/hero.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Лечение героиновой зависимости</h3>
+              <p class="banners__description">снятие ломки, очищение организма, реабилитация, социализация</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-salt.webp">
+                <img class="banners__img" src="img/banners/banner-salt.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle banners__subtitle--brown">Бесплатная консультация</p>
+              <h3 class="banners__title">Лечение солевой зависимости</h3>
+              <p class="banners__description">симптоматическое лечение в стационаре</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/break.webp">
+                <img class="banners__img" src="img/banners/break.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle banners__subtitle--gray">Бесплатная консультация</p>
+              <h3 class="banners__title">Снятие ломки</h3>
+              <p class="banners__description">детоксикация, убод, снятие всухую</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/salt.webp">
+                <img class="banners__img" src="img/banners/salt.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Лечение спайсовой зависимости</h3>
+              <p class="banners__description">гарантируем анонимность, круглосуточно, без выходных</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+        </ul>        
+      </article>
+
+      <article class="warning container">
+        <div class="warning__wrapper">
+          <div class="warning__img-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/warning/warn2.webp">
+              <img class="warning__img" src="img/warning/warn2.jpg" alt="">
+            </picture>
+          </div>
+
+          <div class="warning__form-wrapper">
+            <div class="intro intro--warning">
+              <h2 class="intro__title">Наркотики - деградация личности. Помогите своему близкому!</h2>
+              <p class="intro__description">Наркотическая зависимость считается наиболее опасным заболеванием, которое практически невозможно побороть наедине с самим собой. Наши специалисты готовы прийти на помощь и справится с самыми запущенными стадиями болезни!</p>
+            </div>
+
+            <form class="warning__form" action="/echo" method="post">
+              <input id="phone" class="warning__input" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+              <button class="warning__btn btn">Позвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <article class="banners container">
+        <ul class="banners__list">
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/lawyer.webp">
+                <img class="banners__img" src="img/banners/lawyer.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Помощь адвоката</h3>
+              <p class="banners__description">поможет в  деле любой сложности</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-resoc.webp">
+                <img class="banners__img" src="img/banners/banner-resoc.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Ресоциализация</h3>
+              <p class="banners__description">работа с психологами,подготовка к возвращению в трудовой коллектив</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-game.webp">
+                <img class="banners__img" src="img/banners/banner-game.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Лечение несовершенно-летних зависимых</h3>
+              <p class="banners__description">гарантируем анонимность, круглосуточно, без выходных</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+
+          <li class="banners__item">
+            <div class="banners__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/banners/banner-program.webp">
+                <img class="banners__img" src="img/banners/banner-program.jpg" alt="">
+              </picture>
+            </div>
+            <div class="banners__content-wrapper">
+              <p class="banners__subtitle">Бесплатная консультация</p>
+              <h3 class="banners__title">Программа лечения</h3>
+              <p class="banners__description">в данной программе сочетается комплексное воздействие различных методов</p>
+              <a class="banners__link btn" href="#">Подробнее об услуге</a>
+            </div>
+          </li>
+        </ul>        
+      </article>
+
+      <article class="get-help container">
+        <div class="intro intro--get-help">
+          <h2 class="intro__title">Получите помощь прямо сейчас</h2>
+
+          <p class="intro__description">Кто-то из ваших родственников или друзей имеет зависимость? Вы всячески пытались помочь, но в результате человек все равно возвращался к прошлой жизни?</p>
+          <p class="intro__description">Вы не первые, кто столкнулся с этой бедой, и мы можем вам помочь.</p>
+          <p class="intro__description">Мы гарантируем анонимность, уговорим на лечение, поможем подобрать центр.</p>
+
+        </div>
+
+        <div class="get-help__call-wrapper">
+          <p class="get-help__text">Позвоните нам </p>
+          <p class="get-help__number">8 900 456 23 45</p>
+          <p class="get-help__text">или</p>
+          <a class="get-help__link btn" href="#">Позвоните мне</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+
+        <a class="footer__logo logo" href="index.html">
+          <p class="logo__text">
+            <span class="logo--footer">Новый</span> День
+          </p>
+        </a>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="centers.html">Реабилитационные центры</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="clinics.html">Клиники</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и цены</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Алкоголизм</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Наркомания</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="family.html">Родственикам</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="database.html">Публикации</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="about.html">О нас</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__mobile-wrapper">
+          <ul class="footer__list footer__list--left">
+            <li class="footer__item">
+              <a class="footer__link" href="centers.html">Реабилитационные центры</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="clinics.html">Клиники</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и цены</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="about">О нас</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list footer__list--right">
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Алкоголизм</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Наркомания</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="family.html">Родственикам</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="database.html">Публикации</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__phone">
+          <a class="footer__number-link" href="tel:+79004562345">8 (900) 456-23-45</a>
+          <p class="footer__text">Бесплатная горячая линия</p>
+        </div>
+
+      </div>
+
+      </div>
+    </footer>
+
+    <section class="modal modal--search">
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Поиск по сайту</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <button class="modal__icon-btn" type="submit"></button>
+          <input class="modal__input" type="search" name="search" placeholder="Введите текст..">
+          <button class="modal__btn btn">Найти</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--callback">
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Введите ваш номер телефона</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+          <button class="modal__btn btn">Заказать звонок</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

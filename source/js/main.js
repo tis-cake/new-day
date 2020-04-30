@@ -581,7 +581,7 @@ $(document).ready(function () {
 // слайдер врачей (4 персоны на маленьком)
 $(document).ready(function () {
   var galleryThumbs = new Swiper('#little-master-swiper', {
-    slidesPerView: '3',
+    slidesPerView: '1',
     touchRatio: 1,
     // loop: true,
     centeredSlides: true,

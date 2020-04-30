@@ -4,6 +4,16 @@
   margin-bottom: @d231px;
 }
 
+.about__column-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  padding-top: 0;
+  border-radius: 30px;
+  box-shadow: 20.065px 18.067px 55.2px 4.8px rgba(5, 9, 48, 0.07);
+}
+
 .about__column-left {
   padding-top: @d40px;
 }
@@ -121,15 +131,36 @@
 }
 
 .about--doctor {
-  padding-top: @d89px;
+  padding-top: @d65px;
   margin-bottom: @d135px;
+  .about__column-wrapper {
+    justify-content: flex-end;
+  }
+  .about__column-left {
+    max-width: @d800px;
+    margin-top: @d70px;
+    margin-left: @d47px;
+    padding-top: 0;
+  }
   .about__img-wrapper {
-    width: @d616px;
-    height: @d672px;
+    // width: @d616px;
+    // height: @d672px;
+    width: @d600px;
+    height: @d520px;
     &::after {
-      width: 44.7%;
-      height: 63.7%;
+      content: none;
+      // width: 44.7%;
+      // height: 63.7%;
     }
+  }
+  .about__img {
+    border-radius: 30px 0 0 30px;
+  }
+  .main-info__callback {
+    width: @d284px;
+    height: @d65px;
+    margin-bottom: 0;
+    font-size: @d16px;
   }
 }
 
@@ -159,6 +190,10 @@
   .about {
     flex-direction: column;
     margin-bottom: @m206px;
+  }
+
+  .about__column-wrapper {
+    flex-direction: column-reverse;
   }
 
   .about__column-left {
@@ -244,16 +279,32 @@
   }
 
   .about--doctor {
-    padding-top: @m98px;
+    // padding-top: @m98px;
+    padding-top: @m300px;
     margin-bottom: @m275px;
+    .about__column-wrapper {
+      .padding-inline(0);
+      .margin-inline(@m35px);
+    }
+    .about__column-left {
+      max-width: none;
+      margin-top: @m30px;
+      margin-left: 0;
+      margin-bottom: @m75px;
+      .padding-inline(@m35px);
+    }
     .about__img-wrapper {
-      width: @a;
-      height: @m745px;
-      padding-top: @m87px;
-      &::after {
-        width: 44.7%;
-        height: 57.4%;
-      }
+      width: 100%;
+      // height: @m745px;
+      height: @m545px;
+    }
+    .about__img {
+      border-radius: 30px 30px 0 0;
+    }
+    .main-info__callback {
+      width: @m470px;
+      height: @m75px;
+      font-size: @m27px;
     }
   }
 
@@ -371,11 +422,21 @@
   }
 
   .about--doctor {
-    padding-top: 89px;
+    padding-top: 65px;
     margin-bottom: 135px;
+    .about__column-left {
+      max-width: 800px;
+      margin-top: 70px;
+      margin-left: 47px;
+    }
     .about__img-wrapper {
-      width: 616px;
-      height: 672px;
+      width: 600px;
+      height: 520px;
+    }
+    .main-info__callback {
+      width: 284px;
+      height: 65px;
+      font-size: 16px;
     }
   }
 

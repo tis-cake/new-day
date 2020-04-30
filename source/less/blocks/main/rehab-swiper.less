@@ -230,8 +230,16 @@
   .rehab-swiper__pagination-wrapper {
     position: relative;
 
-    width: @d440px;
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+
+    width: @d460px;
+    height: @d60px;
     .margin-inline(@a);
+
+    // width: @d440px;
+    // .margin-inline(@a);
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -239,23 +247,16 @@
     }
   }
 
-  // .swiper-button-next,
-  // .swiper-button-prev {
-  //   &::after {
-  //     font-size: @d17px;
-  //   }
-  // }
 
   .pagination {
-    position: relative;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex!important;
+    // justify-content: space-between;
+    // align-items: center;
 
-    width: @d460px;
-    height: @d60px;
-    .margin-inline(@a);
+    // width: @d460px;
+    // height: @d60px;
+    // .margin-inline(@a);
   }
 
   .swiper-pagination {
@@ -291,6 +292,10 @@
     & .active {
       color: #fff;
       opacity: 1;
+    }
+
+    .active a {
+      color: #fff;
     }
 
     & .active::before {
@@ -491,14 +496,26 @@
       display: none;
     }
     .rehab-swiper__pagination-wrapper {
-      display: none;
+      display: none!important;
     }
   }
 
   .not-swiper {
+    .swiper-container {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      background-color: #fcfcfd;
+    }
+
     .rehab-swiper__slide {
-      width: 100%;
-      margin-right: 0;
+      // width: 100%;
+      flex-shrink: 0;
+      // width: @m680px;
+      width: @m500px;
+      margin-right: @m50px;
+      &:nth-child(4) {
+        margin-right: @m50px;
+      }
       margin-bottom: @m100px;
     }
   }
@@ -627,8 +644,10 @@
     }
 
     .rehab-swiper__pagination-wrapper {
-      width: 440px;
-      .margin-inline(@a);
+      // width: 440px;
+      // .margin-inline(@a);
+      width: 460px;
+      height: 60px;
     }
 
     // .swiper-button-next,
@@ -652,9 +671,9 @@
 
     .pagination {
       // width: 300px;
-      width: 460px;
-      height: 60px;
-      .margin-inline(@a);
+      // width: 460px;
+      // height: 60px;
+      // .margin-inline(@a);
     }
 
     .swiper-pagination-bullet {

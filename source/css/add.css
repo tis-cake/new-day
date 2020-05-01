@@ -1,0 +1,106 @@
+.uslugi-title {
+  margin-top: 10rem;
+}
+.contacts-map__local-container {
+  height: 50rem;
+  overflow-y: scroll;
+}
+.nakarte {
+  display: flex;
+  flex-flow: nowrap;
+}
+.nakarte img {
+  width: 5rem;
+  height: 100%;
+  margin-right: 1rem;
+}
+.massage-on-map {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50rem;
+  height: 20rem;
+  background: #fcfcfd;
+  color: black;
+  z-index: 10;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+.message-wrap {
+  /*position: relative;*/
+  padding: 8rem 5.5rem;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  width: 62.5rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  /*transform: translate(-50%, -500%);*/
+  transform: translate(-50%, -1000%);
+  z-index: 250;
+  transition: 0.5s;
+}
+.message-wrap.active {
+  transform: translate(-50%, -50%);
+}
+
+/*заполненная звезда*/
+div.star-voted {
+  cursor: pointer;
+  overflow: hidden;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 1.6rem;
+
+  background-image: url(../img/svg/star-fill-gold.svg);
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: 0 0;
+}
+/*пустая звезда*/
+div.star-empty {
+  overflow: hidden;
+  cursor: pointer;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 1.6rem;
+
+  background-image: url(../img/svg/star-stroke-black.svg);
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: 0 0;
+}
+
+@media (max-width: 755px) {
+  div.star-voted,
+  div.star-empty {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 7rem;
+  }
+
+  .rating_count td:first-child .star-voted,
+  .rating_count td:first-child .star-empty {
+    margin-left: 0;
+  }
+
+  .uslugi-title {
+    margin-top: 0;
+    padding-top: 60rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .uslugi-title {
+    padding-top: 35rem;
+  }
+}

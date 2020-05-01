@@ -419,9 +419,20 @@
     margin-bottom: @d10px;
     line-height: @d30px;
   }
-
   .program__description {
     width: @a;
+  }
+}
+
+.program--stages-center {
+  .program__item {
+    display: flex;
+    align-items: center;
+    min-height: @d169px;
+  }
+  .program__title {
+    margin-bottom: 0;
+    font-size: @d25px;
   }
 }
 
@@ -707,6 +718,19 @@
     }
   }
 
+  .program--stages-center {
+    .program__item {
+      justify-content: center;
+      align-items: flex-start;
+      min-height: @m195px;
+    }
+    .program__title {
+      padding-top: 0;
+      margin-bottom: 0;
+      // font-size: @m33px;
+    }
+  }
+
   .program--about {
     margin-bottom: @m131px;
     .intro--program {
@@ -958,6 +982,16 @@
     }
     .program__description {
       width: @a;
+    }
+  }
+
+  .program--stages-center {
+    .program__item {
+      min-height: 169px;
+    }
+    .program__title {
+      margin-bottom: 0;
+      font-size: 25px;
     }
   }
 

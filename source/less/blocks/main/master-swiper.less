@@ -112,7 +112,8 @@
   // height: @d650px;
 }
 
-.master-swiper__main-img {
+.master-swiper__main-img,
+.master-swiper__person-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -245,6 +246,41 @@
   }
 }
 
+.master-swiper__person-wrapper {
+  .swiper-container {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+  }
+}
+
+.master-swiper__person-slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: @d190px;
+}
+.master-swiper__person-img-wrapper {
+  height: @d368px;
+  margin-bottom: @d30px;
+}
+.master-swiper__person-content-wrapper {
+}
+
+.master-swiper__person-name {
+  display: block;
+  margin-bottom: @d10px;
+
+  font-size: @d22px;
+  font-weight: 700;
+  letter-spacing: 0.11px;
+}
+.master-swiper__person-description {
+  font-size: @d19px;
+  letter-spacing: 0.1px;
+}
+
+
 @media (max-width: @mobile-width) {
   .master-swiper,
   .double-wrapper-page .master-swiper {
@@ -270,8 +306,6 @@
 
     width: @a;
     height: @m300px;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
   }
 
   .master-swiper__little-swiper .swiper-wrapper,
@@ -302,9 +336,6 @@
   .double-wrapper-page .master-swiper__little-img-wrapper  {
     width: @m200px;
     height: @m200px;
-
-    // width: @a;
-    // height: @a;
 
     border-radius: 19px;
     box-shadow: none;
@@ -352,6 +383,7 @@
   }
 
   .master-swiper__main-name,
+  .master-swiper__person-name,
   .double-wrapper-page .master-swiper__main-name {
     margin-bottom: @m14px;
     font-size: @m33px;
@@ -365,6 +397,7 @@
   }
 
   .master-swiper__main-description,
+  .master-swiper__person-description,
   .double-wrapper-page .master-swiper__main-description {
     margin-bottom: @m66px;
     font-size: @m30px;
@@ -394,6 +427,27 @@
     height: @m75px;
     border-radius: 38px;
     background-color: #14af4f;
+  }
+
+  .master-swiper__person-slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .master-swiper__person-img-wrapper {
+    height: @m368px;
+    margin-bottom: @m30px;
+  }
+  .master-swiper__person-content-wrapper {
+  }
+
+  // .master-swiper__person-name {
+  //   margin-bottom: 10px;
+  //   font-size: 22px;
+  // }
+  .master-swiper__person-description {
+    // font-size: 19px;
+    margin-bottom: 0;
   }
 }
 
@@ -553,5 +607,23 @@
       margin-bottom: 25px;
       line-height: 25px;
     }
+  }
+
+  .master-swiper__person-slide-wrapper {
+    margin-bottom: 190px;
+  }
+
+  .master-swiper__person-img-wrapper {
+    height: 368px;
+    margin-bottom: 30px;
+  }
+
+  .master-swiper__person-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .master-swiper__person-description {
+    font-size: 19px;
   }
 }

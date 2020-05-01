@@ -639,6 +639,27 @@ $(document).ready(function () {
   // mainMasterSwiper.controller.control = galleryThumbs;
 });
 
+// новый слайдер врачей
+$(document).ready(function () {
+  var personSwiper = new Swiper('#person-master-swiper', {
+    slidesPerView: '1.5',
+    centeredSlides: true,
+    speed: 3000,
+    spaceBetween: 25,
+    touchRatio: 1,
+    // loop: true,
+    freeMode: true,
+    breakpoints: {
+      756: {
+        slidesPerView: '4',
+        spaceBetween: 30,
+        loop: false,
+        centeredSlides: false
+      }
+    }
+  });
+});
+
 // [article-page]
 // плавное перемещение на якорях в оглавлении
 $(document).ready(function(){

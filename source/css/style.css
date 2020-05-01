@@ -3252,6 +3252,11 @@ input[type="radio"].visually-hidden {
 .get-help__header-phone a {
   color: #fff;
 }
+.get-help__header-text a {
+  font-size: 1.6666vw;
+  font-weight: 700;
+  color: #ffffff;
+}
 .get-help--consultation {
   padding-top: 1.0416vw;
   box-shadow: none;
@@ -3408,6 +3413,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 2.666vw;
   }
+  .get-help__header-text a,
   .get-help__header-phone {
     font-size: 6vw;
     color: #ffffff;
@@ -3531,6 +3537,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 14px;
     font-size: 14px;
   }
+  .get-help__header-text a,
   .get-help__header-phone {
     font-size: 32px;
   }
@@ -3860,7 +3867,7 @@ input[type="radio"].visually-hidden {
 }
 .not-swiper .rehab-swiper__slide {
   width: 20vw;
-  margin-right: 1.302vw;
+  margin-right: 1.1979vw;
   margin-bottom: 1.5625vw;
 }
 .not-swiper .rehab-swiper__slide:nth-child(4n) {
@@ -4113,7 +4120,7 @@ input[type="radio"].visually-hidden {
   }
   .not-swiper .rehab-swiper__slide {
     width: 384px;
-    margin-right: 25px;
+    margin-right: 23px;
     margin-bottom: 30px;
   }
 }
@@ -4457,6 +4464,17 @@ input[type="radio"].visually-hidden {
 .program--stages .program__description {
   width: auto;
 }
+.program--stages-center .program__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  min-height: 8.802vw;
+}
+.program--stages-center .program__title {
+  margin-bottom: 0;
+  font-size: 1.302vw;
+}
 .program--about .program__item {
   margin-bottom: 3.0729vw;
   padding-bottom: 3.2812vw;
@@ -4704,6 +4722,17 @@ input[type="radio"].visually-hidden {
   .program--stages .program__description {
     width: 62vw;
   }
+  .program--stages-center .program__item {
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    min-height: 26vw;
+  }
+  .program--stages-center .program__title {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
   .program--about {
     margin-bottom: 17.467vw;
   }
@@ -4924,6 +4953,13 @@ input[type="radio"].visually-hidden {
   }
   .program--stages .program__description {
     width: auto;
+  }
+  .program--stages-center .program__item {
+    min-height: 169px;
+  }
+  .program--stages-center .program__title {
+    margin-bottom: 0;
+    font-size: 25px;
   }
   .program--about .program__item {
     margin-bottom: 59px;
@@ -8630,7 +8666,8 @@ input[type="radio"].visually-hidden {
 .master-swiper__main-img-wrapper {
   width: 23.438vw;
 }
-.master-swiper__main-img {
+.master-swiper__main-img,
+.master-swiper__person-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -8742,6 +8779,29 @@ input[type="radio"].visually-hidden {
   margin-bottom: 1.302vw;
   line-height: 1.302vw;
 }
+.master-swiper__person-slide-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-bottom: 9.896vw;
+}
+.master-swiper__person-img-wrapper {
+  height: 19.167vw;
+  margin-bottom: 1.5625vw;
+}
+.master-swiper__person-name {
+  display: block;
+  margin-bottom: 0.5208vw;
+  font-size: 1.1458vw;
+  font-weight: 700;
+  letter-spacing: 0.11px;
+}
+.master-swiper__person-description {
+  font-size: 0.9895vw;
+  letter-spacing: 0.1px;
+}
 @media (max-width: 755px) {
   .master-swiper,
   .double-wrapper-page .master-swiper {
@@ -8832,6 +8892,7 @@ input[type="radio"].visually-hidden {
     line-height: 5.066vw;
   }
   .master-swiper__main-name,
+  .master-swiper__person-name,
   .double-wrapper-page .master-swiper__main-name {
     margin-bottom: 1.86vw;
     font-size: 4.399vw;
@@ -8843,6 +8904,7 @@ input[type="radio"].visually-hidden {
     font-size: 3.599vw;
   }
   .master-swiper__main-description,
+  .master-swiper__person-description,
   .double-wrapper-page .master-swiper__main-description {
     margin-bottom: 8.799vw;
     font-size: 4vw;
@@ -8869,6 +8931,21 @@ input[type="radio"].visually-hidden {
     height: 10vw;
     border-radius: 38px;
     background-color: #14af4f;
+  }
+  .master-swiper__person-slide-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .master-swiper__person-img-wrapper {
+    height: 49.067vw;
+    margin-bottom: 4vw;
+  }
+  .master-swiper__person-description {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1921px) {
@@ -9001,6 +9078,20 @@ input[type="radio"].visually-hidden {
   .double-wrapper-page .master-swiper__main-work {
     margin-bottom: 25px;
     line-height: 25px;
+  }
+  .master-swiper__person-slide-wrapper {
+    margin-bottom: 190px;
+  }
+  .master-swiper__person-img-wrapper {
+    height: 368px;
+    margin-bottom: 30px;
+  }
+  .master-swiper__person-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .master-swiper__person-description {
+    font-size: 19px;
   }
 }
 .faq {
@@ -11886,6 +11977,7 @@ a.article-author__link {
   box-sizing: border-box;
   position: relative;
   top: -4.0625vw;
+  height: 25vw;
   padding-top: 2.2916vw;
   padding-left: 10.417vw;
   padding-right: 9.635vw;
@@ -11925,7 +12017,7 @@ a.article-author__link {
 }
 .contacts-map__item {
   width: 15.625vw;
-  margin-right: 8.75vw;
+  margin-right: 7.813vw;
   margin-bottom: 3.125vw;
 }
 .contacts-map__item:nth-child(3n) {
@@ -12117,13 +12209,14 @@ a.article-author__link {
     -webkit-box-align: center;
             align-items: center;
     top: 4vw;
-    padding-top: 13.867vw;
+    height: 78.267vw;
+    padding-top: 5.333vw;
     padding-left: 4.666vw;
     padding-right: 4.666vw;
     padding-bottom: 3.333vw;
   }
   .contacts-map__local-link {
-    margin-bottom: 9.733vw;
+    margin-bottom: 5.333vw;
     padding-left: 8vw;
     font-size: 4.266vw;
     line-height: normal;
@@ -12327,6 +12420,7 @@ a.article-author__link {
   }
   .contacts-map__local-container {
     top: -78px;
+    height: 480px;
     padding-top: 40px;
     padding-left: 200px;
     padding-right: 185px;
@@ -12350,7 +12444,7 @@ a.article-author__link {
   }
   .contacts-map__item {
     width: 300px;
-    margin-right: 168px;
+    margin-right: 150px;
     margin-bottom: 60px;
   }
   .contacts-map__city,

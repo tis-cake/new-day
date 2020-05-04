@@ -281,7 +281,13 @@ $(document).ready(function () {
   var reviewsArr = $('.reviews__blockquote-text');
   var size = 190; // кол-во символов
 
-  // добавляем кнопку "показать ещё" для отзывов, длина которых > 155 символов
+  // если это страница услуг (есть .double-main-wrapper)
+  if ($('.reviews').parents().find($('.double-column-wrapper'))) {
+  // if ($('.double-main-wrapper')) {  
+    var size = 130;
+  }
+
+  // добавляем кнопку "показать ещё" для отзывов, длина которых > символов
   for (var i = 0; i < reviewsArr.length; i++) {
     if (reviewsArr[i].textContent.length > size) {
       console.log(reviewsArr[i].textContent.length);

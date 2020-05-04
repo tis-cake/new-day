@@ -429,10 +429,25 @@
     display: flex;
     align-items: center;
     min-height: @d169px;
+    padding-top: @d30px;
+    padding-bottom: @d30px;
   }
   .program__title {
     margin-bottom: 0;
     font-size: @d25px;
+  }
+  .program__item__icon {
+    top: 50%;
+  }
+  &.program--signs {
+    .program__item {
+      min-height: 0;
+      padding-top: @d30px;
+      padding-bottom: @d30px;
+    }
+    .program__item__icon {
+      top: 50%;
+    }
   }
 }
 
@@ -553,6 +568,12 @@
 
   .program {
     margin-bottom: @m184px;
+    .program__list {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      height: auto;
+      align-items: flex-start;
+   }
   }
 
   .program__list {
@@ -607,7 +628,7 @@
     .program__list {
       overflow-x: scroll;
       // max-height: none;
-      height: @m400px;
+      // height: @m400px;
       padding-top: @m20px;
     }
     .program__item {
@@ -617,7 +638,7 @@
       width: @m485px;
       // max-height: none;
       // height: @a;
-      min-height: @m315px;
+      // min-height: @m315px;
       margin-left: @m35px;
       margin-right: @m33px;
       padding-top: @m30px;
@@ -626,6 +647,9 @@
       padding-bottom: @m56px;
 
       box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
+      &:nth-child(3n) {
+        margin-right: @m33px;
+      }
     }
     .program__item__icon {
       top: @m74px;
@@ -674,6 +698,12 @@
    .program__title {
       padding-right: 0;
    }
+
+   // .program__list {
+   //    flex-wrap: nowrap;
+   //    flex-direction: row;
+   //    height: auto;
+   // }
   }
 
   .program--stages {
@@ -684,12 +714,13 @@
       font-size: @m30px;
     }
     .program__list {
-      flex-wrap: nowrap;
+      // flex-wrap: nowrap;
+      flex-wrap: wrap;
       height: @a;
     }
     .program__item {
       width: @a;
-      min-height: @m268px;
+      // min-height: @m268px;
       margin-left: @m50px;
       margin-bottom: @m33px;
       padding-top: @m45px;
@@ -728,6 +759,14 @@
       padding-top: 0;
       margin-bottom: 0;
       // font-size: @m33px;
+    }
+    &.program--signs {
+      .program__item {
+        flex-shrink: 0;
+        min-height: @m146px;
+        padding-top: @m40px;
+        padding-bottom: @m40px;
+      }
     }
   }
 
@@ -988,10 +1027,18 @@
   .program--stages-center {
     .program__item {
       min-height: 169px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     .program__title {
       margin-bottom: 0;
       font-size: 25px;
+    }
+    &.program--signs {
+      .program__item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
     }
   }
 

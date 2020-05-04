@@ -40,6 +40,7 @@
   font-weight: 300;
   font-style: normal;
 }
+/* the source files: https://github.com/tis-cake/new-day/tree/master/source/less */
 html {
   font-size: 62.5%;
 }
@@ -798,7 +799,7 @@ input[type="radio"].visually-hidden {
   }
   .index-bg {
     max-height: none;
-    height: 141vw;
+    height: 100vh;
   }
 }
 @media (min-width: 1921px) {
@@ -1313,6 +1314,11 @@ input[type="radio"].visually-hidden {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    max-width: none;
+    width: 100%;
+    min-height: 66.667vw;
     padding-bottom: 6.666vw;
   }
   .header__features .features-block__item {
@@ -1635,7 +1641,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 1.7187vw;
 }
 .intro--about-doctor p {
-  width: 32.292vw;
   margin-bottom: 1.5625vw;
   font-size: 1.0416vw;
   line-height: 1.5625vw;
@@ -1973,7 +1978,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 33px;
   }
   .intro--about-doctor p {
-    width: 620px;
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 30px;
@@ -2235,6 +2239,7 @@ input[type="radio"].visually-hidden {
   }
   .main.index .main-info {
     width: 100%;
+    height: calc(100vh - 48vw);
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 22.667vw;
@@ -2775,14 +2780,15 @@ input[type="radio"].visually-hidden {
           justify-content: flex-end;
 }
 .about--doctor .about__column-left {
-  max-width: 41.667vw;
+  max-width: 46.875vw;
   margin-top: 3.6458vw;
   margin-left: 2.4479vw;
+  margin-bottom: 3.6458vw;
   padding-top: 0;
 }
 .about--doctor .about__img-wrapper {
   width: 31.25vw;
-  height: 27.083vw;
+  height: 100%;
 }
 .about--doctor .about__img-wrapper::after {
   content: none;
@@ -3061,13 +3067,13 @@ input[type="radio"].visually-hidden {
     margin-bottom: 135px;
   }
   .about--doctor .about__column-left {
-    max-width: 800px;
+    max-width: 900px;
     margin-top: 70px;
+    margin-bottom: 70px;
     margin-left: 47px;
   }
   .about--doctor .about__img-wrapper {
     width: 600px;
-    height: 520px;
   }
   .about--doctor .main-info__callback {
     width: 284px;
@@ -4470,10 +4476,23 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
           align-items: center;
   min-height: 8.802vw;
+  padding-top: 1.5625vw;
+  padding-bottom: 1.5625vw;
 }
 .program--stages-center .program__title {
   margin-bottom: 0;
   font-size: 1.302vw;
+}
+.program--stages-center .program__item__icon {
+  top: 50%;
+}
+.program--stages-center.program--signs .program__item {
+  min-height: 0;
+  padding-top: 1.5625vw;
+  padding-bottom: 1.5625vw;
+}
+.program--stages-center.program--signs .program__item__icon {
+  top: 50%;
 }
 .program--about .program__item {
   margin-bottom: 3.0729vw;
@@ -4579,6 +4598,15 @@ input[type="radio"].visually-hidden {
   .program {
     margin-bottom: 24.533vw;
   }
+  .program .program__list {
+    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    height: auto;
+    -webkit-box-align: start;
+            align-items: flex-start;
+  }
   .program__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4626,7 +4654,6 @@ input[type="radio"].visually-hidden {
   }
   .double-main-wrapper .program__list {
     overflow-x: scroll;
-    height: 53.333vw;
     padding-top: 2.666vw;
   }
   .double-main-wrapper .program__item {
@@ -4636,7 +4663,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
             flex-direction: column;
     width: 64.667vw;
-    min-height: 42vw;
     margin-left: 4.666vw;
     margin-right: 4.399vw;
     padding-top: 4vw;
@@ -4644,6 +4670,9 @@ input[type="radio"].visually-hidden {
     padding-right: 2.666vw;
     padding-bottom: 7.466vw;
     box-shadow: 16px 8px 27px 11px rgba(2, 7, 32, 0.04);
+  }
+  .double-main-wrapper .program__item:nth-child(3n) {
+    margin-right: 4.399vw;
   }
   .double-main-wrapper .program__item__icon {
     top: 9.866vw;
@@ -4691,12 +4720,11 @@ input[type="radio"].visually-hidden {
     font-size: 4vw;
   }
   .program--stages .program__list {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: auto;
   }
   .program--stages .program__item {
     width: auto;
-    min-height: 35.733vw;
     margin-left: 6.666vw;
     margin-bottom: 4.399vw;
     padding-top: 6vw;
@@ -4732,6 +4760,12 @@ input[type="radio"].visually-hidden {
   .program--stages-center .program__title {
     padding-top: 0;
     margin-bottom: 0;
+  }
+  .program--stages-center.program--signs .program__item {
+    flex-shrink: 0;
+    min-height: 19.467vw;
+    padding-top: 5.333vw;
+    padding-bottom: 5.333vw;
   }
   .program--about {
     margin-bottom: 17.467vw;
@@ -4956,10 +4990,16 @@ input[type="radio"].visually-hidden {
   }
   .program--stages-center .program__item {
     min-height: 169px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .program--stages-center .program__title {
     margin-bottom: 0;
     font-size: 25px;
+  }
+  .program--stages-center.program--signs .program__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .program--about .program__item {
     margin-bottom: 59px;

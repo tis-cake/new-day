@@ -135,29 +135,38 @@
   margin-bottom: @d135px;
   .about__column-wrapper {
     justify-content: flex-end;
+    padding: @d70px @d40px;
   }
   .about__column-left {
-    // max-width: @d800px;
-    max-width: @d900px;
-    margin-top: @d70px;
+    // max-width: @d900px;
+    max-width: @d860px;
+    // margin-top: @d70px;
     margin-left: @d47px;
-    margin-bottom: @d70px;
+    // margin-bottom: @d70px;
     padding-top: 0;
   }
+  .about__column-right {
+    display: flex;
+    // align-items: center;
+  }
   .about__img-wrapper {
-    // width: @d616px;
-    // height: @d672px;
-    width: @d600px;
+    // width: @d600px;
     // height: @d520px;
-    height: 100%;
+    width: @d560px;
+    height: @d470px;
+    // margin-top: @d20px;
+    // margin-top: @d70px;
+    // margin-bottom: @d20px;
+    // margin-left: @d30px;
+    // margin-left: @d40px;
+    // height: 100%;
     &::after {
       content: none;
-      // width: 44.7%;
-      // height: 63.7%;
     }
   }
   .about__img {
-    border-radius: 30px 0 0 30px;
+    // border-radius: 30px 0 0 30px;
+    border-radius: 30px;
   }
   .main-info__callback {
     width: @d284px;
@@ -197,6 +206,7 @@
 
   .about__column-wrapper {
     flex-direction: column-reverse;
+    padding: 0;
   }
 
   .about__column-left {
@@ -286,7 +296,8 @@
     padding-top: @m300px;
     margin-bottom: @m275px;
     .about__column-wrapper {
-      .padding-inline(0);
+      padding: 0;
+      // .padding-inline(0);
       .margin-inline(@m35px);
     }
     .about__column-left {
@@ -300,6 +311,9 @@
       width: 100%;
       // height: @m745px;
       height: @m545px;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
     .about__img {
       border-radius: 30px 30px 0 0;
@@ -427,16 +441,26 @@
   .about--doctor {
     padding-top: 65px;
     margin-bottom: 135px;
+    .about__column-wrapper {
+      padding: 70px 40px;
+    }
     .about__column-left {
-      // max-width: 800px;
-      max-width: 900px;
-      margin-top: 70px;
-      margin-bottom: 70px;
+      // max-width: 900px;
+      max-width: 860px;
+      // margin-top: 70px;
+      // margin-bottom: 70px;
       margin-left: 47px;
     }
     .about__img-wrapper {
-      width: 600px;
+      // width: 600px;
       // height: 520px;
+      width: 560px;
+      height: 470px;
+      // margin-top: 20px;
+      // margin-top: 70px;
+      // margin-left: 30px;
+      // margin-left: 40px;
+      // margin-bottom: 20px;
     }
     .main-info__callback {
       width: 284px;

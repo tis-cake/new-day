@@ -1,3 +1,9 @@
+/* в баллуне */
+.address-card-btn {
+  text-decoration: underline;
+  color: #20b659;
+}
+
 .contacts-map {
   // margin-bottom: @d120px;
   margin-bottom: @d65px;
@@ -675,7 +681,9 @@
   .contacts-map__list {
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    // flex-direction: column;
+    // flex-wrap: nowrap;
   }
 
   .contacts-map__item {
@@ -683,7 +691,8 @@
     flex-direction: column;
     align-items: center;
 
-    width: @a;
+    // width: @a;
+    width: 100%;
     margin-right: 0;
     margin-bottom: @m59px;
   }

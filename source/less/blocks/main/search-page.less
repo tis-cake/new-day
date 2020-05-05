@@ -89,6 +89,7 @@
 
 .search__content-title {
   font-size: @d22px;
+  font-weight: 700;
   letter-spacing: 0.11px;
   line-height: @d45px;
   color: #2f2f2f;
@@ -101,106 +102,67 @@
   font-size: @d18px;
 }
 
-@media  (max-width: @mobile-width) {
+@media (max-width: @mobile-width) {
   .search-page {
-    margin-top: 85px;
+    padding-top: @m230px;
+    margin-top: @m85px;
     .database-search__form-wrapper {
-      width: auto;
-      .margin-inline(@a);
-      margin-bottom: 54px;
+      width: 100%;
+      margin-bottom: @m54px;
     }
     .database-search__form {
-      width: 100%;
-      height: 70px;
-      margin-top: 0;
+      height: @m90px;
     }
     .database-search__icon-btn {
-      left: 6.8%;
+      left: 5%;
     }
     .database-search__input {
-      width: 95%;
-      padding-left: 80px;
-      font-size: 22px;
+      // width: 95%;
+      padding-left: @m76px;
+      font-size: @m27px;
     }
   }
 
   .search-page__count {
-    margin-bottom: 84px;
-    font-size: 18px;
+    margin-bottom: @m90px;
+    font-size: @m25px;
   }
 
   .search__toggle-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 790px;
-    margin-bottom: 37px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: @m56px;
   }
 
   .search__toggle-btn {
-    position: relative;
-    padding: 0;
-    padding-bottom: 9px;
-
-    font-size: 25px;
-    letter-spacing: 0.13px;
-
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-
+    padding-bottom: @m8px;
+    font-size: @m30px;
     &.active {
       &::before {
-        position: absolute;
-        content: '';
-        left: 0;
-        bottom: 0;
-
-        width: 100%;
-        height: 2px;
-        background-color: #14b250;
+        height: @m3px;
       }
-    }
-
-    &.disabled {
-      pointer-events: none;
-      cursor: default; 
-      color: #999;
     }
   }
 
   .search__toggle-count {
-    font-size: 18px;
-    color: #747474;
-  }
-
-  .search__content-list {
-    display: none;
-    &.active {
-      display: block;
-    }
+    font-size: @m22px;
   }
 
   .search__content-item {
-    width: 1063px;
-    margin-bottom: 30px;
-  }
-
-  .search__content-link {
-    display: block;
+    width: @a;
+    margin-bottom: @m52px;
   }
 
   .search__content-title {
-    font-size: 22px;
-    letter-spacing: 0.11px;
-    line-height: 45px;
-    color: #2f2f2f;
+    margin-bottom: @m10px;
+    font-size: @m30px;
+    line-height: @m45px;
   }
 
   .search__content-description {
-    width: 710px;
-    line-height: 23px;
-    letter-spacing: 0.09px;
-    font-size: 18px;
+    width: @a;
+    font-size: @m25px;
+    line-height: @m30px;
   }
 }
 

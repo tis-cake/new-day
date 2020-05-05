@@ -73,6 +73,7 @@
   margin-bottom: @d36px;
 
   font-size: @d60px;
+  font-weight: 700;
   line-height: @d65px;
 
   color: #ffffff;
@@ -214,6 +215,10 @@
     & span {
       display: block;
     }
+  }
+  .main-info__description {
+    max-width: 800px;
+    width: @d800px;
   }
   .main-info__callback {
     margin-top: @d40px;
@@ -382,6 +387,12 @@
       background-position: center;
       background-size: cover;
     }
+
+    &:hover,
+    &:focus {
+      padding-left: @m43px;
+      color: #14b250;
+    }
   }
 
   .main-info__title {
@@ -518,6 +529,10 @@
     .main-info__title {
       width: @a;
       margin-bottom: @m29px;
+    }
+    .main-info__description {
+      max-width: none;
+      width: @m632px;
     }
     .main-info__callback {
       width: @m500px;

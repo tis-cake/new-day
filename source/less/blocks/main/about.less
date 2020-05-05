@@ -89,12 +89,49 @@
   }
 }
 
+.about--detox {
+  & ul p {
+    margin-bottom: 0;
+  }
+
+  & ul {
+    padding-left: @d38px;
+  }
+
+  & li {
+    position: relative;
+    margin-bottom: @d15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: @d4px;
+      left: -@d36px;
+
+      width: @d16px;
+      height: @d6px;
+
+      border: @d2px solid #5a5a5a;
+      border-color: #14b250;
+      border-top-style: none;
+      border-right-style: none;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 .about--detox,
 .about--family,
 .about--contacts {
   flex-direction: column;
   margin-bottom: @d87px;
   // width: @a;
+  &>div,
   h2 {
     margin-bottom: @d48px;
 
@@ -120,6 +157,12 @@
     color: #747474;
   }
 }
+
+.about--steps {
+    p {
+      margin-bottom: @d15px;
+    }
+  }
 
 .about--family {
   // width: 76.56vw; // 1470px
@@ -265,10 +308,33 @@
     }
   }
 
+  .about--detox {
+    & ul {
+      padding-left: @m49px;
+    }
+
+    li {
+      margin-bottom: @m39px;
+      &::before {
+        top: @m8px;
+        left: -@m48px;
+        width: @m22px;
+        height: @m10px;
+
+        border: @m3px solid #5a5a5a;
+        border-color: #14b250;
+        border-top-style: none;
+        border-right-style: none;
+      }
+    }
+  }
+
   .about--detox,
   .about--family,
   .about--contacts {
-    margin-bottom: @m155px;
+    // margin-bottom: @m155px;
+    margin-bottom: @m75px;
+    &>div,
     h2 {
       margin-bottom: @m47px;
       font-size: @m45px;
@@ -284,6 +350,12 @@
       font-size: @m30px;
       line-height: @m39px;
       letter-spacing: 0.15px;
+    }
+  }
+
+  .about--steps {
+    p {
+      margin-bottom: @m39px;
     }
   }
 
@@ -380,11 +452,39 @@
     }
   }
 
+  .about--detox {
+    & ul p {
+      margin-bottom: 0;
+    }
+
+    & ul {
+      padding-left: 38px;
+    }
+
+    & li {
+      margin-bottom: 15px;
+
+      &::before {
+        top: 4px;
+        left: -36px;
+
+        width: 16px;
+        height: 6px;
+
+        border: 2px solid #5a5a5a;
+        border-color: #14b250;
+        border-top-style: none;
+        border-right-style: none;
+      }
+    }
+  }
+
   .about--detox,
   .about--family,
   .about--contacts {
     margin-bottom: 87px;
     // width: @a;
+    &>div,
     h2 {
       margin-bottom: 48px;
       font-size: 45px;
@@ -398,6 +498,12 @@
       margin-bottom: 25px;
       font-size: 18px;
       line-height: 24px;
+    }
+  }
+
+  .about--steps {
+    p {
+      margin-bottom: 15px;
     }
   }
 

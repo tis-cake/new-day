@@ -80,11 +80,19 @@
 
 .faq__answer {
   width: 55.98vw; // 1075px;
+
   font-size: @d18px;
   line-height: @d34px;
   letter-spacing: 0.09px;
 
   color: #747474;
+}
+
+.faq__wrapper {
+  .faq__question,
+  .faq__answer {
+    margin-bottom: 0;
+  }
 }
 
 .faq-aside {
@@ -122,6 +130,7 @@
     margin-bottom: @d18px;
 
     font-size: @d25px;
+    font-weight: 700;
     letter-spacing: 0.13px;
     text-align: center;
   }
@@ -186,6 +195,7 @@
   }
 
   .faq__question {
+    width: 94%;
     font-size: @m27px;
     line-height: @m34px;
     letter-spacing: 0.14px;

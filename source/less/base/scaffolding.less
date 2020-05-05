@@ -400,6 +400,14 @@ input[type="radio"].visually-hidden {
   // }
 }
 
+.green-price {
+  display: block;
+  margin-top: @d80px;
+  font-size: @d30px;
+  font-weight: 700;
+  color: #1ab455;
+}
+
 @media (max-width: @mobile-width) {
   .img-desktop {
     display: none;
@@ -436,8 +444,12 @@ input[type="radio"].visually-hidden {
   .go-top-btn {
     display: none!important;
   }
-}
 
+  .green-price {
+    margin-top: @m18px;
+    font-size: @m30px;
+  }
+}
 @media (min-width: @max-desktop-width) {
   
   .container-out-right {
@@ -476,5 +488,9 @@ input[type="radio"].visually-hidden {
     //   width: 35px;
     //   height: 3px;
     // }
+  }
+  .green-price {
+    margin-top: 80px;
+    font-size: 30px;
   }
 }

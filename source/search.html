@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Портал Новый День»">
+    <title>Новый День</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">
+
+    <link rel="preload" href="fonts/Circe/regular/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__mobile">
+
+        <div class="header__mobile-top container">
+          <button type="button" class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__menu-logo logo" href="index.html">
+            <p class="logo__text">
+              <span class="logo__text--strong">Новый</span> День
+            </p>
+          </a>
+          <button class="header__search-link">
+          </button>
+        </div>
+
+        <div class="header__mobile-bottom nav-section">
+          <div class="container">
+            <ul class="nav-section__list">
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="centers.html">
+                  <img class="nav-section__icon" src="img/svg/hospital-black.svg" alt="Центры" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/hospital-white.svg" alt="Центры" width="30" height="30">
+                  <p class="nav-section__title">Центры</p>
+                </a>
+              </li>
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="clinics.html">
+                  <img class="nav-section__icon" src="img/svg/heart-black.svg" alt="Клиники" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/heart-white.svg" alt="Клиники" width="30" height="30">
+                  <p class="nav-section__title">Клиники</p>
+                </a>
+              </li>
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="detox.html">
+                  <img class="nav-section__icon" src="img/svg/wine-glass-black.svg" alt="Алкоголизм" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/wine-glass-white.svg" alt="Алкоголизм" width="30" height="30">
+                  <p class="nav-section__title">Алкоголизм</p>
+                </a>
+              </li>
+              <li class="nav-section__item">
+                <a class="nav-section__link" href="detox.html">
+                  <img class="nav-section__icon" src="img/svg/medicine-black.svg" alt="Наркомания" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/medicine-white.svg" alt="Наркомания" width="30" height="30">
+                  <p class="nav-section__title">Наркомания</p>
+                </a>
+              </li>
+              <li class="nav-section__item nav-section__item--services">
+                <a class="nav-section__link" href="#">
+                  <img class="nav-section__icon" src="img/svg/pharmacy-black.svg" alt="Услуги" width="30" height="30">
+                  <img class="nav-section__icon" src="img/svg/pharmacy-white.svg" alt="Услуги" width="30" height="30">
+                  <p class="nav-section__title">Услуги</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__desktop">
+
+        <div class="header__desktop-top container">
+          <div class="header__nav-info nav-info">
+
+            <a class="nav-info__logo logo" href="index.html">
+              <p class="logo__text">
+                <span class="logo__text--strong">Новый</span> День
+              </p>
+            </a>
+
+            <ul class="nav-info__list">
+              <li class="nav-info__item nav-info__item--search">
+                <a class="nav-info__link" href="#">
+                  Поиск
+                </a>
+              </li>
+              <li class="nav-info__item">
+                Помощь <span class="nav-info__link--around-clock">24/7</span>
+              </li>
+              <li class="nav-info__item">
+                Анонимно
+              </li>
+              <li class="nav-info__item">
+                <a class="nav-info__link" href="tel:+79004562345">
+                  +7 (900) 456-23-45
+                </a>
+              </li>
+              <li class="nav-info__item">
+                <a class="nav-info__link nav-info__link--callback btn" href="#">
+                  Обратный звонок
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="container search-container">
+          <form class="header__search-link-form" action="/echo" method="post">
+            <button class="header__search-link-icon-btn" type="submit"></button>
+            <input class="header__search-link-input" type="search" name="database-search" placeholder="Поиск по сайту..">
+          </form>
+        </div>
+
+        <div class="header__desktop-bottom header__mob-menu--nojs">
+          <div class="container">
+            <nav class="header__nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="centers.html">Реабилитационные центры</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="clinics.html">Клиники</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="detox.html">Наркомания</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="detox.html">Алкоголизм</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Услуги</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="about.html">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="database.html">Публикации</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="family.html">Родственникам</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__consultation-phone">
+              <span class="header__consultation-phone--text">Бесплатная консультация</span>
+              <a class="header__consultation-phone--link" href="tel:+79004562345">8 (900) 456-23-45</a>
+            </div>
+
+            <div class="header__callback">
+              <a class="header__callback--link btn" href="#">
+                Обратный звонок
+              </a>
+            </div>
+
+            <div class="header__features features-block">
+              <ul class="features-block__list features-block__list--header-mobile">
+                <li class="features-block__item features-block__item--anon">
+                  <h3 class="features-block__title">Анонимно</h3>
+                  <p class="features-block__description">Все звонки бесплатные и строго конфиденциальные</p>
+                </li>
+
+                <li class="features-block__item features-block__item--free">
+                  <h3 class="features-block__title">Бесплатно</h3>
+                  <p class="features-block__description">Консультация проводится на безвозмездной основе</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="search-page database-search container">
+        <h2 class="visually-hidden">Страница поиска</h2>
+        <div class="database-search__form-wrapper">
+          <form class="database-search__form" action="/echo" method="post">
+            <button class="database-search__icon-btn" type="submit"></button>
+            <input class="database-search__input" type="search" name="database-search" placeholder="Поиск по сайту...">
+          </form>
+        </div>
+        <p class="search-page__count">По запросу найдено 8 совпадений</p>
+        <div class="search__toggle-wrapper">
+          <a href="#search-tab-1" class="search__toggle-btn active">Услуги <span class="search__toggle-count">(3)</span></a>
+          <a href="#search-tab-2" class="search__toggle-btn">Публикации <span class="search__toggle-count">(4)</span></a>
+          <a href="#search-tab-3" class="search__toggle-btn disabled">Реабилитационные центры <span class="search__toggle-count">(0)</span></a>
+        </div>
+        <ul id="search-tab-1" class="search__content-list active">
+          <li class="search__content-item">
+            <a href="#" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+
+          <li class="search__content-item">
+            <a href="#" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+
+          <li class="search__content-item">
+            <a href="" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul id="search-tab-2" class="search__content-list">
+          <li class="search__content-item">
+            <a href="#" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Lorem ipsum Carfagendum estelenda est</p>
+            </a>
+          </li>
+
+          <li class="search__content-item">
+            <a href="#" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+
+          <li class="search__content-item">
+            <a href="" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul id="search-tab-3" class="search__content-list">
+          <li class="search__content-item">
+            <a href="#" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa provident veritatis nemo consectetur aliquid vel eum amet minus quod unde omnis nisi, cupiditate itaque odio perferendis velit cumque recusandae. Consectetur?</p>
+            </a>
+          </li>
+
+          <li class="search__content-item">
+            <a href="#" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+
+          <li class="search__content-item">
+            <a href="" class="search__content-link">
+              <p class="search__content-title">Лечение спайсовой зависимости</p>
+              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+            </a>
+          </li>
+        </ul>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+
+        <a class="footer__logo logo" href="index.html">
+          <p class="logo__text">
+            <span class="logo--footer">Новый</span> День
+          </p>
+        </a>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="centers.html">Реабилитационные центры</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="clinics.html">Клиники</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и цены</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Алкоголизм</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Наркомания</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="family.html">Родственикам</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__column-desktop">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="database.html">Публикации</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="about.html">О нас</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__mobile-wrapper">
+          <ul class="footer__list footer__list--left">
+            <li class="footer__item">
+              <a class="footer__link" href="centers.html">Реабилитационные центры</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="clinics.html">Клиники</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и цены</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="about">О нас</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list footer__list--right">
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Алкоголизм</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="article-page.html">Наркомания</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="family.html">Родственикам</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="database.html">Публикации</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__phone">
+          <a class="footer__number-link" href="tel:+79004562345">8 (900) 456-23-45</a>
+          <p class="footer__text">Бесплатная горячая линия</p>
+        </div>
+
+      </div>
+
+      </div>
+    </footer>
+
+    <section class="modal modal--search">
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Поиск по сайту</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <button class="modal__icon-btn" type="submit"></button>
+          <input class="modal__input" type="search" name="search" placeholder="Введите текст..">
+          <button class="modal__btn btn">Найти</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="modal modal--callback">
+      <div class="modal-wrapper">
+        <h2 class="modal__title">Введите ваш номер телефона</h2>
+        <button class="modal__close">Закрыть окно</button>
+        <form class="modal__form" action="/echo" method="post">
+          <input class="modal__input-phone phone-mask" type="tel" name="callme" placeholder="+7 (  ___  ) ___  __  __">
+          <button class="modal__btn btn">Заказать звонок</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

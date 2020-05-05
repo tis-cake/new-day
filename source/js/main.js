@@ -1072,3 +1072,17 @@ $(function () {
 $(function () {
   $('.go-top-btn').scrollToTop();
 });
+
+/*переключение табов*/
+$(document).ready(function(){
+  $('.search__toggle-btn').click(function(e) {
+    e.preventDefault();
+    $('.search__toggle-btn.active').removeClass('active');
+
+    $(this).addClass('active');
+    var tab = $(this).attr('href');
+
+    $('.search__content-list').not(tab).removeClass('active');
+    $(tab).addClass('active');
+  });
+});

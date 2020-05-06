@@ -310,7 +310,7 @@ $('.services__list').removeClass('services__list--nojs');
 // переключатель меню
 $(document).ready(function () {
   $('.services__item').click(function (evt) {
-    evt.preventDefault();
+    // evt.preventDefault();
 
     // $('.services__list').toggleClass('active');
 

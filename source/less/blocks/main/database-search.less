@@ -13,7 +13,8 @@
 }
 
 .database-search__form-wrapper {
-  margin-bottom: @d200px;
+  // margin-bottom: @d200px;
+  margin-bottom: @d99px;
 }
 
 .database-search__form {
@@ -92,7 +93,7 @@
 
 .database-search__list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
 
   max-height: 250px;
@@ -103,10 +104,16 @@
   width: @d215px;
   height: @d112px;
 
+  margin-right: @d17px;
+
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
   border-radius: 19px;
+
+  &:nth-child(7n) {
+    margin-right: 0;
+  }
 }
 
 .database-search__link {
@@ -348,6 +355,8 @@
     width: 100%;
     height: @m80px;
 
+    margin-right: 0;
+
     text-align: left;
     background-color: #ffffff;
     box-shadow: none;
@@ -409,7 +418,8 @@
   }
 
   .database-search__form-wrapper {
-    margin-bottom: 200px;
+    // margin-bottom: 200px;
+    margin-bottom: 99px;
   }
 
   .database-search__form {
@@ -434,6 +444,7 @@
   .database-search__item {
     width: 215px;
     height: 112px;
+    margin-right: 17px;
   }
 
   .database-search__link {

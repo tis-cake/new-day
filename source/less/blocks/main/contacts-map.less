@@ -174,8 +174,26 @@
 }
 
 .contacts-map__toggle-wrapper {
+  position: relative;
   display: flex;
+  width: 95%;
   margin-bottom: @d9px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '₽';
+    font-size: @d18px;
+  }
+
+  &::before {
+    // right: -20px;
+    right: -5%;
+  }
+
+  &::after {
+    left: 17%;
+  }
 }
 
 .contacts-map__toggle {
@@ -561,6 +579,11 @@
 
   .contacts-map__toggle-wrapper {
     margin-bottom: @m23px;
+
+    &::before,
+    &::after {
+      font-size: @m30px;
+    }
   }
 
   .contacts-map__toggle {
@@ -658,7 +681,8 @@
     // top: -@m120px;
     top: @m30px;
     // height: @m375px;
-    height: @m587px;
+    // height: @m587px;
+    height: 107.33vw; //805px;
     padding-top: @m40px;
     .padding-inline(@m35px);
     padding-bottom: @m25px;
@@ -802,6 +826,10 @@
 
   .contacts-map__toggle-wrapper {
     margin-bottom: 9px;
+    &::before,
+    &::after {
+      font-size: 18px;
+    }
   }
 
   .contacts-map__toggle {

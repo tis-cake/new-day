@@ -412,7 +412,7 @@
   }
 
   .modal__list:not(:first-child) {
-    display: none;
+    // display: none;
   }
 
   .modal__item {
@@ -487,6 +487,14 @@
   .modal--region-here {
     padding-top: @m110px;
     padding-bottom: @m70px;
+  }
+
+  .modal--region-here {
+    .modal__list-wrapper {
+      max-height: @m526px;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
   }
 }
 

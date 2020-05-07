@@ -7138,6 +7138,7 @@ input[type="radio"].visually-hidden {
 /* DATABASE-SEARCH START */
 .search-page {
   margin-top: 4.427vw;
+  margin-bottom: 13.073vw;
 }
 .search-page .database-search__form-wrapper {
   width: 55.364vw;
@@ -7158,9 +7159,13 @@ input[type="radio"].visually-hidden {
   padding-left: 4.1666vw;
   font-size: 1.1458vw;
 }
+.search-page__database-search {
+  margin-bottom: 0;
+}
 .search-page__count {
   margin-bottom: 4.375vw;
   font-size: 0.9375vw;
+  text-align: center;
 }
 .search__toggle-wrapper {
   display: -webkit-box;
@@ -7168,6 +7173,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
           justify-content: space-between;
   width: 41.146vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.927vw;
 }
 .search__toggle-btn {
@@ -7206,6 +7213,8 @@ input[type="radio"].visually-hidden {
 }
 .search__content-item {
   width: 55.364vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.5625vw;
 }
 .search__content-link {
@@ -7228,6 +7237,7 @@ input[type="radio"].visually-hidden {
   .search-page {
     padding-top: 30.667vw;
     margin-top: 11.33vw;
+    margin-bottom: 22.933vw;
   }
   .search-page .database-search__form-wrapper {
     width: 100%;
@@ -7281,6 +7291,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1921px) {
   .search-page {
     margin-top: 85px;
+    margin-bottom: 251px;
   }
   .search-page .database-search__form-wrapper {
     width: 1063px;
@@ -12384,6 +12395,9 @@ a.article-author__link {
 .contacts-map__toggle-wrapper::after {
   position: absolute;
   content: '₽';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 0.9375vw;
 }
 .contacts-map__toggle-wrapper::before {
@@ -13500,9 +13514,6 @@ a.article-author__link {
   .modal__list {
     text-align: center;
   }
-  .modal__list:not(:first-child) {
-    display: none;
-  }
   .modal__item {
     margin-bottom: 2vw;
   }
@@ -13562,6 +13573,11 @@ a.article-author__link {
   .modal--region-here {
     padding-top: 14.667vw;
     padding-bottom: 9.333vw;
+  }
+  .modal--region-here .modal__list-wrapper {
+    max-height: 70.133vw;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 @media (max-width: 755px) and (max-width: 350px) {

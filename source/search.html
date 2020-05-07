@@ -185,133 +185,138 @@
     </header>
 
     <main class="main">
-      <section class="search-page database-search container">
+      <section class="search-page">
         <h2 class="visually-hidden">Страница поиска</h2>
-        <div class="database-search__form-wrapper">
-          <form class="database-search__form" action="/echo" method="post">
-            <button class="database-search__icon-btn" type="submit"></button>
-            <input class="database-search__input" type="search" name="database-search" placeholder="Поиск по сайту...">
-          </form>
+        <div class="container">
+          <div class="search-page__database-search database-search">
+            <div class="database-search__form-wrapper">
+              <form class="database-search__form" action="/echo" method="post">
+                <button class="database-search__icon-btn" type="submit"></button>
+                <input class="database-search__input" type="search" name="database-search" placeholder="Поиск по сайту...">
+              </form>
+            </div>
+          </div>
+          <p class="search-page__count">По запросу найдено 8 совпадений</p>
+          <div class="search__toggle-wrapper">
+            <a href="#search-tab-1" class="search__toggle-btn">Услуги <span class="search__toggle-count">(3)</span></a>
+            <a href="#search-tab-2" class="search__toggle-btn">Публикации <span class="search__toggle-count">(4)</span></a>
+            <a href="#search-tab-3" class="search__toggle-btn active">Центры <span class="search__toggle-count">(0)</span></a>
+          </div>
+          <ul id="search-tab-1" class="search__content-list">
+            <li class="search__content-item">
+              <a href="#" class="search__content-link">
+                <p class="search__content-title">Лечение спайсовой зависимости</p>
+                <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+              </a>
+            </li>
+        
+            <li class="search__content-item">
+              <a href="#" class="search__content-link">
+                <p class="search__content-title">Лечение спайсовой зависимости</p>
+                <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+              </a>
+            </li>
+        
+            <li class="search__content-item">
+              <a href="" class="search__content-link">
+                <p class="search__content-title">Лечение спайсовой зависимости</p>
+                <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+              </a>
+            </li>
+          </ul>
+          
+          <ul id="search-tab-2" class="search__content-list">
+            <li class="search__content-item">
+              <a href="#" class="search__content-link">
+                <p class="search__content-title">Лечение спайсовой зависимости</p>
+                <p class="search__content-description">Lorem ipsum Carfagendum estelenda est</p>
+              </a>
+            </li>
+        
+            <li class="search__content-item">
+              <a href="#" class="search__content-link">
+                <p class="search__content-title">Лечение спайсовой зависимости</p>
+                <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+              </a>
+            </li>
+        
+            <li class="search__content-item">
+              <a href="" class="search__content-link">
+                <p class="search__content-title">Лечение спайсовой зависимости</p>
+                <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
+              </a>
+            </li>
+          </ul>
         </div>
-        <p class="search-page__count">По запросу найдено 8 совпадений</p>
-        <div class="search__toggle-wrapper">
-          <a href="#search-tab-1" class="search__toggle-btn">Услуги <span class="search__toggle-count">(3)</span></a>
-          <a href="#search-tab-2" class="search__toggle-btn">Публикации <span class="search__toggle-count">(4)</span></a>
-          <a href="#search-tab-3" class="search__toggle-btn active">Центры <span class="search__toggle-count">(0)</span></a>
-        </div>
-        <ul id="search-tab-1" class="search__content-list">
-          <li class="search__content-item">
-            <a href="#" class="search__content-link">
-              <p class="search__content-title">Лечение спайсовой зависимости</p>
-              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
-            </a>
-          </li>
-
-          <li class="search__content-item">
-            <a href="#" class="search__content-link">
-              <p class="search__content-title">Лечение спайсовой зависимости</p>
-              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
-            </a>
-          </li>
-
-          <li class="search__content-item">
-            <a href="" class="search__content-link">
-              <p class="search__content-title">Лечение спайсовой зависимости</p>
-              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
-            </a>
-          </li>
-        </ul>
-
-        <ul id="search-tab-2" class="search__content-list">
-          <li class="search__content-item">
-            <a href="#" class="search__content-link">
-              <p class="search__content-title">Лечение спайсовой зависимости</p>
-              <p class="search__content-description">Lorem ipsum Carfagendum estelenda est</p>
-            </a>
-          </li>
-
-          <li class="search__content-item">
-            <a href="#" class="search__content-link">
-              <p class="search__content-title">Лечение спайсовой зависимости</p>
-              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
-            </a>
-          </li>
-
-          <li class="search__content-item">
-            <a href="" class="search__content-link">
-              <p class="search__content-title">Лечение спайсовой зависимости</p>
-              <p class="search__content-description">Лечение солевой зависимости начинается с детоксикации организма, которая поможет вывести из организма токсины и яды, данная процедура нормализует состояние больного и позволит далее заниматься его здоровьем и реабилитацией</p>
-            </a>
-          </li>
-        </ul>
-
-        <div id="search-tab-3" class="search__content-list rehab-swiper--two-row not-swiper active">
-          <div class="swiper-container two-slides">
-            <a class="rehab-swiper__slide" href="clinic-page.html">
-              <div class="rehab-swiper__img-wrapper">
-                <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
-              </div>
-              <div class="rehab-swiper__text-wrapper">
-                <p class="rehab-swiper__city">г. Москва</p>
-                <p class="rehab-swiper__street">ул. Покровка, 31</p>
-                <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
-                <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
-                <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
-              </div>
-            </a>
-            <a class="rehab-swiper__slide" href="clinic-page.html">
-              <div class="rehab-swiper__img-wrapper">
-                <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
-              </div>
-              <div class="rehab-swiper__text-wrapper">
-                <p class="rehab-swiper__city">г. Москва</p>
-                <p class="rehab-swiper__street">ул. Покровка, 31</p>
-                <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
-                <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
-                <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
-              </div>
-            </a>
-            <a class="rehab-swiper__slide" href="clinic-page.html">
-              <div class="rehab-swiper__img-wrapper">
-                <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
-              </div>
-              <div class="rehab-swiper__text-wrapper">
-                <p class="rehab-swiper__city">г. Москва</p>
-                <p class="rehab-swiper__street">ул. Покровка, 31</p>
-                <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
-                <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
-                <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
-              </div>
-            </a>
-
-            <a class="rehab-swiper__slide" href="clinic-page.html">
-              <div class="rehab-swiper__img-wrapper">
-                <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
-              </div>
-              <div class="rehab-swiper__text-wrapper">
-                <p class="rehab-swiper__city">г. Москва</p>
-                <p class="rehab-swiper__street">ул. Покровка, 31</p>
-                <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
-                <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
-                <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
-              </div>
-            </a>
-
-            <a class="rehab-swiper__slide" href="clinic-page.html">
-              <div class="rehab-swiper__img-wrapper">
-                <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
-              </div>
-              <div class="rehab-swiper__text-wrapper">
-                <p class="rehab-swiper__city">г. Москва</p>
-                <p class="rehab-swiper__street">ул. Покровка, 31</p>
-                <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
-                <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
-                <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
-              </div>
-            </a>
+        
+        <div id="search-tab-3" class="search__content-list rehab-swiper--two-row rehab-swiper--centers not-swiper active">
+          <div class="container">
+            <div class="swiper-container">
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__city">г. Москва</p>
+                  <p class="rehab-swiper__street">ул. Покровка, 31</p>
+                  <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
+                  <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
+                  <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                </div>
+              </a>
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__city">г. Москва</p>
+                  <p class="rehab-swiper__street">ул. Покровка, 31</p>
+                  <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
+                  <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
+                  <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                </div>
+              </a>
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__city">г. Москва</p>
+                  <p class="rehab-swiper__street">ул. Покровка, 31</p>
+                  <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
+                  <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
+                  <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                </div>
+              </a>
+            
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__city">г. Москва</p>
+                  <p class="rehab-swiper__street">ул. Покровка, 31</p>
+                  <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
+                  <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
+                  <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                </div>
+              </a>
+            
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab/центр.jpg" alt="Реабилитационный центр в г.">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__city">г. Москва</p>
+                  <p class="rehab-swiper__street">ул. Покровка, 31</p>
+                  <p class="rehab-swiper__place-description">Лечение наркотической зависимости и алкоголизма</p>
+                  <p class="rehab-swiper__price">40 000 - 80 000 ₽ / мес.</p>
+                  <div class="rehab-swiper__link-page"><img src="img/svg/arrow.svg" alt="Декоративное изображение" width="20" height="20"></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-
       </section>
     </main>
 

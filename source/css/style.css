@@ -388,6 +388,9 @@ input[type="radio"].visually-hidden {
   color: #1ab455;
 }
 @media (max-width: 755px) {
+  body {
+    font-size: 3.2rem;
+  }
   .img-desktop {
     display: none;
   }
@@ -13480,7 +13483,7 @@ a.article-author__link {
     line-height: 6.666vw;
   }
   .modal__input-phone {
-    width: 36vw;
+    width: 42.667vw;
     padding-left: 0;
     padding-right: 0;
   }

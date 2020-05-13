@@ -87,6 +87,11 @@
   color: inherit;
 }
 
+.main-nav__services-list {
+  .main-nav__list {
+    display: none;
+  }
+}
 
 @media  (max-width: @mobile-width) {
   .main-nav {
@@ -148,9 +153,23 @@
   }
 
   .main-nav__services-list {
-    display: none;
-    .main-nav__sub-list {
+
+    .active.main-nav__list {
       display: block;
+      margin-bottom: @m200px;
+      .main-nav__sub-list {
+        display: block;
+      }
+      .main-nav__item {
+        &:hover>.main-nav__sub-list,
+        &:focus>.main-nav__sub-list {
+          display: block;
+        }
+      }
+    }
+
+    .main-nav__link {
+      font-weight: 700;
     }
   }
 }

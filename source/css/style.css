@@ -772,12 +772,11 @@ input[type="radio"].visually-hidden {
   }
   /*при отключённом js*/
   .no-js .header__desktop-bottom,
-  .active.header__desktop-bottom {
+  .active.header__desktop-bottom,
+  .active.header__services-list {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    padding-left: 4.666vw;
-    padding-right: 4.666vw;
     padding-bottom: 16vw;
     background-color: #fff;
   }
@@ -785,7 +784,8 @@ input[type="radio"].visually-hidden {
     position: relative;
     height: 253.33vw;
   }
-  .active.header__desktop-bottom {
+  .active.header__desktop-bottom,
+  .active.header__services-list {
     position: absolute;
     height: 100vh;
     overflow-y: scroll;
@@ -1040,6 +1040,9 @@ input[type="radio"].visually-hidden {
   display: block;
   color: inherit;
 }
+.main-nav__services-list .main-nav__list {
+  display: none;
+}
 @media (max-width: 755px) {
   .main-nav {
     font-size: 4.399vw;
@@ -1087,11 +1090,19 @@ input[type="radio"].visually-hidden {
     margin-top: 7.066vw;
     margin-bottom: 7.066vw;
   }
-  .main-nav__services-list {
-    display: none;
-  }
-  .main-nav__services-list .main-nav__sub-list {
+  .main-nav__services-list .active.main-nav__list {
     display: block;
+    margin-bottom: 26.667vw;
+  }
+  .main-nav__services-list .active.main-nav__list .main-nav__sub-list {
+    display: block;
+  }
+  .main-nav__services-list .active.main-nav__list .main-nav__item:hover > .main-nav__sub-list,
+  .main-nav__services-list .active.main-nav__list .main-nav__item:focus > .main-nav__sub-list {
+    display: block;
+  }
+  .main-nav__services-list .main-nav__link {
+    font-weight: 700;
   }
 }
 @media (min-width: 1921px) {

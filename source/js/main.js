@@ -13,9 +13,21 @@ if ($(".main").hasClass("index")) {
 // мобильное меню
 $(document).ready(function () {
   $('.header__menu-toggle').click(function () {
+    // если открыт список услуг
+    if ($(this).hasClass('services-active')) {
+      $(this).removeClass('active services-active');
+      $('.header__services-list').removeClass('active');
+      $('.main-nav__list').removeClass('active');
+
+      $('.nav-section').removeClass('active');
+      $("body").removeClass('noscroll');
+
+      return false;
+    }
+
     $(this).toggleClass('active');
-    $('.nav-section').toggleClass('active');
-    $('.header__desktop-bottom').toggleClass('active');
+    $('.nav-section').toggleClass('active');            // скрываем нижнее меню (header__mobile-bottom)
+    $('.header__desktop-bottom').toggleClass('active'); // выводим всю навигацию
     $("body").toggleClass('noscroll');
 
     $('.header__mobile-top').removeClass('search'); // тень над поиском у верхнего блока
@@ -25,14 +37,32 @@ $(document).ready(function () {
   });
 });
 
-// подменю на мобильном
+// подменю в главной навигации меню (на мобильном, по дефолту скрыто)
 $(document).ready(function () {
   if (width <= 756) {
     $('.main-nav-sub').click(function(evt) {
       evt.preventDefault();
       var currentSublist = $(this).closest('.main-nav__item').find('.main-nav__sub-list');
-      $('.main-nav__sub-list').not(currentSublist).slideUp();
+      $('.header__nav .main-nav__sub-list').not(currentSublist).slideUp();
       currentSublist.slideToggle();
+    });
+  }
+});
+
+// отдельное меню с услугами (на мобильном)
+$(document).ready(function () {
+  if (width <= 756) {
+    $('.serviсes-list').click(function(evt) {
+      evt.preventDefault();
+      var data = $(this).data('id');
+      var currentSublist = $('.header__services-list').find($('.main-nav__list[data-id='+data+']'));
+
+      currentSublist.toggleClass('active');
+      $('.header__menu-toggle').addClass('active services-active');
+      $('.header__services-list').addClass('active');
+      
+      $('.nav-section').addClass('active'); // скрываем нижнее меню (header__mobile-bottom)
+      $("body").addClass('noscroll');       // убираем скролл страницы
     });
   }
 });
@@ -73,8 +103,13 @@ $(document).ready(function () {
 // убрать index при открытом меню
 $(document).ready(function () {
   if($(".header").hasClass("index")) {
+    // главное меню
     $('.header__menu-toggle').click(function () {
       $('.header').toggleClass('index');
+    });
+    // список услуг
+    $('.serviсes-list').click(function() {
+      $('.header').removeClass('index');
     });
   }
 });
@@ -83,7 +118,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   var centerSwiper = new Swiper('#center-swiper', {
     slidesPerView: '1.5',
-    centeredSlides: true,
+    centeredSlides: false,
     speed: 3000,
     spaceBetween: 25,
     touchRatio: 1,
@@ -133,7 +168,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   var clinicSwiper = new Swiper('#clinic-swiper', {
     slidesPerView: '1.5',
-    centeredSlides: true,
+    // centeredSlides: true,
     speed: 3000,
     spaceBetween: 25,
     touchRatio: 1,

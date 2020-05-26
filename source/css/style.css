@@ -6757,7 +6757,7 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   -webkit-box-align: center;
           align-items: center;
-  margin-bottom: 13.073vw;
+  margin-bottom: 5.208vw;
 }
 .database-search__title {
   font-size: 2.3437vw;
@@ -6832,13 +6832,12 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  max-height: 250px;
-  height: 13.021vw;
 }
 .database-search__item {
   width: 11.198vw;
   height: 5.833vw;
   margin-right: 0.8854vw;
+  margin-bottom: 0.7812vw;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
@@ -7056,6 +7055,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     height: 10.66vw;
     margin-right: 0;
+    margin-bottom: 0;
     text-align: left;
     background-color: #ffffff;
     box-shadow: none;
@@ -7111,7 +7111,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1921px) {
   .database-search {
-    margin-bottom: 251px;
+    margin-bottom: 100px;
   }
   .database-search__title {
     font-size: 45px;
@@ -7138,6 +7138,7 @@ input[type="radio"].visually-hidden {
     width: 215px;
     height: 112px;
     margin-right: 17px;
+    margin-bottom: 15px;
   }
   .database-search__link {
     padding-top: 61px;
@@ -13854,5 +13855,3 @@ a.article-author__link {
   }
 }
 /* FOOTER END */
-
-/*# sourceMappingURL=style.css.map */

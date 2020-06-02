@@ -690,6 +690,10 @@ $(document).ready(function () {
     touchRatio: 1,
     // loop: true,
     freeMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next--master',
+      prevEl: '.swiper-button-prev--master',
+    },
     breakpoints: {
       756: {
         slidesPerView: '4',

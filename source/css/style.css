@@ -382,7 +382,7 @@ input[type="radio"].visually-hidden {
 }
 .green-price {
   display: block;
-  margin-top: 4.1666vw;
+  margin-top: 1.5625vw;
   font-size: 1.5625vw;
   font-weight: 700;
   color: #1ab455;
@@ -463,7 +463,7 @@ input[type="radio"].visually-hidden {
     height: 23px;
   }
   .green-price {
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 30px;
   }
 }
@@ -2105,6 +2105,9 @@ input[type="radio"].visually-hidden {
     width: 40.54vw;
   }
 }
+.main-info__description p {
+  color: #fff;
+}
 .main-info__description,
 .main-info__price {
   max-width: 617px;
@@ -2800,11 +2803,17 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 .about--detox ul {
+  margin-bottom: 1.302vw;
   padding-left: 1.9791vw;
 }
 .about--detox li {
   position: relative;
   margin-bottom: 0.7812vw;
+  font-size: 0.9375vw;
+  font-weight: 400;
+  line-height: 1.25vw;
+  letter-spacing: 0.1px;
+  color: #747474;
 }
 .about--detox li:last-child {
   margin-bottom: 0;
@@ -2998,9 +3007,13 @@ input[type="radio"].visually-hidden {
   }
   .about--detox ul {
     padding-left: 6.533vw;
+    margin-bottom: 5.2vw;
   }
   .about--detox li {
-    margin-bottom: 5.2vw;
+    margin-bottom: 4vw;
+    font-size: 4vw;
+    line-height: 5.2vw;
+    letter-spacing: 0.15px;
   }
   .about--detox li::before {
     top: 1.066vw;
@@ -3139,10 +3152,13 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
   }
   .about--detox ul {
+    margin-bottom: 25px;
     padding-left: 38px;
   }
   .about--detox li {
     margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .about--detox li::before {
     top: 4px;
@@ -3362,6 +3378,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: transparent;
   border-radius: 19px 19px 0 0;
 }
 .get-help__icon {
@@ -6319,7 +6336,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 0;
 }
 .double-main-wrapper .intro--warning {
-  width: 27.604vw;
+  width: 29.167vw;
 }
 .double-main-wrapper .intro--warning .intro__title {
   margin-bottom: 1.6666vw;
@@ -6514,7 +6531,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 0;
   }
   .double-main-wrapper .intro--warning {
-    width: 530px;
+    width: 560px;
   }
   .double-main-wrapper .intro--warning .intro__title {
     margin-bottom: 32px;
@@ -7675,6 +7692,9 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.06);
   border-radius: 19px;
   background-color: #ffffff;
+}
+.services__sub-menu--width-auto {
+  width: auto;
 }
 .active.services__sub-menu {
   display: -webkit-box;
@@ -9110,6 +9130,9 @@ input[type="radio"].visually-hidden {
 }
 /* CONTRAINDICATIONS END */
 /* MASTER-SWIPER START */
+.master-swiper {
+  margin-bottom: 9.896vw;
+}
 .master-swiper .swiper-container {
   box-shadow: none;
 }
@@ -9320,7 +9343,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  margin-bottom: 9.896vw;
 }
 .master-swiper__person-img-wrapper {
   height: 19.167vw;
@@ -9484,6 +9506,9 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1921px) {
+  .master-swiper {
+    margin-bottom: 190px;
+  }
   .master-swiper__main-wrapper {
     margin-bottom: 190px;
   }
@@ -9613,9 +9638,6 @@ input[type="radio"].visually-hidden {
   .double-wrapper-page .master-swiper__main-work {
     margin-bottom: 25px;
     line-height: 25px;
-  }
-  .master-swiper__person-slide-wrapper {
-    margin-bottom: 190px;
   }
   .master-swiper__person-img-wrapper {
     height: 368px;

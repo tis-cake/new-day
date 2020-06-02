@@ -1,3 +1,7 @@
+.master-swiper {
+  margin-bottom: @d190px;
+}
+
 .master-swiper .swiper-container {
   box-shadow: none;
 }
@@ -258,7 +262,6 @@
 .master-swiper__person-slide-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: @d190px;
 }
 .master-swiper__person-img-wrapper {
   height: @d368px;
@@ -452,6 +455,11 @@
 }
 
 @media (min-width: @max-desktop-width) {
+  
+  .master-swiper {
+    margin-bottom: 190px;
+  }
+
   .master-swiper__main-wrapper {
     margin-bottom: 190px;
   }
@@ -607,10 +615,6 @@
       margin-bottom: 25px;
       line-height: 25px;
     }
-  }
-
-  .master-swiper__person-slide-wrapper {
-    margin-bottom: 190px;
   }
 
   .master-swiper__person-img-wrapper {

@@ -95,12 +95,20 @@
   }
 
   & ul {
+    margin-bottom: @d25px;
     padding-left: @d38px;
   }
 
   & li {
     position: relative;
     margin-bottom: @d15px;
+
+    font-size: @d18px;
+    font-weight: 400;
+    line-height: @d24px;
+    letter-spacing: 0.1px;
+
+    color: #747474;
 
     &:last-child {
       margin-bottom: 0;
@@ -311,10 +319,14 @@
   .about--detox {
     & ul {
       padding-left: @m49px;
+      margin-bottom: @m39px;
     }
 
     li {
-      margin-bottom: @m39px;
+      margin-bottom: @m30px;
+      font-size: @m30px;
+      line-height: @m39px;
+      letter-spacing: 0.15px;
       &::before {
         top: @m8px;
         left: -@m48px;
@@ -458,11 +470,14 @@
     }
 
     & ul {
+      margin-bottom: 25px;
       padding-left: 38px;
     }
 
     & li {
       margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 24px;
 
       &::before {
         top: 4px;

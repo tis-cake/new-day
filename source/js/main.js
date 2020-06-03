@@ -324,8 +324,8 @@ $(document).ready(function () {
 
   // добавляем кнопку "показать ещё" для отзывов, длина которых > символов
   for (var i = 0; i < reviewsArr.length; i++) {
-    if (reviewsArr[i].textContent.length > size) {
-      console.log(reviewsArr[i].textContent.length);
+    if (reviewsArr[i].textContent.trim().length > size) {
+      // console.log(reviewsArr[i].textContent.length);
       var currentRevieBlock = reviewsArr[i].closest('.reviews__text-block');
       currentRevieBlock.querySelector('.reviews__btn-more').classList.add('active');
     }

@@ -5633,6 +5633,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   max-width: 496px;
   width: 25.833vw;
+  min-height: 14.792vw;
   margin-bottom: 2.0833vw;
   padding-top: 2.4479vw;
   padding-left: 5.1562vw;
@@ -5795,6 +5796,7 @@ input[type="radio"].visually-hidden {
 }
 .double-main-wrapper .reviews__text-block {
   width: 19.375vw;
+  min-height: 0;
   margin-bottom: 3.3333vw;
   padding-left: 3.8541vw;
 }
@@ -5840,6 +5842,7 @@ input[type="radio"].visually-hidden {
   .double-main-wrapper .reviews__text-block {
     max-width: none;
     width: auto;
+    min-height: 0;
     margin-bottom: 6vw;
     padding-top: 3.599vw;
     padding-left: 11.33vw;
@@ -5939,6 +5942,7 @@ input[type="radio"].visually-hidden {
     margin-top: 60px;
   }
   .reviews__text-block {
+    min-height: 284px;
     margin-bottom: 40px;
     padding-top: 47px;
     padding-left: 99px;

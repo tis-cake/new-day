@@ -4539,6 +4539,15 @@ input[type="radio"].visually-hidden {
 .program__item__icon--pill::before {
   background-image: url('../img/program/pill.svg');
 }
+.program__item-icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
 .program__title {
   margin-bottom: 0.20833vw;
   font-size: 1.5625vw;

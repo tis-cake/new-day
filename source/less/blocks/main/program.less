@@ -522,6 +522,25 @@
   }
 }
 
+.program--count-circle {
+  .program__list {
+    counter-reset: programItem;
+  }
+  .program__item__icon::before {
+    counter-increment: programItem;
+    content: counter(programItem, decimal-leading-zero);
+
+    width: @a;
+    height: @a;
+
+    font-family: @gotham;
+    font-size: @d35px;
+    font-weight: 700;
+
+    color: #ffffff;
+  }
+}
+
 .program--about {
   .program__item {
     margin-bottom: @d59px;
@@ -841,6 +860,14 @@
     }
   }
 
+  .program--count-circle {
+    .program__item__icon::before {
+      width: auto;
+      height: auto;
+      font-size: @m35px;
+    }
+  }
+
   .program--about {
     margin-bottom: @m131px;
     .intro--program {
@@ -1112,6 +1139,14 @@
         padding-top: 30px;
         padding-bottom: 30px;
       }
+    }
+  }
+
+  .program--count-circle {
+    .program__item__icon::before {
+      width: auto;
+      height: auto;
+      font-size: 35px;
     }
   }
 

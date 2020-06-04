@@ -4735,6 +4735,19 @@ input[type="radio"].visually-hidden {
 .program--stages-center.program--signs .program__item__icon {
   top: 50%;
 }
+.program--count-circle .program__list {
+  counter-reset: programItem;
+}
+.program--count-circle .program__item__icon::before {
+  counter-increment: programItem;
+  content: counter(programItem, decimal-leading-zero);
+  width: auto;
+  height: auto;
+  font-family: 'GothamPro', 'Arial', sans-serif;
+  font-size: 1.8229vw;
+  font-weight: 700;
+  color: #ffffff;
+}
 .program--about .program__item {
   margin-bottom: 3.0729vw;
   padding-bottom: 3.2812vw;
@@ -5010,6 +5023,11 @@ input[type="radio"].visually-hidden {
     padding-top: 5.333vw;
     padding-bottom: 5.333vw;
   }
+  .program--count-circle .program__item__icon::before {
+    width: auto;
+    height: auto;
+    font-size: 4.666vw;
+  }
   .program--about {
     margin-bottom: 17.467vw;
   }
@@ -5243,6 +5261,11 @@ input[type="radio"].visually-hidden {
   .program--stages-center.program--signs .program__item {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .program--count-circle .program__item__icon::before {
+    width: auto;
+    height: auto;
+    font-size: 35px;
   }
   .program--about .program__item {
     margin-bottom: 59px;

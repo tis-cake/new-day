@@ -3826,6 +3826,7 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  height: 12.5vw;
   padding-top: 1.927vw;
   padding-left: 2.0833vw;
   padding-right: 2.0833vw;
@@ -3884,6 +3885,7 @@ input[type="radio"].visually-hidden {
   height: 14.479vw;
 }
 .double-main-wrapper .rehab-swiper__text-wrapper {
+  height: 11.979vw;
   padding-top: 1.5104vw;
   padding-left: 1.7187vw;
   padding-right: 1.7187vw;
@@ -4109,7 +4111,7 @@ input[type="radio"].visually-hidden {
   .rehab-swiper__text-wrapper,
   .double-main-wrapper .rehab-swiper__text-wrapper,
   .rehab-swiper--two-row .rehab-swiper__text-wrapper {
-    height: auto;
+    height: 46.667vw;
     padding-top: 4.933vw;
     padding-left: 4.933vw;
     padding-right: 3.066vw;
@@ -4184,6 +4186,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 192px;
   }
   .rehab-swiper__text-wrapper {
+    height: 240px;
     padding-top: 37px;
     padding-left: 40px;
     padding-right: 40px;
@@ -5819,7 +5822,6 @@ input[type="radio"].visually-hidden {
 }
 .double-main-wrapper .reviews__text-block {
   width: 19.375vw;
-  min-height: 0;
   margin-bottom: 3.3333vw;
   padding-left: 3.8541vw;
 }

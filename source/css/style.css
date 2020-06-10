@@ -6611,6 +6611,9 @@ input[type="radio"].visually-hidden {
     border-radius: 45px;
     cursor: pointer;
   }
+  .btn-list__list-toggle:active {
+    padding-left: 14.533vw;
+  }
   .btn-list__list-toggle::before,
   .btn-list__list-toggle::after {
     content: '';

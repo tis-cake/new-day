@@ -6996,6 +6996,9 @@ input[type="radio"].visually-hidden {
     border-radius: 45px;
     cursor: pointer;
   }
+  .database-search__list-toggle:active {
+    padding-left: 14.533vw;
+  }
   .database-search__list-toggle::before,
   .database-search__list-toggle::after {
     content: '';
@@ -7098,7 +7101,7 @@ input[type="radio"].visually-hidden {
             flex-direction: column;
     width: 100%;
     max-height: none;
-    height: 173.33vw;
+    height: auto;
     margin-top: 5.333vw;
     padding-top: 4vw;
     padding-bottom: 4vw;

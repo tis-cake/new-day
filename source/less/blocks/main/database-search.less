@@ -230,6 +230,10 @@
 
     cursor: pointer;
 
+    &:active {
+      padding-left: @m109px;
+    }
+
     &::before,
     &::after {
       content: '';
@@ -339,7 +343,8 @@
 
     width: 100%;
     max-height: none;
-    height: 173.33vw; //1300px
+    height: auto;
+    // height: 173.33vw; //1300px
 
     margin-top: @m40px;
     padding-top: @m30px;

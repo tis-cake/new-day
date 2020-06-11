@@ -7679,6 +7679,9 @@ input[type="radio"].visually-hidden {
   border-radius: 19px;
   cursor: pointer;
 }
+.services__link:focus {
+  outline: none;
+}
 .services__text {
   display: inline-block;
   width: 6.771vw;

@@ -5842,10 +5842,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 18.267vw;
   }
   .reviews__blockquote-wrapper {
-    height: 93.333vw;
+    height: auto;
     margin-top: 0;
     padding-top: 5.733vw;
     overflow-x: scroll;
+    overflow-y: hidden;
   }
   .reviews__blockquote,
   .double-main-wrapper .reviews__blockquote {

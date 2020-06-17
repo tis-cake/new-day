@@ -310,7 +310,10 @@
 @media (max-width: @mobile-width) {
   .main-info {
     .mn();
-    height: 103.33vw; //775px
+    // height: 103.33vw; //775px
+    height: auto;
+    // min-height: 100vh;
+    height: calc(100vh - 48vw);
     width: 100%;
 
     margin-top: 0;
@@ -340,7 +343,10 @@
   .main-info__bg-wrapper {
     max-height: none;
     width: 100vw;
-    height: 103.33vw;
+    // height: 103.33vw;
+    height: auto;
+    // min-height: 100vh;
+    height: calc(100vh - 48vw);
   }
 
   .main-info__main-wrapper {

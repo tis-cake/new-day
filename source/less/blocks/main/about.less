@@ -89,19 +89,20 @@
   }
 }
 
-.about--detox {
+.about {
   & ul p {
     margin-bottom: 0;
   }
 
   & ul {
-    margin-bottom: @d25px;
+    margin-top: @d34px;
+    margin-bottom: @d34px;
     padding-left: @d38px;
   }
 
   & li {
     position: relative;
-    margin-bottom: @d15px;
+    margin-bottom: @d10px;
 
     font-size: @d18px;
     font-weight: 400;
@@ -117,7 +118,8 @@
     &::before {
       content: '';
       position: absolute;
-      top: @d4px;
+      // top: @d4px;
+      top: @d8px;
       left: -@d36px;
 
       width: @d16px;
@@ -233,6 +235,8 @@
   .about__column-left {
     margin-top: @d54px;
   }
+  ul,
+  ol,
   .intro__description {
     max-width: none;
     width: @d910px;
@@ -316,7 +320,7 @@
     }
   }
 
-  .about--detox {
+  .about {
     & ul {
       padding-left: @m49px;
       margin-bottom: @m39px;
@@ -328,7 +332,7 @@
       line-height: @m39px;
       letter-spacing: 0.15px;
       &::before {
-        top: @m8px;
+        top: @m10px;
         left: -@m48px;
         width: @m22px;
         height: @m10px;
@@ -422,6 +426,8 @@
     .intro__title {
       margin-bottom: @m40px;
     }
+    ul,
+    ol,
     .intro__description {
       max-width: none;
       width: @a;
@@ -464,23 +470,24 @@
     }
   }
 
-  .about--detox {
+  .about {
     & ul p {
       margin-bottom: 0;
     }
 
     & ul {
-      margin-bottom: 25px;
+      margin-top: 34px;
+      margin-bottom: 34px;
       padding-left: 38px;
     }
 
     & li {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       font-size: 18px;
       line-height: 24px;
 
       &::before {
-        top: 4px;
+        top: 8px;
         left: -36px;
 
         width: 16px;
@@ -596,6 +603,8 @@
     .about__column-left {
       margin-top: 54px;
     }
+    ul,
+    ol,
     .intro__description {
       max-width: none;
       width: 910px;

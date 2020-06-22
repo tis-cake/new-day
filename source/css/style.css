@@ -29,6 +29,13 @@
 @font-face {
   font-display: swap;
   font-family: GothamPro;
+  src: local("Gotham Pro Medium"), local("Gotham Pro-Medium"), url("../fonts/GothamPro/medium/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro/medium/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro/medium/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: GothamPro;
   src: local("Gotham Pro Bold"), local("Gotham Pro-Bold"), url("../fonts/GothamPro/bold/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro/bold/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro/bold/GothamPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -474,8 +481,6 @@ input[type="radio"].visually-hidden {
 .header {
   top: 0;
   position: relative;
-  max-height: 175px;
-  height: 9.115vw;
   letter-spacing: 0.2px;
   color: #2f2f2f;
   background-color: #fff;
@@ -555,8 +560,7 @@ input[type="radio"].visually-hidden {
 .header.index .logo__text--strong {
   color: #ffffff;
 }
-.header.index .logo__text,
-.header.index .logo__text--strong {
+.header.index .logo__text {
   font-weight: 400;
 }
 .header.index .menu-toggle span {
@@ -920,23 +924,32 @@ input[type="radio"].visually-hidden {
 }
 .logo__text {
   position: relative;
-  padding-left: 2.8645vw;
-  font-size: 1.25vw;
+  width: 11.719vw;
+  padding-left: 3.125vw;
+  font-size: 1.3541vw;
   font-weight: 300;
 }
 .logo__text--strong {
-  font-weight: 700;
+  font-weight: 500;
   color: #2f2f2f;
+}
+.logo__text--block {
+  display: block;
+  margin-top: 0.20833vw;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 0.8333vw;
+  line-height: 1.1;
 }
 .logo__text::before {
   content: '';
   position: absolute;
-  top: -0.5208vw;
-  left: -0.3125vw;
-  max-width: 50px;
-  max-height: 50px;
-  width: 2.6041vw;
-  height: 2.6041vw;
+  top: 0;
+  left: -0.8333vw;
+  max-width: 70px;
+  max-height: 70px;
+  width: 3.6458vw;
+  height: 3.6458vw;
   background-image: url("../img/svg/logo-nd-green.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -952,8 +965,10 @@ input[type="radio"].visually-hidden {
     font-size: 4.399vw;
     letter-spacing: 0.17px;
   }
+  .logo__text--block {
+    font-size: inherit;
+  }
   .logo__text::before {
-    top: -2.26vw;
     left: -3.2vw;
     max-width: none;
     max-height: none;
@@ -963,12 +978,16 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1921px) {
   .logo__text {
-    padding-left: 55px;
-    font-size: 24px;
+    width: 225px;
+    padding-left: 60px;
+    font-size: 26px;
+  }
+  .logo__text--block {
+    margin-top: 4px;
+    font-size: 16px;
   }
   .logo__text::before {
-    top: -10px;
-    left: -6px;
+    left: -16px;
   }
 }
 /* LOGO END */
@@ -13916,6 +13935,7 @@ a.article-author__link {
 /* FOOTER START */
 .footer {
   padding-top: 7.552vw;
+  padding-bottom: 7.5vw;
   font-family: 'GothamPro', 'Arial', sans-serif;
   background-color: #2f2f2f;
 }
@@ -13927,9 +13947,10 @@ a.article-author__link {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
-  padding-bottom: 7.5vw;
+}
+.footer__logo {
+  -webkit-box-align: initial;
+          align-items: initial;
 }
 .footer__list {
   font-size: 0.9895vw;
@@ -13957,9 +13978,17 @@ a.article-author__link {
   font-size: 0.9895vw;
   line-height: 1.25vw;
 }
+.footer__desc {
+  width: 20.573vw;
+  color: #c5c5c5;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 0.8854vw;
+}
 @media (max-width: 755px) {
   .footer {
     padding-top: 22.8vw;
+    padding-bottom: 26.267vw;
   }
   .footer__wrapper {
     -webkit-box-orient: vertical;
@@ -13967,14 +13996,12 @@ a.article-author__link {
             flex-direction: column-reverse;
     -webkit-box-align: stretch;
             align-items: stretch;
-    padding-bottom: 26.267vw;
   }
   .footer__logo .logo__text {
     width: auto;
     padding-left: 12.8vw;
   }
   .footer__logo .logo__text::before {
-    top: -5.2vw;
     left: -2.4vw;
   }
   .footer__column-desktop {
@@ -14017,12 +14044,15 @@ a.article-author__link {
     line-height: normal;
     letter-spacing: 0.35px;
   }
+  .footer__desc {
+    width: 100%;
+    margin-top: 6.666vw;
+    font-size: 3.599vw;
+  }
 }
 @media (min-width: 1921px) {
   .footer {
     padding-top: 145px;
-  }
-  .footer__wrapper {
     padding-bottom: 144px;
   }
   .footer__list {
@@ -14036,6 +14066,10 @@ a.article-author__link {
   .footer__text {
     font-size: 19px;
     line-height: 24px;
+  }
+  .footer__desc {
+    width: 395px;
+    font-size: 17px;
   }
 }
 /* FOOTER END */

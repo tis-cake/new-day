@@ -10,26 +10,37 @@
 
 .logo__text {
   position: relative;
-  padding-left: @d55px;
+  width: @d225px;
+  padding-left: @d60px;
 
-  font-size: @d24px;
+  font-size: @d26px;
   font-weight: 300;
 
   &--strong {
-    font-weight: 700;
+    font-weight: 500;
     color: #2f2f2f;
+  }
+
+  &--block {
+    display: block;
+    margin-top: @d4px;
+
+    font-family: @circe;
+    font-weight: 300;
+    font-size: @d16px;
+    line-height: 1.1;
   }
 
   &::before {
     content: '';
     position: absolute;
-    top: -@d10px;
-    left:  -@d6px;
+    top: 0;
+    left:  -@d16px;
 
-    max-width: 50px;
-    max-height: 50px;
-    width: @d50px;
-    height: @d50px;
+    max-width: 70px;
+    max-height: 70px;
+    width: @d70px;
+    height: @d70px;
 
     background-image: url("../img/svg/logo-nd-green.svg");
     background-repeat: no-repeat;
@@ -44,7 +55,6 @@
   }
 }
 
-
 @media (max-width: @mobile-width) {
 
   .logo__text {
@@ -54,8 +64,12 @@
     font-size: @m33px;
     letter-spacing: 0.17px;
 
+    &--block {
+      font-size: inherit;
+    }
+
     &::before {
-      top: -@m17px;
+      // top: -@m17px;
       left: -@m24px;
       max-width: none;
       max-height: none;
@@ -68,12 +82,20 @@
 @media  (min-width: @max-desktop-width) {
 
   .logo__text {
-    padding-left: 55px;
-    font-size: 24px;
+    // padding-left: 55px;
+    // font-size: 24px;
+    width: 225px;
+    padding-left: 60px;
+    font-size: 26px;
+    &--block {
+      margin-top: 4px;
+      font-size: 16px;
+    }
 
     &::before {
-      top: -10px;
-      left: -6px;
+      // top: -10px;
+      // left: -6px;
+      left: -16px;
     }
   }
 }

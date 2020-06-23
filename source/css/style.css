@@ -8313,48 +8313,46 @@ input[type="radio"].visually-hidden {
 .tariffs__wrapper {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
 }
 .tariffs__column {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  height: 21.823vw;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 87px 0px rgba(2, 7, 32, 0.05);
+}
+.tariffs__header {
+  position: relative;
+  box-sizing: border-box;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  width: 19.948vw;
-  border-radius: 20px;
-  box-shadow: 0 0 87px rgba(2, 7, 32, 0.04);
-}
-.tariffs__header {
-  position: relative;
-  height: 10.417vw;
-  border-radius: 20px 20px 0 0;
-}
-.tariffs__header::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 9.896vw;
-  background-image: url('../img/tariffs/bg-green-big.png');
+  flex-shrink: 0;
+  width: 26.927vw;
+  padding-top: 2.0312vw;
+  padding-left: 2.1875vw;
+  padding-right: 0.5208vw;
+  padding-bottom: 2.0312vw;
+  border-radius: 20px 0 0 20px;
+  background-image: url('../img/tariffs/row-bg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -6px center;
   background-size: cover;
-  border-radius: 20px 20px 0 0;
 }
 .tariffs__header * {
   color: #ffffff;
 }
 .tariffs__icon {
   position: absolute;
-  top: -2.1354vw;
-  right: 2.0312vw;
-  width: 4.6875vw;
-  height: 4.6875vw;
-  box-shadow: 12px 12px 38px rgba(8, 8, 72, 0.15);
-  border-radius: 19px;
+  width: 4.375vw;
+  height: 4.375vw;
+  box-shadow: 12px 12px 38px 0px rgba(8, 8, 72, 0.1);
+  border-radius: 15px;
   background-color: #ffffff;
 }
 .tariffs__icon::before {
@@ -8380,13 +8378,11 @@ input[type="radio"].visually-hidden {
   background-image: url('../img/tariffs/gh.svg');
 }
 .tariffs__header-text {
-  box-sizing: border-box;
-  padding-top: 1.5625vw;
-  padding-left: 2.0833vw;
-  padding-right: 2.0833vw;
+  margin-left: 5.729vw;
+  margin-bottom: 3.3333vw;
 }
 .tariffs__title {
-  margin-bottom: 0.5208vw;
+  margin-bottom: 19px;
   font-size: 1.5625vw;
   font-weight: 400;
 }
@@ -8402,33 +8398,56 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0.26041vw;
 }
 .tariffs__category-price {
-  font-size: 2.0833vw;
+  font-size: 1.6666vw;
   font-weight: 700;
 }
 .tariffs__category-day {
-  margin-top: 0.26041vw;
+  margin-top: 0;
   margin-left: 0.625vw;
 }
 .tariffs__main {
-  margin-bottom: 0.7812vw;
-  padding-left: 2.0833vw;
-  padding-right: 1.0416vw;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 2.0312vw;
+  padding-left: 2.1875vw;
+  padding-right: 2.4479vw;
+  padding-bottom: 2.0312vw;
+}
+.tariffs__main .tariffs__link-wrapper {
+  display: none;
+}
+.tariffs__desc-wrap {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 2.1875vw;
 }
 .tariffs__description {
-  font-size: 0.9375vw;
-  line-height: 1.3541vw;
   letter-spacing: 0.09px;
-  color: #747474;
+  padding-right: 2.5vw;
+  font-size: 1.0416vw;
+  line-height: 1.4062vw;
+  color: #fff;
 }
 .tariffs__list {
-  margin-top: 1.8229vw;
-  padding-left: 1.9791vw;
-  padding-right: 1.0416vw;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding-left: 1.5625vw;
   font-size: 0.9895vw;
 }
 .tariffs__item {
   position: relative;
-  margin-bottom: 1.0937vw;
+  margin-bottom: 0;
+  width: 47%;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
 }
 .tariffs__item::before {
   content: '';
@@ -8450,17 +8469,6 @@ input[type="radio"].visually-hidden {
 .tariffs__item--gray::before {
   content: none;
 }
-.tariffs__footer {
-  margin-top: auto;
-  height: 7.396vw;
-}
-.tariffs__footer-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0 0 20px 20px;
-}
 .tariffs__link-wrapper {
   display: -webkit-box;
   display: flex;
@@ -8469,64 +8477,72 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   -webkit-box-align: start;
           align-items: flex-start;
+  margin-top: auto;
+  padding-right: 5.208vw;
 }
 .tariffs__link {
   position: relative;
   display: inline-block;
-  margin-bottom: 0.8854vw;
+  font-weight: 700;
   font-size: 0.9895vw;
   line-height: 1.4062vw;
   letter-spacing: 0.1px;
-  color: #747474;
+}
+.tariffs__link:last-child {
+  margin-top: 0.8333vw;
 }
 .tariffs__link::before {
   content: '';
   position: absolute;
-  top: -0.15625vw;
-  right: -2.3437vw;
   width: 1.4062vw;
   height: 1.4062vw;
-  background-image: url("../img/svg/arrow.svg");
+  top: 0;
+  right: -1.875vw;
+  background-image: url("../img/svg/arrow-white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.tariffs--contacts {
-  margin-bottom: 9.792vw;
-}
 .tariffs--contacts .tariffs__column {
-  width: 26.354vw;
+  height: 18.125vw;
 }
 .tariffs--contacts .tariffs__header {
-  height: 12.76vw;
-}
-.tariffs--contacts .tariffs__header::before {
-  height: 11.719vw;
-  background-image: url('../img/tariffs/bg-green-big-full.png');
-}
-.tariffs--contacts .tariffs__icon {
-  top: -2.3958vw;
-  right: 3.6458vw;
-  width: 5.208vw;
-  height: 5.208vw;
+  width: 29.688vw;
+  padding-right: 30px;
+  background-image: url('../img/tariffs/row-bg1.png');
+  background-position: center;
 }
 .tariffs--contacts .tariffs__header-text {
-  padding-top: 2.3958vw;
-  padding-left: 2.8645vw;
-  padding-right: 2.8645vw;
+  margin-left: 5.99vw;
+  margin-bottom: 2.4479vw;
 }
-.tariffs--contacts .tariffs__main {
-  margin-top: -0.7812vw;
-  margin-bottom: 1.6145vw;
-  padding-left: 3.125vw;
-  padding-right: 2.0833vw;
+.tariffs--contacts .tariffs__title {
+  margin-bottom: 0.7812vw;
 }
-.tariffs--contacts .tariffs__list {
-  margin-top: 2.1875vw;
-  margin-bottom: 2.6041vw;
+.tariffs--contacts .tariffs__category-price {
+  font-size: 1.8229vw;
+}
+.tariffs--contacts .tariffs__category-day {
+  margin-top: 0.10416vw;
+}
+.tariffs--contacts .tariffs__description {
+  padding-right: 0;
+}
+.tariffs--contacts .tariffs__link-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  padding-right: 0;
+}
+.tariffs--contacts .tariffs__link:first-child {
+  margin-right: 3.6458vw;
+}
+.tariffs--contacts .tariffs__link:last-child {
+  margin-top: 0;
 }
 .tariffs--contacts .tariffs__item {
-  margin-bottom: 1.0416vw;
+  width: 30%;
+  margin-bottom: 1.0937vw;
 }
 @media (max-width: 755px) {
   .tariffs,
@@ -8543,9 +8559,11 @@ input[type="radio"].visually-hidden {
   }
   .tariffs__column,
   .tariffs--contacts .tariffs__column {
+    flex-wrap: wrap;
     width: auto;
     height: auto;
     margin-bottom: 19.333vw;
+    padding-bottom: 4.933vw;
   }
   .tariffs__column:last-child,
   .tariffs--contacts .tariffs__column:last-child {
@@ -8553,13 +8571,22 @@ input[type="radio"].visually-hidden {
   }
   .tariffs__header,
   .tariffs--contacts .tariffs__header {
-    height: 33.333vw;
-    margin-bottom: 2.4vw;
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    background-image: none;
   }
   .tariffs__header::before,
   .tariffs--contacts .tariffs__header::before {
-    height: 33.333vw;
-    background-image: url('../img/tariffs/bg-green-small.png');
+    z-index: -1;
+    position: absolute;
+    content: '';
+    height: 38vw;
+    width: 100%;
+    background-image: url('../img/tariffs/row-bg-m.png');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .tariffs__icon,
   .tariffs--contacts .tariffs__icon {
@@ -8575,49 +8602,74 @@ input[type="radio"].visually-hidden {
   }
   .tariffs__header-text,
   .tariffs--contacts .tariffs__header-text {
-    padding-top: 4.533vw;
-    padding-left: 4.266vw;
-    padding-right: 4.266vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16.133vw;
+    padding-top: 6.266vw;
   }
-  .tariffs__title {
-    margin-bottom: 2.8vw;
+  .tariffs__title,
+  .tariffs--contacts .tariffs__title {
+    margin-bottom: 1.73vw;
     font-size: 4.399vw;
   }
-  .tariffs__category {
+  .tariffs__category,
+  .tariffs--contacts .tariffs__category {
     font-size: 3.599vw;
   }
-  .tariffs__category-text {
+  .tariffs__category-text,
+  .tariffs--contacts .tariffs__category-text {
     margin-left: 0.266vw;
     margin-right: 2.4vw;
     margin-bottom: 0.666vw;
   }
-  .tariffs__category-price {
+  .tariffs__category-price,
+  .tariffs--contacts .tariffs__category-price {
     font-size: 6vw;
   }
-  .tariffs__category-day {
+  .tariffs__category-day,
+  .tariffs--contacts .tariffs__category-day {
     margin-top: 0.133vw;
     margin-left: 2.933vw;
   }
   .tariffs__main,
   .tariffs--contacts .tariffs__main {
-    margin-bottom: 5.333vw;
-    padding-left: 4.266vw;
-    padding-right: 2.666vw;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  .tariffs__description {
+  .tariffs__main .tariffs__link-wrapper,
+  .tariffs--contacts .tariffs__main .tariffs__link-wrapper {
+    display: -webkit-box;
+    display: flex;
+  }
+  .tariffs__desc-wrap {
+    position: static;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .tariffs__description,
+  .tariffs--contacts .tariffs__description {
     font-size: 4vw;
     line-height: 5.066vw;
     letter-spacing: 0.15px;
+    color: #747474;
   }
   .tariffs__list,
   .tariffs--contacts .tariffs__list {
+    height: auto;
     margin-top: 6vw;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 6.533vw;
     padding-right: 0px;
     font-size: 4vw;
   }
   .tariffs__item,
   .tariffs--contacts .tariffs__item {
+    width: 100%;
     margin-bottom: 2.8vw;
   }
   .tariffs__item::before,
@@ -8631,27 +8683,48 @@ input[type="radio"].visually-hidden {
     border-top-style: none;
     border-right-style: none;
   }
-  .tariffs__footer {
-    height: 25.333vw;
-  }
-  .tariffs__link-wrapper {
+  .tariffs__link-wrapper,
+  .tariffs--contacts .tariffs__link-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     margin-top: 6.666vw;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .tariffs__link {
-    margin-bottom: 4vw;
+  .tariffs__header .tariffs__link-wrapper {
+    display: none;
+  }
+  .tariffs__link,
+  .tariffs--contacts .tariffs__link {
+    margin-bottom: 5.733vw;
     font-size: 4vw;
     line-height: 3.599vw;
     letter-spacing: 0.15px;
+    color: #747474;
   }
-  .tariffs__link::before {
+  .tariffs__link:first-child,
+  .tariffs--contacts .tariffs__link:first-child {
+    margin-right: 0;
+  }
+  .tariffs__link:last-child,
+  .tariffs--contacts .tariffs__link:last-child {
+    margin-top: 0;
+  }
+  .tariffs__link::before,
+  .tariffs--contacts .tariffs__link::before {
     top: -1.33vw;
     right: -9.066vw;
     width: 5.333vw;
     height: 5.333vw;
+    background-image: url(../img/svg/arrow.svg);
   }
+  .tariffs__header-text,
+  .tariffs--contacts .tariffs__header-text,
+  .tariffs__main,
   .tariffs--contacts .tariffs__main {
-    margin-top: 0;
-    padding-bottom: 2.666vw;
+    padding-left: 4.266vw;
+    padding-right: 4.266vw;
   }
 }
 @media (min-width: 1921px) {
@@ -8659,31 +8732,30 @@ input[type="radio"].visually-hidden {
     margin-bottom: 194px;
   }
   .tariffs__column {
-    width: 383px;
+    height: 419px;
   }
   .tariffs__header {
-    height: 200px;
-  }
-  .tariffs__header::before {
-    height: 190px;
+    width: 517px;
+    padding-top: 39px;
+    padding-left: 42px;
+    padding-right: 10px;
+    padding-bottom: 39px;
+    background-position: -6px center;
   }
   .tariffs__icon {
-    top: -41px;
-    right: 39px;
-    width: 90px;
-    height: 90px;
+    width: 84px;
+    height: 84px;
   }
   .tariffs__icon::before {
     width: 52px;
     height: 52px;
   }
   .tariffs__header-text {
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 110px;
+    margin-bottom: 64px;
   }
   .tariffs__title {
-    margin-bottom: 10px;
+    margin-bottom: 19px;
     font-size: 30px;
   }
   .tariffs__category {
@@ -8695,29 +8767,28 @@ input[type="radio"].visually-hidden {
     margin-bottom: 5px;
   }
   .tariffs__category-price {
-    font-size: 40px;
+    font-size: 32px;
   }
   .tariffs__category-day {
-    margin-top: 5px;
     margin-left: 12px;
   }
   .tariffs__main {
-    margin-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 20px;
+    padding-top: 39px;
+    padding-left: 42px;
+    padding-right: 47px;
+    padding-bottom: 39px;
+  }
+  .tariffs__desc-wrap {
+    left: 42px;
   }
   .tariffs__description {
-    font-size: 18px;
-    line-height: 26px;
+    padding-right: 48px;
+    font-size: 20px;
+    line-height: 27px;
   }
   .tariffs__list {
-    margin-top: 35px;
-    padding-left: 38px;
-    padding-right: 20px;
+    padding-left: 30px;
     font-size: 19px;
-  }
-  .tariffs__item {
-    margin-bottom: 21px;
   }
   .tariffs__item::before {
     top: 4px;
@@ -8729,55 +8800,46 @@ input[type="radio"].visually-hidden {
     border-top-style: none;
     border-right-style: none;
   }
-  .tariffs__footer {
-    height: 142px;
+  .tariffs__link-wrapper {
+    padding-right: 100px;
   }
   .tariffs__link {
-    margin-bottom: 17px;
     font-size: 19px;
     line-height: 27px;
   }
   .tariffs__link::before {
-    top: -3px;
-    right: -45px;
     width: 27px;
     height: 27px;
+    right: -36px;
   }
-  .tariffs--contacts {
-    margin-bottom: 188px;
+  .tariffs__link:first-child {
+    margin-right: 70px;
   }
   .tariffs--contacts .tariffs__column {
-    width: 506px;
+    height: 348px;
   }
   .tariffs--contacts .tariffs__header {
-    height: 245px;
-  }
-  .tariffs--contacts .tariffs__header::before {
-    height: 225px;
-  }
-  .tariffs--contacts .tariffs__icon {
-    top: -46px;
-    right: 70px;
-    width: 100px;
-    height: 100px;
+    width: 570px;
+    padding-right: 30px;
   }
   .tariffs--contacts .tariffs__header-text {
-    padding-top: 46px;
-    padding-left: 55px;
-    padding-right: 55px;
+    margin-left: 115px;
+    margin-bottom: 47px;
   }
-  .tariffs--contacts .tariffs__main {
-    margin-top: -15px;
-    margin-bottom: 31px;
-    padding-left: 60px;
-    padding-right: 40px;
+  .tariffs--contacts .tariffs__title {
+    margin-bottom: 15px;
   }
-  .tariffs--contacts .tariffs__list {
-    margin-top: 42px;
-    margin-bottom: 50px;
+  .tariffs--contacts .tariffs__category-price {
+    font-size: 35px;
+  }
+  .tariffs--contacts .tariffs__category-day {
+    margin-top: 2px;
+  }
+  .tariffs--contacts .tariffs__link:first-child {
+    margin-right: 70px;
   }
   .tariffs--contacts .tariffs__item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 /* TARRIFS END */

@@ -4608,6 +4608,12 @@ input[type="radio"].visually-hidden {
 .program__item__icon--pill::before {
   background-image: url('../img/program/pill.svg');
 }
+.program__item__icon--communication::before {
+  background-image: url('../img/svg/icon-communication.svg');
+}
+.program__item__icon--education::before {
+  background-image: url('../img/svg/icon-education.svg');
+}
 .program__item-icon {
   position: relative;
   top: 50%;

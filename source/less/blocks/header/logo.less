@@ -10,7 +10,8 @@
 
 .logo__text {
   position: relative;
-  width: @d225px;
+  // width: @d225px;
+  width: @d175px;
   padding-left: @d60px;
 
   font-size: @d26px;
@@ -69,12 +70,20 @@
     }
 
     &::before {
-      // top: -@m17px;
+      top: -@m17px;
       left: -@m24px;
       max-width: none;
       max-height: none;
       width: @m110px;
       height: @m110px;
+    }
+  }
+
+  .footer__logo {
+    .logo__text {
+      &::before {
+        top: 0;
+      }
     }
   }
 }
@@ -84,7 +93,8 @@
   .logo__text {
     // padding-left: 55px;
     // font-size: 24px;
-    width: 225px;
+    // width: 225px;
+    width: 175px;
     padding-left: 60px;
     font-size: 26px;
     &--block {

@@ -924,7 +924,7 @@ input[type="radio"].visually-hidden {
 }
 .logo__text {
   position: relative;
-  width: 11.719vw;
+  width: 9.115vw;
   padding-left: 3.125vw;
   font-size: 1.3541vw;
   font-weight: 300;
@@ -969,16 +969,20 @@ input[type="radio"].visually-hidden {
     font-size: inherit;
   }
   .logo__text::before {
+    top: -2.26vw;
     left: -3.2vw;
     max-width: none;
     max-height: none;
     width: 14.667vw;
     height: 14.667vw;
   }
+  .footer__logo .logo__text::before {
+    top: 0;
+  }
 }
 @media (min-width: 1921px) {
   .logo__text {
-    width: 225px;
+    width: 175px;
     padding-left: 60px;
     font-size: 26px;
   }
@@ -1678,7 +1682,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0.15625vw;
 }
 .intro--banner-program .intro__title {
-  width: 21.875vw;
+  width: 25vw;
   margin-bottom: 1.4062vw;
   line-height: 2.4479vw;
 }
@@ -2020,7 +2024,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 3px;
   }
   .intro--banner-program .intro__title {
-    width: 420px;
+    width: 480px;
     margin-bottom: 27px;
     line-height: 47px;
   }
@@ -2823,15 +2827,15 @@ input[type="radio"].visually-hidden {
 .about--bottom .intro__description {
   margin-bottom: 1.3541vw;
 }
-.about ul p {
+.about ul:not(.features-block__list) p {
   margin-bottom: 0;
 }
-.about ul {
+.about ul:not(.features-block__list) {
   margin-top: 1.7708vw;
   margin-bottom: 1.7708vw;
   padding-left: 1.9791vw;
 }
-.about li {
+.about li:not(.features-block__item) {
   position: relative;
   margin-bottom: 0.5208vw;
   font-size: 0.9375vw;
@@ -2840,10 +2844,10 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.1px;
   color: #747474;
 }
-.about li:last-child {
+.about li:not(.features-block__item):last-child {
   margin-bottom: 0;
 }
-.about li::before {
+.about li:not(.features-block__item)::before {
   content: '';
   position: absolute;
   top: 0.41666vw;
@@ -3034,17 +3038,17 @@ input[type="radio"].visually-hidden {
     line-height: 5.6vw;
     margin-bottom: 5.6vw;
   }
-  .about ul {
+  .about ul:not(.features-block__list) {
     padding-left: 6.533vw;
     margin-bottom: 5.2vw;
   }
-  .about li {
+  .about li:not(.features-block__item) {
     margin-bottom: 4vw;
     font-size: 4vw;
     line-height: 5.2vw;
     letter-spacing: 0.15px;
   }
-  .about li::before {
+  .about li:not(.features-block__item)::before {
     top: 1.33vw;
     left: -6.4vw;
     width: 2.933vw;
@@ -3181,20 +3185,20 @@ input[type="radio"].visually-hidden {
     border-bottom: 30px solid #1bbd59;
     border-right: 30px solid #1bbd59;
   }
-  .about ul p {
+  .about ul:not(.features-block__list) p {
     margin-bottom: 0;
   }
-  .about ul {
+  .about ul:not(.features-block__list) {
     margin-top: 34px;
     margin-bottom: 34px;
     padding-left: 38px;
   }
-  .about li {
+  .about li:not(.features-block__item) {
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 24px;
   }
-  .about li::before {
+  .about li:not(.features-block__item)::before {
     top: 8px;
     left: -36px;
     width: 16px;
@@ -4607,6 +4611,12 @@ input[type="radio"].visually-hidden {
 }
 .program__item__icon--pill::before {
   background-image: url('../img/program/pill.svg');
+}
+.program__item__icon--communication::before {
+  background-image: url('../img/svg/icon-communication.svg');
+}
+.program__item__icon--education::before {
+  background-image: url('../img/svg/icon-education.svg');
 }
 .program__item-icon {
   position: relative;
@@ -7724,6 +7734,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   flex-wrap: wrap;
   height: 15.781vw;
   -webkit-transition: height 0.2s;
@@ -7740,10 +7752,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   box-shadow: 0 0 55px 5px rgba(5, 9, 48, 0.04);
   border-radius: 19px;
-  margin-right: 1.5625vw;
 }
 .services__item:nth-child(8n) {
   margin-right: 0;
+}
+.services__item .services__link[href] .services__text::before {
+  content: none;
 }
 .services__link {
   box-sizing: border-box;
@@ -7752,6 +7766,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -8036,7 +8052,6 @@ input[type="radio"].visually-hidden {
   .services__item {
     width: 176px;
     height: 129px;
-    margin-right: 30px;
   }
   .services__link {
     padding-top: 65px;
@@ -8414,7 +8429,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding-top: 2.0312vw;
   padding-left: 2.1875vw;
-  padding-right: 2.4479vw;
+  padding-right: 1.0416vw;
   padding-bottom: 2.0312vw;
 }
 .tariffs__main .tariffs__link-wrapper {
@@ -8440,6 +8455,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  align-content: space-between;
   height: 100%;
   padding-left: 1.5625vw;
   font-size: 0.9895vw;
@@ -8447,7 +8463,7 @@ input[type="radio"].visually-hidden {
 .tariffs__item {
   position: relative;
   margin-bottom: 0;
-  width: 47%;
+  width: 44%;
   page-break-inside: avoid;
   -webkit-column-break-inside: avoid;
      -moz-column-break-inside: avoid;
@@ -8505,7 +8521,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/svg/arrow-white.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .tariffs--contacts .tariffs__column {
   height: 18.125vw;
@@ -8546,7 +8562,6 @@ input[type="radio"].visually-hidden {
 }
 .tariffs--contacts .tariffs__item {
   width: 30%;
-  margin-bottom: 1.0937vw;
 }
 @media (max-width: 755px) {
   .tariffs,
@@ -8779,7 +8794,7 @@ input[type="radio"].visually-hidden {
   .tariffs__main {
     padding-top: 39px;
     padding-left: 42px;
-    padding-right: 47px;
+    padding-right: 20px;
     padding-bottom: 39px;
   }
   .tariffs__desc-wrap {
@@ -8841,9 +8856,6 @@ input[type="radio"].visually-hidden {
   }
   .tariffs--contacts .tariffs__link:first-child {
     margin-right: 70px;
-  }
-  .tariffs--contacts .tariffs__item {
-    margin-bottom: 21px;
   }
 }
 /* TARRIFS END */

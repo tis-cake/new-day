@@ -718,7 +718,12 @@
     .program__list {
       overflow-x: scroll;
       max-height: none;
-      height: @m400px;
+
+      // height: @m400px;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      height: auto;
+
       padding-top: @m20px;
     }
     .program__item {

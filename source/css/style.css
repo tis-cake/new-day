@@ -4973,7 +4973,11 @@ input[type="radio"].visually-hidden {
   .double-main-wrapper .program__list {
     overflow-x: scroll;
     max-height: none;
-    height: 53.333vw;
+    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    height: auto;
     padding-top: 2.666vw;
   }
   .double-main-wrapper .program__item {

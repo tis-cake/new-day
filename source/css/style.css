@@ -4120,6 +4120,7 @@ input[type="radio"].visually-hidden {
   background-color: #14b250;
   border-radius: 50%;
 }
+.double-main-wrapper .rehab-swiper .two-slides,
 .arrow-container .two-slides,
 .two-slides {
   box-shadow: none;
@@ -8912,6 +8913,7 @@ input[type="radio"].visually-hidden {
   font-size: 1.1979vw;
   font-weight: 700;
   letter-spacing: 0.12px;
+  color: #000;
 }
 .price-category__description {
   color: #747474;
@@ -8919,6 +8921,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.1px;
 }
 .price-category__cost {
+  flex-shrink: 0;
   font-size: 1.1979vw;
   font-weight: 700;
 }
@@ -8944,7 +8947,6 @@ input[type="radio"].visually-hidden {
   }
   .price-category__cost {
     font-size: 4.399vw;
-    color: #2f2f2f;
   }
 }
 @media (min-width: 1921px) {

@@ -662,6 +662,36 @@
   }
 }
 
+.program__list > ul {
+  margin-top: @d24px;
+  margin-bottom: @d24px;
+  padding-left: @d38px;
+  padding-right: @d20px;
+  color: #747474;
+
+  & > li {
+    position: relative;
+    margin-bottom: @d21px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: @d4px;
+      left: -@d36px;
+
+      width: @d16px;
+      height: @d6px;
+
+      border: @d2px solid #5a5a5a;
+      border-color: #14b250;
+      border-top-style: none;
+      border-right-style: none;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 @media (max-width: @mobile-width) {
 
   .program {
@@ -980,6 +1010,49 @@
       min-height: @m215px;
     }
   }
+
+  .program--secondary-list {
+    .intro {
+      margin-bottom: 0;
+    }
+    .program__list {
+      flex-wrap: wrap;
+      overflow: initial;
+      padding-top: 0;
+
+      ul,
+      p {
+        font-size: @m30px;
+        line-height: @m38px;
+        letter-spacing: 0.15px;
+      }
+    }
+  }
+
+  .program__list > ul {
+    margin-top: @m40px;
+    padding-left: @m49px;
+    padding-right: 0px;
+    margin-bottom: @m40px;
+    // font-size: @m30px;
+    & > li {
+      margin-bottom: @m21px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::before {
+        top: @m8px;
+        left: -@m48px;
+        width: @m22px;
+        height: @m10px;
+
+        border: @m3px solid #5a5a5a;
+        border-color: #14b250;
+        border-top-style: none;
+        border-right-style: none;
+      }
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -1237,6 +1310,30 @@
     }
     .program__item {
       min-height: 0;
+    }
+  }
+
+  .program__list > ul {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-left: 38px;
+    padding-right: 20px;
+
+    & > li {
+      margin-bottom: 21px;
+
+      &::before {
+        top: 4px;
+        left: -36px;
+
+        width: 16px;
+        height: 6px;
+
+        border: @d2px solid #5a5a5a;
+        border-color: #14b250;
+        border-top-style: none;
+        border-right-style: none;
+      }
     }
   }
 }

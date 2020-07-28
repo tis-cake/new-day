@@ -1677,7 +1677,7 @@ input[type="radio"].visually-hidden {
 }
 .intro--tariffs {
   width: 44.792vw;
-  margin-bottom: 5.99vw;
+  margin-bottom: 3.6458vw;
 }
 .intro--price-category {
   margin-bottom: 3.5416vw;
@@ -2019,7 +2019,7 @@ input[type="radio"].visually-hidden {
   }
   .intro--tariffs {
     width: 860px;
-    margin-bottom: 115px;
+    margin-bottom: 70px;
   }
   .intro--price-category {
     margin-bottom: 68px;
@@ -7824,7 +7824,7 @@ input[type="radio"].visually-hidden {
 /* BREADCRUMBS END */
 /* SERVICES START */
 .services {
-  margin-bottom: 9.219vw;
+  margin-bottom: 4.6875vw;
 }
 .services__list {
   position: relative;
@@ -8140,7 +8140,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1921px) {
   .services {
-    margin-bottom: 177px;
+    margin-bottom: 90px;
   }
   .services__list {
     height: 303px;
@@ -8424,6 +8424,9 @@ input[type="radio"].visually-hidden {
 /* TARRIFS START */
 .tariffs {
   margin-bottom: 10.104vw;
+}
+.tariffs .intro__description {
+  display: none;
 }
 .tariffs__wrapper {
   display: -webkit-box;

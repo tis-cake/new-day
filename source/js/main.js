@@ -3,6 +3,8 @@ var width = $(window).width();
 // при отключённом js - показывать меню
 $('.header').removeClass('no-js');
 
+var observer = lozad();
+observer.observe();
 
 // [index]
 // если открыта главная

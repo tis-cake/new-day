@@ -13580,6 +13580,13 @@ a.article-author__link {
   padding-top: 2vw;
   padding-bottom: 4vw;
   background-color: #f8f8f8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.aside-link.out {
+  z-index: -1;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 .aside-link__wrap {
   display: -webkit-box;

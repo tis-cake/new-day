@@ -69,12 +69,13 @@ $(document).ready(function () {
   }
 });
 
-// появление нижнего блока меню
+// поведение нижнего блока меню и ссылки-номера внизу при скролле
 $(document).ready(function () {
 
   var headerBottomBlock = $('.header__mobile-bottom'),
       headerTopBlock = $('.header__mobile-top'),
       headerSearch = $('.search-container'),
+      bottomTelLink = $('.aside-link'),
       scrollPrev = 0;
 
   $(window).scroll(function() {
@@ -84,10 +85,12 @@ $(document).ready(function () {
       headerTopBlock.addClass('out');
       headerBottomBlock.addClass('out');
       headerSearch.addClass('out');
+      bottomTelLink.addClass('out');
     } else {
       headerTopBlock.removeClass('out');
       headerBottomBlock.removeClass('out');
       headerSearch.removeClass('out');
+      bottomTelLink.removeClass('out');
     };
     scrollPrev = scrolled;
   })

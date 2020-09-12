@@ -307,6 +307,19 @@
   }
 }
 
+.main-info--team {
+  .main-info__title {
+    max-width: 800px;
+    width: @d800px;
+    color: @light-black;
+  }
+  .main-info__description {
+    max-width: 790px;
+    width: @d790px;
+    color: #747474;
+  }
+}
+
 @media (max-width: @mobile-width) {
   .main-info {
     .mn();
@@ -644,6 +657,14 @@
       width: @m470px;
       height: @m75px;
       font-size: @m27px;
+    }
+  }
+
+  .main-info--team {
+    .main-info__title,
+    .main-info__description {
+      max-width: none;
+      width: 100%;
     }
   }
 }

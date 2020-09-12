@@ -1,0 +1,41 @@
+.team {
+  margin-bottom: 160px;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, @d380px);
+  justify-content: space-between;
+  row-gap: @d86px;
+}
+
+.team__item {}
+
+@media (max-width: @mobile-width) {
+  .team {
+    margin-bottom: @m160px;
+  }
+
+  .team__list {
+    grid-template-columns: 1fr;
+    row-gap: @m86px;
+  }
+
+  .team__item {
+    .master-swiper__person-img-wrapper {
+      // height: @m368px;
+      height: @m565px;
+    }
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .team {
+    margin-bottom: 160px;
+  }
+
+  .team__list {
+    grid-template-columns: repeat(4, 380px);
+    row-gap: 86px;
+  }
+}

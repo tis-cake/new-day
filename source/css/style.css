@@ -9260,6 +9260,7 @@ input[type="radio"].visually-hidden {
   font-size: 1.1458vw;
   font-weight: 700;
   letter-spacing: 0.11px;
+  color: #2f2f2f;
 }
 .master-swiper__person-description {
   font-size: 0.9895vw;
